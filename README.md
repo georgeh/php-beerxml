@@ -1,4 +1,4 @@
 php-beerxml
 ===========
 
-A PHP BeerXML Parser
+A PHP BeerXML Parser and Generator
