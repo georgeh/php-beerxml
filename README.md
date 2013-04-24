@@ -1,12 +1,33 @@
 php-beerxml
 ===========
 
-A PHP parser and generator for the [BeerXML](http://www.beerxml.com/) standard.
+A PHP parser and generator for the [BeerXML 1.0](http://www.beerxml.com/) standard.
 
-Installing
-==========
+Installation
+============
 
-Add `"georgeh/php-beerxml"` to your composer.json and run `composer update`. Not using Composer? Get it at http://getcomposer.org/
+Requires **PHP 5.3.0** or higher.
+
+The easiest way is to install php-beerxml with [Composer](http://getcomposer.org/doc/00-intro.md).
+
+Create a file named `composer.json` in your project root:
+
+```json
+{
+    "require": {
+        "georgeh/php-beerxml": "*",
+    }
+}
+```
+
+Then, run the following commands:
+
+```bash
+$ curl -s http://getcomposer.org/installer | php
+$ php composer.phar install
+```
+
+If you don't use Composer, you can directly [download](https://github.com/georgeh/php-beerxml) the sources and configure it with your autoloader.
   
 Usage
 =====
@@ -15,8 +36,6 @@ Parser
 ------
 
 ```php
-require_once('vendor/autoload.php');
-
 $parser = new \BeerXML\Parser();
 $parser->setXmlString(file_get_contents('http://www.beerxml.com/recipes.xml'));
 $result = $parser->parse();
