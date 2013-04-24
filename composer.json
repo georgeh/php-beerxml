@@ -1,8 +1,8 @@
 {
-    "name": "georgeh/beerxml",
+    "name": "georgeh/php-beerxml",
     "type": "library",
     "description": "BeerXML parser and generator",
-    "homepage": "http://github.com/georgeh/beerxml",
+    "homepage": "https://github.com/georgeh/php-beerxml",
     "license": "MIT",
     "authors": [
         {
