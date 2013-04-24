@@ -32,14 +32,6 @@ class Parser
     );
 
     /**
-     * @param \XMLReader $xmlReader
-     */
-    public function setXmlReader($xmlReader)
-    {
-        $this->xmlReader = $xmlReader;
-    }
-
-    /**
      * @param string $xmlStr BeerXML to parse
      */
     public function setXmlString($xmlStr)

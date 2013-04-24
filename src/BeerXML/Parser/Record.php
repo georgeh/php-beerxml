@@ -30,7 +30,7 @@ abstract class Record
         ),
         'MASH'      => array(
             'parser' => '\BeerXML\Parser\MashProfile',
-            'method' => 'setEquipment'
+            'method' => 'setMash'
         ),
     );
 
@@ -108,52 +108,21 @@ abstract class Record
         }
         $record = $this->createRecord();
         // While this recipe is still open
-        $i = 0;
         while ($this->tagName != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
-            $i++;
             if (!$this->xmlReader->read()) {
                 throw new \Exception('Surprise end of file!');
             };
 
             if (\XMLReader::ELEMENT == $this->xmlReader->nodeType) {
                 if (isset($this->simpleProperties[$this->xmlReader->name])) {
-                    // Simple values
                     $method = $this->simpleProperties[$this->xmlReader->name];
                     // Call the setter method
                     $record->{$method}($this->xmlReader->readString());
-                } else {
-                    if (isset($this->complexProperties[$this->xmlReader->name])) {
-                        // Complex values (records)
-                        $recordType   = $this->complexProperties[$this->xmlReader->name];
-                        $recordParser = new $recordType['parser'];
-                        $recordParser->setXmlReader($this->xmlReader);
-                        $complex = $recordParser->parse();
-                        $method  = $recordType['method'];
-                        // Call the setter method
-                        $record->{$method}($complex);
-                    } else {
-                        if (isset($this->complexPropertySets[$this->xmlReader->name])) {
-                            // Sets of records
-                            $setTag      = $this->xmlReader->name;
-                            $setType     = $this->complexPropertySets[$this->xmlReader->name];
-                            $tag         = $setType['tag'];
-                            $parserClass = $setType['parser'];
-                            $recordAdder = $setType['method'];
-                            while ($setTag != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
-                                if (!$this->xmlReader->read()) {
-                                    throw new \Exception('Surprise end of file!');
-                                };
+                } elseif (isset($this->complexProperties[$this->xmlReader->name])) {
+                    $this->setComplexProperty($record);
+                } elseif (isset($this->complexPropertySets[$this->xmlReader->name])) {
+                    $this->setComplexPropertySet($record);
 
-                                if ($tag == $this->xmlReader->name && \XMLReader::ELEMENT == $this->xmlReader->nodeType) {
-                                    $recordParser = new $parserClass;
-                                    $recordParser->setXmlReader($this->xmlReader);
-                                    $complex = $recordParser->parse();
-                                    // Add the
-                                    $record->{$recordAdder}($complex);
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -161,4 +130,47 @@ abstract class Record
         return $record;
     }
 
+    /**
+     * Add a set of records to the record
+     * @param $record
+     * @throws \Exception
+     */
+    protected function setComplexPropertySet($record)
+    {
+        // Sets of records
+        $setTag      = $this->xmlReader->name;
+        $setType     = $this->complexPropertySets[$this->xmlReader->name];
+        $tag         = $setType['tag'];
+        $parserClass = $setType['parser'];
+        $recordAdder = $setType['method'];
+        while ($setTag != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
+            if (!$this->xmlReader->read()) {
+                throw new \Exception('Surprise end of file!');
+            };
+
+            if ($tag == $this->xmlReader->name && \XMLReader::ELEMENT == $this->xmlReader->nodeType) {
+                $recordParser = new $parserClass;
+                $recordParser->setXmlReader($this->xmlReader);
+                $complex = $recordParser->parse();
+                // Add the record
+                $record->{$recordAdder}($complex);
+            }
+        }
+    }
+
+
+    /**
+     * Set a complex value to the record
+     * @param $record
+     */
+    protected function setComplexProperty($record)
+    {
+        $recordType   = $this->complexProperties[$this->xmlReader->name];
+        $recordParser = new $recordType['parser'];
+        $recordParser->setXmlReader($this->xmlReader);
+        $complex = $recordParser->parse();
+        $method  = $recordType['method'];
+        // Call the setter method
+        $record->{$method}($complex);
+    }
 }
