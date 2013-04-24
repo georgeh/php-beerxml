@@ -18,6 +18,8 @@ class Style extends Record
      * @var array
      */
     protected $simpleProperties = array(
+        'NAME'            => 'setName',
+        'VERSION'         => 'setVersion',
         'CATEGORY'        => 'setCategory',
         'CATEGORY_NUMBER' => 'setCategoryNumber',
         'STYLE_LETTER'    => 'setStyleLetter',

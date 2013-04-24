@@ -436,7 +436,7 @@ class Recipe
     }
 
     /**
-     * @return array
+     * @return Fermentable[]
      */
     public function getFermentables()
     {
@@ -500,7 +500,7 @@ class Recipe
     }
 
     /**
-     * @return array
+     * @return Hop[]
      */
     public function getHops()
     {

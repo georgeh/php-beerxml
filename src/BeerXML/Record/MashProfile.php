@@ -116,7 +116,7 @@ class MashProfile
     }
 
     /**
-     * @return array
+     * @return MashStep[]
      */
     public function getMashSteps()
     {
