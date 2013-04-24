@@ -420,7 +420,7 @@ class Recipe
     }
 
     /**
-     * @return \BeerXML\Equipment
+     * @return Equipment
      */
     public function getEquipment()
     {
@@ -428,7 +428,7 @@ class Recipe
     }
 
     /**
-     * @param \BeerXML\Equipment $equipment
+     * @param Equipment $equipment
      */
     public function setEquipment($equipment)
     {
@@ -444,11 +444,11 @@ class Recipe
     }
 
     /**
-     * @param array $fermentables
+     * @param Fermentable $fermentable
      */
-    public function setFermentables($fermentables)
+    public function addFermentable($fermentable)
     {
-        $this->fermentables = $fermentables;
+        $this->fermentables[] = $fermentable;
     }
 
     /**
@@ -508,11 +508,11 @@ class Recipe
     }
 
     /**
-     * @param array $hops
+     * @param Hop $hop
      */
-    public function setHops($hops)
+    public function addHop($hop)
     {
-        $this->hops = $hops;
+        $this->hops[] = $hop;
     }
 
     /**
@@ -532,7 +532,7 @@ class Recipe
     }
 
     /**
-     * @return \BeerXML\MashProfile
+     * @return MashProfile
      */
     public function getMash()
     {
@@ -540,7 +540,7 @@ class Recipe
     }
 
     /**
-     * @param \BeerXML\MashProfile $mash
+     * @param MashProfile $mash
      */
     public function setMash($mash)
     {
@@ -556,11 +556,11 @@ class Recipe
     }
 
     /**
-     * @param array
+     * @param Misc
      */
-    public function setMiscs($miscs)
+    public function addMisc($misc)
     {
-        $this->miscs = $miscs;
+        $this->miscs[] = $misc;
     }
 
     /**
@@ -708,7 +708,7 @@ class Recipe
     }
 
     /**
-     * @return \BeerXML\Style
+     * @return Style
      */
     public function getStyle()
     {
@@ -716,7 +716,7 @@ class Recipe
     }
 
     /**
-     * @param \BeerXML\Style $style
+     * @param Style $style
      */
     public function setStyle($style)
     {
@@ -828,11 +828,11 @@ class Recipe
     }
 
     /**
-     * @param array
+     * @param Water
      */
-    public function setWaters($waters)
+    public function addWater($water)
     {
-        $this->waters = $waters;
+        $this->waters[] = $water;
     }
 
     /**
@@ -844,10 +844,10 @@ class Recipe
     }
 
     /**
-     * @param array
+     * @param Yeast
      */
-    public function setYeasts($yeasts)
+    public function addYeast($yeast)
     {
-        $this->yeasts = $yeasts;
+        $this->yeasts[] = $yeast;
     }
 }

@@ -108,11 +108,11 @@ class MashProfile
     }
 
     /**
-     * @param array $mashSteps
+     * @param MashStep $mashStep
      */
-    public function setMashSteps($mashSteps)
+    public function addMashStep($mashStep)
     {
-        $this->mashSteps = $mashSteps;
+        $this->mashSteps = $mashStep;
     }
 
     /**

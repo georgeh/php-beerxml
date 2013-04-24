@@ -1,0 +1,25 @@
+{
+    "name": "georgeh/beerxml",
+    "type": "library",
+    "description": "BeerXML parser and generator",
+    "homepage": "http://github.com/georgeh/beerxml",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George Hotelling",
+            "email": "george@hotelling.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.1.0",
+        "ext-xmlreader": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "BeerXML": "src/"
+        }
+    }
+}
