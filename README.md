@@ -2,6 +2,32 @@ php-beerxml
 ===========
 
 A PHP parser and generator for the [BeerXML 1.0](http://www.beerxml.com/) standard.
+[![Build Status](https://travis-ci.org/georgeh/php-beerxml.png?branch=master)](https://travis-ci.org/georgeh/php-beerxml)
+
+Usage
+=====
+
+Full API documentation is at http://georgeh.github.io/php-beerxml/
+
+The unit tests in the tests/ directory provides some good examples as well.
+
+Parser
+------
+
+```php
+$parser = new \BeerXML\Parser();
+$parser->setXmlString(file_get_contents('http://www.beerxml.com/recipes.xml'));
+$result = $parser->parse();
+foreach ($result as $recipe) {
+    /** @var $recipe \BeerXML\Record\Recipe **/
+    echo "Found beer recipe " . $recipe->getName() . "\n";
+}
+```
+
+Generator
+---------
+
+Coming soon!
 
 Installation
 ============
@@ -28,28 +54,4 @@ $ php composer.phar install
 ```
 
 If you don't use Composer, you can directly [download](https://github.com/georgeh/php-beerxml) the sources and configure it with your autoloader.
-  
-Usage
-=====
 
-Full API documentation is at http://georgeh.github.io/php-beerxml/
-
-The unit tests in the tests/ directory provides some good examples as well.
-
-Parser
-------
-
-```php
-$parser = new \BeerXML\Parser();
-$parser->setXmlString(file_get_contents('http://www.beerxml.com/recipes.xml'));
-$result = $parser->parse();
-foreach ($result as $recipe) {
-    /** @var $recipe \BeerXML\Record\Recipe **/
-    echo "Found beer recipe " . $recipe->getName() . "\n";
-}
-```
-
-Generator
----------
-
-Coming soon!
