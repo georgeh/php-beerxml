@@ -13,6 +13,27 @@ abstract class Record {
     protected $record;
 
     /**
+     * @var string
+     */
+    protected $tagName;
+
+    /**
+     * <TAG> => getterMethod()
+     * @var array
+     */
+    protected $simpleValues = array( );
+
+    /**
+     * <TAG> => getterMethod()
+     * @var array
+     */
+    protected $optionalSimpleValues = array( );
+
+    protected $complexValues = array( );
+
+    protected $complexValueSets = array( );
+
+    /**
      * @param \XMLWriter $xmlWriter
      */
     public function setXmlWriter($xmlWriter)
@@ -29,5 +50,32 @@ abstract class Record {
      * Construct the record in XMLWriter
      * @return null
      */
-    abstract public function build();
+    public function build()
+    {
+        $this->xmlWriter->startElement($this->tagName);
+        // Simple required elements
+        foreach ($this->simpleValues as $tag => $method) {
+            $this->xmlWriter->writeElement($tag, $this->record->{$method}());
+        }
+
+        foreach ($this->optionalSimpleValues as $tag => $method) {
+            $value = $this->record->{$method}();
+            if (!empty($value)) {
+                $this->xmlWriter->writeElement($tag, $value);
+            }
+        }
+
+        // Simple optional
+        $this->additionalFields();
+
+        $this->xmlWriter->endElement();
+    }
+
+    /**
+     * Runs before closing out the build sequence, to add fields that require logic
+     */
+    protected function additionalFields()
+    {
+
+    }
 }

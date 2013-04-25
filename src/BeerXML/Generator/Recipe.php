@@ -6,27 +6,62 @@ namespace BeerXML\Generator;
 
 class Recipe extends Record
 {
+    protected $tagName = 'RECIPE';
+
     /**
      * @var \BeerXML\Record\Recipe
      */
     protected $record;
-    /**
-     * Construct the record in XMLWriter
-     * @return null
-     */
-    public function build()
-    {
-        $this->xmlWriter->startElement('RECIPE');
-        // Simple required elements
-        $this->xmlWriter->writeElement('NAME', $this->record->getName());
-        $this->xmlWriter->writeElement('VERSION', $this->record->getVersion());
-        $this->xmlWriter->writeElement('BREWER', $this->record->getBrewer());
-        $this->xmlWriter->writeElement('BATCH_SIZE', $this->record->getBatchSize());
-        $this->xmlWriter->writeElement('BOIL_SIZE', $this->record->getBoilSize());
-        $this->xmlWriter->writeElement('BOIL_TIME', $this->record->getBoilTime());
 
-        // Simple optional
-        $this->xmlWriter->endElement();
+    /**
+     * <TAG> => getterMethod
+     * @var array
+     */
+    protected $simpleValues = array(
+        'NAME'       => 'getName',
+        'VERSION'    => 'getVersion',
+        'BREWER'     => 'getBrewer',
+        'BATCH_SIZE' => 'getBatchSize',
+        'BOIL_SIZE'  => 'getBoilSize',
+        'BOIL_TIME'  => 'getBoilTime',
+    );
+
+    protected $optionalSimpleValues = array(
+        'ASST_BREWER'         => 'getAsstBrewer',
+        'NOTES'               => 'getNotes',
+        'TASTE_NOTES'         => 'getTasteNotes',
+        'TASTE_RATING'        => 'getTasteRating',
+        'OG'                  => 'getOg',
+        'FG'                  => 'getFg',
+        'FERMENTATION_STAGES' => 'getFermentationStages',
+        'PRIMARY_AGE'         => 'getPrimaryAge',
+        'PRIMARY_TEMP'        => 'getPrimaryTemp',
+        'SECONDARY_AGE'       => 'getSecondaryAge',
+        'SECONDARY_TEMP'      => 'getSecondaryTemp',
+        'TERTIARY_AGE'        => 'getTertiaryAge',
+        'TERTIARY_TEMP'       => 'getTertiaryTemp',
+        'AGE'                 => 'getAge',
+        'AGE_TEMP'            => 'getAgeTemp',
+        'DATE'                => 'getDate',
+        'CARBONATION'         => 'getCarbonation',
+        'FORCED_CARBONATION'  => 'getForcedCarbonation',
+        'PRIMING_SUGAR_NAME'  => 'getPrimingSugarName',
+        'CARBONATION_TEMP'    => 'getCarbonationTemp',
+        'PRIMING_SUGAR_EQUIV' => 'getPrimingSugarEquiv',
+        'KEG_PRIMING_FACTOR'  => 'getKegPrimingFactor',
+    );
+
+    protected function additionalFields()
+    {
+
+        $efficiency = $this->record->getEfficiency();
+        if ( !empty($efficiency) ||
+            \BeerXML\Record\Recipe::TYPE_ALL_GRAIN == $this->record->getType() ||
+            \BeerXML\Record\Recipe::TYPE_PARTIAL_MASH == $this->record->getType() ) {
+            $this->xmlWriter->writeElement('EFFICIENCY', $efficiency);
+        }
+        parent::additionalFields();
     }
+
 
 }
