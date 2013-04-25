@@ -32,6 +32,10 @@ If you don't use Composer, you can directly [download](https://github.com/george
 Usage
 =====
 
+Full API documentation is at http://georgeh.github.io/php-beerxml/
+
+The unit tests in the tests/ directory provides some good examples as well.
+
 Parser
 ------
 
