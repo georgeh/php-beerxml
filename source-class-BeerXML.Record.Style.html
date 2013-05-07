@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File BeerXML/Record/Style.php</title>
+	<title>File BeerXML/Record/Style.php | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
-	<script type="text/javascript" src="elementlist.js?1782243200"></script>
+	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
+	<script type="text/javascript" src="elementlist.js?273089376"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -115,56 +115,56 @@
 </span><span id="15" class="l"><a class="l" href="#15"> 15: </a>    <span class="php-keyword1">const</span> <a id="TYPE_CIDER" href="#TYPE_CIDER">TYPE_CIDER</a> = <span class="php-quote">'Cider'</span>;
 </span><span id="16" class="l"><a class="l" href="#16"> 16: </a>
 </span><span id="17" class="l"><a class="l" href="#17"> 17: </a>    <span class="php-comment">/**
-</span></span><span id="18" class="l"><a class="l" href="#18"> 18: </a><span class="php-comment">     * Name of the style profile – usually this is the specific name of the style – for example &quot;Scottish Wee Heavy Ale”
-</span></span><span id="19" class="l"><a class="l" href="#19"> 19: </a><span class="php-comment">     * and not the Category which in this case might be &quot;Scottish Ale”
+</span></span><span id="18" class="l"><a class="l" href="#18"> 18: </a><span class="php-comment">     * Name of the style profile – usually this is the specific name of the style – for example &quot;Scottish Wee Heavy Ale&quot;
+</span></span><span id="19" class="l"><a class="l" href="#19"> 19: </a><span class="php-comment">     * and not the Category which in this case might be &quot;Scottish Ale&quot;
 </span></span><span id="20" class="l"><a class="l" href="#20"> 20: </a><span class="php-comment">     * @var string
 </span></span><span id="21" class="l"><a class="l" href="#21"> 21: </a><span class="php-comment">     */</span>
 </span><span id="22" class="l"><a class="l" href="#22"> 22: </a>    <span class="php-keyword1">private</span> <span class="php-var"><a id="$name" href="#$name">$name</a></span>;
 </span><span id="23" class="l"><a class="l" href="#23"> 23: </a>
 </span><span id="24" class="l"><a class="l" href="#24"> 24: </a>    <span class="php-comment">/**
-</span></span><span id="25" class="l"><a class="l" href="#25"> 25: </a><span class="php-comment">     * Category that this style belongs to – usually associated with a group of styles such as &quot;English Ales” or
-</span></span><span id="26" class="l"><a class="l" href="#26"> 26: </a><span class="php-comment">     * &quot;Amercian Lagers”.
+</span></span><span id="25" class="l"><a class="l" href="#25"> 25: </a><span class="php-comment">     * Category that this style belongs to – usually associated with a group of styles such as &quot;English Ales&quot; or
+</span></span><span id="26" class="l"><a class="l" href="#26"> 26: </a><span class="php-comment">     * &quot;Amercian Lagers&quot;.
 </span></span><span id="27" class="l"><a class="l" href="#27"> 27: </a><span class="php-comment">     * @var string
 </span></span><span id="28" class="l"><a class="l" href="#28"> 28: </a><span class="php-comment">     */</span>
 </span><span id="29" class="l"><a class="l" href="#29"> 29: </a>    <span class="php-keyword1">private</span> <span class="php-var"><a id="$category" href="#$category">$category</a></span>;
 </span><span id="30" class="l"><a class="l" href="#30"> 30: </a>
 </span><span id="31" class="l"><a class="l" href="#31"> 31: </a>    <span class="php-comment">/**
-</span></span><span id="32" class="l"><a class="l" href="#32"> 32: </a><span class="php-comment">     * Version of the style record.  Should always be &quot;1” for this version of the XML standard.
+</span></span><span id="32" class="l"><a class="l" href="#32"> 32: </a><span class="php-comment">     * Version of the style record.  Should always be &quot;1&quot; for this version of the XML standard.
 </span></span><span id="33" class="l"><a class="l" href="#33"> 33: </a><span class="php-comment">     * @var int
 </span></span><span id="34" class="l"><a class="l" href="#34"> 34: </a><span class="php-comment">     */</span>
 </span><span id="35" class="l"><a class="l" href="#35"> 35: </a>    <span class="php-keyword1">private</span> <span class="php-var"><a id="$version" href="#$version">$version</a></span> = <span class="php-num">1</span>;
 </span><span id="36" class="l"><a class="l" href="#36"> 36: </a>
 </span><span id="37" class="l"><a class="l" href="#37"> 37: </a>    <span class="php-comment">/**
 </span></span><span id="38" class="l"><a class="l" href="#38"> 38: </a><span class="php-comment">     * Number or identifier associated with this style category.  For example in the BJCP style guide, the
-</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">     * &quot;American Lager” category has a category number of &quot;1”.
+</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">     * &quot;American Lager&quot; category has a category number of &quot;1&quot;.
 </span></span><span id="40" class="l"><a class="l" href="#40"> 40: </a><span class="php-comment">     * @var string
 </span></span><span id="41" class="l"><a class="l" href="#41"> 41: </a><span class="php-comment">     */</span>
 </span><span id="42" class="l"><a class="l" href="#42"> 42: </a>    <span class="php-keyword1">private</span> <span class="php-var"><a id="$categoryNumber" href="#$categoryNumber">$categoryNumber</a></span>;
 </span><span id="43" class="l"><a class="l" href="#43"> 43: </a>
 </span><span id="44" class="l"><a class="l" href="#44"> 44: </a>    <span class="php-comment">/**
 </span></span><span id="45" class="l"><a class="l" href="#45"> 45: </a><span class="php-comment">     * The specific style number or subcategory letter associated with this particular style.  For example in the BJCP
-</span></span><span id="46" class="l"><a class="l" href="#46"> 46: </a><span class="php-comment">     * style guide, an American Standard Lager would be style letter &quot;A” under the main category.  Letters should be
+</span></span><span id="46" class="l"><a class="l" href="#46"> 46: </a><span class="php-comment">     * style guide, an American Standard Lager would be style letter &quot;A&quot; under the main category.  Letters should be
 </span></span><span id="47" class="l"><a class="l" href="#47"> 47: </a><span class="php-comment">     * upper case.
 </span></span><span id="48" class="l"><a class="l" href="#48"> 48: </a><span class="php-comment">     * @var string
 </span></span><span id="49" class="l"><a class="l" href="#49"> 49: </a><span class="php-comment">     */</span>
 </span><span id="50" class="l"><a class="l" href="#50"> 50: </a>    <span class="php-keyword1">private</span> <span class="php-var"><a id="$styleLetter" href="#$styleLetter">$styleLetter</a></span>;
 </span><span id="51" class="l"><a class="l" href="#51"> 51: </a>
 </span><span id="52" class="l"><a class="l" href="#52"> 52: </a>    <span class="php-comment">/**
-</span></span><span id="53" class="l"><a class="l" href="#53"> 53: </a><span class="php-comment">     * The name of the style guide that this particular style or category belongs to.  For example &quot;BJCP” might denote
-</span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">     * the BJCP style guide, and &quot;AHA” would be used for the AHA style guide.
+</span></span><span id="53" class="l"><a class="l" href="#53"> 53: </a><span class="php-comment">     * The name of the style guide that this particular style or category belongs to.  For example &quot;BJCP&quot; might denote
+</span></span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-comment">     * the BJCP style guide, and &quot;AHA&quot; would be used for the AHA style guide.
 </span></span><span id="55" class="l"><a class="l" href="#55"> 55: </a><span class="php-comment">     * @var string
 </span></span><span id="56" class="l"><a class="l" href="#56"> 56: </a><span class="php-comment">     */</span>
 </span><span id="57" class="l"><a class="l" href="#57"> 57: </a>    <span class="php-keyword1">private</span> <span class="php-var"><a id="$styleGuide" href="#$styleGuide">$styleGuide</a></span>;
 </span><span id="58" class="l"><a class="l" href="#58"> 58: </a>
 </span><span id="59" class="l"><a class="l" href="#59"> 59: </a>    <span class="php-comment">/**
-</span></span><span id="60" class="l"><a class="l" href="#60"> 60: </a><span class="php-comment">     * May be &quot;Lager”, &quot;Ale”, &quot;Mead”, &quot;Wheat”, &quot;Mixed” or &quot;Cider”.  Defines the type of beverage associated with this
+</span></span><span id="60" class="l"><a class="l" href="#60"> 60: </a><span class="php-comment">     * May be &quot;Lager&quot;, &quot;Ale&quot;, &quot;Mead&quot;, &quot;Wheat&quot;, &quot;Mixed&quot; or &quot;Cider&quot;.  Defines the type of beverage associated with this
 </span></span><span id="61" class="l"><a class="l" href="#61"> 61: </a><span class="php-comment">     * category.
 </span></span><span id="62" class="l"><a class="l" href="#62"> 62: </a><span class="php-comment">     * @var string
 </span></span><span id="63" class="l"><a class="l" href="#63"> 63: </a><span class="php-comment">     */</span>
 </span><span id="64" class="l"><a class="l" href="#64"> 64: </a>    <span class="php-keyword1">private</span> <span class="php-var"><a id="$type" href="#$type">$type</a></span>;
 </span><span id="65" class="l"><a class="l" href="#65"> 65: </a>
 </span><span id="66" class="l"><a class="l" href="#66"> 66: </a>    <span class="php-comment">/**
-</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">     * The minimum specific gravity as measured relative to water.  For example &quot;1.040” might be a reasonable minimum
+</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">     * The minimum specific gravity as measured relative to water.  For example &quot;1.040&quot; might be a reasonable minimum
 </span></span><span id="68" class="l"><a class="l" href="#68"> 68: </a><span class="php-comment">     * for a Pale Ale.
 </span></span><span id="69" class="l"><a class="l" href="#69"> 69: </a><span class="php-comment">     * @var float
 </span></span><span id="70" class="l"><a class="l" href="#70"> 70: </a><span class="php-comment">     */</span>
@@ -632,7 +632,7 @@
 </span><span id="532" class="l"><a class="l" href="#532">532: </a></span>}</code></pre>
 
 	<div id="footer">
-		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </div>

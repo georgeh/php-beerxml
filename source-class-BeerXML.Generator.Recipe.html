@@ -5,10 +5,10 @@
 	<meta name="generator" content="ApiGen 2.8.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File BeerXML/Generator/Recipe.php</title>
+	<title>File BeerXML/Generator/Recipe.php | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
-	<script type="text/javascript" src="elementlist.js?1782243200"></script>
+	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
+	<script type="text/javascript" src="elementlist.js?273089376"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -42,8 +42,17 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-BeerXML.Generator.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Generator.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Generator.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Generator.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Generator.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Generator.Misc.html">Misc</a></li>
 				<li class="active"><a href="class-BeerXML.Generator.Recipe.html">Recipe</a></li>
 				<li><a href="class-BeerXML.Generator.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Generator.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Generator.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Generator.Yeast.html">Yeast</a></li>
 			</ul>
 
 
@@ -114,48 +123,63 @@
 </span><span id="26" class="l"><a class="l" href="#26">26: </a>        <span class="php-quote">'BOIL_TIME'</span>  =&gt; <span class="php-quote">'getBoilTime'</span>,
 </span><span id="27" class="l"><a class="l" href="#27">27: </a>    );
 </span><span id="28" class="l"><a class="l" href="#28">28: </a>
-</span><span id="29" class="l"><a class="l" href="#29">29: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$optionalSimpleValues" href="#$optionalSimpleValues">$optionalSimpleValues</a></span> = <span class="php-keyword1">array</span>(
-</span><span id="30" class="l"><a class="l" href="#30">30: </a>        <span class="php-quote">'ASST_BREWER'</span>         =&gt; <span class="php-quote">'getAsstBrewer'</span>,
-</span><span id="31" class="l"><a class="l" href="#31">31: </a>        <span class="php-quote">'NOTES'</span>               =&gt; <span class="php-quote">'getNotes'</span>,
-</span><span id="32" class="l"><a class="l" href="#32">32: </a>        <span class="php-quote">'TASTE_NOTES'</span>         =&gt; <span class="php-quote">'getTasteNotes'</span>,
-</span><span id="33" class="l"><a class="l" href="#33">33: </a>        <span class="php-quote">'TASTE_RATING'</span>        =&gt; <span class="php-quote">'getTasteRating'</span>,
-</span><span id="34" class="l"><a class="l" href="#34">34: </a>        <span class="php-quote">'OG'</span>                  =&gt; <span class="php-quote">'getOg'</span>,
-</span><span id="35" class="l"><a class="l" href="#35">35: </a>        <span class="php-quote">'FG'</span>                  =&gt; <span class="php-quote">'getFg'</span>,
-</span><span id="36" class="l"><a class="l" href="#36">36: </a>        <span class="php-quote">'FERMENTATION_STAGES'</span> =&gt; <span class="php-quote">'getFermentationStages'</span>,
-</span><span id="37" class="l"><a class="l" href="#37">37: </a>        <span class="php-quote">'PRIMARY_AGE'</span>         =&gt; <span class="php-quote">'getPrimaryAge'</span>,
-</span><span id="38" class="l"><a class="l" href="#38">38: </a>        <span class="php-quote">'PRIMARY_TEMP'</span>        =&gt; <span class="php-quote">'getPrimaryTemp'</span>,
-</span><span id="39" class="l"><a class="l" href="#39">39: </a>        <span class="php-quote">'SECONDARY_AGE'</span>       =&gt; <span class="php-quote">'getSecondaryAge'</span>,
-</span><span id="40" class="l"><a class="l" href="#40">40: </a>        <span class="php-quote">'SECONDARY_TEMP'</span>      =&gt; <span class="php-quote">'getSecondaryTemp'</span>,
-</span><span id="41" class="l"><a class="l" href="#41">41: </a>        <span class="php-quote">'TERTIARY_AGE'</span>        =&gt; <span class="php-quote">'getTertiaryAge'</span>,
-</span><span id="42" class="l"><a class="l" href="#42">42: </a>        <span class="php-quote">'TERTIARY_TEMP'</span>       =&gt; <span class="php-quote">'getTertiaryTemp'</span>,
-</span><span id="43" class="l"><a class="l" href="#43">43: </a>        <span class="php-quote">'AGE'</span>                 =&gt; <span class="php-quote">'getAge'</span>,
-</span><span id="44" class="l"><a class="l" href="#44">44: </a>        <span class="php-quote">'AGE_TEMP'</span>            =&gt; <span class="php-quote">'getAgeTemp'</span>,
-</span><span id="45" class="l"><a class="l" href="#45">45: </a>        <span class="php-quote">'DATE'</span>                =&gt; <span class="php-quote">'getDate'</span>,
-</span><span id="46" class="l"><a class="l" href="#46">46: </a>        <span class="php-quote">'CARBONATION'</span>         =&gt; <span class="php-quote">'getCarbonation'</span>,
-</span><span id="47" class="l"><a class="l" href="#47">47: </a>        <span class="php-quote">'FORCED_CARBONATION'</span>  =&gt; <span class="php-quote">'getForcedCarbonation'</span>,
-</span><span id="48" class="l"><a class="l" href="#48">48: </a>        <span class="php-quote">'PRIMING_SUGAR_NAME'</span>  =&gt; <span class="php-quote">'getPrimingSugarName'</span>,
-</span><span id="49" class="l"><a class="l" href="#49">49: </a>        <span class="php-quote">'CARBONATION_TEMP'</span>    =&gt; <span class="php-quote">'getCarbonationTemp'</span>,
-</span><span id="50" class="l"><a class="l" href="#50">50: </a>        <span class="php-quote">'PRIMING_SUGAR_EQUIV'</span> =&gt; <span class="php-quote">'getPrimingSugarEquiv'</span>,
-</span><span id="51" class="l"><a class="l" href="#51">51: </a>        <span class="php-quote">'KEG_PRIMING_FACTOR'</span>  =&gt; <span class="php-quote">'getKegPrimingFactor'</span>,
-</span><span id="52" class="l"><a class="l" href="#52">52: </a>    );
-</span><span id="53" class="l"><a class="l" href="#53">53: </a>
-</span><span id="54" class="l"><a class="l" href="#54">54: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_additionalFields" href="#_additionalFields">additionalFields</a>()
-</span><span id="55" class="l"><a class="l" href="#55">55: </a>    {
-</span><span id="56" class="l"><a class="l" href="#56">56: </a>
-</span><span id="57" class="l"><a class="l" href="#57">57: </a>        <span class="php-var">$efficiency</span> = <span class="php-var">$this</span>-&gt;record-&gt;getEfficiency();
-</span><span id="58" class="l"><a class="l" href="#58">58: </a>        <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>(<span class="php-var">$efficiency</span>) ||
-</span><span id="59" class="l"><a class="l" href="#59">59: </a>            \BeerXML\Record\Recipe::TYPE_ALL_GRAIN == <span class="php-var">$this</span>-&gt;record-&gt;<span class="php-keyword2">getType</span>() ||
-</span><span id="60" class="l"><a class="l" href="#60">60: </a>            \BeerXML\Record\Recipe::TYPE_PARTIAL_MASH == <span class="php-var">$this</span>-&gt;record-&gt;<span class="php-keyword2">getType</span>() ) {
-</span><span id="61" class="l"><a class="l" href="#61">61: </a>            <span class="php-var">$this</span>-&gt;xmlWriter-&gt;writeElement(<span class="php-quote">'EFFICIENCY'</span>, <span class="php-var">$efficiency</span>);
-</span><span id="62" class="l"><a class="l" href="#62">62: </a>        }
-</span><span id="63" class="l"><a class="l" href="#63">63: </a>        parent::additionalFields();
-</span><span id="64" class="l"><a class="l" href="#64">64: </a>    }
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>    <span class="php-comment">/**
+</span></span><span id="30" class="l"><a class="l" href="#30">30: </a><span class="php-comment">     * &lt;TAG&gt; =&gt; getterMethod
+</span></span><span id="31" class="l"><a class="l" href="#31">31: </a><span class="php-comment">     * @var array
+</span></span><span id="32" class="l"><a class="l" href="#32">32: </a><span class="php-comment">     */</span>
+</span><span id="33" class="l"><a class="l" href="#33">33: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$optionalSimpleValues" href="#$optionalSimpleValues">$optionalSimpleValues</a></span> = <span class="php-keyword1">array</span>(
+</span><span id="34" class="l"><a class="l" href="#34">34: </a>        <span class="php-quote">'ASST_BREWER'</span>         =&gt; <span class="php-quote">'getAsstBrewer'</span>,
+</span><span id="35" class="l"><a class="l" href="#35">35: </a>        <span class="php-quote">'NOTES'</span>               =&gt; <span class="php-quote">'getNotes'</span>,
+</span><span id="36" class="l"><a class="l" href="#36">36: </a>        <span class="php-quote">'TASTE_NOTES'</span>         =&gt; <span class="php-quote">'getTasteNotes'</span>,
+</span><span id="37" class="l"><a class="l" href="#37">37: </a>        <span class="php-quote">'TASTE_RATING'</span>        =&gt; <span class="php-quote">'getTasteRating'</span>,
+</span><span id="38" class="l"><a class="l" href="#38">38: </a>        <span class="php-quote">'OG'</span>                  =&gt; <span class="php-quote">'getOg'</span>,
+</span><span id="39" class="l"><a class="l" href="#39">39: </a>        <span class="php-quote">'FG'</span>                  =&gt; <span class="php-quote">'getFg'</span>,
+</span><span id="40" class="l"><a class="l" href="#40">40: </a>        <span class="php-quote">'FERMENTATION_STAGES'</span> =&gt; <span class="php-quote">'getFermentationStages'</span>,
+</span><span id="41" class="l"><a class="l" href="#41">41: </a>        <span class="php-quote">'PRIMARY_AGE'</span>         =&gt; <span class="php-quote">'getPrimaryAge'</span>,
+</span><span id="42" class="l"><a class="l" href="#42">42: </a>        <span class="php-quote">'PRIMARY_TEMP'</span>        =&gt; <span class="php-quote">'getPrimaryTemp'</span>,
+</span><span id="43" class="l"><a class="l" href="#43">43: </a>        <span class="php-quote">'SECONDARY_AGE'</span>       =&gt; <span class="php-quote">'getSecondaryAge'</span>,
+</span><span id="44" class="l"><a class="l" href="#44">44: </a>        <span class="php-quote">'SECONDARY_TEMP'</span>      =&gt; <span class="php-quote">'getSecondaryTemp'</span>,
+</span><span id="45" class="l"><a class="l" href="#45">45: </a>        <span class="php-quote">'TERTIARY_AGE'</span>        =&gt; <span class="php-quote">'getTertiaryAge'</span>,
+</span><span id="46" class="l"><a class="l" href="#46">46: </a>        <span class="php-quote">'TERTIARY_TEMP'</span>       =&gt; <span class="php-quote">'getTertiaryTemp'</span>,
+</span><span id="47" class="l"><a class="l" href="#47">47: </a>        <span class="php-quote">'AGE'</span>                 =&gt; <span class="php-quote">'getAge'</span>,
+</span><span id="48" class="l"><a class="l" href="#48">48: </a>        <span class="php-quote">'AGE_TEMP'</span>            =&gt; <span class="php-quote">'getAgeTemp'</span>,
+</span><span id="49" class="l"><a class="l" href="#49">49: </a>        <span class="php-quote">'DATE'</span>                =&gt; <span class="php-quote">'getDate'</span>,
+</span><span id="50" class="l"><a class="l" href="#50">50: </a>        <span class="php-quote">'CARBONATION'</span>         =&gt; <span class="php-quote">'getCarbonation'</span>,
+</span><span id="51" class="l"><a class="l" href="#51">51: </a>        <span class="php-quote">'FORCED_CARBONATION'</span>  =&gt; <span class="php-quote">'getForcedCarbonation'</span>,
+</span><span id="52" class="l"><a class="l" href="#52">52: </a>        <span class="php-quote">'PRIMING_SUGAR_NAME'</span>  =&gt; <span class="php-quote">'getPrimingSugarName'</span>,
+</span><span id="53" class="l"><a class="l" href="#53">53: </a>        <span class="php-quote">'CARBONATION_TEMP'</span>    =&gt; <span class="php-quote">'getCarbonationTemp'</span>,
+</span><span id="54" class="l"><a class="l" href="#54">54: </a>        <span class="php-quote">'PRIMING_SUGAR_EQUIV'</span> =&gt; <span class="php-quote">'getPrimingSugarEquiv'</span>,
+</span><span id="55" class="l"><a class="l" href="#55">55: </a>        <span class="php-quote">'KEG_PRIMING_FACTOR'</span>  =&gt; <span class="php-quote">'getKegPrimingFactor'</span>,
+</span><span id="56" class="l"><a class="l" href="#56">56: </a>    );
+</span><span id="57" class="l"><a class="l" href="#57">57: </a>
+</span><span id="58" class="l"><a class="l" href="#58">58: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$complexValueSets" href="#$complexValueSets">$complexValueSets</a></span> = <span class="php-keyword1">array</span>(
+</span><span id="59" class="l"><a class="l" href="#59">59: </a>        <span class="php-quote">'HOPS'</span>         =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'generator'</span> =&gt; <span class="php-quote">'BeerXML\Generator\Hop'</span>, <span class="php-quote">'values'</span> =&gt; <span class="php-quote">'getHops'</span>),
+</span><span id="60" class="l"><a class="l" href="#60">60: </a>        <span class="php-quote">'FERMENTABLES'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'generator'</span> =&gt; <span class="php-quote">'BeerXML\Generator\Fermentable'</span>, <span class="php-quote">'values'</span> =&gt; <span class="php-quote">'getFermentables'</span>),
+</span><span id="61" class="l"><a class="l" href="#61">61: </a>        <span class="php-quote">'MISCS'</span>        =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'generator'</span> =&gt; <span class="php-quote">'BeerXML\Generator\Misc'</span>, <span class="php-quote">'values'</span> =&gt; <span class="php-quote">'getMiscs'</span>),
+</span><span id="62" class="l"><a class="l" href="#62">62: </a>        <span class="php-quote">'YEASTS'</span>       =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'generator'</span> =&gt; <span class="php-quote">'BeerXML\Generator\Yeast'</span>, <span class="php-quote">'values'</span> =&gt; <span class="php-quote">'getYeasts'</span>),
+</span><span id="63" class="l"><a class="l" href="#63">63: </a>        <span class="php-quote">'WATERS'</span>       =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'generator'</span> =&gt; <span class="php-quote">'BeerXML\Generator\Water'</span>, <span class="php-quote">'values'</span> =&gt; <span class="php-quote">'getWaters'</span>),
+</span><span id="64" class="l"><a class="l" href="#64">64: </a>    );
 </span><span id="65" class="l"><a class="l" href="#65">65: </a>
-</span><span id="66" class="l"><a class="l" href="#66">66: </a>
-</span><span id="67" class="l"><a class="l" href="#67">67: </a></span>}</code></pre>
+</span><span id="66" class="l"><a class="l" href="#66">66: </a>    <span class="php-comment">/**
+</span></span><span id="67" class="l"><a class="l" href="#67">67: </a><span class="php-comment">     * @{inheritDoc}
+</span></span><span id="68" class="l"><a class="l" href="#68">68: </a><span class="php-comment">     */</span>
+</span><span id="69" class="l"><a class="l" href="#69">69: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_additionalFields" href="#_additionalFields">additionalFields</a>()
+</span><span id="70" class="l"><a class="l" href="#70">70: </a>    {
+</span><span id="71" class="l"><a class="l" href="#71">71: </a>        <span class="php-var">$efficiency</span> = <span class="php-var">$this</span>-&gt;record-&gt;getEfficiency();
+</span><span id="72" class="l"><a class="l" href="#72">72: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">empty</span>(<span class="php-var">$efficiency</span>) ||
+</span><span id="73" class="l"><a class="l" href="#73">73: </a>            \BeerXML\Record\Recipe::TYPE_ALL_GRAIN == <span class="php-var">$this</span>-&gt;record-&gt;<span class="php-keyword2">getType</span>() ||
+</span><span id="74" class="l"><a class="l" href="#74">74: </a>            \BeerXML\Record\Recipe::TYPE_PARTIAL_MASH == <span class="php-var">$this</span>-&gt;record-&gt;<span class="php-keyword2">getType</span>()
+</span><span id="75" class="l"><a class="l" href="#75">75: </a>        ) {
+</span><span id="76" class="l"><a class="l" href="#76">76: </a>            <span class="php-var">$this</span>-&gt;xmlWriter-&gt;writeElement(<span class="php-quote">'EFFICIENCY'</span>, <span class="php-var">$efficiency</span>);
+</span><span id="77" class="l"><a class="l" href="#77">77: </a>        }
+</span><span id="78" class="l"><a class="l" href="#78">78: </a>        parent::additionalFields();
+</span><span id="79" class="l"><a class="l" href="#79">79: </a>    }
+</span><span id="80" class="l"><a class="l" href="#80">80: </a>
+</span><span id="81" class="l"><a class="l" href="#81">81: </a>
+</span><span id="82" class="l"><a class="l" href="#82">82: </a></span>}</code></pre>
 
 	<div id="footer">
-		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </div>
