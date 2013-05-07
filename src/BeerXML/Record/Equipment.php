@@ -13,7 +13,7 @@ class Equipment
     private $name;
 
     /**
-     * Version of the equipment record.  Should always be "1” for this version of the XML standard.
+     * Version of the equipment record.  Should always be "1" for this version of the XML standard.
      * @var int
      */
     private $version = 1;
@@ -398,7 +398,7 @@ class Equipment
     }
 
     /**
-     * Version of the equipment record.  Should always be "1” for this version of the XML standard.
+     * Version of the equipment record.  Should always be "1" for this version of the XML standard.
      * @param int $version
      */
     public function setVersion($version)
@@ -407,7 +407,7 @@ class Equipment
     }
 
     /**
-     * Version of the equipment record.  Should always be "1” for this version of the XML standard.
+     * Version of the equipment record.  Should always be "1" for this version of the XML standard.
      * @return int
      */
     public function getVersion()

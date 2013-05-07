@@ -190,13 +190,13 @@ interface RecipeReaderInterface
     public function getTertiaryTemp();
 
     /**
-     * May be one of "Extract”, "Partial Mash” or "All Grain”
+     * May be one of "Extract", "Partial Mash" or "All Grain"
      * @return string
      */
     public function getType();
 
     /**
-     * Version of the recipe record.  Should always be "1” for this version of the XML standard.
+     * Version of the recipe record.  Should always be "1" for this version of the XML standard.
      * @return int
      */
     public function getVersion();

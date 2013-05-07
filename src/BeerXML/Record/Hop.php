@@ -343,9 +343,9 @@ class Hop
     }
 
     /**
-     * The time as measured in minutes.  Meaning is dependent on the “USE” field.  For “Boil” this is the boil time.
-     * For “Mash” this is the mash time.  For “First Wort” this is the boil time.  For “Aroma” this is the steep time.
-     * For “Dry Hop” this is the amount of time to dry hop.
+     * The time as measured in minutes.  Meaning is dependent on the “USE" field.  For “Boil" this is the boil time.
+     * For “Mash" this is the mash time.  For “First Wort" this is the boil time.  For “Aroma" this is the steep time.
+     * For “Dry Hop" this is the amount of time to dry hop.
      * @param number $time
      */
     public function setTime($time)
@@ -354,9 +354,9 @@ class Hop
     }
 
     /**
-     * The time as measured in minutes.  Meaning is dependent on the “USE” field.  For “Boil” this is the boil time.
-     * For “Mash” this is the mash time.  For “First Wort” this is the boil time.  For “Aroma” this is the steep time.
-     * For “Dry Hop” this is the amount of time to dry hop.
+     * The time as measured in minutes.  Meaning is dependent on the “USE" field.  For “Boil" this is the boil time.
+     * For “Mash" this is the mash time.  For “First Wort" this is the boil time.  For “Aroma" this is the steep time.
+     * For “Dry Hop" this is the amount of time to dry hop.
      * @return number
      */
     public function getTime()

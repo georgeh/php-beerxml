@@ -15,56 +15,56 @@ class Style
     const TYPE_CIDER = 'Cider';
 
     /**
-     * Name of the style profile – usually this is the specific name of the style – for example "Scottish Wee Heavy Ale”
-     * and not the Category which in this case might be "Scottish Ale”
+     * Name of the style profile – usually this is the specific name of the style – for example "Scottish Wee Heavy Ale"
+     * and not the Category which in this case might be "Scottish Ale"
      * @var string
      */
     private $name;
 
     /**
-     * Category that this style belongs to – usually associated with a group of styles such as "English Ales” or
-     * "Amercian Lagers”.
+     * Category that this style belongs to – usually associated with a group of styles such as "English Ales" or
+     * "Amercian Lagers".
      * @var string
      */
     private $category;
 
     /**
-     * Version of the style record.  Should always be "1” for this version of the XML standard.
+     * Version of the style record.  Should always be "1" for this version of the XML standard.
      * @var int
      */
     private $version = 1;
 
     /**
      * Number or identifier associated with this style category.  For example in the BJCP style guide, the
-     * "American Lager” category has a category number of "1”.
+     * "American Lager" category has a category number of "1".
      * @var string
      */
     private $categoryNumber;
 
     /**
      * The specific style number or subcategory letter associated with this particular style.  For example in the BJCP
-     * style guide, an American Standard Lager would be style letter "A” under the main category.  Letters should be
+     * style guide, an American Standard Lager would be style letter "A" under the main category.  Letters should be
      * upper case.
      * @var string
      */
     private $styleLetter;
 
     /**
-     * The name of the style guide that this particular style or category belongs to.  For example "BJCP” might denote
-     * the BJCP style guide, and "AHA” would be used for the AHA style guide.
+     * The name of the style guide that this particular style or category belongs to.  For example "BJCP" might denote
+     * the BJCP style guide, and "AHA" would be used for the AHA style guide.
      * @var string
      */
     private $styleGuide;
 
     /**
-     * May be "Lager”, "Ale”, "Mead”, "Wheat”, "Mixed” or "Cider”.  Defines the type of beverage associated with this
+     * May be "Lager", "Ale", "Mead", "Wheat", "Mixed" or "Cider".  Defines the type of beverage associated with this
      * category.
      * @var string
      */
     private $type;
 
     /**
-     * The minimum specific gravity as measured relative to water.  For example "1.040” might be a reasonable minimum
+     * The minimum specific gravity as measured relative to water.  For example "1.040" might be a reasonable minimum
      * for a Pale Ale.
      * @var float
      */

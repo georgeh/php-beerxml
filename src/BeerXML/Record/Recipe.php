@@ -16,13 +16,13 @@ class Recipe
     private $name;
 
     /**
-     * Version of the recipe record.  Should always be "1” for this version of the XML standard.
+     * Version of the recipe record.  Should always be "1" for this version of the XML standard.
      * @var int
      */
     private $version = 1;
 
     /**
-     * May be one of "Extract”, "Partial Mash” or "All Grain”
+     * May be one of "Extract", "Partial Mash" or "All Grain"
      * @var string
      */
     private $type;
@@ -73,7 +73,7 @@ class Recipe
 
     /**
      * The percent brewhouse efficiency to be used for estimating the starting gravity of the beer.   Not required for
-     * "Extract” recipes, but is required for "Partial Mash” and "All Grain” recipes.
+     * "Extract" recipes, but is required for "Partial Mash" and "All Grain" recipes.
      * @var float
      */
     private $efficiency;
@@ -109,7 +109,7 @@ class Recipe
     private $waters = array();
 
     /**
-     * A MASH profile record containing one or more MASH_STEPs.  NOTE: No Mash record is needed for "Extract” type
+     * A MASH profile record containing one or more MASH_STEPs.  NOTE: No Mash record is needed for "Extract" type
      * brews.
      * @var MashProfile
      */
@@ -200,7 +200,7 @@ class Recipe
     private $ageTemp;
 
     /**
-     * Date brewed in a easily recognizable format such as "3 Dec 04”.
+     * Date brewed in a easily recognizable format such as "3 Dec 04".
      * @var string
      */
     private $date;
@@ -219,7 +219,7 @@ class Recipe
     private $forcedCarbonation = false;
 
     /**
-     * Text describing the priming agent such as "Honey” or "Corn Sugar” – used only if this is not a forced carbonation
+     * Text describing the priming agent such as "Honey" or "Corn Sugar" – used only if this is not a forced carbonation
      * @var string
      */
     private $primingSugarName;
@@ -232,7 +232,7 @@ class Recipe
 
     /**
      * Factor used to convert this priming agent to an equivalent amount of corn sugar for a bottled scenario.  For
-     * example, "Dry Malt Extract” would have a value of 1.4 because it requires 1.4 times as much DME as corn sugar to
+     * example, "Dry Malt Extract" would have a value of 1.4 because it requires 1.4 times as much DME as corn sugar to
      * carbonate.  To calculate the amount of DME needed, the program can calculate the amount of corn sugar needed and
      * then multiply by this factor.
      * @var float

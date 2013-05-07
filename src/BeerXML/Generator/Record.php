@@ -31,6 +31,10 @@ abstract class Record {
 
     protected $complexValues = array( );
 
+    /**
+     * <TAG> => array('generator' => 'BeerXML\Generator\Class', 'values' => 'getRecords')
+     * @var array
+     */
     protected $complexValueSets = array( );
 
     /**
@@ -63,6 +67,21 @@ abstract class Record {
             if (!empty($value)) {
                 $this->xmlWriter->writeElement($tag, $value);
             }
+        }
+
+        foreach ($this->complexValueSets as $tag => $complex) {
+            $this->xmlWriter->startElement($tag);
+            $method = $complex['values']; // getter method, should return an array
+            $generatorClass = $complex['generator']; // Should be a subclass of BeerXML\Generator\Record
+
+            $values = $this->record->{$method}();
+            $generator = new $generatorClass();
+            $generator->setXmlWriter($this->xmlWriter);
+            foreach ($values as $record) {
+                $generator->setRecord($record);
+                $generator->build();
+            }
+            $this->xmlWriter->endElement();
         }
 
         // Simple optional

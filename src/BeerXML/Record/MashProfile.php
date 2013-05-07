@@ -13,7 +13,7 @@ class MashProfile
     private $name;
 
     /**
-     * Version of the mash record.  Should always be "1” for this version of the XML standard.
+     * Version of the mash record.  Should always be "1" for this version of the XML standard.
      * @var int
      */
     private $version = 1;
@@ -112,7 +112,7 @@ class MashProfile
      */
     public function addMashStep($mashStep)
     {
-        $this->mashSteps = $mashStep;
+        $this->mashSteps[] = $mashStep;
     }
 
     /**

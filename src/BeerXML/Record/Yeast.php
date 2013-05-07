@@ -28,19 +28,19 @@ class Yeast
     private $name;
 
     /**
-     * Version of the standard.  Should be "1” for this version.
+     * Version of the standard.  Should be "1" for this version.
      * @var int
      */
     private $version = 1;
 
     /**
-     * May be "Ale”, "Lager”, "Wheat”, "Wine” or "Champagne”
+     * May be "Ale", "Lager", "Wheat", "Wine" or "Champagne"
      * @var string
      */
     private $type;
 
     /**
-     * May be "Liquid”, "Dry”, "Slant” or "Culture”
+     * May be "Liquid", "Dry", "Slant" or "Culture"
      * @var string
      */
     private $form;
@@ -84,7 +84,7 @@ class Yeast
     private $maxTemperature;
 
     /**
-     * May be "Low”, "Medium”, "High” or "Very High”
+     * May be "Low", "Medium", "High" or "Very High"
      * @var string
      */
     private $flocculation;
@@ -129,6 +129,9 @@ class Yeast
     private $addToSecondary = false;
 
     /**
+     * Flag denoting that this yeast was added for a secondary (or later) fermentation as opposed to the primary
+     * fermentation.  Useful if one uses two or more yeast strains for a single brew (eg: Lambic).  Default value is
+     * FALSE.
      * @param boolean $addToSecondary
      */
     public function setAddToSecondary($addToSecondary)
@@ -137,6 +140,9 @@ class Yeast
     }
 
     /**
+     * Flag denoting that this yeast was added for a secondary (or later) fermentation as opposed to the primary
+     * fermentation.  Useful if one uses two or more yeast strains for a single brew (eg: Lambic).  Default value is
+     * FALSE.
      * @return boolean
      */
     public function getAddToSecondary()
@@ -145,6 +151,8 @@ class Yeast
     }
 
     /**
+     * The amount of yeast, measured in liters.  For a starter this is the size of the starter.  If the flag
+     * AMOUNT_IS_WEIGHT is set to TRUE then this measurement is in kilograms and not liters.
      * @param number $amount
      */
     public function setAmount($amount)
@@ -153,6 +161,8 @@ class Yeast
     }
 
     /**
+     * The amount of yeast, measured in liters.  For a starter this is the size of the starter.  If the flag
+     * AMOUNT_IS_WEIGHT is set to TRUE then this measurement is in kilograms and not liters.
      * @return number
      */
     public function getAmount()
@@ -177,6 +187,7 @@ class Yeast
     }
 
     /**
+     * Average attenuation for this yeast strain.
      * @param number $attenuation
      */
     public function setAttenuation($attenuation)
@@ -185,6 +196,7 @@ class Yeast
     }
 
     /**
+     * Average attenuation for this yeast strain.
      * @return number
      */
     public function getAttenuation()
@@ -193,6 +205,7 @@ class Yeast
     }
 
     /**
+     * Styles or types of beer this yeast strain is best suited for.
      * @param string $bestFor
      */
     public function setBestFor($bestFor)
@@ -201,6 +214,7 @@ class Yeast
     }
 
     /**
+     * Styles or types of beer this yeast strain is best suited for.
      * @return string
      */
     public function getBestFor()
@@ -209,6 +223,7 @@ class Yeast
     }
 
     /**
+     * May be "Low", "Medium", "High" or "Very High"
      * @param string $flocculation
      */
     public function setFlocculation($flocculation)
@@ -217,6 +232,7 @@ class Yeast
     }
 
     /**
+     * May be "Low", "Medium", "High" or "Very High"
      * @return string
      */
     public function getFlocculation()
@@ -225,6 +241,7 @@ class Yeast
     }
 
     /**
+     * May be "Liquid", "Dry", "Slant" or "Culture"
      * @param string $form
      */
     public function setForm($form)
@@ -233,6 +250,7 @@ class Yeast
     }
 
     /**
+     * May be "Liquid", "Dry", "Slant" or "Culture"
      * @return string
      */
     public function getForm()
@@ -241,6 +259,7 @@ class Yeast
     }
 
     /**
+     * The name of the laboratory that produced the yeast.
      * @param string $laboratory
      */
     public function setLaboratory($laboratory)
@@ -249,6 +268,7 @@ class Yeast
     }
 
     /**
+     * The name of the laboratory that produced the yeast.
      * @return string
      */
     public function getLaboratory()
@@ -257,6 +277,7 @@ class Yeast
     }
 
     /**
+     * Recommended of times this yeast can be reused (recultured from a previous batch)
      * @param int $maxReuse
      */
     public function setMaxReuse($maxReuse)
@@ -265,6 +286,7 @@ class Yeast
     }
 
     /**
+     * Recommended of times this yeast can be reused (recultured from a previous batch)
      * @return int
      */
     public function getMaxReuse()
@@ -273,6 +295,7 @@ class Yeast
     }
 
     /**
+     * The maximum recommended temperature for fermenting this yeast strain in Celsius.
      * @param number $maxTemperature
      */
     public function setMaxTemperature($maxTemperature)
@@ -281,6 +304,7 @@ class Yeast
     }
 
     /**
+     * The maximum recommended temperature for fermenting this yeast strain in Celsius.
      * @return number
      */
     public function getMaxTemperature()
@@ -289,6 +313,7 @@ class Yeast
     }
 
     /**
+     * The minimum recommended temperature for fermenting this yeast strain in degrees Celsius.
      * @param number $minTemperature
      */
     public function setMinTemperature($minTemperature)
@@ -297,6 +322,7 @@ class Yeast
     }
 
     /**
+     * The minimum recommended temperature for fermenting this yeast strain in degrees Celsius.
      * @return number
      */
     public function getMinTemperature()
@@ -305,6 +331,7 @@ class Yeast
     }
 
     /**
+     * Name of the yeast.
      * @param string $name
      */
     public function setName($name)
@@ -313,6 +340,7 @@ class Yeast
     }
 
     /**
+     * Name of the yeast.
      * @return string
      */
     public function getName()
@@ -321,6 +349,7 @@ class Yeast
     }
 
     /**
+     * Notes on this yeast strain.  May be a multiline entry.
      * @param string $notes
      */
     public function setNotes($notes)
@@ -329,6 +358,7 @@ class Yeast
     }
 
     /**
+     * Notes on this yeast strain.  May be a multiline entry.
      * @return string
      */
     public function getNotes()
@@ -337,6 +367,7 @@ class Yeast
     }
 
     /**
+     * The manufacturer’s product ID label or number that identifies this particular strain of yeast.
      * @param string $productId
      */
     public function setProductId($productId)
@@ -345,6 +376,7 @@ class Yeast
     }
 
     /**
+     * The manufacturer’s product ID label or number that identifies this particular strain of yeast.
      * @return string
      */
     public function getProductId()
@@ -353,6 +385,8 @@ class Yeast
     }
 
     /**
+     * Number of times this yeast has been reused as a harvested culture.  This number should be zero if this is a
+     * product directly from the manufacturer.
      * @param int $timesCultured
      */
     public function setTimesCultured($timesCultured)
@@ -361,6 +395,8 @@ class Yeast
     }
 
     /**
+     * Number of times this yeast has been reused as a harvested culture.  This number should be zero if this is a
+     * product directly from the manufacturer.
      * @return int
      */
     public function getTimesCultured()
@@ -369,6 +405,7 @@ class Yeast
     }
 
     /**
+     * May be "Ale", "Lager", "Wheat", "Wine" or "Champagne"
      * @param string $type
      */
     public function setType($type)
@@ -377,6 +414,7 @@ class Yeast
     }
 
     /**
+     * May be "Ale", "Lager", "Wheat", "Wine" or "Champagne"
      * @return string
      */
     public function getType()
@@ -385,6 +423,7 @@ class Yeast
     }
 
     /**
+     * Version of the standard.  Should be "1" for this version.
      * @param int $version
      */
     public function setVersion($version)
@@ -393,6 +432,7 @@ class Yeast
     }
 
     /**
+     * Version of the standard.  Should be "1" for this version.
      * @return int
      */
     public function getVersion()
