@@ -3,7 +3,20 @@
 
 namespace BeerXML;
 
-
+/**
+ * BeerXML Generator Class
+ * @package BeerXML
+ *
+ * <code>
+ * $recipe = new \BeerXML\Record\Recipe();
+ * $recipe->setName('My Brew');
+ *
+ * $generator = new \BeerXML\Generator();
+ * $generator->addRecord($recipe);
+ * $xml = $generator->render();
+ * echo $xml;
+ * </code>
+ */
 class Generator {
 
     /**
@@ -70,6 +83,5 @@ class Generator {
         }
         $this->xmlWriter->endElement();
         return $this->xmlWriter->outputMemory(true);
-
     }
 }

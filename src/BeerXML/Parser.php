@@ -4,8 +4,30 @@
 namespace BeerXML;
 
 
+use BeerXML\Record\MashProfile;
 use BeerXML\Parser\Record;
+use BeerXML\Record\Equipment;
+use BeerXML\Record\Fermentable;
+use BeerXML\Record\Hop;
+use BeerXML\Record\Misc;
+use BeerXML\Record\Recipe;
+use BeerXML\Record\Style;
+use BeerXML\Record\Water;
+use BeerXML\Record\Yeast;
 
+/**
+ * Parses BeerXML 1.0 files into PHP record classes
+ *
+ * <code>
+ * <?php
+ * $parser = new \BeerXML\Parser();
+ * $result = $parser->parse(file_get_contents('http://www.beerxml.com/recipes.xml'));
+ * foreach ($result as $recipe) {
+ *     echo "Found beer recipe " . $recipe->getName() . "\n";
+ * }
+ * </code>
+ * @package BeerXML
+ */
 class Parser
 {
     /**
@@ -32,20 +54,25 @@ class Parser
     );
 
     /**
-     * @param string $xmlStr BeerXML to parse
+     * @param \XMLReader $xmlReader
      */
-    public function setXmlString($xmlStr)
+    function __construct($xmlReader = null)
     {
-        $this->xmlReader = new \XMLReader();
-        $this->xmlReader->XML($xmlStr);
+        if (is_null($xmlReader)) {
+            $xmlReader = new \XMLReader();
+        }
+        $this->xmlReader = $xmlReader;
     }
 
     /**
      * Parse a beer XML, returning an array of the record objects found
-     * @return array
+     *
+     * @param string $xml
+     * @return Recipe[]|Equipment[]|Fermentable[]|Hop[]|MashProfile[]|Misc[]|Style[]|Water[]|Yeast[]
      */
-    public function parse()
+    public function parse($xml)
     {
+        $this->xmlReader->XML($xml);
         $records = array();
 
         while ($this->xmlReader->read()) {

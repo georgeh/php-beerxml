@@ -25,8 +25,7 @@ class ParserTest extends \PHPUnit_Framework_TestCase
     public function testReturnsRecords()
     {
         $xml = file_get_contents(dirname(__FILE__) . '/fixtures/recipe-simplest.xml');
-        $this->parser->setXmlString($xml);
-        $result = $this->parser->parse();
+        $result = $this->parser->parse($xml);
         $this->assertEquals(1, count($result));
         $this->assertInstanceOf('BeerXML\Record\Recipe', $result[0]);
     }
@@ -34,8 +33,7 @@ class ParserTest extends \PHPUnit_Framework_TestCase
     public function testReturnsComplexRecords()
     {
         $xml = file_get_contents(dirname(__FILE__) . '/fixtures/recipe-record.xml');
-        $this->parser->setXmlString($xml);
-        $result = $this->parser->parse();
+        $result = $this->parser->parse($xml);
         $this->assertEquals(1, count($result));
         $recipe = $result[0];
         /** @var $recipe Recipe */
@@ -53,8 +51,7 @@ class ParserTest extends \PHPUnit_Framework_TestCase
     public function testCanDealWithOfficialExample()
     {
         $xml = file_get_contents(dirname(__FILE__) . '/fixtures/recipes-4fromweb.xml');
-        $this->parser->setXmlString($xml);
-        $result = $this->parser->parse();
+        $result = $this->parser->parse($xml);
         $this->assertEquals(4, count($result));
 
         $burtonAle = $result[0];

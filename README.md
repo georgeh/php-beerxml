@@ -16,8 +16,7 @@ Parser
 
 ```php
 $parser = new \BeerXML\Parser();
-$parser->setXmlString(file_get_contents('http://www.beerxml.com/recipes.xml'));
-$result = $parser->parse();
+$result = $parser->parse(file_get_contents('http://www.beerxml.com/recipes.xml'));
 foreach ($result as $recipe) {
     /** @var $recipe \BeerXML\Record\Recipe **/
     echo "Found beer recipe " . $recipe->getName() . "\n";
@@ -27,7 +26,15 @@ foreach ($result as $recipe) {
 Generator
 ---------
 
-Coming soon!
+```php
+$recipe = new \BeerXML\Record\Recipe();
+$recipe->setName('My Brew');
+
+$generator = new \BeerXML\Generator();
+$generator->addRecord($recipe);
+$xml = $generator->render();
+echo $xml;
+```
 
 Installation
 ============

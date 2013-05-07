@@ -18,11 +18,11 @@ class Yeast extends Record
      * @var array
      */
     protected $simpleValues = array(
-        'NAME'    => 'setName',
-        'VERSION' => 'setVersion',
-        'TYPE'    => 'setType',
-        'FORM'    => 'setForm',
-        'AMOUNT'  => 'setAmount',
+        'NAME'    => 'getName',
+        'VERSION' => 'getVersion',
+        'TYPE'    => 'getType',
+        'FORM'    => 'getForm',
+        'AMOUNT'  => 'getAmount',
     );
 
     /**
@@ -30,18 +30,18 @@ class Yeast extends Record
      * @var array
      */
     protected $optionalSimpleValues = array(
-        'AMOUNT_IS_WEIGHT' => 'setAmountIsWeight',
-        'LABORATORY'       => 'setLaboratory',
-        'PRODUCT_ID'       => 'setProductId',
-        'MIN_TEMPERATURE'  => 'setMinTemperature',
-        'FLOCCULATION'     => 'setFlocculation',
-        'ATTENUATION'      => 'setAttenuation',
-        'NOTES'            => 'setNotes',
-        'BEST_FOR'         => 'setBestFor',
-        'TIMES_CULTURED'   => 'setTimesCultured',
-        'MAX_REUSE'        => 'setMaxReuse',
-        'MAX_TEMPERATURE'  => 'setMaxTemperature',
-        'ADD_TO_SECONDARY' => 'setAddToSecondary',
+        'AMOUNT_IS_WEIGHT' => 'getAmountIsWeight',
+        'LABORATORY'       => 'getLaboratory',
+        'PRODUCT_ID'       => 'getProductId',
+        'MIN_TEMPERATURE'  => 'getMinTemperature',
+        'FLOCCULATION'     => 'getFlocculation',
+        'ATTENUATION'      => 'getAttenuation',
+        'NOTES'            => 'getNotes',
+        'BEST_FOR'         => 'getBestFor',
+        'TIMES_CULTURED'   => 'getTimesCultured',
+        'MAX_REUSE'        => 'getMaxReuse',
+        'MAX_TEMPERATURE'  => 'getMaxTemperature',
+        'ADD_TO_SECONDARY' => 'getAddToSecondary',
     );
 
     /**
