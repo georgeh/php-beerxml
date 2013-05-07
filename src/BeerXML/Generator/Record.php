@@ -72,6 +72,17 @@ abstract class Record {
     }
 
     /**
+     * Converts a boolean to the string format expected by BeerXML
+     *
+     * @param boolean $bool
+     * @return string 'TRUE' or 'FALSE'
+     */
+    protected function boolToString($bool)
+    {
+        return ($bool)?'TRUE':'FALSE';
+    }
+
+    /**
      * Runs before closing out the build sequence, to add fields that require logic
      */
     protected function additionalFields()

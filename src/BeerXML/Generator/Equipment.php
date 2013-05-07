@@ -41,10 +41,9 @@ class Equipment extends Record
 
     protected function additionalFields()
     {
-        $calcBoilVolume = ($this->record->getCalcBoilVolume()) ? 'TRUE' : 'FALSE';
-        $this->xmlWriter->writeElement('CALC_BOIL_VOLUME', $calcBoilVolume);
+        $this->xmlWriter->writeElement('CALC_BOIL_VOLUME', $this->boolToString($this->record->getCalcBoilVolume()));
 
-        parent::additionalFields();
+        return parent::additionalFields();
     }
 
 }
