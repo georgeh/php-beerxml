@@ -7,7 +7,6 @@
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
-         forceCoversAnnotation="true"
          mapTestClassNameToCoveredClassName="false"
          processIsolation="false"
          stopOnError="false"
