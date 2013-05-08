@@ -42,10 +42,10 @@ class Misc extends Record
     protected function additionalFields()
     {
         if ($amountIsWeight = $this->record->getAmountIsWeight()) {
-            $this->xmlWriter->writeElement('AMOUNT_IS_WEIGHT', $amountIsWeight);
+            $this->xmlWriter->writeElement('AMOUNT_IS_WEIGHT', $this->boolToString($amountIsWeight));
         }
 
-        return parent::additionalFields();
+        parent::additionalFields();
     }
 
 
