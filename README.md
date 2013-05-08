@@ -1,8 +1,10 @@
 php-beerxml
 ===========
 
-A PHP parser and generator for the [BeerXML 1.0](http://www.beerxml.com/) standard.
 [![Build Status](https://travis-ci.org/georgeh/php-beerxml.png?branch=master)](https://travis-ci.org/georgeh/php-beerxml)
+[![Coverage Status](https://coveralls.io/repos/georgeh/php-beerxml/badge.png?branch=master)](https://coveralls.io/r/georgeh/php-beerxml)
+
+A PHP parser and generator for the [BeerXML 1.0](http://www.beerxml.com/) standard.
 
 Usage
 =====
@@ -61,4 +63,3 @@ $ php composer.phar install
 ```
 
 If you don't use Composer, you can directly [download](https://github.com/georgeh/php-beerxml) the sources and configure it with your autoloader.
-
