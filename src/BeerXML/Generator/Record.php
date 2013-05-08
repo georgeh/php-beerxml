@@ -69,6 +69,17 @@ abstract class Record {
             }
         }
 
+        foreach ($this->complexValues as $generatorClass => $method) {
+            $value = $this->record->{$method}();
+            if ($value) {
+                /** @var Record $generator */
+                $generator = new $generatorClass();
+                $generator->setXmlWriter($this->xmlWriter);
+                $generator->setRecord($value);
+                $generator->build();
+            }
+        }
+
         foreach ($this->complexValueSets as $tag => $complex) {
             $this->xmlWriter->startElement($tag);
             $method = $complex['values']; // getter method, should return an array

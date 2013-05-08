@@ -55,6 +55,11 @@ class Recipe extends Record
         'KEG_PRIMING_FACTOR'  => 'getKegPrimingFactor',
     );
 
+    protected $complexValues = array(
+        'BeerXML\Generator\Style' => 'getStyle',
+        'BeerXML\Generator\MashProfile' => 'getMash',
+    );
+
     protected $complexValueSets = array(
         'HOPS'         => array('generator' => 'BeerXML\Generator\Hop', 'values' => 'getHops'),
         'FERMENTABLES' => array('generator' => 'BeerXML\Generator\Fermentable', 'values' => 'getFermentables'),

@@ -17,6 +17,45 @@
         <DATE>3 Jan 04</DATE>
         <CARBONATION>2.1</CARBONATION>
         <FORCED_CARBONATION>Kegged</FORCED_CARBONATION>
+        <STYLE>
+            <NAME>Dry Stout</NAME>
+            <VERSION>1</VERSION>
+            <CATEGORY>16</CATEGORY>
+            <CATEGORY_NUMBER/>
+            <STYLE_LETTER>A</STYLE_LETTER>
+            <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+            <TYPE>Ale</TYPE>
+            <OG_MIN>1.035</OG_MIN>
+            <OG_MAX>1.05</OG_MAX>
+            <FG_MIN>1.007</FG_MIN>
+            <FG_MAX>1.011</FG_MAX>
+            <IBU_MIN>30</IBU_MIN>
+            <IBU_MAX>50</IBU_MAX>
+            <COLOR_MIN>35</COLOR_MIN>
+            <COLOR_MAX>200</COLOR_MAX>
+            <ABV_MIN>3.2</ABV_MIN>
+            <ABV_MAX>5.5</ABV_MAX>
+            <CARB_MIN>1.6</CARB_MIN>
+            <CARB_MAX>2.1</CARB_MAX>
+            <NOTES>Famous Irish Stout. Dry, roasted, almost coffee like flavor. Often soured with pasteurized sour beer. Full body perception due to flaked barley, though starting gravity may be low. Dry roasted flavor.</NOTES>
+        </STYLE>
+        <MASH>
+            <NAME>Single Step Infusion, 68 C</NAME>
+            <VERSION>1</VERSION>
+            <GRAIN_TEMP>22</GRAIN_TEMP>
+            <MASH_STEPS>
+                <MASH_STEP>
+                    <NAME>Conversion Step, 68C</NAME>
+                    <VERSION>1</VERSION>
+                    <TYPE>Infusion</TYPE>
+                    <INFUSE_AMOUNT>10</INFUSE_AMOUNT>
+                    <STEP_TEMP>68</STEP_TEMP>
+                    <STEP_TIME>60</STEP_TIME>
+                    <INFUSE_AMOUNT>10</INFUSE_AMOUNT>
+                </MASH_STEP>
+            </MASH_STEPS>
+            <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
+        </MASH>
         <HOPS>
             <HOP>
                 <NAME>Goldings, East Kent</NAME>

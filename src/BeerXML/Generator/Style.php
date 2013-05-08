@@ -18,24 +18,23 @@ class Style extends Record
      * @var array
      */
     protected $simpleValues = array(
-        'NAME'            => 'setName',
-        'VERSION'         => 'setVersion',
-        'CATEGORY'        => 'setCategory',
-        'CATEGORY_NUMBER' => 'setCategoryNumber',
-        'STYLE_LETTER'    => 'setStyleLetter',
-        'STYLE_GUIDE'     => 'setStyleGuide',
-        'VERSION'         => 'setVersion',
-        'TYPE'            => 'setType',
-        'OG_MIN'          => 'setOgMin',
-        'OG_MAX'          => 'setOgMax',
-        'FG_MIN'          => 'setFgMin',
-        'FG_MAX'          => 'setFgMax',
-        'IBU_MIN'         => 'setIbuMin',
-        'IBU_MAX'         => 'setIbuMax',
-        'COLOR_MIN'       => 'setColorMin',
-        'COLOR_MAX'       => 'setColorMax',
-        'ABV_MIN'         => 'setAbvMin',
-        'ABV_MAX'         => 'setAbvMax',
+        'NAME'            => 'getName',
+        'VERSION'         => 'getVersion',
+        'CATEGORY'        => 'getCategory',
+        'CATEGORY_NUMBER' => 'getCategoryNumber',
+        'STYLE_LETTER'    => 'getStyleLetter',
+        'STYLE_GUIDE'     => 'getStyleGuide',
+        'TYPE'            => 'getType',
+        'OG_MIN'          => 'getOgMin',
+        'OG_MAX'          => 'getOgMax',
+        'FG_MIN'          => 'getFgMin',
+        'FG_MAX'          => 'getFgMax',
+        'IBU_MIN'         => 'getIbuMin',
+        'IBU_MAX'         => 'getIbuMax',
+        'COLOR_MIN'       => 'getColorMin',
+        'COLOR_MAX'       => 'getColorMax',
+        'ABV_MIN'         => 'getAbvMin',
+        'ABV_MAX'         => 'getAbvMax',
     );
 
     /**
@@ -43,12 +42,12 @@ class Style extends Record
      * @var array
      */
     protected $optionalSimpleValues = array(
-        'CARB_MIN'        => 'setCarbMin',
-        'CARB_MAX'        => 'setCarbMax',
-        'NOTES'           => 'setNotes',
-        'PROFILE'         => 'setProfile',
-        'INGREDIENTS'     => 'setIngredients',
-        'EXAMPLES'        => 'setExamples',
+        'CARB_MIN'        => 'getCarbMin',
+        'CARB_MAX'        => 'getCarbMax',
+        'NOTES'           => 'getNotes',
+        'PROFILE'         => 'getProfile',
+        'INGREDIENTS'     => 'getIngredients',
+        'EXAMPLES'        => 'getExamples',
     );
 
 
