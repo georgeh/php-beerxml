@@ -8,6 +8,7 @@ namespace BeerXML;
  * @package BeerXML
  *
  * <code>
+ * <?php
  * $recipe = new \BeerXML\Record\Recipe();
  * $recipe->setName('My Brew');
  *
