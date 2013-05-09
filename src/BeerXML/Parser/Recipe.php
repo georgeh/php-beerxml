@@ -11,6 +11,7 @@ class Recipe extends Record
 
     /**
      * Tags that map to simple values and the corresponding setter method on the record class
+     *
      * @var array
      */
     protected $simpleProperties = array(

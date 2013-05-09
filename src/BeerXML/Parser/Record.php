@@ -15,6 +15,7 @@ abstract class Record
 
     /**
      * Tags that map to simple values and the corresponding setter method on the record class
+     *
      * @var array
      */
     protected $simpleProperties = array();
@@ -132,15 +133,16 @@ abstract class Record
 
     /**
      * Add a set of records to the record
+     *
      * @param $record
      * @throws \Exception
      */
     protected function setComplexPropertySet($record)
     {
         // Sets of records
-        $setTag      = $this->xmlReader->name;
-        $setType     = $this->complexPropertySets[$this->xmlReader->name];
-        $tag         = $setType['tag'];
+        $setTag = $this->xmlReader->name;
+        $setType = $this->complexPropertySets[$this->xmlReader->name];
+        $tag = $setType['tag'];
         $parserClass = $setType['parser'];
         $recordAdder = $setType['method'];
         while ($setTag != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
@@ -161,15 +163,16 @@ abstract class Record
 
     /**
      * Set a complex value to the record
+     *
      * @param $record
      */
     protected function setComplexProperty($record)
     {
-        $recordType   = $this->complexProperties[$this->xmlReader->name];
+        $recordType = $this->complexProperties[$this->xmlReader->name];
         $recordParser = new $recordType['parser'];
         $recordParser->setXmlReader($this->xmlReader);
         $complex = $recordParser->parse();
-        $method  = $recordType['method'];
+        $method = $recordType['method'];
         // Call the setter method
         $record->{$method}($complex);
     }

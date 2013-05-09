@@ -5,6 +5,7 @@ namespace BeerXML;
 
 /**
  * BeerXML Generator Class
+ *
  * @package BeerXML
  *
  * <code>
@@ -18,7 +19,8 @@ namespace BeerXML;
  * echo $xml;
  * </code>
  */
-class Generator {
+class Generator
+{
 
     /**
      * @var \XMLWriter
@@ -27,6 +29,7 @@ class Generator {
 
     /**
      * Mapping classes to set tags
+     *
      * @todo replace with reader interfaces and injectable dependencies
      * @var array
      */
@@ -45,6 +48,7 @@ class Generator {
 
     /**
      * Records to build
+     *
      * @var array
      */
     private $records = array();
@@ -65,6 +69,7 @@ class Generator {
 
     /**
      * Creates the XML
+     *
      * @return string BeerXML
      */
     public function render()

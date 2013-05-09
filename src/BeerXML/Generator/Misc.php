@@ -15,25 +15,27 @@ class Misc extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $simpleValues = array(
-        'NAME'             => 'getName',
-        'VERSION'          => 'getVersion',
-        'TYPE'             => 'getType',
-        'USE'              => 'getUse',
-        'TIME'             => 'getTime',
-        'AMOUNT'           => 'getAmount',
+        'NAME'    => 'getName',
+        'VERSION' => 'getVersion',
+        'TYPE'    => 'getType',
+        'USE'     => 'getUse',
+        'TIME'    => 'getTime',
+        'AMOUNT'  => 'getAmount',
 
     );
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $optionalSimpleValues = array(
-        'USE_FOR'          => 'getUseFor',
-        'NOTES'            => 'getNotes',
+        'USE_FOR' => 'getUseFor',
+        'NOTES'   => 'getNotes',
     );
 
     /**

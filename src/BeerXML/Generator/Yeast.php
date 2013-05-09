@@ -15,6 +15,7 @@ class Yeast extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $simpleValues = array(
@@ -27,6 +28,7 @@ class Yeast extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $optionalSimpleValues = array(

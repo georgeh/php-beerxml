@@ -11,18 +11,21 @@ class Recipe
 
     /**
      * Name of the recipe.
+     *
      * @var string
      */
     private $name;
 
     /**
      * Version of the recipe record.  Should always be "1" for this version of the XML standard.
+     *
      * @var int
      */
     private $version = 1;
 
     /**
      * May be one of "Extract", "Partial Mash" or "All Grain"
+     *
      * @var string
      */
     private $type;
@@ -30,6 +33,7 @@ class Recipe
     /**
      * The style of the beer this recipe is associated with.  All of the required items for a valid style should be
      * between the <STYLE>…</STYLE> tags.
+     *
      * @var Style
      */
     private $style;
@@ -37,36 +41,42 @@ class Recipe
     /**
      * An equipment record is optional.  If included the BATCH_SIZE and BOIL_SIZE in the equipment record must match
      * the values in this recipe record.
+     *
      * @var Equipment
      */
     private $equipment;
 
     /**
      * Name of the brewer
+     *
      * @var string
      */
     private $brewer;
 
     /**
      * Optional name of the assistant brewer
+     *
      * @var string
      */
     private $asstBrewer;
 
     /**
      * Target size of the finished batch in liters.
+     *
      * @var float
      */
     private $batchSize;
 
     /**
      * Starting size for the main boil of the wort in liters.
+     *
      * @var float
      */
     private $boilSize;
 
     /**
      * The total time to boil the wort in minutes.
+     *
      * @var number
      */
     private $boilTime;
@@ -74,36 +84,42 @@ class Recipe
     /**
      * The percent brewhouse efficiency to be used for estimating the starting gravity of the beer.   Not required for
      * "Extract" recipes, but is required for "Partial Mash" and "All Grain" recipes.
+     *
      * @var float
      */
     private $efficiency;
 
     /**
      * Zero or more HOP ingredient records may appear between the <HOPS>…</HOPS> tags.
+     *
      * @var array of Hop
      */
     private $hops = array();
 
     /**
      * Zero or more FERMENTABLE ingredients may appear between the <FERMENTABLES> … </FERMENTABLES> tags.
+     *
      * @var array of Fermentable
      */
     private $fermentables = array();
 
     /**
      * Zero or more MISC records may appear between <MISCS> … </MISCS>
+     *
      * @var array of Misc
      */
     private $miscs = array();
 
     /**
      * Zero or more YEAST records may appear between <YEASTS> … </YEASTS>
+     *
      * @var array of Yeast
      */
     private $yeasts = array();
 
     /**
      * Zero or more WATER records may appear between <WATERS> … </WATERS>
+     *
      * @var array of Water
      */
     private $waters = array();
@@ -111,102 +127,119 @@ class Recipe
     /**
      * A MASH profile record containing one or more MASH_STEPs.  NOTE: No Mash record is needed for "Extract" type
      * brews.
+     *
      * @var MashProfile
      */
     private $mash;
 
     /**
      * Notes associated with this recipe – may be multiline.
+     *
      * @var string
      */
     private $notes;
 
     /**
      * Tasting notes – may be multiline.
+     *
      * @var string
      */
     private $tasteNotes;
 
     /**
      * Number between zero and 50.0 denoting the taste rating – corresponds to the 50 point BJCP rating system.
+     *
      * @var float
      */
     private $tasteRating;
 
     /**
      * The measured original (pre-fermentation) specific gravity of the beer.
+     *
      * @var float
      */
     private $og;
 
     /**
      * The measured final gravity of the finished beer.
+     *
      * @var float
      */
     private $fg;
 
     /**
      * The number of fermentation stages used – typically a number between one and three
+     *
      * @var int
      */
     private $fermentationStages;
 
     /**
      * Time spent in the primary in days
+     *
      * @var number
      */
     private $primaryAge;
 
     /**
      * Temperature in degrees Celsius for the primary fermentation.
+     *
      * @var number
      */
     private $primaryTemp;
 
     /**
      * Time spent in the secondary in days.
+     *
      * @var number
      */
     private $secondaryAge;
 
     /**
      * Temperature in degrees Celsius for the secondary fermentation.
+     *
      * @var number
      */
     private $secondaryTemp;
 
     /**
      * Time spent in the third fermenter in days.
+     *
      * @var number
      */
     private $tertiaryAge;
 
     /**
      * Temperature in the tertiary fermenter.
+     *
      * @var number
      */
     private $tertiaryTemp;
 
     /**
      * The time to age the beer in days after bottling.
+     *
      * @var number
      */
     private $age;
 
     /**
      * Temperature for aging the beer after bottling.
+     *
      * @var number
      */
     private $ageTemp;
 
     /**
      * Date brewed in a easily recognizable format such as "3 Dec 04".
+     *
      * @var string
      */
     private $date;
 
     /**
      * Floating point value corresponding to the target volumes of CO2 used to carbonate this beer.
+     *
      * @var float
      */
     private $carbonation;
@@ -214,18 +247,21 @@ class Recipe
     /**
      * TRUE if the batch was force carbonated using CO2 pressure, FALSE if the batch was carbonated using a priming
      * agent.  Default is FALSE
+     *
      * @var bool
      */
     private $forcedCarbonation = false;
 
     /**
      * Text describing the priming agent such as "Honey" or "Corn Sugar" – used only if this is not a forced carbonation
+     *
      * @var string
      */
     private $primingSugarName;
 
     /**
      * The temperature for either bottling or forced carbonation.
+     *
      * @var number
      */
     private $carbonationTemp;
@@ -235,6 +271,7 @@ class Recipe
      * example, "Dry Malt Extract" would have a value of 1.4 because it requires 1.4 times as much DME as corn sugar to
      * carbonate.  To calculate the amount of DME needed, the program can calculate the amount of corn sugar needed and
      * then multiply by this factor.
+     *
      * @var float
      */
     private $primingSugarEquiv;
@@ -242,6 +279,7 @@ class Recipe
     /**
      * Used to factor in the smaller amount of sugar needed for large containers.  For example, this might be 0.5 for a
      * typical 5 gallon keg since naturally priming a keg requires about 50% as much sugar as priming bottles.
+     *
      * @var float
      */
     private $kegPrimingFactor;

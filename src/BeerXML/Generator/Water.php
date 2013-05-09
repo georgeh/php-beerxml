@@ -15,6 +15,7 @@ class Water extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $simpleValues = array(
@@ -31,6 +32,7 @@ class Water extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $optionalSimpleValues = array(

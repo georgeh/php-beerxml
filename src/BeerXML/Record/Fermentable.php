@@ -7,11 +7,11 @@ namespace BeerXML\Record;
 class Fermentable
 {
 
-    const TYPE_GRAIN       = 'Grain';
-    const TYPE_SUGAR       = 'Sugar';
-    const TYPE_EXTRACT     = 'Extract';
+    const TYPE_GRAIN = 'Grain';
+    const TYPE_SUGAR = 'Sugar';
+    const TYPE_EXTRACT = 'Extract';
     const TYPE_DRY_EXTRACT = 'Dry Extract';
-    const TYPE_ADJUNCT     = 'Adjunct';
+    const TYPE_ADJUNCT = 'Adjunct';
 
     /**
      * @var string
@@ -101,6 +101,7 @@ class Fermentable
     /**
      * May be TRUE if this item is normally added after the boil.  The default value is FALSE since most grains are
      * added during the mash or boil.
+     *
      * @param boolean $addAfterBoil
      */
     public function setAddAfterBoil($addAfterBoil)
@@ -111,6 +112,7 @@ class Fermentable
     /**
      * May be TRUE if this item is normally added after the boil.  The default value is FALSE since most grains are
      * added during the mash or boil.
+     *
      * @return boolean
      */
     public function getAddAfterBoil()
@@ -120,6 +122,7 @@ class Fermentable
 
     /**
      * Weight of the fermentable, extract or sugar in Kilograms.
+     *
      * @param number $amount
      */
     public function setAmount($amount)
@@ -129,6 +132,7 @@ class Fermentable
 
     /**
      * Weight of the fermentable, extract or sugar in Kilograms.
+     *
      * @return number
      */
     public function getAmount()
@@ -139,6 +143,7 @@ class Fermentable
     /**
      * Percent difference between the coarse grain yield and fine grain yield.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
+     *
      * @param number $coarseFineDiff
      */
     public function setCoarseFineDiff($coarseFineDiff)
@@ -149,6 +154,7 @@ class Fermentable
     /**
      * Percent difference between the coarse grain yield and fine grain yield.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
+     *
      * @return number
      */
     public function getCoarseFineDiff()
@@ -158,6 +164,7 @@ class Fermentable
 
     /**
      * The color of the item in Lovibond Units (SRM for liquid extracts).
+     *
      * @param float $color
      */
     public function setColor($color)
@@ -167,6 +174,7 @@ class Fermentable
 
     /**
      * The color of the item in Lovibond Units (SRM for liquid extracts).
+     *
      * @return float
      */
     public function getColor()
@@ -177,6 +185,7 @@ class Fermentable
     /**
      * The diastatic power of the grain as measured in "Lintner" units.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
+     *
      * @param float $diastaticPower
      */
     public function setDiastaticPower($diastaticPower)
@@ -187,6 +196,7 @@ class Fermentable
     /**
      * The diastatic power of the grain as measured in "Lintner" units.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
+     *
      * @return float
      */
     public function getDiastaticPower()
@@ -199,6 +209,7 @@ class Fermentable
      * To convert to IBUs we multiply this number by the "AMOUNT" field (in pounds) and divide by the number of gallons
      * in the batch.  Based on a sixty minute boil.
      * Only suitable for use with an "Extract" type, otherwise this value is ignored.
+     *
      * @param float $ibuGalPerLb
      */
     public function setIbuGalPerLb($ibuGalPerLb)
@@ -211,6 +222,7 @@ class Fermentable
      * To convert to IBUs we multiply this number by the "AMOUNT" field (in pounds) and divide by the number of gallons
      * in the batch.  Based on a sixty minute boil.
      * Only suitable for use with an "Extract" type, otherwise this value is ignored.
+     *
      * @return float
      */
     public function getIbuGalPerLb()
@@ -220,6 +232,7 @@ class Fermentable
 
     /**
      * The recommended maximum percentage (by weight) this ingredient should represent in a batch of beer.
+     *
      * @param number $maxInBatch
      */
     public function setMaxInBatch($maxInBatch)
@@ -229,6 +242,7 @@ class Fermentable
 
     /**
      * The recommended maximum percentage (by weight) this ingredient should represent in a batch of beer.
+     *
      * @return number
      */
     public function getMaxInBatch()
@@ -239,6 +253,7 @@ class Fermentable
     /**
      * Percent moisture in the grain.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
+     *
      * @param number $moisture
      */
     public function setMoisture($moisture)
@@ -249,6 +264,7 @@ class Fermentable
     /**
      * Percent moisture in the grain.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
+     *
      * @return number
      */
     public function getMoisture()
@@ -258,6 +274,7 @@ class Fermentable
 
     /**
      * Name of the fermentable.
+     *
      * @param string $name
      */
     public function setName($name)
@@ -267,6 +284,7 @@ class Fermentable
 
     /**
      * Name of the fermentable.
+     *
      * @return string
      */
     public function getName()
@@ -276,6 +294,7 @@ class Fermentable
 
     /**
      * Textual noted describing this ingredient and its use.  May be multiline.
+     *
      * @param string $notes
      */
     public function setNotes($notes)
@@ -285,6 +304,7 @@ class Fermentable
 
     /**
      * Textual noted describing this ingredient and its use.  May be multiline.
+     *
      * @return string
      */
     public function getNotes()
@@ -294,6 +314,7 @@ class Fermentable
 
     /**
      * Country or place of origin
+     *
      * @param string $origin
      */
     public function setOrigin($origin)
@@ -303,6 +324,7 @@ class Fermentable
 
     /**
      * Country or place of origin
+     *
      * @return string
      */
     public function getOrigin()
@@ -313,6 +335,7 @@ class Fermentable
     /**
      * The percent protein in the grain.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
+     *
      * @param number $protein
      */
     public function setProtein($protein)
@@ -323,6 +346,7 @@ class Fermentable
     /**
      * The percent protein in the grain.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
+     *
      * @return number
      */
     public function getProtein()
@@ -335,6 +359,7 @@ class Fermentable
      * A value of TRUE is only appropriate for a "Grain" or "Adjunct" types.  The default value is FALSE.
      * Note that this does NOT indicate whether the grain is mashed or not – it is only a recommendation used in recipe
      * formulation.
+     *
      * @param boolean $recommendMash
      */
     public function setRecommendMash($recommendMash)
@@ -347,6 +372,7 @@ class Fermentable
      * A value of TRUE is only appropriate for a "Grain" or "Adjunct" types.  The default value is FALSE.
      * Note that this does NOT indicate whether the grain is mashed or not – it is only a recommendation used in recipe
      * formulation.
+     *
      * @return boolean
      */
     public function getRecommendMash()
@@ -356,6 +382,7 @@ class Fermentable
 
     /**
      * Supplier of the grain/extract/sugar
+     *
      * @param string $supplier
      */
     public function setSupplier($supplier)
@@ -365,6 +392,7 @@ class Fermentable
 
     /**
      * Supplier of the grain/extract/sugar
+     *
      * @return string
      */
     public function getSupplier()
@@ -374,6 +402,7 @@ class Fermentable
 
     /**
      * May be "Grain", "Sugar", "Extract", "Dry Extract" or "Adjunct".  Extract refers to liquid extract.
+     *
      * @param string $type
      */
     public function setType($type)
@@ -383,6 +412,7 @@ class Fermentable
 
     /**
      * May be "Grain", "Sugar", "Extract", "Dry Extract" or "Adjunct".  Extract refers to liquid extract.
+     *
      * @return string
      */
     public function getType()
@@ -393,6 +423,7 @@ class Fermentable
     /**
      * Should be set to 1 for this version of the XML standard.
      * May be a higher number for later versions but all later versions shall be backward compatible.
+     *
      * @param int $version
      */
     public function setVersion($version)
@@ -403,6 +434,7 @@ class Fermentable
     /**
      * Should be set to 1 for this version of the XML standard.
      * May be a higher number for later versions but all later versions shall be backward compatible.
+     *
      * @return int
      */
     public function getVersion()
@@ -412,6 +444,7 @@ class Fermentable
 
     /**
      * Percent dry yield (fine grain) for the grain, or the raw yield by weight if this is an extract adjunct or sugar.
+     *
      * @param number $yield
      */
     public function setYield($yield)
@@ -421,6 +454,7 @@ class Fermentable
 
     /**
      * Percent dry yield (fine grain) for the grain, or the raw yield by weight if this is an extract adjunct or sugar.
+     *
      * @return number
      */
     public function getYield()

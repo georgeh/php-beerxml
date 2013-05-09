@@ -26,6 +26,7 @@ use BeerXML\Record\Yeast;
  *     echo "Found beer recipe " . $recipe->getName() . "\n";
  * }
  * </code>
+ *
  * @package BeerXML
  */
 class Parser

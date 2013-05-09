@@ -8,8 +8,8 @@ class Style
 {
 
     const TYPE_LAGER = 'Lager';
-    const TYPE_ALE   = 'Ale';
-    const TYPE_MEAD  = 'Mead';
+    const TYPE_ALE = 'Ale';
+    const TYPE_MEAD = 'Mead';
     const TYPE_WHEAT = 'Wheat';
     const TYPE_MIXED = 'Mixed';
     const TYPE_CIDER = 'Cider';
@@ -17,6 +17,7 @@ class Style
     /**
      * Name of the style profile – usually this is the specific name of the style – for example "Scottish Wee Heavy Ale"
      * and not the Category which in this case might be "Scottish Ale"
+     *
      * @var string
      */
     private $name;
@@ -24,12 +25,14 @@ class Style
     /**
      * Category that this style belongs to – usually associated with a group of styles such as "English Ales" or
      * "Amercian Lagers".
+     *
      * @var string
      */
     private $category;
 
     /**
      * Version of the style record.  Should always be "1" for this version of the XML standard.
+     *
      * @var int
      */
     private $version = 1;
@@ -37,6 +40,7 @@ class Style
     /**
      * Number or identifier associated with this style category.  For example in the BJCP style guide, the
      * "American Lager" category has a category number of "1".
+     *
      * @var string
      */
     private $categoryNumber;
@@ -45,6 +49,7 @@ class Style
      * The specific style number or subcategory letter associated with this particular style.  For example in the BJCP
      * style guide, an American Standard Lager would be style letter "A" under the main category.  Letters should be
      * upper case.
+     *
      * @var string
      */
     private $styleLetter;
@@ -52,6 +57,7 @@ class Style
     /**
      * The name of the style guide that this particular style or category belongs to.  For example "BJCP" might denote
      * the BJCP style guide, and "AHA" would be used for the AHA style guide.
+     *
      * @var string
      */
     private $styleGuide;
@@ -59,6 +65,7 @@ class Style
     /**
      * May be "Lager", "Ale", "Mead", "Wheat", "Mixed" or "Cider".  Defines the type of beverage associated with this
      * category.
+     *
      * @var string
      */
     private $type;
@@ -66,96 +73,112 @@ class Style
     /**
      * The minimum specific gravity as measured relative to water.  For example "1.040" might be a reasonable minimum
      * for a Pale Ale.
+     *
      * @var float
      */
     private $ogMin;
 
     /**
      * The maximum specific gravity as measured relative to water.
+     *
      * @var float
      */
     private $ogMax;
 
     /**
      * The minimum final gravity as measured relative to water.
+     *
      * @var float
      */
     private $fgMin;
 
     /**
      * The maximum final gravity as measured relative to water.
+     *
      * @var float
      */
     private $fgMax;
 
     /**
      * The recommended minimum bitterness for this style as measured in International Bitterness Units (IBUs)
+     *
      * @var float
      */
     private $ibuMin;
 
     /**
      * The recommended maximum bitterness for this style as measured in International Bitterness Units (IBUs)
+     *
      * @var float
      */
     private $ibuMax;
 
     /**
      * The minimum recommended color in SRM
+     *
      * @var number
      */
     private $colorMin;
 
     /**
      * The maximum recommended color in SRM.
+     *
      * @var number
      */
     private $colorMax;
 
     /**
      * Minimum recommended carbonation for this style in volumes of CO2
+     *
      * @var float
      */
     private $carbMin;
 
     /**
      * The maximum recommended carbonation for this style in volumes of CO2
+     *
      * @var float
      */
     private $carbMax;
 
     /**
      * The minimum recommended alcohol by volume as a percentage.
+     *
      * @var float
      */
     private $abvMin;
 
     /**
      * The maximum recommended alcohol by volume as a percentage.
+     *
      * @var float
      */
     private $abvMax;
 
     /**
      * Description of the style, history
+     *
      * @var string
      */
     private $notes;
 
     /**
      * Flavor and aroma profile for this style
+     *
      * @var string
      */
     private $profile;
 
     /**
      * Suggested ingredients for this style
+     *
      * @var string
      */
     private $ingredients;
 
     /**
      * Example beers of this style.
+     *
      * @var string
      */
     private $examples;

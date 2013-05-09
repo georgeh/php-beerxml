@@ -4,7 +4,8 @@
 namespace BeerXML\Generator;
 
 
-abstract class Record {
+abstract class Record
+{
     /**
      * @var \XMLWriter
      */
@@ -19,23 +20,26 @@ abstract class Record {
 
     /**
      * <TAG> => getterMethod()
+     *
      * @var array
      */
-    protected $simpleValues = array( );
+    protected $simpleValues = array();
 
     /**
      * <TAG> => getterMethod()
+     *
      * @var array
      */
-    protected $optionalSimpleValues = array( );
+    protected $optionalSimpleValues = array();
 
-    protected $complexValues = array( );
+    protected $complexValues = array();
 
     /**
      * <TAG> => array('generator' => 'BeerXML\Generator\Class', 'values' => 'getRecords')
+     *
      * @var array
      */
-    protected $complexValueSets = array( );
+    protected $complexValueSets = array();
 
     /**
      * @param \XMLWriter $xmlWriter
@@ -52,6 +56,7 @@ abstract class Record {
 
     /**
      * Construct the record in XMLWriter
+     *
      * @return null
      */
     public function build()
@@ -109,7 +114,7 @@ abstract class Record {
      */
     protected function boolToString($bool)
     {
-        return ($bool)?'TRUE':'FALSE';
+        return ($bool) ? 'TRUE' : 'FALSE';
     }
 
     /**

@@ -15,6 +15,7 @@ class Recipe extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $simpleValues = array(
@@ -28,6 +29,7 @@ class Recipe extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $optionalSimpleValues = array(
@@ -56,7 +58,7 @@ class Recipe extends Record
     );
 
     protected $complexValues = array(
-        'BeerXML\Generator\Style' => 'getStyle',
+        'BeerXML\Generator\Style'       => 'getStyle',
         'BeerXML\Generator\MashProfile' => 'getMash',
     );
 

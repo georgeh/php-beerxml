@@ -15,6 +15,7 @@ class MashStep extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $simpleValues = array(
@@ -28,6 +29,7 @@ class MashStep extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $optionalSimpleValues = array(

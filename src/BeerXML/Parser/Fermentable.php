@@ -10,6 +10,7 @@ class Fermentable extends Record
 
     /**
      * Tags that map to simple values and the corresponding setter method on the record class
+     *
      * @var array
      */
     protected $simpleProperties = array(
@@ -36,7 +37,6 @@ class Fermentable extends Record
     {
         return new \BeerXML\Record\Fermentable();
     }
-
 
 
 }

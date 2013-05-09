@@ -6,24 +6,27 @@ namespace BeerXML\Record;
 
 interface RecipeReaderInterface
 {
-    const TYPE_EXTRACT      = 'Extract';
+    const TYPE_EXTRACT = 'Extract';
     const TYPE_PARTIAL_MASH = 'Partial Mash';
-    const TYPE_ALL_GRAIN    = 'All Grain';
+    const TYPE_ALL_GRAIN = 'All Grain';
 
     /**
      * The time to age the beer in days after bottling.
+     *
      * @return number Time (days)
      */
     public function getAge();
 
     /**
      * Temperature for aging the beer after bottling.
+     *
      * @return number Temperature C
      */
     public function getAgeTemp();
 
     /**
      * Optional name of the assistant brewer
+     *
      * @return string
      */
     public function getAsstBrewer();
@@ -72,6 +75,7 @@ interface RecipeReaderInterface
     /**
      * An equipment record is optional.  If included the BATCH_SIZE and BOIL_SIZE in the equipment record must match
      * the values in this recipe record.
+     *
      * @return \BeerXML\Record\Equipment
      */
     public function getEquipment();
@@ -118,6 +122,7 @@ interface RecipeReaderInterface
 
     /**
      * Name of the recipe.
+     *
      * @return string
      */
     public function getName();
@@ -165,6 +170,7 @@ interface RecipeReaderInterface
     /**
      * The style of the beer this recipe is associated with.  All of the required items for a valid style should be
      * between the <STYLE>…</STYLE> tags.
+     *
      * @return \BeerXML\Record\Style
      */
     public function getStyle();
@@ -191,12 +197,14 @@ interface RecipeReaderInterface
 
     /**
      * May be one of "Extract", "Partial Mash" or "All Grain"
+     *
      * @return string
      */
     public function getType();
 
     /**
      * Version of the recipe record.  Should always be "1" for this version of the XML standard.
+     *
      * @return int
      */
     public function getVersion();

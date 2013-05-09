@@ -8,72 +8,84 @@ class Water
 {
     /**
      * Name of the water profile – usually the city and country of the water profile.
+     *
      * @var string
      */
     private $name;
 
     /**
      * Version of the water record.  Should always be "1" for this version of the XML standard.
+     *
      * @var int
      */
     private $version = 1;
 
     /**
      * Volume of water to use in a recipe in liters.
+     *
      * @var number
      */
     private $amount;
 
     /**
      * The amount of calcium (Ca) in parts per million.
+     *
      * @var float
      */
     private $calcium;
 
     /**
      * The amount of bicarbonate (HCO3) in parts per million.
+     *
      * @var float
      */
     private $bicarbonate;
 
     /**
      * The amount of Sulfate (SO4) in parts per million.
+     *
      * @var float
      */
     private $sulfate;
 
     /**
      * The amount of Chloride (Cl) in parts per million.
+     *
      * @var float
      */
     private $chloride;
 
     /**
      * The amount of Sodium (Na) in parts per million.
+     *
      * @var float
      */
     private $sodium;
 
     /**
      * The amount of Magnesium (Mg) in parts per million.
+     *
      * @var float
      */
     private $magnesium;
 
     /**
      * The PH of the water.
+     *
      * @var float
      */
     private $pH;
 
     /**
      * Notes about the water profile.  May be multiline.
+     *
      * @var string
      */
     private $notes;
 
     /**
      * Volume of water to use in a recipe in liters.
+     *
      * @param number $amount
      */
     public function setAmount($amount)
@@ -83,6 +95,7 @@ class Water
 
     /**
      * Volume of water to use in a recipe in liters.
+     *
      * @return number
      */
     public function getAmount()
@@ -92,6 +105,7 @@ class Water
 
     /**
      * The amount of bicarbonate (HCO3) in parts per million.
+     *
      * @param float $bicarbonate
      */
     public function setBicarbonate($bicarbonate)
@@ -101,6 +115,7 @@ class Water
 
     /**
      * The amount of bicarbonate (HCO3) in parts per million.
+     *
      * @return float
      */
     public function getBicarbonate()
@@ -110,6 +125,7 @@ class Water
 
     /**
      * The amount of calcium (Ca) in parts per million.
+     *
      * @param float $calcium
      */
     public function setCalcium($calcium)
@@ -119,6 +135,7 @@ class Water
 
     /**
      * The amount of calcium (Ca) in parts per million.
+     *
      * @return float
      */
     public function getCalcium()
@@ -144,6 +161,7 @@ class Water
 
     /**
      * The amount of Magnesium (Mg) in parts per million.
+     *
      * @param float $magnesium
      */
     public function setMagnesium($magnesium)
@@ -153,6 +171,7 @@ class Water
 
     /**
      * The amount of Magnesium (Mg) in parts per million.
+     *
      * @return float
      */
     public function getMagnesium()
@@ -162,6 +181,7 @@ class Water
 
     /**
      * Name of the water profile – usually the city and country of the water profile.
+     *
      * @param string $name
      */
     public function setName($name)
@@ -171,6 +191,7 @@ class Water
 
     /**
      * Name of the water profile – usually the city and country of the water profile.
+     *
      * @return string
      */
     public function getName()
@@ -180,6 +201,7 @@ class Water
 
     /**
      * Notes about the water profile.  May be multiline.
+     *
      * @param string $notes
      */
     public function setNotes($notes)
@@ -189,6 +211,7 @@ class Water
 
     /**
      * Notes about the water profile.  May be multiline.
+     *
      * @return string
      */
     public function getNotes()
@@ -198,6 +221,7 @@ class Water
 
     /**
      * The PH of the water.
+     *
      * @param float $pH
      */
     public function setPH($pH)
@@ -207,6 +231,7 @@ class Water
 
     /**
      * The PH of the water.
+     *
      * @return float
      */
     public function getPH()
@@ -216,6 +241,7 @@ class Water
 
     /**
      * The amount of Sodium (Na) in parts per million.
+     *
      * @param float $sodium
      */
     public function setSodium($sodium)
@@ -225,6 +251,7 @@ class Water
 
     /**
      * The amount of Sodium (Na) in parts per million.
+     *
      * @return float
      */
     public function getSodium()
@@ -234,6 +261,7 @@ class Water
 
     /**
      * The amount of Sulfate (SO4) in parts per million.
+     *
      * @param float $sulfate
      */
     public function setSulfate($sulfate)
@@ -243,6 +271,7 @@ class Water
 
     /**
      * The amount of Sulfate (SO4) in parts per million.
+     *
      * @return float
      */
     public function getSulfate()
@@ -252,6 +281,7 @@ class Water
 
     /**
      * Version of the water record.  Should always be "1" for this version of the XML standard.
+     *
      * @param int $version
      */
     public function setVersion($version)
@@ -261,6 +291,7 @@ class Water
 
     /**
      * Version of the water record.  Should always be "1" for this version of the XML standard.
+     *
      * @return int
      */
     public function getVersion()

@@ -15,6 +15,7 @@ class Style extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $simpleValues = array(
@@ -39,15 +40,16 @@ class Style extends Record
 
     /**
      * <TAG> => getterMethod
+     *
      * @var array
      */
     protected $optionalSimpleValues = array(
-        'CARB_MIN'        => 'getCarbMin',
-        'CARB_MAX'        => 'getCarbMax',
-        'NOTES'           => 'getNotes',
-        'PROFILE'         => 'getProfile',
-        'INGREDIENTS'     => 'getIngredients',
-        'EXAMPLES'        => 'getExamples',
+        'CARB_MIN'    => 'getCarbMin',
+        'CARB_MAX'    => 'getCarbMax',
+        'NOTES'       => 'getNotes',
+        'PROFILE'     => 'getProfile',
+        'INGREDIENTS' => 'getIngredients',
+        'EXAMPLES'    => 'getExamples',
     );
 
 

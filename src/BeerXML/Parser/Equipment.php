@@ -4,11 +4,13 @@
 namespace BeerXML\Parser;
 
 
-class Equipment extends Record {
+class Equipment extends Record
+{
     protected $tagName = 'EQUIPMENT';
 
     /**
      * Tags that map to simple values and the corresponding setter method on the record class
+     *
      * @var array
      */
     protected $simpleProperties = array(

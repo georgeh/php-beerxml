@@ -8,18 +8,21 @@ class MashProfile
 {
     /**
      * Name of the mash profile.
+     *
      * @var string
      */
     private $name;
 
     /**
      * Version of the mash record.  Should always be "1" for this version of the XML standard.
+     *
      * @var int
      */
     private $version = 1;
 
     /**
      * The temperature of the grain before adding it to the mash in degrees Celsius.
+     *
      * @var number
      */
     private $grainTemp;
@@ -27,12 +30,14 @@ class MashProfile
     /**
      * Record set that starts the list of <MASH_STEP> records.  All MASH_STEP records should appear between the
      * <MASH_STEPS> … </MASH_STEPS> pair.
+     *
      * @var array
      */
     private $mashSteps = array();
 
     /**
      * Notes associated with this profile – may be multiline.
+     *
      * @var string
      */
     private $notes;
@@ -40,30 +45,35 @@ class MashProfile
     /**
      * Grain tun temperature – may be used to adjust the infusion temperature for equipment if the program supports it.
      * Measured in degrees C.
+     *
      * @var number
      */
     private $tunTemp;
 
     /**
      * Temperature of the sparge water used in degrees Celsius.
+     *
      * @var number
      */
     private $spargeTemp;
 
     /**
      * PH of the sparge.
+     *
      * @var float
      */
     private $pH;
 
     /**
      * Weight of the mash tun in kilograms
+     *
      * @var float
      */
     private $tunWeight;
 
     /**
      * Specific heat of the tun material in calories per gram-degree C.
+     *
      * @var float
      */
     private $tunSpecificHeat;
@@ -71,6 +81,7 @@ class MashProfile
     /**
      * If TRUE, mash infusion and decoction calculations should take into account the temperature effects of the
      * equipment (tun specific heat and tun weight).  If FALSE, the tun is assumed to be pre-heated.  Default is FALSE.
+     *
      * @var bool
      */
     private $equipAdjust = false;
