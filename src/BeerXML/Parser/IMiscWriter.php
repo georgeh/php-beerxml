@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IMiscWriter {
+interface IMiscWriter
+{
 
     /**
      * Amount of item used.  The default measurements are by weight, but this may be the measurement in volume units if

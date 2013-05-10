@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IYeastWriter {
+interface IYeastWriter
+{
 
     /**
      * Flag denoting that this yeast was added for a secondary (or later) fermentation as opposed to the primary

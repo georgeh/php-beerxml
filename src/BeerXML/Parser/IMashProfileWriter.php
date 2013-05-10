@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IMashProfileWriter {
+interface IMashProfileWriter
+{
 
     /**
      * @param boolean $equipAdjust

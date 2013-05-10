@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IHopWriter {
+interface IHopWriter
+{
 
     /**
      * Percent alpha of hops - for example "5.5" represents 5.5% alpha

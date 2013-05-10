@@ -36,7 +36,9 @@ class Generator
      */
     private $recordSetTags = array(
         '\BeerXML\Generator\IHopReader'         => array('tag' => 'HOPS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IFermentableReader' => array('tag' => 'FERMENTABLES', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IFermentableReader' => array('tag'       => 'FERMENTABLES',
+                                                         'generator' => 'BeerXML\Generator\Hop'
+        ),
         '\BeerXML\Generator\IYeastReader'       => array('tag' => 'YEASTS', 'generator' => 'BeerXML\Generator\Hop'),
         '\BeerXML\Generator\IMiscReader'        => array('tag' => 'MISCS', 'generator' => 'BeerXML\Generator\Hop'),
         '\BeerXML\Generator\IWaterReader'       => array('tag' => 'WATERS', 'generator' => 'BeerXML\Generator\Hop'),
@@ -54,7 +56,7 @@ class Generator
      */
     private $records = array();
 
-    function __construct()
+    public function __construct()
     {
         $this->xmlWriter = new \XMLWriter();
     }
@@ -98,9 +100,9 @@ class Generator
     {
         foreach ($this->recordSetTags as $interface => $tagGen) {
             if ($record instanceof $interface) {
-                $tag = $tagGen['tag'];
+                $tag            = $tagGen['tag'];
                 $generatorClass = $tagGen['generator'];
-                $generator = new $generatorClass();
+                $generator      = new $generatorClass();
                 return array($tag, $generator);
             }
         }

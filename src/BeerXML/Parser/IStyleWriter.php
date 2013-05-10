@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IStyleWriter {
+interface IStyleWriter
+{
 
     /**
      * @param float $abvMax

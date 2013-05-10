@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IEquipmentWriter {
+interface IEquipmentWriter
+{
 
     /**
      * The target volume of the batch at the start of fermentation.

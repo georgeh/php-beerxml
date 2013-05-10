@@ -9,17 +9,17 @@ use BeerXML\Parser\IMiscWriter;
 
 class Misc implements IMiscReader, IMiscWriter
 {
-    const TYPE_SPICE = 'Spice';
-    const TYPE_FINING = 'Fining';
+    const TYPE_SPICE       = 'Spice';
+    const TYPE_FINING      = 'Fining';
     const TYPE_WATER_AGENT = 'Water Agent';
-    const TYPE_HERB = 'Herb';
-    const TYPE_FLAVOR = 'Flavor';
-    const TYPE_OTHER = 'Other';
-    const USE_BOIL = 'Boil';
-    const USE_MASH = 'Mash';
-    const USE_PRIMARY = 'Primary';
-    const USE_SECONDARY = 'Secondary';
-    const USE_BOTTLING = 'Bottling';
+    const TYPE_HERB        = 'Herb';
+    const TYPE_FLAVOR      = 'Flavor';
+    const TYPE_OTHER       = 'Other';
+    const USE_BOIL         = 'Boil';
+    const USE_MASH         = 'Mash';
+    const USE_PRIMARY      = 'Primary';
+    const USE_SECONDARY    = 'Secondary';
+    const USE_BOTTLING     = 'Bottling';
 
     /**
      * Name of the misc item.

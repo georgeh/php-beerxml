@@ -8,9 +8,9 @@ use BeerXML\Parser\IRecipeWriter;
 
 class Recipe implements IRecipeReader, IRecipeWriter
 {
-    const TYPE_EXTRACT = 'Extract';
+    const TYPE_EXTRACT      = 'Extract';
     const TYPE_PARTIAL_MASH = 'Partial Mash';
-    const TYPE_ALL_GRAIN = 'All Grain';
+    const TYPE_ALL_GRAIN    = 'All Grain';
 
     /**
      * Name of the recipe.

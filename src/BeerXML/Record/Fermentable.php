@@ -10,11 +10,11 @@ use BeerXML\Parser\IFermentableWriter;
 class Fermentable implements IFermentableReader, IFermentableWriter
 {
 
-    const TYPE_GRAIN = 'Grain';
-    const TYPE_SUGAR = 'Sugar';
-    const TYPE_EXTRACT = 'Extract';
+    const TYPE_GRAIN       = 'Grain';
+    const TYPE_SUGAR       = 'Sugar';
+    const TYPE_EXTRACT     = 'Extract';
     const TYPE_DRY_EXTRACT = 'Dry Extract';
-    const TYPE_ADJUNCT = 'Adjunct';
+    const TYPE_ADJUNCT     = 'Adjunct';
 
     /**
      * @var string

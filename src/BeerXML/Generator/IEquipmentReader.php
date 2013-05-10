@@ -4,7 +4,8 @@
 namespace BeerXML\Generator;
 
 
-interface IEquipmentReader {
+interface IEquipmentReader
+{
 
     /**
      * The target volume of the batch at the start of fermentation.

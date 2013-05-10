@@ -4,7 +4,8 @@
 namespace BeerXML\Generator;
 
 
-interface IWaterReader {
+interface IWaterReader
+{
 
     /**
      * Volume of water to use in a recipe in liters.

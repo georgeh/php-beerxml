@@ -87,10 +87,10 @@ abstract class Record
 
         foreach ($this->complexValueSets as $tag => $complex) {
             $this->xmlWriter->startElement($tag);
-            $method = $complex['values']; // getter method, should return an array
+            $method         = $complex['values']; // getter method, should return an array
             $generatorClass = $complex['generator']; // Should be a subclass of BeerXML\Generator\Record
 
-            $values = $this->record->{$method}();
+            $values    = $this->record->{$method}();
             $generator = new $generatorClass();
             $generator->setXmlWriter($this->xmlWriter);
             foreach ($values as $record) {

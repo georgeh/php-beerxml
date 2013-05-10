@@ -11,8 +11,8 @@ class Style implements IStyleReader, IStyleWriter
 {
 
     const TYPE_LAGER = 'Lager';
-    const TYPE_ALE = 'Ale';
-    const TYPE_MEAD = 'Mead';
+    const TYPE_ALE   = 'Ale';
+    const TYPE_MEAD  = 'Mead';
     const TYPE_WHEAT = 'Wheat';
     const TYPE_MIXED = 'Mixed';
     const TYPE_CIDER = 'Cider';

@@ -4,7 +4,8 @@
 namespace BeerXML\Generator;
 
 
-interface IStyleReader {
+interface IStyleReader
+{
 
     /**
      * @return float

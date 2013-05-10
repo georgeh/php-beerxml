@@ -4,7 +4,8 @@
 namespace BeerXML\Generator;
 
 
-interface IHopReader {
+interface IHopReader
+{
 
     /**
      * Percent alpha of hops - for example "5.5" represents 5.5% alpha

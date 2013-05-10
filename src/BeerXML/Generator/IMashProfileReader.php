@@ -4,7 +4,8 @@
 namespace BeerXML\Generator;
 
 
-interface IMashProfileReader {
+interface IMashProfileReader
+{
 
     /**
      * @return boolean

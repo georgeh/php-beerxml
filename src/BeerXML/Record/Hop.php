@@ -10,17 +10,17 @@ use BeerXML\Parser\IHopWriter;
 class Hop implements IHopReader, IHopWriter
 {
 
-    const USE_BOIL = 'Boil';
-    const USE_DRY_HOP = 'Dry Hop';
-    const USE_MASH = 'Mash';
+    const USE_BOIL       = 'Boil';
+    const USE_DRY_HOP    = 'Dry Hop';
+    const USE_MASH       = 'Mash';
     const USE_FIRST_WORT = 'First Wort';
-    const USE_AROMA = 'Aroma';
+    const USE_AROMA      = 'Aroma';
     const TYPE_BITTERING = 'Bittering';
-    const TYPE_AROMA = 'Aroma';
-    const TYPE_BOTH = 'Both';
-    const FORM_PELLET = 'Pellet';
-    const FORM_PLUG = 'Plug';
-    const FORM_LEAF = 'Leaf';
+    const TYPE_AROMA     = 'Aroma';
+    const TYPE_BOTH      = 'Both';
+    const FORM_PELLET    = 'Pellet';
+    const FORM_PLUG      = 'Plug';
+    const FORM_LEAF      = 'Leaf';
 
     /**
      * @var string

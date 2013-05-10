@@ -4,6 +4,7 @@
 namespace BeerXML\Exception;
 
 
-class InvalidRecord extends \Exception {
+class InvalidRecord extends \Exception
+{
 
 }

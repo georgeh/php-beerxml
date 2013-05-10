@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IWaterWriter {
+interface IWaterWriter
+{
 
     /**
      * Volume of water to use in a recipe in liters.

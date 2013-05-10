@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IRecipeWriter {
+interface IRecipeWriter
+{
 
     /**
      * @param number $age

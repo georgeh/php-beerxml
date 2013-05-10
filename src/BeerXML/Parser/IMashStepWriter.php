@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IMashStepWriter {
+interface IMashStepWriter
+{
 
     /**
      * the temperature you can expect the mash to fall to after a long mash step.  Measured in degrees Celsius.

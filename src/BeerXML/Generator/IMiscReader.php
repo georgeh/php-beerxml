@@ -4,7 +4,8 @@
 namespace BeerXML\Generator;
 
 
-interface IMiscReader {
+interface IMiscReader
+{
 
     /**
      * Amount of item used.  The default measurements are by weight, but this may be the measurement in volume units if

@@ -4,7 +4,8 @@
 namespace BeerXML\Parser;
 
 
-interface IFermentableWriter {
+interface IFermentableWriter
+{
 
     /**
      * May be TRUE if this item is normally added after the boil.  The default value is FALSE since most grains are

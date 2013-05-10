@@ -10,9 +10,9 @@ use BeerXML\Parser\IMashStepWriter;
 class MashStep implements IMashStepReader, IMashStepWriter
 {
 
-    const TYPE_INFUSION = 'Infusion';
+    const TYPE_INFUSION    = 'Infusion';
     const TYPE_TEMPERATURE = 'Temperature';
-    const TYPE_DECOCTION = 'Decoction';
+    const TYPE_DECOCTION   = 'Decoction';
 
     /**
      * Name of the mash step – usually descriptive text such as "Dough In" or "Conversion"

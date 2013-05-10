@@ -9,18 +9,18 @@ use BeerXML\Parser\IYeastWriter;
 
 class Yeast implements IYeastReader, IYeastWriter
 {
-    const TYPE_LAGER = 'Lager';
-    const TYPE_ALE = 'Ale';
-    const TYPE_WHEAT = 'Wheat';
-    const TYPE_WINE = 'Wine';
-    const TYPE_CHAMPAGNE = 'Champagne';
-    const FORM_LIQUID = 'Liquid';
-    const FORM_DRY = 'Dry';
-    const FORM_SLANT = 'Slant';
-    const FORM_CULTURE = 'Culture';
-    const FLOCCULATION_LOW = 'Low';
-    const FLOCCULATION_MEDIUM = 'Medium';
-    const FLOCCULATION_HIGH = 'High';
+    const TYPE_LAGER             = 'Lager';
+    const TYPE_ALE               = 'Ale';
+    const TYPE_WHEAT             = 'Wheat';
+    const TYPE_WINE              = 'Wine';
+    const TYPE_CHAMPAGNE         = 'Champagne';
+    const FORM_LIQUID            = 'Liquid';
+    const FORM_DRY               = 'Dry';
+    const FORM_SLANT             = 'Slant';
+    const FORM_CULTURE           = 'Culture';
+    const FLOCCULATION_LOW       = 'Low';
+    const FLOCCULATION_MEDIUM    = 'Medium';
+    const FLOCCULATION_HIGH      = 'High';
     const FLOCCULATION_VERY_HIGH = 'Very High';
 
 
