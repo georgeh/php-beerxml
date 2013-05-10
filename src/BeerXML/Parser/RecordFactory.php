@@ -3,16 +3,6 @@
 
 namespace BeerXML\Parser;
 
-use BeerXML\Record\Equipment;
-use BeerXML\Record\Fermentable;
-use BeerXML\Record\Hop;
-use BeerXML\Record\MashProfile;
-use BeerXML\Record\MashStep;
-use BeerXML\Record\Misc;
-use BeerXML\Record\Recipe;
-use BeerXML\Record\Style;
-use BeerXML\Record\Water;
-use BeerXML\Record\Yeast;
 
 /**
  * Factory for record classes. \BeerXML\Parser uses this (or a subclass of this) to create objects to store the data it
@@ -31,7 +21,7 @@ class RecordFactory {
      */
     public function getEquipment()
     {
-        return new Equipment();
+        return new \BeerXML\Record\Equipment();
     }
 
     /**
@@ -39,7 +29,7 @@ class RecordFactory {
      */
     public function getFermentable()
     {
-        return new Fermentable();
+        return new \BeerXML\Record\Fermentable();
     }
 
     /**
@@ -47,7 +37,7 @@ class RecordFactory {
      */
     public function getHop()
     {
-        return new Hop();
+        return new \BeerXML\Record\Hop();
     }
 
     /**
@@ -55,7 +45,7 @@ class RecordFactory {
      */
     public function getMashProfile()
     {
-        return new MashProfile();
+        return new \BeerXML\Record\MashProfile();
     }
 
     /**
@@ -63,7 +53,7 @@ class RecordFactory {
      */
     public function getMashStep()
     {
-        return new MashStep();
+        return new \BeerXML\Record\MashStep();
     }
 
     /**
@@ -71,7 +61,7 @@ class RecordFactory {
      */
     public function getMisc()
     {
-        return new Misc();
+        return new \BeerXML\Record\Misc();
     }
 
     /**
@@ -79,7 +69,7 @@ class RecordFactory {
      */
     public function getRecipe()
     {
-        return new Recipe();
+        return new \BeerXML\Record\Recipe();
     }
 
     /**
@@ -87,7 +77,7 @@ class RecordFactory {
      */
     public function getStyle()
     {
-        return new Style();
+        return new \BeerXML\Record\Style();
     }
 
     /**
@@ -95,7 +85,7 @@ class RecordFactory {
      */
     public function getWater()
     {
-        return new Water();
+        return new \BeerXML\Record\Water();
     }
 
     /**
@@ -103,6 +93,6 @@ class RecordFactory {
      */
     public function getYeast()
     {
-        return new Yeast();
+        return new \BeerXML\Record\Yeast();
     }
 }
