@@ -21,6 +21,15 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
      */
     private $generator;
 
+    /**
+     * @expectedException \BeerXML\Exception\InvalidRecord
+     */
+    public function testThrowsExceptionForInvalidRecords()
+    {
+        $this->generator->addRecord('asdf');
+        $this->generator->render();
+    }
+
     protected function setUp()
     {
         $this->generator = new Generator();
@@ -65,6 +74,8 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
         $this->assertContains('<EFFICIENCY', $xml);
     }
 
+
+
     /**
      * @dataProvider dryStout
      * @param Recipe $recipe
@@ -96,7 +107,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
         $recipe->setOg(1.036);
         $recipe->setFg(1.012);
         $recipe->setCarbonation(2.1);
-        $recipe->setForcedCarbonation('Kegged');
+        $recipe->setForcedCarbonation(true);
         $recipe->setAge(24.0);
         $recipe->setAgeTemp(17.0);
         $recipe->setFermentationStages(2);

@@ -50,7 +50,6 @@ class Recipe extends Record
         'AGE_TEMP'            => 'getAgeTemp',
         'DATE'                => 'getDate',
         'CARBONATION'         => 'getCarbonation',
-        'FORCED_CARBONATION'  => 'getForcedCarbonation',
         'PRIMING_SUGAR_NAME'  => 'getPrimingSugarName',
         'CARBONATION_TEMP'    => 'getCarbonationTemp',
         'PRIMING_SUGAR_EQUIV' => 'getPrimingSugarEquiv',
@@ -81,6 +80,10 @@ class Recipe extends Record
             \BeerXML\Record\Recipe::TYPE_PARTIAL_MASH == $this->record->getType()
         ) {
             $this->xmlWriter->writeElement('EFFICIENCY', $efficiency);
+        }
+
+        if ($forcedCarb = $this->record->getForcedCarbonation()) {
+            $this->xmlWriter->writeElement('FORCED_CARBONATION', $this->boolToString($forcedCarb));
         }
         parent::additionalFields();
     }

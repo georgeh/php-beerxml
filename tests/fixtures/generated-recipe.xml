@@ -16,7 +16,6 @@
         <AGE_TEMP>17</AGE_TEMP>
         <DATE>3 Jan 04</DATE>
         <CARBONATION>2.1</CARBONATION>
-        <FORCED_CARBONATION>Kegged</FORCED_CARBONATION>
         <STYLE>
             <NAME>Dry Stout</NAME>
             <VERSION>1</VERSION>
@@ -167,5 +166,6 @@
             </WATER>
         </WATERS>
         <EFFICIENCY>72</EFFICIENCY>
+        <FORCED_CARBONATION>TRUE</FORCED_CARBONATION>
     </RECIPE>
 </RECIPES>
