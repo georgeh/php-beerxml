@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BeerXML\Generator\IEquipmentReader | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li class="active"><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Generator.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Generator.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Generator.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Generator.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Generator.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Generator.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Generator.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Generator.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Generator.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Generator.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Generator.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-BeerXML.Generator.IEquipmentReader.html">IEquipmentReader</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentableReader.html">IFermentableReader</a></li>
+				<li><a href="class-BeerXML.Generator.IHopReader.html">IHopReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfileReader.html">IMashProfileReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStepReader.html">IMashStepReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMiscReader.html">IMiscReader</a></li>
+				<li><a href="class-BeerXML.Generator.IRecipeReader.html">IRecipeReader</a></li>
+				<li><a href="class-BeerXML.Generator.IStyleReader.html">IStyleReader</a></li>
+				<li><a href="class-BeerXML.Generator.IWaterReader.html">IWaterReader</a></li>
+				<li><a href="class-BeerXML.Generator.IYeastReader.html">IYeastReader</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Generator.html" title="Summary of BeerXML\Generator"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IEquipmentReader</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Record.Equipment.html">BeerXML\Record\Equipment</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Generator.html">Generator</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BeerXML.Generator.IEquipmentReader.html#7-128" title="Go to source code">BeerXML/Generator/IEquipmentReader.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getBatchSize" id="_getBatchSize">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBatchSize">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#10-15" title="Go to source code">getBatchSize</a>( )</code>
+
+		<div class="description short">
+			
+<p>The target volume of the batch at the start of fermentation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The target volume of the batch at the start of fermentation.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBoilSize" id="_getBoilSize">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBoilSize">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#17-23" title="Go to source code">getBoilSize</a>( )</code>
+
+		<div class="description short">
+			
+<p>The pre-boil volume used in this particular instance for this equipment
+setup. Note that this may be a calculated value depending on the
+CALC_BOIL_VOLUME parameter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The pre-boil volume used in this particular instance for this equipment
+setup. Note that this may be a calculated value depending on the
+CALC_BOIL_VOLUME parameter.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBoilTime" id="_getBoilTime">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBoilTime">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#25-31" title="Go to source code">getBoilTime</a>( )</code>
+
+		<div class="description short">
+			
+<p>The normal amount of time one boils for this equipment setup. This can be
+used with the evaporation rate to calculate the evaporation loss.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The normal amount of time one boils for this equipment setup. This can be
+used with the evaporation rate to calculate the evaporation loss.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCalcBoilVolume" id="_getCalcBoilVolume">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCalcBoilVolume">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#33-40" title="Go to source code">getCalcBoilVolume</a>( )</code>
+
+		<div class="description short">
+			
+<p>Flag denoting that the program should calculate the boil size. Flag may be
+TRUE or FALSE. If TRUE, then BOIL_SIZE = (BATCH_SIZE – TOP_UP_WATER –
+TRUB_CHILLER_LOSS) * (1+BOIL_TIME * EVAP_RATE ) If set then the boil size should
+match this value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Flag denoting that the program should calculate the boil size. Flag may be
+TRUE or FALSE. If TRUE, then BOIL_SIZE = (BATCH_SIZE – TOP_UP_WATER –
+TRUB_CHILLER_LOSS) * (1+BOIL_TIME * EVAP_RATE ) If set then the boil size should
+match this value.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEvapRate" id="_getEvapRate">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEvapRate">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#42-47" title="Go to source code">getEvapRate</a>( )</code>
+
+		<div class="description short">
+			
+<p>The percentage of wort lost to evaporation per hour of the boil.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The percentage of wort lost to evaporation per hour of the boil.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHopUtilization" id="_getHopUtilization">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHopUtilization">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#49-55" title="Go to source code">getHopUtilization</a>( )</code>
+
+		<div class="description short">
+			
+<p>Large batch hop utilization. This value should be 100% for batches less than
+20 gallons, but may be higher (200% or more) for very large batch equipment.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Large batch hop utilization. This value should be 100% for batches less than
+20 gallons, but may be higher (200% or more) for very large batch equipment.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLauterDeadspace" id="_getLauterDeadspace">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLauterDeadspace">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#57-62" title="Go to source code">getLauterDeadspace</a>( )</code>
+
+		<div class="description short">
+			
+<p>Amount lost to the lauter tun and equipment associated with the lautering
+process.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Amount lost to the lauter tun and equipment associated with the lautering
+process.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#64-69" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Name of the equipment profile – usually a text description of the brewing
+setup.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Name of the equipment profile – usually a text description of the brewing
+setup.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNotes" id="_getNotes">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNotes">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#71-76" title="Go to source code">getNotes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Notes associated with the equipment. May be a multiline entry.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Notes associated with the equipment. May be a multiline entry.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTopUpKettle" id="_getTopUpKettle">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTopUpKettle">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#78-83" title="Go to source code">getTopUpKettle</a>( )</code>
+
+		<div class="description short">
+			
+<p>Amount normally added to the boil kettle before the boil.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Amount normally added to the boil kettle before the boil.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTopUpWater" id="_getTopUpWater">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTopUpWater">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#85-88" title="Go to source code">getTopUpWater</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTrubChillerLoss" id="_getTrubChillerLoss">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTrubChillerLoss">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#90-96" title="Go to source code">getTrubChillerLoss</a>( )</code>
+
+		<div class="description short">
+			
+<p>The amount of wort normally lost during transition from the boiler to the
+fermentation vessel. Includes both unusable wort due to trub and wort lost to
+the chiller and transfer systems.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of wort normally lost during transition from the boiler to the
+fermentation vessel. Includes both unusable wort due to trub and wort lost to
+the chiller and transfer systems.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTunSpecificHeat" id="_getTunSpecificHeat">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTunSpecificHeat">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#98-104" title="Go to source code">getTunSpecificHeat</a>( )</code>
+
+		<div class="description short">
+			
+<p>The specific heat of the mash tun which is usually a function of the material
+it is made of. Typical ranges are 0.1-0.25 for metal and 0.2-0.5 for plastic
+materials.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The specific heat of the mash tun which is usually a function of the material
+it is made of. Typical ranges are 0.1-0.25 for metal and 0.2-0.5 for plastic
+materials.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTunVolume" id="_getTunVolume">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTunVolume">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#106-112" title="Go to source code">getTunVolume</a>( )</code>
+
+		<div class="description short">
+			
+<p>Volume of the mash tun in liters. This parameter can be used to calculate if
+a particular mash and grain profile will fit in the mash tun. It may also be
+used for thermal calculations in the case of a partially full mash tun.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Volume of the mash tun in liters. This parameter can be used to calculate if
+a particular mash and grain profile will fit in the mash tun. It may also be
+used for thermal calculations in the case of a partially full mash tun.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTunWeight" id="_getTunWeight">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTunWeight">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#114-120" title="Go to source code">getTunWeight</a>( )</code>
+
+		<div class="description short">
+			
+<p>Weight of the mash tun in kilograms. Used primarily to calculate the thermal
+parameters of the mash tun – in conjunction with the volume and specific
+heat.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Weight of the mash tun in kilograms. Used primarily to calculate the thermal
+parameters of the mash tun – in conjunction with the volume and specific
+heat.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVersion" id="_getVersion">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVersion">#</a>
+		<code><a href="source-class-BeerXML.Generator.IEquipmentReader.html#122-127" title="Go to source code">getVersion</a>( )</code>
+
+		<div class="description short">
+			
+<p>Version of the equipment record. Should always be "1" for this version of the
+XML standard.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Version of the equipment record. Should always be "1" for this version of the
+XML standard.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

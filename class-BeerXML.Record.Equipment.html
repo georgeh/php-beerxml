@@ -7,7 +7,7 @@
 	<title>Class BeerXML\Record\Equipment | php-beerxml</title>
 
 	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?273089376"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -23,6 +23,8 @@
 			<ul>
 				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
 				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
 				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
@@ -53,10 +55,6 @@
 				<li><a href="class-BeerXML.Record.Yeast.html">Yeast</a></li>
 			</ul>
 
-			<h3>Interfaces</h3>
-			<ul>
-				<li><a href="class-BeerXML.Record.RecipeReaderInterface.html">RecipeReaderInterface</a></li>
-			</ul>
 
 
 
@@ -101,6 +99,17 @@
 
 
 
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>BeerXML\Record\Equipment</span></b>			
+			 implements 
+				<a href="class-BeerXML.Generator.IEquipmentReader.html"><span>BeerXML\Generator\IEquipmentReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IEquipmentWriter.html"><span>BeerXML\Parser\IEquipmentWriter</span></a>
+			
+			
+		</dd>
+	</dl>
 
 
 
@@ -115,7 +124,7 @@
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Record.html">Record</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Record.Equipment.html#7-418" title="Go to source code">BeerXML/Record/Equipment.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Record.Equipment.html#10-467" title="Go to source code">BeerXML/Record/Equipment.php</a><br />
 	</div>
 
 
@@ -133,7 +142,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBatchSize">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#114-121" title="Go to source code">setBatchSize</a>( <span>float <var>$batchSize</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#133-141" title="Go to source code">setBatchSize</a>( <span>float <var>$batchSize</var></span> )</code>
 
 		<div class="description short">
 			
@@ -157,6 +166,8 @@
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setBatchSize">BeerXML\Parser\IEquipmentWriter::setBatchSize()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -171,7 +182,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBatchSize">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#123-130" title="Go to source code">getBatchSize</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#143-151" title="Go to source code">getBatchSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -194,6 +205,8 @@
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getBatchSize">BeerXML\Generator\IEquipmentReader::getBatchSize()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -208,7 +221,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBoilSize">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#132-140" title="Go to source code">setBoilSize</a>( <span>float <var>$boilSize</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#153-162" title="Go to source code">setBoilSize</a>( <span>float <var>$boilSize</var></span> )</code>
 
 		<div class="description short">
 			
@@ -236,6 +249,8 @@ CALC_BOIL_VOLUME parameter.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setBoilSize">BeerXML\Parser\IEquipmentWriter::setBoilSize()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -250,7 +265,7 @@ CALC_BOIL_VOLUME parameter.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBoilSize">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#142-150" title="Go to source code">getBoilSize</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#164-173" title="Go to source code">getBoilSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -277,6 +292,8 @@ CALC_BOIL_VOLUME parameter.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getBoilSize">BeerXML\Generator\IEquipmentReader::getBoilSize()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -291,7 +308,7 @@ CALC_BOIL_VOLUME parameter.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBoilTime">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#152-160" title="Go to source code">setBoilTime</a>( <span>number <var>$boilTime</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#175-184" title="Go to source code">setBoilTime</a>( <span>number <var>$boilTime</var></span> )</code>
 
 		<div class="description short">
 			
@@ -317,6 +334,8 @@ used with the evaporation rate to calculate the evaporation loss.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setBoilTime">BeerXML\Parser\IEquipmentWriter::setBoilTime()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -331,7 +350,7 @@ used with the evaporation rate to calculate the evaporation loss.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBoilTime">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#162-170" title="Go to source code">getBoilTime</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#186-195" title="Go to source code">getBoilTime</a>( )</code>
 
 		<div class="description short">
 			
@@ -356,6 +375,8 @@ used with the evaporation rate to calculate the evaporation loss.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getBoilTime">BeerXML\Generator\IEquipmentReader::getBoilTime()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -370,7 +391,7 @@ used with the evaporation rate to calculate the evaporation loss.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCalcBoilVolume">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#172-181" title="Go to source code">setCalcBoilVolume</a>( <span>boolean <var>$calcBoilVolume</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#197-207" title="Go to source code">setCalcBoilVolume</a>( <span>boolean <var>$calcBoilVolume</var></span> )</code>
 
 		<div class="description short">
 			
@@ -400,6 +421,8 @@ match this value.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setCalcBoilVolume">BeerXML\Parser\IEquipmentWriter::setCalcBoilVolume()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -414,7 +437,7 @@ match this value.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCalcBoilVolume">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#183-192" title="Go to source code">getCalcBoilVolume</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#209-219" title="Go to source code">getCalcBoilVolume</a>( )</code>
 
 		<div class="description short">
 			
@@ -443,6 +466,8 @@ match this value.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getCalcBoilVolume">BeerXML\Generator\IEquipmentReader::getCalcBoilVolume()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -457,7 +482,7 @@ match this value.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setEvapRate">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#194-201" title="Go to source code">setEvapRate</a>( <span>float <var>$evapRate</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#221-229" title="Go to source code">setEvapRate</a>( <span>float <var>$evapRate</var></span> )</code>
 
 		<div class="description short">
 			
@@ -481,6 +506,8 @@ match this value.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setEvapRate">BeerXML\Parser\IEquipmentWriter::setEvapRate()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -495,7 +522,7 @@ match this value.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEvapRate">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#203-210" title="Go to source code">getEvapRate</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#231-239" title="Go to source code">getEvapRate</a>( )</code>
 
 		<div class="description short">
 			
@@ -518,6 +545,8 @@ match this value.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getEvapRate">BeerXML\Generator\IEquipmentReader::getEvapRate()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -532,7 +561,7 @@ match this value.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setHopUtilization">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#212-220" title="Go to source code">setHopUtilization</a>( <span>float <var>$hopUtilization</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#241-250" title="Go to source code">setHopUtilization</a>( <span>float <var>$hopUtilization</var></span> )</code>
 
 		<div class="description short">
 			
@@ -558,6 +587,8 @@ match this value.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setHopUtilization">BeerXML\Parser\IEquipmentWriter::setHopUtilization()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -572,7 +603,7 @@ match this value.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getHopUtilization">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#222-230" title="Go to source code">getHopUtilization</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#252-261" title="Go to source code">getHopUtilization</a>( )</code>
 
 		<div class="description short">
 			
@@ -597,6 +628,8 @@ match this value.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getHopUtilization">BeerXML\Generator\IEquipmentReader::getHopUtilization()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -611,7 +644,7 @@ match this value.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setLauterDeadspace">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#232-239" title="Go to source code">setLauterDeadspace</a>( <span>number <var>$lauterDeadspace</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#263-271" title="Go to source code">setLauterDeadspace</a>( <span>number <var>$lauterDeadspace</var></span> )</code>
 
 		<div class="description short">
 			
@@ -637,6 +670,8 @@ process.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setLauterDeadspace">BeerXML\Parser\IEquipmentWriter::setLauterDeadspace()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -651,7 +686,7 @@ process.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLauterDeadspace">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#241-248" title="Go to source code">getLauterDeadspace</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#273-281" title="Go to source code">getLauterDeadspace</a>( )</code>
 
 		<div class="description short">
 			
@@ -676,6 +711,8 @@ process.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getLauterDeadspace">BeerXML\Generator\IEquipmentReader::getLauterDeadspace()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -690,7 +727,7 @@ process.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#250-257" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#283-291" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -716,6 +753,8 @@ setup.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setName">BeerXML\Parser\IEquipmentWriter::setName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -730,7 +769,7 @@ setup.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#259-266" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#293-301" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -755,6 +794,8 @@ setup.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getName">BeerXML\Generator\IEquipmentReader::getName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -769,7 +810,7 @@ setup.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#268-275" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#303-311" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
 
 		<div class="description short">
 			
@@ -793,6 +834,8 @@ setup.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setNotes">BeerXML\Parser\IEquipmentWriter::setNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -807,7 +850,7 @@ setup.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#277-284" title="Go to source code">getNotes</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#313-321" title="Go to source code">getNotes</a>( )</code>
 
 		<div class="description short">
 			
@@ -830,6 +873,8 @@ setup.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getNotes">BeerXML\Generator\IEquipmentReader::getNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -844,7 +889,7 @@ setup.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTopUpKettle">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#286-293" title="Go to source code">setTopUpKettle</a>( <span>number <var>$topUpKettle</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#323-331" title="Go to source code">setTopUpKettle</a>( <span>number <var>$topUpKettle</var></span> )</code>
 
 		<div class="description short">
 			
@@ -868,6 +913,8 @@ setup.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setTopUpKettle">BeerXML\Parser\IEquipmentWriter::setTopUpKettle()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -882,7 +929,7 @@ setup.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTopUpKettle">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#295-302" title="Go to source code">getTopUpKettle</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#333-341" title="Go to source code">getTopUpKettle</a>( )</code>
 
 		<div class="description short">
 			
@@ -905,6 +952,8 @@ setup.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getTopUpKettle">BeerXML\Generator\IEquipmentReader::getTopUpKettle()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -919,7 +968,7 @@ setup.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTopUpWater">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#304-310" title="Go to source code">setTopUpWater</a>( <span>float <var>$topUpWater</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#343-349" title="Go to source code">setTopUpWater</a>( <span>float <var>$topUpWater</var></span> )</code>
 
 		<div class="description short">
 			
@@ -939,6 +988,8 @@ setup.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setTopUpWater">BeerXML\Parser\IEquipmentWriter::setTopUpWater()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -953,7 +1004,7 @@ setup.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTopUpWater">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#312-318" title="Go to source code">getTopUpWater</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#351-357" title="Go to source code">getTopUpWater</a>( )</code>
 
 		<div class="description short">
 			
@@ -972,6 +1023,8 @@ setup.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getTopUpWater">BeerXML\Generator\IEquipmentReader::getTopUpWater()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -986,7 +1039,7 @@ setup.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTrubChillerLoss">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#320-328" title="Go to source code">setTrubChillerLoss</a>( <span>float <var>$trubChillerLoss</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#359-368" title="Go to source code">setTrubChillerLoss</a>( <span>float <var>$trubChillerLoss</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1014,6 +1067,8 @@ the chiller and transfer systems.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setTrubChillerLoss">BeerXML\Parser\IEquipmentWriter::setTrubChillerLoss()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1028,7 +1083,7 @@ the chiller and transfer systems.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTrubChillerLoss">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#330-338" title="Go to source code">getTrubChillerLoss</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#370-379" title="Go to source code">getTrubChillerLoss</a>( )</code>
 
 		<div class="description short">
 			
@@ -1055,6 +1110,8 @@ the chiller and transfer systems.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getTrubChillerLoss">BeerXML\Generator\IEquipmentReader::getTrubChillerLoss()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1069,7 +1126,7 @@ the chiller and transfer systems.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTunSpecificHeat">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#340-348" title="Go to source code">setTunSpecificHeat</a>( <span>float <var>$tunSpecificHeat</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#381-390" title="Go to source code">setTunSpecificHeat</a>( <span>float <var>$tunSpecificHeat</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1097,6 +1154,8 @@ materials.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setTunSpecificHeat">BeerXML\Parser\IEquipmentWriter::setTunSpecificHeat()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1111,7 +1170,7 @@ materials.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTunSpecificHeat">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#350-358" title="Go to source code">getTunSpecificHeat</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#392-401" title="Go to source code">getTunSpecificHeat</a>( )</code>
 
 		<div class="description short">
 			
@@ -1138,6 +1197,8 @@ materials.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getTunSpecificHeat">BeerXML\Generator\IEquipmentReader::getTunSpecificHeat()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1152,7 +1213,7 @@ materials.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTunVolume">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#360-368" title="Go to source code">setTunVolume</a>( <span>float <var>$tunVolume</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#403-412" title="Go to source code">setTunVolume</a>( <span>float <var>$tunVolume</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1180,6 +1241,8 @@ used for thermal calculations in the case of a partially full mash tun.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setTunVolume">BeerXML\Parser\IEquipmentWriter::setTunVolume()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1194,7 +1257,7 @@ used for thermal calculations in the case of a partially full mash tun.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTunVolume">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#370-378" title="Go to source code">getTunVolume</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#414-423" title="Go to source code">getTunVolume</a>( )</code>
 
 		<div class="description short">
 			
@@ -1221,6 +1284,8 @@ used for thermal calculations in the case of a partially full mash tun.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getTunVolume">BeerXML\Generator\IEquipmentReader::getTunVolume()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1235,7 +1300,7 @@ used for thermal calculations in the case of a partially full mash tun.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTunWeight">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#380-388" title="Go to source code">setTunWeight</a>( <span>float <var>$tunWeight</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#425-434" title="Go to source code">setTunWeight</a>( <span>float <var>$tunWeight</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1263,6 +1328,8 @@ heat.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setTunWeight">BeerXML\Parser\IEquipmentWriter::setTunWeight()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1277,7 +1344,7 @@ heat.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTunWeight">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#390-398" title="Go to source code">getTunWeight</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#436-445" title="Go to source code">getTunWeight</a>( )</code>
 
 		<div class="description short">
 			
@@ -1304,6 +1371,8 @@ heat.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getTunWeight">BeerXML\Generator\IEquipmentReader::getTunWeight()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1318,7 +1387,7 @@ heat.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#400-407" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#447-455" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1344,6 +1413,8 @@ XML standard.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IEquipmentWriter.html#_setVersion">BeerXML\Parser\IEquipmentWriter::setVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1358,7 +1429,7 @@ XML standard.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Equipment.html#409-416" title="Go to source code">getVersion</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Equipment.html#457-465" title="Go to source code">getVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -1383,6 +1454,8 @@ XML standard.</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IEquipmentReader.html#_getVersion">BeerXML\Generator\IEquipmentReader::getVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

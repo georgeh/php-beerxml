@@ -7,7 +7,7 @@
 	<title>Class BeerXML\Generator\Style | php-beerxml</title>
 
 	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?273089376"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -23,6 +23,8 @@
 			<ul>
 				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
 				<li class="active"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
 				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
@@ -54,6 +56,19 @@
 				<li><a href="class-BeerXML.Generator.Yeast.html">Yeast</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Generator.IEquipmentReader.html">IEquipmentReader</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentableReader.html">IFermentableReader</a></li>
+				<li><a href="class-BeerXML.Generator.IHopReader.html">IHopReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfileReader.html">IMashProfileReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStepReader.html">IMashStepReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMiscReader.html">IMiscReader</a></li>
+				<li><a href="class-BeerXML.Generator.IRecipeReader.html">IRecipeReader</a></li>
+				<li><a href="class-BeerXML.Generator.IStyleReader.html">IStyleReader</a></li>
+				<li><a href="class-BeerXML.Generator.IWaterReader.html">IWaterReader</a></li>
+				<li><a href="class-BeerXML.Generator.IYeastReader.html">IYeastReader</a></li>
+			</ul>
 
 
 
@@ -126,7 +141,7 @@
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Generator.html">Generator</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Generator.Style.html#7-55" title="Go to source code">BeerXML/Generator/Style.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Generator.Style.html#7-56" title="Go to source code">BeerXML/Generator/Style.php</a><br />
 	</div>
 
 
@@ -213,24 +228,23 @@
 				<a href="source-class-BeerXML.Generator.Style.html#16-39" title="Go to source code"><var>$simpleValues</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(
-    <span class="php-quote">'NAME'</span>            =&gt; <span class="php-quote">'setName'</span>,
-    <span class="php-quote">'VERSION'</span>         =&gt; <span class="php-quote">'setVersion'</span>,
-    <span class="php-quote">'CATEGORY'</span>        =&gt; <span class="php-quote">'setCategory'</span>,
-    <span class="php-quote">'CATEGORY_NUMBER'</span> =&gt; <span class="php-quote">'setCategoryNumber'</span>,
-    <span class="php-quote">'STYLE_LETTER'</span>    =&gt; <span class="php-quote">'setStyleLetter'</span>,
-    <span class="php-quote">'STYLE_GUIDE'</span>     =&gt; <span class="php-quote">'setStyleGuide'</span>,
-    <span class="php-quote">'VERSION'</span>         =&gt; <span class="php-quote">'setVersion'</span>,
-    <span class="php-quote">'TYPE'</span>            =&gt; <span class="php-quote">'setType'</span>,
-    <span class="php-quote">'OG_MIN'</span>          =&gt; <span class="php-quote">'setOgMin'</span>,
-    <span class="php-quote">'OG_MAX'</span>          =&gt; <span class="php-quote">'setOgMax'</span>,
-    <span class="php-quote">'FG_MIN'</span>          =&gt; <span class="php-quote">'setFgMin'</span>,
-    <span class="php-quote">'FG_MAX'</span>          =&gt; <span class="php-quote">'setFgMax'</span>,
-    <span class="php-quote">'IBU_MIN'</span>         =&gt; <span class="php-quote">'setIbuMin'</span>,
-    <span class="php-quote">'IBU_MAX'</span>         =&gt; <span class="php-quote">'setIbuMax'</span>,
-    <span class="php-quote">'COLOR_MIN'</span>       =&gt; <span class="php-quote">'setColorMin'</span>,
-    <span class="php-quote">'COLOR_MAX'</span>       =&gt; <span class="php-quote">'setColorMax'</span>,
-    <span class="php-quote">'ABV_MIN'</span>         =&gt; <span class="php-quote">'setAbvMin'</span>,
-    <span class="php-quote">'ABV_MAX'</span>         =&gt; <span class="php-quote">'setAbvMax'</span>,
+    <span class="php-quote">'NAME'</span>            =&gt; <span class="php-quote">'getName'</span>,
+    <span class="php-quote">'VERSION'</span>         =&gt; <span class="php-quote">'getVersion'</span>,
+    <span class="php-quote">'CATEGORY'</span>        =&gt; <span class="php-quote">'getCategory'</span>,
+    <span class="php-quote">'CATEGORY_NUMBER'</span> =&gt; <span class="php-quote">'getCategoryNumber'</span>,
+    <span class="php-quote">'STYLE_LETTER'</span>    =&gt; <span class="php-quote">'getStyleLetter'</span>,
+    <span class="php-quote">'STYLE_GUIDE'</span>     =&gt; <span class="php-quote">'getStyleGuide'</span>,
+    <span class="php-quote">'TYPE'</span>            =&gt; <span class="php-quote">'getType'</span>,
+    <span class="php-quote">'OG_MIN'</span>          =&gt; <span class="php-quote">'getOgMin'</span>,
+    <span class="php-quote">'OG_MAX'</span>          =&gt; <span class="php-quote">'getOgMax'</span>,
+    <span class="php-quote">'FG_MIN'</span>          =&gt; <span class="php-quote">'getFgMin'</span>,
+    <span class="php-quote">'FG_MAX'</span>          =&gt; <span class="php-quote">'getFgMax'</span>,
+    <span class="php-quote">'IBU_MIN'</span>         =&gt; <span class="php-quote">'getIbuMin'</span>,
+    <span class="php-quote">'IBU_MAX'</span>         =&gt; <span class="php-quote">'getIbuMax'</span>,
+    <span class="php-quote">'COLOR_MIN'</span>       =&gt; <span class="php-quote">'getColorMin'</span>,
+    <span class="php-quote">'COLOR_MAX'</span>       =&gt; <span class="php-quote">'getColorMax'</span>,
+    <span class="php-quote">'ABV_MIN'</span>         =&gt; <span class="php-quote">'getAbvMin'</span>,
+    <span class="php-quote">'ABV_MAX'</span>         =&gt; <span class="php-quote">'getAbvMax'</span>,
 )</code></td>
 		<td class="description"><div>
 			<a href="#$simpleValues" class="anchor">#</a>
@@ -256,15 +270,15 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Generator.Style.html#41-52" title="Go to source code"><var>$optionalSimpleValues</var></a>
+				<a href="source-class-BeerXML.Generator.Style.html#41-53" title="Go to source code"><var>$optionalSimpleValues</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(
-    <span class="php-quote">'CARB_MIN'</span>        =&gt; <span class="php-quote">'setCarbMin'</span>,
-    <span class="php-quote">'CARB_MAX'</span>        =&gt; <span class="php-quote">'setCarbMax'</span>,
-    <span class="php-quote">'NOTES'</span>           =&gt; <span class="php-quote">'setNotes'</span>,
-    <span class="php-quote">'PROFILE'</span>         =&gt; <span class="php-quote">'setProfile'</span>,
-    <span class="php-quote">'INGREDIENTS'</span>     =&gt; <span class="php-quote">'setIngredients'</span>,
-    <span class="php-quote">'EXAMPLES'</span>        =&gt; <span class="php-quote">'setExamples'</span>,
+    <span class="php-quote">'CARB_MIN'</span>    =&gt; <span class="php-quote">'getCarbMin'</span>,
+    <span class="php-quote">'CARB_MAX'</span>    =&gt; <span class="php-quote">'getCarbMax'</span>,
+    <span class="php-quote">'NOTES'</span>       =&gt; <span class="php-quote">'getNotes'</span>,
+    <span class="php-quote">'PROFILE'</span>     =&gt; <span class="php-quote">'getProfile'</span>,
+    <span class="php-quote">'INGREDIENTS'</span> =&gt; <span class="php-quote">'getIngredients'</span>,
+    <span class="php-quote">'EXAMPLES'</span>    =&gt; <span class="php-quote">'getExamples'</span>,
 )</code></td>
 		<td class="description"><div>
 			<a href="#$optionalSimpleValues" class="anchor">#</a>

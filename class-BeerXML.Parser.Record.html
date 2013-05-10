@@ -7,7 +7,7 @@
 	<title>Class BeerXML\Parser\Record | php-beerxml</title>
 
 	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?273089376"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -23,6 +23,8 @@
 			<ul>
 				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
 				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
 				<li class="active"><a href="namespace-BeerXML.Parser.html">Parser</a>
@@ -49,11 +51,25 @@
 				<li><a href="class-BeerXML.Parser.Misc.html">Misc</a></li>
 				<li><a href="class-BeerXML.Parser.Recipe.html">Recipe</a></li>
 				<li class="active"><a href="class-BeerXML.Parser.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Parser.RecordFactory.html">RecordFactory</a></li>
 				<li><a href="class-BeerXML.Parser.Style.html">Style</a></li>
 				<li><a href="class-BeerXML.Parser.Water.html">Water</a></li>
 				<li><a href="class-BeerXML.Parser.Yeast.html">Yeast</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.IEquipmentWriter.html">IEquipmentWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableWriter.html">IFermentableWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IHopWriter.html">IHopWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileWriter.html">IMashProfileWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepWriter.html">IMashStepWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscWriter.html">IMiscWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeWriter.html">IRecipeWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleWriter.html">IStyleWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterWriter.html">IWaterWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastWriter.html">IYeastWriter</a></li>
+			</ul>
 
 
 
@@ -125,25 +141,25 @@
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Parser.Record.html#7-176" title="Go to source code">BeerXML/Parser/Record.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.Record.html#7-202" title="Go to source code">BeerXML/Parser/Record.php</a><br />
 	</div>
 
 
 
 	<table class="summary" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="createRecord" id="_createRecord">
+	<tr data-order="setRecordFactory" id="_setRecordFactory">
 
 		<td class="attributes"><code>
-			abstract protected 
+			 public 
 			
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_createRecord">#</a>
-		<code><a href="source-class-BeerXML.Parser.Record.html#85" title="Go to source code">createRecord</a>( )</code>
+		<a class="anchor" href="#_setRecordFactory">#</a>
+		<code><a href="source-class-BeerXML.Parser.Record.html#91-97" title="Go to source code">setRecordFactory</a>( <span><code><a href="class-BeerXML.Parser.RecordFactory.html">BeerXML\Parser\RecordFactory</a></code> <var>$recordFactory</var></span> )</code>
 
 		<div class="description short">
 			
@@ -153,6 +169,11 @@
 			
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$recordFactory</var></dt>
+					<dd><code><code><a href="class-BeerXML.Parser.RecordFactory.html">BeerXML\Parser\RecordFactory</a></code></code><br>$recordFactory</dd>
+				</dl></div>
 
 
 
@@ -172,7 +193,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setXmlReader">#</a>
-		<code><a href="source-class-BeerXML.Parser.Record.html#87-93" title="Go to source code">setXmlReader</a>( <span><code><a href="class-XMLReader.html">XMLReader</a></code> <var>$xmlReader</var></span> )</code>
+		<code><a href="source-class-BeerXML.Parser.Record.html#99-105" title="Go to source code">setXmlReader</a>( <span><code><a href="class-XMLReader.html">XMLReader</a></code> <var>$xmlReader</var></span> )</code>
 
 		<div class="description short">
 			
@@ -206,7 +227,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setXmlString">#</a>
-		<code><a href="source-class-BeerXML.Parser.Record.html#95-102" title="Go to source code">setXmlString</a>( <span>string <var>$xmlStr</var></span> )</code>
+		<code><a href="source-class-BeerXML.Parser.Record.html#107-114" title="Go to source code">setXmlString</a>( <span>string <var>$xmlStr</var></span> )</code>
 
 		<div class="description short">
 			
@@ -240,7 +261,36 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parse">#</a>
-		<code><a href="source-class-BeerXML.Parser.Record.html#104-131" title="Go to source code">parse</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.Record.html#116-143" title="Go to source code">parse</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createRecord" id="_createRecord">
+
+		<td class="attributes"><code>
+			abstract protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createRecord">#</a>
+		<code><a href="source-class-BeerXML.Parser.Record.html#145" title="Go to source code">createRecord</a>( )</code>
 
 		<div class="description short">
 			
@@ -269,7 +319,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setComplexPropertySet">#</a>
-		<code><a href="source-class-BeerXML.Parser.Record.html#133-159" title="Go to source code">setComplexPropertySet</a>( <span>mixed <var>$record</var></span> )</code>
+		<code><a href="source-class-BeerXML.Parser.Record.html#147-173" title="Go to source code">setComplexPropertySet</a>( <span>mixed <var>$record</var></span> )</code>
 
 		<div class="description short">
 			
@@ -311,7 +361,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setComplexProperty">#</a>
-		<code><a href="source-class-BeerXML.Parser.Record.html#162-175" title="Go to source code">setComplexProperty</a>( <span>mixed <var>$record</var></span> )</code>
+		<code><a href="source-class-BeerXML.Parser.Record.html#175-188" title="Go to source code">setComplexProperty</a>( <span>mixed <var>$record</var></span> )</code>
 
 		<div class="description short">
 			
@@ -331,6 +381,44 @@
 					<dd><code>mixed</code><br>$record</dd>
 				</dl></div>
 
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createRecordParser" id="_createRecordParser">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-BeerXML.Parser.Record.html">BeerXML\Parser\Record</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createRecordParser">#</a>
+		<code><a href="source-class-BeerXML.Parser.Record.html#190-201" title="Go to source code">createRecordParser</a>( <span>string <var>$class</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$class</var></dt>
+					<dd><code>string</code><br>$class</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.Record.html">BeerXML\Parser\Record</a></code></code><br />
+				</div>
 
 
 
@@ -399,6 +487,29 @@
 			</div>
 		</div></td>
 	</tr>
+	<tr data-order="recordFactory" id="$recordFactory">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-BeerXML.Parser.RecordFactory.html">BeerXML\Parser\RecordFactory</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-BeerXML.Parser.Record.html#16-19" title="Go to source code"><var>$recordFactory</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$recordFactory" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
 	<tr data-order="simpleProperties" id="$simpleProperties">
 		<td class="attributes"><code>
 			protected  
@@ -406,7 +517,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Parser.Record.html#16-20" title="Go to source code"><var>$simpleProperties</var></a>
+				<a href="source-class-BeerXML.Parser.Record.html#21-26" title="Go to source code"><var>$simpleProperties</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 		<td class="description"><div>
@@ -435,7 +546,7 @@ record class</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Parser.Record.html#22-35" title="Go to source code"><var>$complexProperties</var></a>
+				<a href="source-class-BeerXML.Parser.Record.html#28-41" title="Go to source code"><var>$complexProperties</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(
     <span class="php-quote">'STYLE'</span>     =&gt; <span class="php-keyword1">array</span>(
@@ -471,7 +582,7 @@ record class</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Parser.Record.html#37-83" title="Go to source code"><var>$complexPropertySets</var></a>
+				<a href="source-class-BeerXML.Parser.Record.html#43-89" title="Go to source code"><var>$complexPropertySets</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(
     <span class="php-quote">'HOPS'</span>         =&gt; <span class="php-keyword1">array</span>(

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class BeerXML\Parser\RecordFactory | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li class="active"><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Parser.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Parser.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Parser.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Parser.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Parser.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Parser.Record.html">Record</a></li>
+				<li class="active"><a href="class-BeerXML.Parser.RecordFactory.html">RecordFactory</a></li>
+				<li><a href="class-BeerXML.Parser.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Parser.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Parser.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.IEquipmentWriter.html">IEquipmentWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableWriter.html">IFermentableWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IHopWriter.html">IHopWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileWriter.html">IMashProfileWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepWriter.html">IMashStepWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscWriter.html">IMiscWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeWriter.html">IRecipeWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleWriter.html">IStyleWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterWriter.html">IWaterWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastWriter.html">IYeastWriter</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Parser.html" title="Summary of BeerXML\Parser"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class RecordFactory</h1>
+
+
+	<div class="description">
+	
+<p>Factory for record classes. \BeerXML\Parser uses this (or a subclass of this)
+to create objects to store the data it finds.</p>
+
+<p>If you want \BeerXML\Parser to write into different classes, implement the
+Writer interfaces in this directory in your objects, subclass this Factory class
+so that it returns the objects you want, and then pass it into
+\BeerXML\Parser</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
+		<b>Package:</b> BeerXML\Parser<br />
+
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.RecordFactory.html#6-97" title="Go to source code">BeerXML/Parser/RecordFactory.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getEquipment" id="_getEquipment">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IEquipmentWriter.html">BeerXML\Parser\IEquipmentWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEquipment">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#18-24" title="Go to source code">getEquipment</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IEquipmentWriter.html">BeerXML\Parser\IEquipmentWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFermentable" id="_getFermentable">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IFermentableWriter.html">BeerXML\Parser\IFermentableWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFermentable">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#26-32" title="Go to source code">getFermentable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IFermentableWriter.html">BeerXML\Parser\IFermentableWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHop" id="_getHop">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IHopWriter.html">BeerXML\Parser\IHopWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHop">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#34-40" title="Go to source code">getHop</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IHopWriter.html">BeerXML\Parser\IHopWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMashProfile" id="_getMashProfile">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IMashProfileWriter.html">BeerXML\Parser\IMashProfileWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMashProfile">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#42-48" title="Go to source code">getMashProfile</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IMashProfileWriter.html">BeerXML\Parser\IMashProfileWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMashStep" id="_getMashStep">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IMashStepWriter.html">BeerXML\Parser\IMashStepWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMashStep">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#50-56" title="Go to source code">getMashStep</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IMashStepWriter.html">BeerXML\Parser\IMashStepWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMisc" id="_getMisc">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IMiscWriter.html">BeerXML\Parser\IMiscWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMisc">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#58-64" title="Go to source code">getMisc</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IMiscWriter.html">BeerXML\Parser\IMiscWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRecipe" id="_getRecipe">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IRecipeWriter.html">BeerXML\Parser\IRecipeWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRecipe">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#66-72" title="Go to source code">getRecipe</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IRecipeWriter.html">BeerXML\Parser\IRecipeWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStyle" id="_getStyle">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IStyleWriter.html">BeerXML\Parser\IStyleWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStyle">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#74-80" title="Go to source code">getStyle</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IStyleWriter.html">BeerXML\Parser\IStyleWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWater" id="_getWater">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IWaterWriter.html">BeerXML\Parser\IWaterWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWater">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#82-88" title="Go to source code">getWater</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IWaterWriter.html">BeerXML\Parser\IWaterWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getYeast" id="_getYeast">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Parser.IYeastWriter.html">BeerXML\Parser\IYeastWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getYeast">#</a>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#90-96" title="Go to source code">getYeast</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IYeastWriter.html">BeerXML\Parser\IYeastWriter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

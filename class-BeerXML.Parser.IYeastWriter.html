@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BeerXML\Parser\IYeastWriter | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li class="active"><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Parser.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Parser.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Parser.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Parser.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Parser.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Parser.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Parser.RecordFactory.html">RecordFactory</a></li>
+				<li><a href="class-BeerXML.Parser.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Parser.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Parser.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.IEquipmentWriter.html">IEquipmentWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableWriter.html">IFermentableWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IHopWriter.html">IHopWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileWriter.html">IMashProfileWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepWriter.html">IMashStepWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscWriter.html">IMiscWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeWriter.html">IRecipeWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleWriter.html">IStyleWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterWriter.html">IWaterWriter</a></li>
+				<li class="active"><a href="class-BeerXML.Parser.IYeastWriter.html">IYeastWriter</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Parser.html" title="Summary of BeerXML\Parser"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IYeastWriter</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Record.Yeast.html">BeerXML\Record\Yeast</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.IYeastWriter.html#7-130" title="Go to source code">BeerXML/Parser/IYeastWriter.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setAddToSecondary" id="_setAddToSecondary">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAddToSecondary">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#10-17" title="Go to source code">setAddToSecondary</a>( <span>boolean <var>$addToSecondary</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Flag denoting that this yeast was added for a secondary (or later)
+fermentation as opposed to the primary fermentation. Useful if one uses two or
+more yeast strains for a single brew (eg: Lambic). Default value is FALSE.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Flag denoting that this yeast was added for a secondary (or later)
+fermentation as opposed to the primary fermentation. Useful if one uses two or
+more yeast strains for a single brew (eg: Lambic). Default value is FALSE.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$addToSecondary</var></dt>
+					<dd><code>boolean</code><br>$addToSecondary</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAmount" id="_setAmount">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAmount">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#19-25" title="Go to source code">setAmount</a>( <span>number <var>$amount</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The amount of yeast, measured in liters. For a starter this is the size of
+the starter. If the flag AMOUNT_IS_WEIGHT is set to TRUE then this measurement
+is in kilograms and not liters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of yeast, measured in liters. For a starter this is the size of
+the starter. If the flag AMOUNT_IS_WEIGHT is set to TRUE then this measurement
+is in kilograms and not liters.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$amount</var></dt>
+					<dd><code>number</code><br>$amount</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAmountIsWeight" id="_setAmountIsWeight">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAmountIsWeight">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#27-30" title="Go to source code">setAmountIsWeight</a>( <span>boolean <var>$amountIsWeight</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$amountIsWeight</var></dt>
+					<dd><code>boolean</code><br>$amountIsWeight</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAttenuation" id="_setAttenuation">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAttenuation">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#32-37" title="Go to source code">setAttenuation</a>( <span>number <var>$attenuation</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Average attenuation for this yeast strain.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Average attenuation for this yeast strain.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attenuation</var></dt>
+					<dd><code>number</code><br>$attenuation</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBestFor" id="_setBestFor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBestFor">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#39-44" title="Go to source code">setBestFor</a>( <span>string <var>$bestFor</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Styles or types of beer this yeast strain is best suited for.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Styles or types of beer this yeast strain is best suited for.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bestFor</var></dt>
+					<dd><code>string</code><br>$bestFor</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFlocculation" id="_setFlocculation">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFlocculation">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#46-51" title="Go to source code">setFlocculation</a>( <span>string <var>$flocculation</var></span> )</code>
+
+		<div class="description short">
+			
+<p>May be "Low", "Medium", "High" or "Very High"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be "Low", "Medium", "High" or "Very High"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$flocculation</var></dt>
+					<dd><code>string</code><br>$flocculation</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setForm" id="_setForm">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setForm">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#53-58" title="Go to source code">setForm</a>( <span>string <var>$form</var></span> )</code>
+
+		<div class="description short">
+			
+<p>May be "Liquid", "Dry", "Slant" or "Culture"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be "Liquid", "Dry", "Slant" or "Culture"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$form</var></dt>
+					<dd><code>string</code><br>$form</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLaboratory" id="_setLaboratory">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLaboratory">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#60-65" title="Go to source code">setLaboratory</a>( <span>string <var>$laboratory</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The name of the laboratory that produced the yeast.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The name of the laboratory that produced the yeast.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$laboratory</var></dt>
+					<dd><code>string</code><br>$laboratory</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMaxReuse" id="_setMaxReuse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMaxReuse">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#67-72" title="Go to source code">setMaxReuse</a>( <span>integer <var>$maxReuse</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Recommended of times this yeast can be reused (recultured from a previous
+batch)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Recommended of times this yeast can be reused (recultured from a previous
+batch)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$maxReuse</var></dt>
+					<dd><code>integer</code><br>$maxReuse</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMaxTemperature" id="_setMaxTemperature">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMaxTemperature">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#74-79" title="Go to source code">setMaxTemperature</a>( <span>number <var>$maxTemperature</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The maximum recommended temperature for fermenting this yeast strain in
+Celsius.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The maximum recommended temperature for fermenting this yeast strain in
+Celsius.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$maxTemperature</var></dt>
+					<dd><code>number</code><br>$maxTemperature</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMinTemperature" id="_setMinTemperature">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMinTemperature">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#81-86" title="Go to source code">setMinTemperature</a>( <span>number <var>$minTemperature</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The minimum recommended temperature for fermenting this yeast strain in
+degrees Celsius.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The minimum recommended temperature for fermenting this yeast strain in
+degrees Celsius.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$minTemperature</var></dt>
+					<dd><code>number</code><br>$minTemperature</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setName" id="_setName">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setName">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#88-93" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Name of the yeast.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Name of the yeast.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setNotes" id="_setNotes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setNotes">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#95-100" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Notes on this yeast strain. May be a multiline entry.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Notes on this yeast strain. May be a multiline entry.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$notes</var></dt>
+					<dd><code>string</code><br>$notes</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setProductId" id="_setProductId">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setProductId">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#102-107" title="Go to source code">setProductId</a>( <span>string <var>$productId</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The manufacturer’s product ID label or number that identifies this
+particular strain of yeast.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The manufacturer’s product ID label or number that identifies this
+particular strain of yeast.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$productId</var></dt>
+					<dd><code>string</code><br>$productId</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTimesCultured" id="_setTimesCultured">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTimesCultured">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#109-115" title="Go to source code">setTimesCultured</a>( <span>integer <var>$timesCultured</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Number of times this yeast has been reused as a harvested culture. This
+number should be zero if this is a product directly from the manufacturer.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Number of times this yeast has been reused as a harvested culture. This
+number should be zero if this is a product directly from the manufacturer.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$timesCultured</var></dt>
+					<dd><code>integer</code><br>$timesCultured</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setType" id="_setType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setType">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#117-122" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
+
+		<div class="description short">
+			
+<p>May be "Ale", "Lager", "Wheat", "Wine" or "Champagne"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be "Ale", "Lager", "Wheat", "Wine" or "Champagne"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code><br>$type</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setVersion" id="_setVersion">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setVersion">#</a>
+		<code><a href="source-class-BeerXML.Parser.IYeastWriter.html#124-129" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Version of the standard. Should be "1" for this version.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Version of the standard. Should be "1" for this version.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$version</var></dt>
+					<dd><code>integer</code><br>$version</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

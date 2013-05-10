@@ -7,7 +7,7 @@
 	<title>Class BeerXML\Generator\Recipe | php-beerxml</title>
 
 	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?273089376"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -23,6 +23,8 @@
 			<ul>
 				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
 				<li class="active"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
 				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
@@ -54,6 +56,19 @@
 				<li><a href="class-BeerXML.Generator.Yeast.html">Yeast</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Generator.IEquipmentReader.html">IEquipmentReader</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentableReader.html">IFermentableReader</a></li>
+				<li><a href="class-BeerXML.Generator.IHopReader.html">IHopReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfileReader.html">IMashProfileReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStepReader.html">IMashStepReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMiscReader.html">IMiscReader</a></li>
+				<li><a href="class-BeerXML.Generator.IRecipeReader.html">IRecipeReader</a></li>
+				<li><a href="class-BeerXML.Generator.IStyleReader.html">IStyleReader</a></li>
+				<li><a href="class-BeerXML.Generator.IWaterReader.html">IWaterReader</a></li>
+				<li><a href="class-BeerXML.Generator.IYeastReader.html">IYeastReader</a></li>
+			</ul>
 
 
 
@@ -126,7 +141,7 @@
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Generator.html">Generator</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Generator.Recipe.html#7-82" title="Go to source code">BeerXML/Generator/Recipe.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Generator.Recipe.html#7-92" title="Go to source code">BeerXML/Generator/Recipe.php</a><br />
 	</div>
 
 
@@ -144,7 +159,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_additionalFields">#</a>
-		<code><a href="source-class-BeerXML.Generator.Recipe.html#66-79" title="Go to source code">additionalFields</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.Recipe.html#72-89" title="Go to source code">additionalFields</a>( )</code>
 
 		<div class="description short">
 			
@@ -246,7 +261,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Generator.Recipe.html#16-27" title="Go to source code"><var>$simpleValues</var></a>
+				<a href="source-class-BeerXML.Generator.Recipe.html#16-28" title="Go to source code"><var>$simpleValues</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(
     <span class="php-quote">'NAME'</span>       =&gt; <span class="php-quote">'getName'</span>,
@@ -280,7 +295,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Generator.Recipe.html#29-56" title="Go to source code"><var>$optionalSimpleValues</var></a>
+				<a href="source-class-BeerXML.Generator.Recipe.html#30-57" title="Go to source code"><var>$optionalSimpleValues</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(
     <span class="php-quote">'ASST_BREWER'</span>         =&gt; <span class="php-quote">'getAsstBrewer'</span>,
@@ -300,7 +315,6 @@
     <span class="php-quote">'AGE_TEMP'</span>            =&gt; <span class="php-quote">'getAgeTemp'</span>,
     <span class="php-quote">'DATE'</span>                =&gt; <span class="php-quote">'getDate'</span>,
     <span class="php-quote">'CARBONATION'</span>         =&gt; <span class="php-quote">'getCarbonation'</span>,
-    <span class="php-quote">'FORCED_CARBONATION'</span>  =&gt; <span class="php-quote">'getForcedCarbonation'</span>,
     <span class="php-quote">'PRIMING_SUGAR_NAME'</span>  =&gt; <span class="php-quote">'getPrimingSugarName'</span>,
     <span class="php-quote">'CARBONATION_TEMP'</span>    =&gt; <span class="php-quote">'getCarbonationTemp'</span>,
     <span class="php-quote">'PRIMING_SUGAR_EQUIV'</span> =&gt; <span class="php-quote">'getPrimingSugarEquiv'</span>,
@@ -323,6 +337,32 @@
 			</div>
 		</div></td>
 	</tr>
+	<tr data-order="complexValues" id="$complexValues">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-BeerXML.Generator.Recipe.html#59-62" title="Go to source code"><var>$complexValues</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+    <span class="php-quote">'BeerXML\Generator\Style'</span>       =&gt; <span class="php-quote">'getStyle'</span>,
+    <span class="php-quote">'BeerXML\Generator\MashProfile'</span> =&gt; <span class="php-quote">'getMash'</span>,
+)</code></td>
+		<td class="description"><div>
+			<a href="#$complexValues" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
 	<tr data-order="complexValueSets" id="$complexValueSets">
 		<td class="attributes"><code>
 			protected  
@@ -330,7 +370,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Generator.Recipe.html#58-64" title="Go to source code"><var>$complexValueSets</var></a>
+				<a href="source-class-BeerXML.Generator.Recipe.html#64-70" title="Go to source code"><var>$complexValueSets</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(
     <span class="php-quote">'HOPS'</span>         =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'generator'</span> =&gt; <span class="php-quote">'BeerXML\Generator\Hop'</span>, <span class="php-quote">'values'</span> =&gt; <span class="php-quote">'getHops'</span>),
@@ -364,7 +404,6 @@
 	<caption>Properties inherited from <a href="class-BeerXML.Generator.Record.html#properties">BeerXML\Generator\Record</a></caption>
 	<tr>
 		<td><code>
-			<a href="class-BeerXML.Generator.Record.html#$complexValues"><var>$complexValues</var></a>, 
 			<a href="class-BeerXML.Generator.Record.html#$xmlWriter"><var>$xmlWriter</var></a>
 		</code></td>
 	</tr>

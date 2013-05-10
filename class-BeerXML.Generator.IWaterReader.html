@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BeerXML\Generator\IWaterReader | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li class="active"><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Generator.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Generator.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Generator.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Generator.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Generator.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Generator.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Generator.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Generator.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Generator.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Generator.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Generator.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Generator.IEquipmentReader.html">IEquipmentReader</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentableReader.html">IFermentableReader</a></li>
+				<li><a href="class-BeerXML.Generator.IHopReader.html">IHopReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfileReader.html">IMashProfileReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStepReader.html">IMashStepReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMiscReader.html">IMiscReader</a></li>
+				<li><a href="class-BeerXML.Generator.IRecipeReader.html">IRecipeReader</a></li>
+				<li><a href="class-BeerXML.Generator.IStyleReader.html">IStyleReader</a></li>
+				<li class="active"><a href="class-BeerXML.Generator.IWaterReader.html">IWaterReader</a></li>
+				<li><a href="class-BeerXML.Generator.IYeastReader.html">IYeastReader</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Generator.html" title="Summary of BeerXML\Generator"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IWaterReader</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Record.Water.html">BeerXML\Record\Water</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Generator.html">Generator</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BeerXML.Generator.IWaterReader.html#7-84" title="Go to source code">BeerXML/Generator/IWaterReader.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getAmount" id="_getAmount">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAmount">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#10-15" title="Go to source code">getAmount</a>( )</code>
+
+		<div class="description short">
+			
+<p>Volume of water to use in a recipe in liters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Volume of water to use in a recipe in liters.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBicarbonate" id="_getBicarbonate">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBicarbonate">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#17-22" title="Go to source code">getBicarbonate</a>( )</code>
+
+		<div class="description short">
+			
+<p>The amount of bicarbonate (HCO3) in parts per million.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of bicarbonate (HCO3) in parts per million.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCalcium" id="_getCalcium">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCalcium">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#24-29" title="Go to source code">getCalcium</a>( )</code>
+
+		<div class="description short">
+			
+<p>The amount of calcium (Ca) in parts per million.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of calcium (Ca) in parts per million.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getChloride" id="_getChloride">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getChloride">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#31-34" title="Go to source code">getChloride</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMagnesium" id="_getMagnesium">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMagnesium">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#36-41" title="Go to source code">getMagnesium</a>( )</code>
+
+		<div class="description short">
+			
+<p>The amount of Magnesium (Mg) in parts per million.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of Magnesium (Mg) in parts per million.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#43-48" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Name of the water profile – usually the city and country of the water
+profile.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Name of the water profile – usually the city and country of the water
+profile.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNotes" id="_getNotes">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNotes">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#50-55" title="Go to source code">getNotes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Notes about the water profile. May be multiline.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Notes about the water profile. May be multiline.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPH" id="_getPH">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPH">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#57-62" title="Go to source code">getPH</a>( )</code>
+
+		<div class="description short">
+			
+<p>The PH of the water.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The PH of the water.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSodium" id="_getSodium">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSodium">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#64-69" title="Go to source code">getSodium</a>( )</code>
+
+		<div class="description short">
+			
+<p>The amount of Sodium (Na) in parts per million.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of Sodium (Na) in parts per million.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSulfate" id="_getSulfate">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSulfate">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#71-76" title="Go to source code">getSulfate</a>( )</code>
+
+		<div class="description short">
+			
+<p>The amount of Sulfate (SO4) in parts per million.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of Sulfate (SO4) in parts per million.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVersion" id="_getVersion">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVersion">#</a>
+		<code><a href="source-class-BeerXML.Generator.IWaterReader.html#78-83" title="Go to source code">getVersion</a>( )</code>
+
+		<div class="description short">
+			
+<p>Version of the water record. Should always be "1" for this version of the XML
+standard.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Version of the water record. Should always be "1" for this version of the XML
+standard.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

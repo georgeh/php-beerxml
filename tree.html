@@ -7,7 +7,7 @@
 	<title>Tree | php-beerxml</title>
 
 	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?273089376"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -23,6 +23,8 @@
 			<ul>
 				<li><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
 				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
 				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
@@ -62,6 +64,7 @@
 				<li><a href="class-BeerXML.Parser.Misc.html">BeerXML\Parser\Misc</a></li>
 				<li><a href="class-BeerXML.Parser.Recipe.html">BeerXML\Parser\Recipe</a></li>
 				<li><a href="class-BeerXML.Parser.Record.html">BeerXML\Parser\Record</a></li>
+				<li><a href="class-BeerXML.Parser.RecordFactory.html">BeerXML\Parser\RecordFactory</a></li>
 				<li><a href="class-BeerXML.Parser.Style.html">BeerXML\Parser\Style</a></li>
 				<li><a href="class-BeerXML.Parser.Water.html">BeerXML\Parser\Water</a></li>
 				<li><a href="class-BeerXML.Parser.Yeast.html">BeerXML\Parser\Yeast</a></li>
@@ -81,12 +84,32 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-BeerXML.Record.RecipeReaderInterface.html">BeerXML\Record\RecipeReaderInterface</a></li>
+				<li><a href="class-BeerXML.Generator.IEquipmentReader.html">BeerXML\Generator\IEquipmentReader</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentableReader.html">BeerXML\Generator\IFermentableReader</a></li>
+				<li><a href="class-BeerXML.Generator.IHopReader.html">BeerXML\Generator\IHopReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfileReader.html">BeerXML\Generator\IMashProfileReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStepReader.html">BeerXML\Generator\IMashStepReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMiscReader.html">BeerXML\Generator\IMiscReader</a></li>
+				<li><a href="class-BeerXML.Generator.IRecipeReader.html">BeerXML\Generator\IRecipeReader</a></li>
+				<li><a href="class-BeerXML.Generator.IStyleReader.html">BeerXML\Generator\IStyleReader</a></li>
+				<li><a href="class-BeerXML.Generator.IWaterReader.html">BeerXML\Generator\IWaterReader</a></li>
+				<li><a href="class-BeerXML.Generator.IYeastReader.html">BeerXML\Generator\IYeastReader</a></li>
+				<li><a href="class-BeerXML.Parser.IEquipmentWriter.html">BeerXML\Parser\IEquipmentWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableWriter.html">BeerXML\Parser\IFermentableWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IHopWriter.html">BeerXML\Parser\IHopWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileWriter.html">BeerXML\Parser\IMashProfileWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepWriter.html">BeerXML\Parser\IMashStepWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscWriter.html">BeerXML\Parser\IMiscWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeWriter.html">BeerXML\Parser\IRecipeWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleWriter.html">BeerXML\Parser\IStyleWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterWriter.html">BeerXML\Parser\IWaterWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastWriter.html">BeerXML\Parser\IYeastWriter</a></li>
 			</ul>
 
 
 			<h3>Exceptions</h3>
 			<ul>
+				<li><a href="class-BeerXML.Exception.InvalidRecord.html">BeerXML\Exception\InvalidRecord</a></li>
 				<li><a href="class-Exception.html">Exception</a></li>
 			</ul>
 
@@ -299,7 +322,18 @@
 
 				</ul></li>
 
+			<li><div class="notlast"><a href="class-BeerXML.Parser.RecordFactory.html"><span>BeerXML\Parser\RecordFactory</span></a>
+			
+			
+			</div>
+
+				</li>
+
 			<li><div class="notlast"><a href="class-BeerXML.Record.Equipment.html"><span>BeerXML\Record\Equipment</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IEquipmentReader.html"><span>BeerXML\Generator\IEquipmentReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IEquipmentWriter.html"><span>BeerXML\Parser\IEquipmentWriter</span></a>
 			
 			
 			</div>
@@ -307,6 +341,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.Fermentable.html"><span>BeerXML\Record\Fermentable</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IFermentableReader.html"><span>BeerXML\Generator\IFermentableReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IFermentableWriter.html"><span>BeerXML\Parser\IFermentableWriter</span></a>
 			
 			
 			</div>
@@ -314,6 +352,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.Hop.html"><span>BeerXML\Record\Hop</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IHopReader.html"><span>BeerXML\Generator\IHopReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IHopWriter.html"><span>BeerXML\Parser\IHopWriter</span></a>
 			
 			
 			</div>
@@ -321,6 +363,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.MashProfile.html"><span>BeerXML\Record\MashProfile</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IMashProfileReader.html"><span>BeerXML\Generator\IMashProfileReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IMashProfileWriter.html"><span>BeerXML\Parser\IMashProfileWriter</span></a>
 			
 			
 			</div>
@@ -328,6 +374,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.MashStep.html"><span>BeerXML\Record\MashStep</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IMashStepReader.html"><span>BeerXML\Generator\IMashStepReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IMashStepWriter.html"><span>BeerXML\Parser\IMashStepWriter</span></a>
 			
 			
 			</div>
@@ -335,6 +385,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.Misc.html"><span>BeerXML\Record\Misc</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IMiscReader.html"><span>BeerXML\Generator\IMiscReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IMiscWriter.html"><span>BeerXML\Parser\IMiscWriter</span></a>
 			
 			
 			</div>
@@ -342,6 +396,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.Recipe.html"><span>BeerXML\Record\Recipe</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IRecipeReader.html"><span>BeerXML\Generator\IRecipeReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IRecipeWriter.html"><span>BeerXML\Parser\IRecipeWriter</span></a>
 			
 			
 			</div>
@@ -349,6 +407,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.Style.html"><span>BeerXML\Record\Style</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IStyleReader.html"><span>BeerXML\Generator\IStyleReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IStyleWriter.html"><span>BeerXML\Parser\IStyleWriter</span></a>
 			
 			
 			</div>
@@ -356,6 +418,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.Water.html"><span>BeerXML\Record\Water</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IWaterReader.html"><span>BeerXML\Generator\IWaterReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IWaterWriter.html"><span>BeerXML\Parser\IWaterWriter</span></a>
 			
 			
 			</div>
@@ -363,6 +429,10 @@
 				</li>
 
 			<li><div class="notlast"><a href="class-BeerXML.Record.Yeast.html"><span>BeerXML\Record\Yeast</span></a>
+			 implements 
+				<a href="class-BeerXML.Generator.IYeastReader.html"><span>BeerXML\Generator\IYeastReader</span></a>, 
+			
+				<a href="class-BeerXML.Parser.IYeastWriter.html"><span>BeerXML\Parser\IYeastWriter</span></a>
 			
 			
 			</div>
@@ -390,7 +460,140 @@
 <div class="tree">
 	<ul>
 
-			<li class="last"><div class="last"><a href="class-BeerXML.Record.RecipeReaderInterface.html"><span>BeerXML\Record\RecipeReaderInterface</span></a>
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IEquipmentReader.html"><span>BeerXML\Generator\IEquipmentReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IFermentableReader.html"><span>BeerXML\Generator\IFermentableReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IHopReader.html"><span>BeerXML\Generator\IHopReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IMashProfileReader.html"><span>BeerXML\Generator\IMashProfileReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IMashStepReader.html"><span>BeerXML\Generator\IMashStepReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IMiscReader.html"><span>BeerXML\Generator\IMiscReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IRecipeReader.html"><span>BeerXML\Generator\IRecipeReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IStyleReader.html"><span>BeerXML\Generator\IStyleReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IWaterReader.html"><span>BeerXML\Generator\IWaterReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Generator.IYeastReader.html"><span>BeerXML\Generator\IYeastReader</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IEquipmentWriter.html"><span>BeerXML\Parser\IEquipmentWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IFermentableWriter.html"><span>BeerXML\Parser\IFermentableWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IHopWriter.html"><span>BeerXML\Parser\IHopWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IMashProfileWriter.html"><span>BeerXML\Parser\IMashProfileWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IMashStepWriter.html"><span>BeerXML\Parser\IMashStepWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IMiscWriter.html"><span>BeerXML\Parser\IMiscWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IRecipeWriter.html"><span>BeerXML\Parser\IRecipeWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IStyleWriter.html"><span>BeerXML\Parser\IStyleWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-BeerXML.Parser.IWaterWriter.html"><span>BeerXML\Parser\IWaterWriter</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-BeerXML.Parser.IYeastWriter.html"><span>BeerXML\Parser\IYeastWriter</span></a>
 			
 			
 			</div>
@@ -410,8 +613,15 @@
 			
 			</div>
 
+				<ul>
+
+			<li class="last"><div class="last"><a href="class-BeerXML.Exception.InvalidRecord.html"><span>BeerXML\Exception\InvalidRecord</span></a>
+			
+			
+			</div>
+
 		</li>
-		
+		</ul></li>
 	</ul>
 </div>
 </div>

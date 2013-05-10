@@ -8,7 +8,7 @@
 	<title>File BeerXML/Generator/Equipment.php | php-beerxml</title>
 
 	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?273089376"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -24,6 +24,8 @@
 			<ul>
 				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
 				<li class="active"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
 				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
@@ -55,6 +57,19 @@
 				<li><a href="class-BeerXML.Generator.Yeast.html">Yeast</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Generator.IEquipmentReader.html">IEquipmentReader</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentableReader.html">IFermentableReader</a></li>
+				<li><a href="class-BeerXML.Generator.IHopReader.html">IHopReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfileReader.html">IMashProfileReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStepReader.html">IMashStepReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMiscReader.html">IMiscReader</a></li>
+				<li><a href="class-BeerXML.Generator.IRecipeReader.html">IRecipeReader</a></li>
+				<li><a href="class-BeerXML.Generator.IStyleReader.html">IStyleReader</a></li>
+				<li><a href="class-BeerXML.Generator.IWaterReader.html">IWaterReader</a></li>
+				<li><a href="class-BeerXML.Generator.IYeastReader.html">IYeastReader</a></li>
+			</ul>
 
 
 
@@ -112,38 +127,39 @@
 </span><span id="15" class="l"><a class="l" href="#15">15: </a>
 </span><span id="16" class="l"><a class="l" href="#16">16: </a>    <span class="php-comment">/**
 </span></span><span id="17" class="l"><a class="l" href="#17">17: </a><span class="php-comment">     * &lt;TAG&gt; =&gt; getterMethod
-</span></span><span id="18" class="l"><a class="l" href="#18">18: </a><span class="php-comment">     * @var array
-</span></span><span id="19" class="l"><a class="l" href="#19">19: </a><span class="php-comment">     */</span>
-</span><span id="20" class="l"><a class="l" href="#20">20: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$simpleValues" href="#$simpleValues">$simpleValues</a></span> = <span class="php-keyword1">array</span>(
-</span><span id="21" class="l"><a class="l" href="#21">21: </a>        <span class="php-quote">'NAME'</span>       =&gt; <span class="php-quote">'getName'</span>,
-</span><span id="22" class="l"><a class="l" href="#22">22: </a>        <span class="php-quote">'VERSION'</span>    =&gt; <span class="php-quote">'getVersion'</span>,
-</span><span id="23" class="l"><a class="l" href="#23">23: </a>        <span class="php-quote">'BATCH_SIZE'</span> =&gt; <span class="php-quote">'getBatchSize'</span>,
-</span><span id="24" class="l"><a class="l" href="#24">24: </a>        <span class="php-quote">'BOIL_SIZE'</span>  =&gt; <span class="php-quote">'getBoilSize'</span>,
-</span><span id="25" class="l"><a class="l" href="#25">25: </a>    );
-</span><span id="26" class="l"><a class="l" href="#26">26: </a>
-</span><span id="27" class="l"><a class="l" href="#27">27: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$optionalSimpleValues" href="#$optionalSimpleValues">$optionalSimpleValues</a></span> = <span class="php-keyword1">array</span>(
-</span><span id="28" class="l"><a class="l" href="#28">28: </a>        <span class="php-quote">'BOIL_TIME'</span>         =&gt; <span class="php-quote">'getBoilTime'</span>,
-</span><span id="29" class="l"><a class="l" href="#29">29: </a>        <span class="php-quote">'TUN_VOLUME'</span>        =&gt; <span class="php-quote">'getTunVolume'</span>,
+</span></span><span id="18" class="l"><a class="l" href="#18">18: </a><span class="php-comment">     *
+</span></span><span id="19" class="l"><a class="l" href="#19">19: </a><span class="php-comment">     * @var array
+</span></span><span id="20" class="l"><a class="l" href="#20">20: </a><span class="php-comment">     */</span>
+</span><span id="21" class="l"><a class="l" href="#21">21: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$simpleValues" href="#$simpleValues">$simpleValues</a></span> = <span class="php-keyword1">array</span>(
+</span><span id="22" class="l"><a class="l" href="#22">22: </a>        <span class="php-quote">'NAME'</span>       =&gt; <span class="php-quote">'getName'</span>,
+</span><span id="23" class="l"><a class="l" href="#23">23: </a>        <span class="php-quote">'VERSION'</span>    =&gt; <span class="php-quote">'getVersion'</span>,
+</span><span id="24" class="l"><a class="l" href="#24">24: </a>        <span class="php-quote">'BATCH_SIZE'</span> =&gt; <span class="php-quote">'getBatchSize'</span>,
+</span><span id="25" class="l"><a class="l" href="#25">25: </a>        <span class="php-quote">'BOIL_SIZE'</span>  =&gt; <span class="php-quote">'getBoilSize'</span>,
+</span><span id="26" class="l"><a class="l" href="#26">26: </a>    );
+</span><span id="27" class="l"><a class="l" href="#27">27: </a>
+</span><span id="28" class="l"><a class="l" href="#28">28: </a>    <span class="php-keyword1">protected</span> <span class="php-var"><a id="$optionalSimpleValues" href="#$optionalSimpleValues">$optionalSimpleValues</a></span> = <span class="php-keyword1">array</span>(
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>        <span class="php-quote">'BOIL_TIME'</span>         =&gt; <span class="php-quote">'getBoilTime'</span>,
 </span><span id="30" class="l"><a class="l" href="#30">30: </a>        <span class="php-quote">'TUN_VOLUME'</span>        =&gt; <span class="php-quote">'getTunVolume'</span>,
-</span><span id="31" class="l"><a class="l" href="#31">31: </a>        <span class="php-quote">'TUN_WEIGHT'</span>        =&gt; <span class="php-quote">'getTunWeight'</span>,
-</span><span id="32" class="l"><a class="l" href="#32">32: </a>        <span class="php-quote">'TUN_SPECIFIC_HEAT'</span> =&gt; <span class="php-quote">'getTunSpecificHeat'</span>,
-</span><span id="33" class="l"><a class="l" href="#33">33: </a>        <span class="php-quote">'TOP_UP_WATER'</span>      =&gt; <span class="php-quote">'getTopUpWater'</span>,
-</span><span id="34" class="l"><a class="l" href="#34">34: </a>        <span class="php-quote">'TRUB_CHILLER_LOSS'</span> =&gt; <span class="php-quote">'getTrubChillerLoss'</span>,
-</span><span id="35" class="l"><a class="l" href="#35">35: </a>        <span class="php-quote">'EVAP_RATE'</span>         =&gt; <span class="php-quote">'getEvapRate'</span>,
-</span><span id="36" class="l"><a class="l" href="#36">36: </a>        <span class="php-quote">'LAUTER_DEADSPACE'</span>  =&gt; <span class="php-quote">'getLauterDeadspace'</span>,
-</span><span id="37" class="l"><a class="l" href="#37">37: </a>        <span class="php-quote">'TOP_UP_KETTLE'</span>     =&gt; <span class="php-quote">'getTopUpKettle'</span>,
-</span><span id="38" class="l"><a class="l" href="#38">38: </a>        <span class="php-quote">'HOP_UTILIZATION'</span>   =&gt; <span class="php-quote">'getHopUtilization'</span>,
-</span><span id="39" class="l"><a class="l" href="#39">39: </a>        <span class="php-quote">'NOTES'</span>             =&gt; <span class="php-quote">'getNotes'</span>,
-</span><span id="40" class="l"><a class="l" href="#40">40: </a>    );
-</span><span id="41" class="l"><a class="l" href="#41">41: </a>
-</span><span id="42" class="l"><a class="l" href="#42">42: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_additionalFields" href="#_additionalFields">additionalFields</a>()
-</span><span id="43" class="l"><a class="l" href="#43">43: </a>    {
-</span><span id="44" class="l"><a class="l" href="#44">44: </a>        <span class="php-var">$this</span>-&gt;xmlWriter-&gt;writeElement(<span class="php-quote">'CALC_BOIL_VOLUME'</span>, <span class="php-var">$this</span>-&gt;boolToString(<span class="php-var">$this</span>-&gt;record-&gt;getCalcBoilVolume()));
-</span><span id="45" class="l"><a class="l" href="#45">45: </a>
-</span><span id="46" class="l"><a class="l" href="#46">46: </a>        <span class="php-keyword1">return</span> parent::additionalFields();
-</span><span id="47" class="l"><a class="l" href="#47">47: </a>    }
-</span><span id="48" class="l"><a class="l" href="#48">48: </a>
-</span><span id="49" class="l"><a class="l" href="#49">49: </a></span>}</code></pre>
+</span><span id="31" class="l"><a class="l" href="#31">31: </a>        <span class="php-quote">'TUN_VOLUME'</span>        =&gt; <span class="php-quote">'getTunVolume'</span>,
+</span><span id="32" class="l"><a class="l" href="#32">32: </a>        <span class="php-quote">'TUN_WEIGHT'</span>        =&gt; <span class="php-quote">'getTunWeight'</span>,
+</span><span id="33" class="l"><a class="l" href="#33">33: </a>        <span class="php-quote">'TUN_SPECIFIC_HEAT'</span> =&gt; <span class="php-quote">'getTunSpecificHeat'</span>,
+</span><span id="34" class="l"><a class="l" href="#34">34: </a>        <span class="php-quote">'TOP_UP_WATER'</span>      =&gt; <span class="php-quote">'getTopUpWater'</span>,
+</span><span id="35" class="l"><a class="l" href="#35">35: </a>        <span class="php-quote">'TRUB_CHILLER_LOSS'</span> =&gt; <span class="php-quote">'getTrubChillerLoss'</span>,
+</span><span id="36" class="l"><a class="l" href="#36">36: </a>        <span class="php-quote">'EVAP_RATE'</span>         =&gt; <span class="php-quote">'getEvapRate'</span>,
+</span><span id="37" class="l"><a class="l" href="#37">37: </a>        <span class="php-quote">'LAUTER_DEADSPACE'</span>  =&gt; <span class="php-quote">'getLauterDeadspace'</span>,
+</span><span id="38" class="l"><a class="l" href="#38">38: </a>        <span class="php-quote">'TOP_UP_KETTLE'</span>     =&gt; <span class="php-quote">'getTopUpKettle'</span>,
+</span><span id="39" class="l"><a class="l" href="#39">39: </a>        <span class="php-quote">'HOP_UTILIZATION'</span>   =&gt; <span class="php-quote">'getHopUtilization'</span>,
+</span><span id="40" class="l"><a class="l" href="#40">40: </a>        <span class="php-quote">'NOTES'</span>             =&gt; <span class="php-quote">'getNotes'</span>,
+</span><span id="41" class="l"><a class="l" href="#41">41: </a>    );
+</span><span id="42" class="l"><a class="l" href="#42">42: </a>
+</span><span id="43" class="l"><a class="l" href="#43">43: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_additionalFields" href="#_additionalFields">additionalFields</a>()
+</span><span id="44" class="l"><a class="l" href="#44">44: </a>    {
+</span><span id="45" class="l"><a class="l" href="#45">45: </a>        <span class="php-var">$this</span>-&gt;xmlWriter-&gt;writeElement(<span class="php-quote">'CALC_BOIL_VOLUME'</span>, <span class="php-var">$this</span>-&gt;boolToString(<span class="php-var">$this</span>-&gt;record-&gt;getCalcBoilVolume()));
+</span><span id="46" class="l"><a class="l" href="#46">46: </a>
+</span><span id="47" class="l"><a class="l" href="#47">47: </a>        <span class="php-keyword1">return</span> parent::additionalFields();
+</span><span id="48" class="l"><a class="l" href="#48">48: </a>    }
+</span><span id="49" class="l"><a class="l" href="#49">49: </a>
+</span><span id="50" class="l"><a class="l" href="#50">50: </a></span>}</code></pre>
 
 	<div id="footer">
 		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>

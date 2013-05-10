@@ -4,10 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Interface BeerXML\Record\RecipeReaderInterface | php-beerxml</title>
+	<title>Interface BeerXML\Generator\IRecipeReader | php-beerxml</title>
 
 	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?273089376"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -23,11 +23,13 @@
 			<ul>
 				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
-				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li class="active"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
 				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
 						</li>
-				<li class="active"><a href="namespace-BeerXML.Record.html">Record</a>
+				<li><a href="namespace-BeerXML.Record.html">Record</a>
 						</li>
 							</ul></li>
 				<li><a href="namespace-PHP.html">PHP</a>
@@ -41,21 +43,31 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-BeerXML.Record.Equipment.html">Equipment</a></li>
-				<li><a href="class-BeerXML.Record.Fermentable.html">Fermentable</a></li>
-				<li><a href="class-BeerXML.Record.Hop.html">Hop</a></li>
-				<li><a href="class-BeerXML.Record.MashProfile.html">MashProfile</a></li>
-				<li><a href="class-BeerXML.Record.MashStep.html">MashStep</a></li>
-				<li><a href="class-BeerXML.Record.Misc.html">Misc</a></li>
-				<li><a href="class-BeerXML.Record.Recipe.html">Recipe</a></li>
-				<li><a href="class-BeerXML.Record.Style.html">Style</a></li>
-				<li><a href="class-BeerXML.Record.Water.html">Water</a></li>
-				<li><a href="class-BeerXML.Record.Yeast.html">Yeast</a></li>
+				<li><a href="class-BeerXML.Generator.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Generator.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Generator.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Generator.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Generator.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Generator.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Generator.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Generator.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Generator.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Generator.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Generator.Yeast.html">Yeast</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li class="active"><a href="class-BeerXML.Record.RecipeReaderInterface.html">RecipeReaderInterface</a></li>
+				<li><a href="class-BeerXML.Generator.IEquipmentReader.html">IEquipmentReader</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentableReader.html">IFermentableReader</a></li>
+				<li><a href="class-BeerXML.Generator.IHopReader.html">IHopReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfileReader.html">IMashProfileReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStepReader.html">IMashStepReader</a></li>
+				<li><a href="class-BeerXML.Generator.IMiscReader.html">IMiscReader</a></li>
+				<li class="active"><a href="class-BeerXML.Generator.IRecipeReader.html">IRecipeReader</a></li>
+				<li><a href="class-BeerXML.Generator.IStyleReader.html">IStyleReader</a></li>
+				<li><a href="class-BeerXML.Generator.IWaterReader.html">IWaterReader</a></li>
+				<li><a href="class-BeerXML.Generator.IYeastReader.html">IYeastReader</a></li>
 			</ul>
 
 
@@ -82,7 +94,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-BeerXML.Record.html" title="Summary of BeerXML\Record"><span>Namespace</span></a>
+				<a href="namespace-BeerXML.Generator.html" title="Summary of BeerXML\Generator"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -97,7 +109,7 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Interface RecipeReaderInterface</h1>
+	<h1>Interface IRecipeReader</h1>
 
 
 
@@ -105,6 +117,10 @@
 
 
 
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Record.Recipe.html">BeerXML\Record\Recipe</a>
+	</div>
 
 
 
@@ -112,10 +128,10 @@
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Record.html">Record</a><br />
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Generator.html">Generator</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Record.RecipeReaderInterface.html#7-213" title="Go to source code">BeerXML/Record/RecipeReaderInterface.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Generator.IRecipeReader.html#7-217" title="Go to source code">BeerXML/Generator/IRecipeReader.php</a><br />
 	</div>
 
 
@@ -133,7 +149,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAge">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#13-17" title="Go to source code">getAge</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#9-14" title="Go to source code">getAge</a>( )</code>
 
 		<div class="description short">
 			
@@ -170,7 +186,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAgeTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#19-23" title="Go to source code">getAgeTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#16-21" title="Go to source code">getAgeTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -207,7 +223,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAsstBrewer">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#25-29" title="Go to source code">getAsstBrewer</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#23-28" title="Go to source code">getAsstBrewer</a>( )</code>
 
 		<div class="description short">
 			
@@ -244,7 +260,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBatchSize">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#31-35" title="Go to source code">getBatchSize</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#30-34" title="Go to source code">getBatchSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -277,7 +293,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBoilSize">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#37-40" title="Go to source code">getBoilSize</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#36-39" title="Go to source code">getBoilSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -310,7 +326,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBoilTime">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#42-45" title="Go to source code">getBoilTime</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#41-44" title="Go to source code">getBoilTime</a>( )</code>
 
 		<div class="description short">
 			
@@ -343,7 +359,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBrewer">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#47-50" title="Go to source code">getBrewer</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#46-49" title="Go to source code">getBrewer</a>( )</code>
 
 		<div class="description short">
 			
@@ -376,7 +392,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCarbonation">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#52-55" title="Go to source code">getCarbonation</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#51-54" title="Go to source code">getCarbonation</a>( )</code>
 
 		<div class="description short">
 			
@@ -409,7 +425,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCarbonationTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#57-60" title="Go to source code">getCarbonationTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#56-59" title="Go to source code">getCarbonationTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -442,7 +458,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDate">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#62-65" title="Go to source code">getDate</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#61-64" title="Go to source code">getDate</a>( )</code>
 
 		<div class="description short">
 			
@@ -475,7 +491,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEfficiency">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#67-70" title="Go to source code">getEfficiency</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#66-69" title="Go to source code">getEfficiency</a>( )</code>
 
 		<div class="description short">
 			
@@ -508,7 +524,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEquipment">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#72-77" title="Go to source code">getEquipment</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#71-77" title="Go to source code">getEquipment</a>( )</code>
 
 		<div class="description short">
 			
@@ -547,7 +563,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFermentables">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#79-82" title="Go to source code">getFermentables</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#79-82" title="Go to source code">getFermentables</a>( )</code>
 
 		<div class="description short">
 			
@@ -580,7 +596,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFermentationStages">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#84-87" title="Go to source code">getFermentationStages</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#84-87" title="Go to source code">getFermentationStages</a>( )</code>
 
 		<div class="description short">
 			
@@ -613,7 +629,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFg">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#89-92" title="Go to source code">getFg</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#89-92" title="Go to source code">getFg</a>( )</code>
 
 		<div class="description short">
 			
@@ -646,7 +662,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getForcedCarbonation">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#94-97" title="Go to source code">getForcedCarbonation</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#94-97" title="Go to source code">getForcedCarbonation</a>( )</code>
 
 		<div class="description short">
 			
@@ -679,7 +695,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getHops">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#99-102" title="Go to source code">getHops</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#99-102" title="Go to source code">getHops</a>( )</code>
 
 		<div class="description short">
 			
@@ -712,7 +728,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getKegPrimingFactor">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#104-107" title="Go to source code">getKegPrimingFactor</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#104-107" title="Go to source code">getKegPrimingFactor</a>( )</code>
 
 		<div class="description short">
 			
@@ -745,7 +761,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMash">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#109-112" title="Go to source code">getMash</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#109-112" title="Go to source code">getMash</a>( )</code>
 
 		<div class="description short">
 			
@@ -778,7 +794,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMiscs">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#114-117" title="Go to source code">getMiscs</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#114-117" title="Go to source code">getMiscs</a>( )</code>
 
 		<div class="description short">
 			
@@ -811,7 +827,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#119-123" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#119-124" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -848,7 +864,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#125-128" title="Go to source code">getNotes</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#126-129" title="Go to source code">getNotes</a>( )</code>
 
 		<div class="description short">
 			
@@ -881,7 +897,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getOg">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#130-133" title="Go to source code">getOg</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#131-134" title="Go to source code">getOg</a>( )</code>
 
 		<div class="description short">
 			
@@ -914,7 +930,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#135-138" title="Go to source code">getPrimaryAge</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#136-139" title="Go to source code">getPrimaryAge</a>( )</code>
 
 		<div class="description short">
 			
@@ -947,7 +963,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#140-143" title="Go to source code">getPrimaryTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#141-144" title="Go to source code">getPrimaryTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -980,7 +996,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimingSugarEquiv">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#145-148" title="Go to source code">getPrimingSugarEquiv</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#146-149" title="Go to source code">getPrimingSugarEquiv</a>( )</code>
 
 		<div class="description short">
 			
@@ -1013,7 +1029,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimingSugarName">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#150-153" title="Go to source code">getPrimingSugarName</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#151-154" title="Go to source code">getPrimingSugarName</a>( )</code>
 
 		<div class="description short">
 			
@@ -1046,7 +1062,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSecondaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#155-158" title="Go to source code">getSecondaryAge</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#156-159" title="Go to source code">getSecondaryAge</a>( )</code>
 
 		<div class="description short">
 			
@@ -1079,7 +1095,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSecondaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#160-163" title="Go to source code">getSecondaryTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#161-164" title="Go to source code">getSecondaryTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -1112,7 +1128,7 @@ the equipment record must match the values in this recipe record.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStyle">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#165-170" title="Go to source code">getStyle</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#166-172" title="Go to source code">getStyle</a>( )</code>
 
 		<div class="description short">
 			
@@ -1153,7 +1169,7 @@ tags.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTasteNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#172-175" title="Go to source code">getTasteNotes</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#174-177" title="Go to source code">getTasteNotes</a>( )</code>
 
 		<div class="description short">
 			
@@ -1186,7 +1202,7 @@ tags.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTasteRating">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#177-180" title="Go to source code">getTasteRating</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#179-182" title="Go to source code">getTasteRating</a>( )</code>
 
 		<div class="description short">
 			
@@ -1219,7 +1235,7 @@ tags.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTertiaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#182-185" title="Go to source code">getTertiaryAge</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#184-187" title="Go to source code">getTertiaryAge</a>( )</code>
 
 		<div class="description short">
 			
@@ -1252,7 +1268,7 @@ tags.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTertiaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#187-190" title="Go to source code">getTertiaryTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#189-192" title="Go to source code">getTertiaryTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -1285,7 +1301,7 @@ tags.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getType">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#192-196" title="Go to source code">getType</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#194-199" title="Go to source code">getType</a>( )</code>
 
 		<div class="description short">
 			
@@ -1322,7 +1338,7 @@ tags.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#198-202" title="Go to source code">getVersion</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#201-206" title="Go to source code">getVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -1361,7 +1377,7 @@ XML standard.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getWaters">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#204-207" title="Go to source code">getWaters</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#208-211" title="Go to source code">getWaters</a>( )</code>
 
 		<div class="description short">
 			
@@ -1394,7 +1410,7 @@ XML standard.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getYeasts">#</a>
-		<code><a href="source-class-BeerXML.Record.RecipeReaderInterface.html#209-212" title="Go to source code">getYeasts</a>( )</code>
+		<code><a href="source-class-BeerXML.Generator.IRecipeReader.html#213-216" title="Go to source code">getYeasts</a>( )</code>
 
 		<div class="description short">
 			
@@ -1425,69 +1441,6 @@ XML standard.</p>
 
 
 
-	<table class="summary" id="constants">
-	<caption>Constants summary</caption>
-	<tr data-order="TYPE_EXTRACT" id="TYPE_EXTRACT">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name"><code>
-				<a href="source-class-BeerXML.Record.RecipeReaderInterface.html#9" title="Go to source code"><b>TYPE_EXTRACT</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-quote">'Extract'</span></code></td>
-		<td class="description"><div>
-			<a href="#TYPE_EXTRACT" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TYPE_PARTIAL_MASH" id="TYPE_PARTIAL_MASH">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name"><code>
-				<a href="source-class-BeerXML.Record.RecipeReaderInterface.html#10" title="Go to source code"><b>TYPE_PARTIAL_MASH</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-quote">'Partial Mash'</span></code></td>
-		<td class="description"><div>
-			<a href="#TYPE_PARTIAL_MASH" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TYPE_ALL_GRAIN" id="TYPE_ALL_GRAIN">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name"><code>
-				<a href="source-class-BeerXML.Record.RecipeReaderInterface.html#11" title="Go to source code"><b>TYPE_ALL_GRAIN</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-quote">'All Grain'</span></code></td>
-		<td class="description"><div>
-			<a href="#TYPE_ALL_GRAIN" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	</table>
 
 
 

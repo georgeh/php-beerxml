@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BeerXML\Parser\IEquipmentWriter | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
+	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li class="active"><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Parser.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Parser.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Parser.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Parser.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Parser.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Parser.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Parser.RecordFactory.html">RecordFactory</a></li>
+				<li><a href="class-BeerXML.Parser.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Parser.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Parser.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-BeerXML.Parser.IEquipmentWriter.html">IEquipmentWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableWriter.html">IFermentableWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IHopWriter.html">IHopWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileWriter.html">IMashProfileWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepWriter.html">IMashStepWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscWriter.html">IMiscWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeWriter.html">IRecipeWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleWriter.html">IStyleWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterWriter.html">IWaterWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastWriter.html">IYeastWriter</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Parser.html" title="Summary of BeerXML\Parser"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IEquipmentWriter</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Record.Equipment.html">BeerXML\Record\Equipment</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.IEquipmentWriter.html#7-128" title="Go to source code">BeerXML/Parser/IEquipmentWriter.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setBatchSize" id="_setBatchSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBatchSize">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#10-15" title="Go to source code">setBatchSize</a>( <span>float <var>$batchSize</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The target volume of the batch at the start of fermentation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The target volume of the batch at the start of fermentation.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$batchSize</var></dt>
+					<dd><code>float</code><br>$batchSize</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBoilSize" id="_setBoilSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBoilSize">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#17-23" title="Go to source code">setBoilSize</a>( <span>float <var>$boilSize</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The pre-boil volume used in this particular instance for this equipment
+setup. Note that this may be a calculated value depending on the
+CALC_BOIL_VOLUME parameter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The pre-boil volume used in this particular instance for this equipment
+setup. Note that this may be a calculated value depending on the
+CALC_BOIL_VOLUME parameter.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$boilSize</var></dt>
+					<dd><code>float</code><br>$boilSize</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBoilTime" id="_setBoilTime">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBoilTime">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#25-31" title="Go to source code">setBoilTime</a>( <span>number <var>$boilTime</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The normal amount of time one boils for this equipment setup. This can be
+used with the evaporation rate to calculate the evaporation loss.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The normal amount of time one boils for this equipment setup. This can be
+used with the evaporation rate to calculate the evaporation loss.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$boilTime</var></dt>
+					<dd><code>number</code><br>$boilTime</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCalcBoilVolume" id="_setCalcBoilVolume">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCalcBoilVolume">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#33-40" title="Go to source code">setCalcBoilVolume</a>( <span>boolean <var>$calcBoilVolume</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Flag denoting that the program should calculate the boil size. Flag may be
+TRUE or FALSE. If TRUE, then BOIL_SIZE = (BATCH_SIZE – TOP_UP_WATER –
+TRUB_CHILLER_LOSS) * (1+BOIL_TIME * EVAP_RATE ) If set then the boil size should
+match this value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Flag denoting that the program should calculate the boil size. Flag may be
+TRUE or FALSE. If TRUE, then BOIL_SIZE = (BATCH_SIZE – TOP_UP_WATER –
+TRUB_CHILLER_LOSS) * (1+BOIL_TIME * EVAP_RATE ) If set then the boil size should
+match this value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$calcBoilVolume</var></dt>
+					<dd><code>boolean</code><br>$calcBoilVolume</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEvapRate" id="_setEvapRate">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEvapRate">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#42-47" title="Go to source code">setEvapRate</a>( <span>float <var>$evapRate</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The percentage of wort lost to evaporation per hour of the boil.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The percentage of wort lost to evaporation per hour of the boil.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$evapRate</var></dt>
+					<dd><code>float</code><br>$evapRate</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHopUtilization" id="_setHopUtilization">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHopUtilization">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#49-55" title="Go to source code">setHopUtilization</a>( <span>float <var>$hopUtilization</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Large batch hop utilization. This value should be 100% for batches less than
+20 gallons, but may be higher (200% or more) for very large batch equipment.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Large batch hop utilization. This value should be 100% for batches less than
+20 gallons, but may be higher (200% or more) for very large batch equipment.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$hopUtilization</var></dt>
+					<dd><code>float</code><br>$hopUtilization</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLauterDeadspace" id="_setLauterDeadspace">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLauterDeadspace">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#57-62" title="Go to source code">setLauterDeadspace</a>( <span>number <var>$lauterDeadspace</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Amount lost to the lauter tun and equipment associated with the lautering
+process.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Amount lost to the lauter tun and equipment associated with the lautering
+process.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$lauterDeadspace</var></dt>
+					<dd><code>number</code><br>$lauterDeadspace</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setName" id="_setName">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setName">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#64-69" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Name of the equipment profile – usually a text description of the brewing
+setup.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Name of the equipment profile – usually a text description of the brewing
+setup.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setNotes" id="_setNotes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setNotes">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#71-76" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Notes associated with the equipment. May be a multiline entry.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Notes associated with the equipment. May be a multiline entry.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$notes</var></dt>
+					<dd><code>string</code><br>$notes</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTopUpKettle" id="_setTopUpKettle">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTopUpKettle">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#78-83" title="Go to source code">setTopUpKettle</a>( <span>number <var>$topUpKettle</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Amount normally added to the boil kettle before the boil.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Amount normally added to the boil kettle before the boil.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$topUpKettle</var></dt>
+					<dd><code>number</code><br>$topUpKettle</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTopUpWater" id="_setTopUpWater">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTopUpWater">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#85-88" title="Go to source code">setTopUpWater</a>( <span>float <var>$topUpWater</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$topUpWater</var></dt>
+					<dd><code>float</code><br>$topUpWater</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTrubChillerLoss" id="_setTrubChillerLoss">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTrubChillerLoss">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#90-96" title="Go to source code">setTrubChillerLoss</a>( <span>float <var>$trubChillerLoss</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The amount of wort normally lost during transition from the boiler to the
+fermentation vessel. Includes both unusable wort due to trub and wort lost to
+the chiller and transfer systems.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of wort normally lost during transition from the boiler to the
+fermentation vessel. Includes both unusable wort due to trub and wort lost to
+the chiller and transfer systems.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$trubChillerLoss</var></dt>
+					<dd><code>float</code><br>$trubChillerLoss</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTunSpecificHeat" id="_setTunSpecificHeat">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTunSpecificHeat">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#98-104" title="Go to source code">setTunSpecificHeat</a>( <span>float <var>$tunSpecificHeat</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The specific heat of the mash tun which is usually a function of the material
+it is made of. Typical ranges are 0.1-0.25 for metal and 0.2-0.5 for plastic
+materials.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The specific heat of the mash tun which is usually a function of the material
+it is made of. Typical ranges are 0.1-0.25 for metal and 0.2-0.5 for plastic
+materials.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tunSpecificHeat</var></dt>
+					<dd><code>float</code><br>$tunSpecificHeat</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTunVolume" id="_setTunVolume">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTunVolume">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#106-112" title="Go to source code">setTunVolume</a>( <span>float <var>$tunVolume</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Volume of the mash tun in liters. This parameter can be used to calculate if
+a particular mash and grain profile will fit in the mash tun. It may also be
+used for thermal calculations in the case of a partially full mash tun.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Volume of the mash tun in liters. This parameter can be used to calculate if
+a particular mash and grain profile will fit in the mash tun. It may also be
+used for thermal calculations in the case of a partially full mash tun.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tunVolume</var></dt>
+					<dd><code>float</code><br>$tunVolume</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTunWeight" id="_setTunWeight">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTunWeight">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#114-120" title="Go to source code">setTunWeight</a>( <span>float <var>$tunWeight</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Weight of the mash tun in kilograms. Used primarily to calculate the thermal
+parameters of the mash tun – in conjunction with the volume and specific
+heat.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Weight of the mash tun in kilograms. Used primarily to calculate the thermal
+parameters of the mash tun – in conjunction with the volume and specific
+heat.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tunWeight</var></dt>
+					<dd><code>float</code><br>$tunWeight</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setVersion" id="_setVersion">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setVersion">#</a>
+		<code><a href="source-class-BeerXML.Parser.IEquipmentWriter.html#122-127" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Version of the equipment record. Should always be "1" for this version of the
+XML standard.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Version of the equipment record. Should always be "1" for this version of the
+XML standard.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$version</var></dt>
+					<dd><code>integer</code><br>$version</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
