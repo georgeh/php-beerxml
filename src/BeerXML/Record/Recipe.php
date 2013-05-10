@@ -3,7 +3,10 @@
 namespace BeerXML\Record;
 
 
-class Recipe
+use BeerXML\Generator\IRecipeReader;
+use BeerXML\Parser\IRecipeWriter;
+
+class Recipe implements IRecipeReader, IRecipeWriter
 {
     const TYPE_EXTRACT = 'Extract';
     const TYPE_PARTIAL_MASH = 'Partial Mash';

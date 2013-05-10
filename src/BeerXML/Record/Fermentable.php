@@ -4,7 +4,10 @@
 namespace BeerXML\Record;
 
 
-class Fermentable
+use BeerXML\Generator\IFermentableReader;
+use BeerXML\Parser\IFermentableWriter;
+
+class Fermentable implements IFermentableReader, IFermentableWriter
 {
 
     const TYPE_GRAIN = 'Grain';

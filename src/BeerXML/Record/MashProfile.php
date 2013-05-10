@@ -4,7 +4,10 @@
 namespace BeerXML\Record;
 
 
-class MashProfile
+use BeerXML\Generator\IMashProfileReader;
+use BeerXML\Parser\IMashProfileWriter;
+
+class MashProfile implements IMashProfileReader, IMashProfileWriter
 {
     /**
      * Name of the mash profile.

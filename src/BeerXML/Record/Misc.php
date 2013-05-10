@@ -4,7 +4,10 @@
 namespace BeerXML\Record;
 
 
-class Misc
+use BeerXML\Generator\IMiscReader;
+use BeerXML\Parser\IMiscWriter;
+
+class Misc implements IMiscReader, IMiscWriter
 {
     const TYPE_SPICE = 'Spice';
     const TYPE_FINING = 'Fining';

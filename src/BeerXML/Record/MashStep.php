@@ -4,7 +4,10 @@
 namespace BeerXML\Record;
 
 
-class MashStep
+use BeerXML\Generator\IMashStepReader;
+use BeerXML\Parser\IMashStepWriter;
+
+class MashStep implements IMashStepReader, IMashStepWriter
 {
 
     const TYPE_INFUSION = 'Infusion';

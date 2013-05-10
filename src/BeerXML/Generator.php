@@ -3,6 +3,8 @@
 
 namespace BeerXML;
 
+use BeerXML\Exception\InvalidRecord;
+
 /**
  * BeerXML Generator Class
  *
@@ -30,20 +32,19 @@ class Generator
     /**
      * Mapping classes to set tags
      *
-     * @todo replace with reader interfaces and injectable dependencies
      * @var array
      */
     private $recordSetTags = array(
-        'BeerXML\Record\Hop'         => array('tag' => 'HOPS', 'generator' => 'BeerXML\Generator\Hop'),
-        'BeerXML\Record\Fermentable' => array('tag' => 'FERMENTABLES', 'generator' => 'BeerXML\Generator\Hop'),
-        'BeerXML\Record\Yeast'       => array('tag' => 'YEASTS', 'generator' => 'BeerXML\Generator\Hop'),
-        'BeerXML\Record\Misc'        => array('tag' => 'MISCS', 'generator' => 'BeerXML\Generator\Hop'),
-        'BeerXML\Record\Water'       => array('tag' => 'WATERS', 'generator' => 'BeerXML\Generator\Hop'),
-        'BeerXML\Record\Style'       => array('tag' => 'STYLES', 'generator' => 'BeerXML\Generator\Hop'),
-        'BeerXML\Record\MashStep'    => array('tag' => 'MASH_STEPS', 'generator' => 'BeerXML\Generator\Hop'),
-        'BeerXML\Record\Mash'        => array('tag' => 'MASHS', 'generator' => 'BeerXML\Generator\Hop'),
-        'BeerXML\Record\Recipe'      => array('tag' => 'RECIPES', 'generator' => 'BeerXML\Generator\Recipe'),
-        'BeerXML\Record\Equipment'   => array('tag' => 'EQUIPMENTS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IHopReader'         => array('tag' => 'HOPS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IFermentableReader' => array('tag' => 'FERMENTABLES', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IYeastReader'       => array('tag' => 'YEASTS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IMiscReader'        => array('tag' => 'MISCS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IWaterReader'       => array('tag' => 'WATERS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IStyleReader'       => array('tag' => 'STYLES', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IMashStepReader'    => array('tag' => 'MASH_STEPS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IMashReader'        => array('tag' => 'MASHS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IRecipeReader'      => array('tag' => 'RECIPES', 'generator' => 'BeerXML\Generator\Recipe'),
+        '\BeerXML\Generator\IEquipmentReader'   => array('tag' => 'EQUIPMENTS', 'generator' => 'BeerXML\Generator\Hop'),
     );
 
     /**
@@ -77,10 +78,7 @@ class Generator
         $this->xmlWriter->openMemory();
         $this->xmlWriter->startDocument('1.0', 'UTF-8');
 
-        $recordClass = get_class($this->records[0]);
-        $setTag = $this->recordSetTags[$recordClass]['tag'];
-        $generatorClass = $this->recordSetTags[$recordClass]['generator'];
-        $generator = new $generatorClass();
+        list($setTag, $generator) = $this->getTagGeneratorForObject($this->records[0]);
         $generator->setXmlWriter($this->xmlWriter);
         $this->xmlWriter->startElement($setTag);
         foreach ($this->records as $record) {
@@ -89,5 +87,24 @@ class Generator
         }
         $this->xmlWriter->endElement();
         return $this->xmlWriter->outputMemory(true);
+    }
+
+    /**
+     * @param Record\IHopReader|Record\IFermentableReader|Record\IYeastReader|Record\IMiscReader|Record\IWaterReader|Record\IStyleReader|Record\IMashStepReader|Record\IMashReader|Record\IRecipeReader|Record\IEquipmentReader $record
+     * @return array(string, Record)
+     * @throws Exception\InvalidRecord
+     */
+    private function getTagGeneratorForObject($record)
+    {
+        foreach ($this->recordSetTags as $interface => $tagGen) {
+            if ($record instanceof $interface) {
+                $tag = $tagGen['tag'];
+                $generatorClass = $tagGen['generator'];
+                $generator = new $generatorClass();
+                return array($tag, $generator);
+            }
+        }
+
+        throw new InvalidRecord('Record did not implement a valid Reader interface');
     }
 }

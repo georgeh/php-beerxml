@@ -4,7 +4,10 @@
 namespace BeerXML\Record;
 
 
-class Style
+use BeerXML\Generator\IStyleReader;
+use BeerXML\Parser\IStyleWriter;
+
+class Style implements IStyleReader, IStyleWriter
 {
 
     const TYPE_LAGER = 'Lager';

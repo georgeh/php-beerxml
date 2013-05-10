@@ -1,15 +1,11 @@
 <?php
 
 
-namespace BeerXML\Record;
+namespace BeerXML\Generator;
 
 
-interface RecipeReaderInterface
+interface IRecipeReader
 {
-    const TYPE_EXTRACT = 'Extract';
-    const TYPE_PARTIAL_MASH = 'Partial Mash';
-    const TYPE_ALL_GRAIN = 'All Grain';
-
     /**
      * The time to age the beer in days after bottling.
      *

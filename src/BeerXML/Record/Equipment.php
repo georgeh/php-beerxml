@@ -4,7 +4,10 @@
 namespace BeerXML\Record;
 
 
-class Equipment
+use BeerXML\Generator\IEquipmentReader;
+use BeerXML\Parser\IEquipmentWriter;
+
+class Equipment implements IEquipmentReader, IEquipmentWriter
 {
     /**
      * Name of the equipment profile – usually a text description of the brewing setup.
