@@ -35,6 +35,6 @@ class Yeast extends Record
 
     protected function createRecord()
     {
-        return new \BeerXML\Record\Yeast();
+        return $this->recordFactory->getYeast();
     }
 }

@@ -35,7 +35,7 @@ class Fermentable extends Record
 
     public function createRecord()
     {
-        return new \BeerXML\Record\Fermentable();
+        return $this->recordFactory->getFermentable();
     }
 
 

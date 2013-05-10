@@ -49,6 +49,6 @@ class Recipe extends Record
 
     protected function createRecord()
     {
-        return new \BeerXML\Record\Recipe();
+        return $this->recordFactory->getRecipe();
     }
 }

@@ -10,7 +10,7 @@ class Hop extends Record
 
     protected function createRecord()
     {
-        return new \BeerXML\Record\Hop();
+        return $this->recordFactory->getHop();
     }
 
     /**

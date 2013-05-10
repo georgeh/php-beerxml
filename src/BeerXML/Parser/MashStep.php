@@ -26,6 +26,6 @@ class MashStep extends Record
 
     protected function createRecord()
     {
-        return new \BeerXML\Record\MashStep();
+        return $this->recordFactory->getMashStep();
     }
 }

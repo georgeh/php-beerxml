@@ -4,16 +4,17 @@
 namespace BeerXML;
 
 
-use BeerXML\Record\MashProfile;
+use BeerXML\Generator\IEquipmentReader;
+use BeerXML\Generator\IFermentableReader;
+use BeerXML\Generator\IHopReader;
+use BeerXML\Generator\IMashProfileReader;
+use BeerXML\Generator\IMiscReader;
+use BeerXML\Generator\IRecipeReader;
+use BeerXML\Generator\IStyleReader;
+use BeerXML\Generator\IWaterReader;
+use BeerXML\Generator\IYeastReader;
+use BeerXML\Parser\RecordFactory;
 use BeerXML\Parser\Record;
-use BeerXML\Record\Equipment;
-use BeerXML\Record\Fermentable;
-use BeerXML\Record\Hop;
-use BeerXML\Record\Misc;
-use BeerXML\Record\Recipe;
-use BeerXML\Record\Style;
-use BeerXML\Record\Water;
-use BeerXML\Record\Yeast;
 
 /**
  * Parses BeerXML 1.0 files into PHP record classes
@@ -37,6 +38,11 @@ class Parser
     private $xmlReader;
 
     /**
+     * @var RecordFactory
+     */
+    private $recordFactory;
+
+    /**
      * @var Parser\Record
      */
     private $recipeParser;
@@ -55,21 +61,22 @@ class Parser
     );
 
     /**
-     * @param \XMLReader $xmlReader
+     * @param RecordFactory $factory
      */
-    function __construct($xmlReader = null)
+    public function __construct(RecordFactory $factory = null)
     {
-        if (is_null($xmlReader)) {
-            $xmlReader = new \XMLReader();
+        $this->xmlReader = new \XMLReader();
+        if (is_null($factory)) {
+            $factory = new RecordFactory();
         }
-        $this->xmlReader = $xmlReader;
+        $this->recordFactory = $factory;
     }
 
     /**
      * Parse a beer XML, returning an array of the record objects found
      *
      * @param string $xml
-     * @return Recipe[]|Equipment[]|Fermentable[]|Hop[]|MashProfile[]|Misc[]|Style[]|Water[]|Yeast[]
+     * @return IRecipeReader[]|IEquipmentReader[]|IFermentableReader[]|IHopReader[]|IMashProfileReader[]|IMiscReader[]|IStyleReader[]|IWaterReader[]|IYeastReader[]
      */
     public function parse($xml)
     {
@@ -80,7 +87,9 @@ class Parser
             // Find records
             if ($this->xmlReader->nodeType == \XMLReader::ELEMENT && isset($this->tagParsers[$this->xmlReader->name])) {
                 $recordParser = new $this->tagParsers[$this->xmlReader->name];
+                /** @var $recordParser Record */
                 $recordParser->setXmlReader($this->xmlReader);
+                $recordParser->setRecordFactory($this->recordFactory);
                 $records[] = $recordParser->parse();
             }
         }

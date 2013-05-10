@@ -9,11 +9,6 @@ class Style extends Record
     protected $tagName = 'STYLE';
 
     /**
-     * @var \XMLReader
-     */
-    protected $xmlReader;
-
-    /**
      * Tags that map to simple values and the corresponding setter method on the record class
      *
      * @var array
@@ -25,7 +20,6 @@ class Style extends Record
         'CATEGORY_NUMBER' => 'setCategoryNumber',
         'STYLE_LETTER'    => 'setStyleLetter',
         'STYLE_GUIDE'     => 'setStyleGuide',
-        'VERSION'         => 'setVersion',
         'TYPE'            => 'setType',
         'OG_MIN'          => 'setOgMin',
         'OG_MAX'          => 'setOgMax',
@@ -50,7 +44,7 @@ class Style extends Record
      */
     protected function createRecord()
     {
-        return new \BeerXML\Record\Style();
+        return $this->recordFactory->getStyle();
     }
 
 }

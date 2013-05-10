@@ -14,6 +14,11 @@ abstract class Record
     protected $xmlReader;
 
     /**
+     * @var RecordFactory
+     */
+    protected $recordFactory;
+
+    /**
      * Tags that map to simple values and the corresponding setter method on the record class
      *
      * @var array
@@ -83,7 +88,13 @@ abstract class Record
         ),
     );
 
-    abstract protected function createRecord();
+    /**
+     * @param RecordFactory $recordFactory
+     */
+    public function setRecordFactory($recordFactory)
+    {
+        $this->recordFactory = $recordFactory;
+    }
 
     /**
      * @param \XMLReader $xmlReader
@@ -131,6 +142,8 @@ abstract class Record
         return $record;
     }
 
+    abstract protected function createRecord();
+
     /**
      * Add a set of records to the record
      *
@@ -151,15 +164,13 @@ abstract class Record
             };
 
             if ($tag == $this->xmlReader->name && \XMLReader::ELEMENT == $this->xmlReader->nodeType) {
-                $recordParser = new $parserClass;
-                $recordParser->setXmlReader($this->xmlReader);
+                $recordParser = $this->createRecordParser($parserClass);
                 $complex = $recordParser->parse();
                 // Add the record
                 $record->{$recordAdder}($complex);
             }
         }
     }
-
 
     /**
      * Set a complex value to the record
@@ -169,11 +180,23 @@ abstract class Record
     protected function setComplexProperty($record)
     {
         $recordType   = $this->complexProperties[$this->xmlReader->name];
-        $recordParser = new $recordType['parser'];
-        $recordParser->setXmlReader($this->xmlReader);
+        $recordParser = $this->createRecordParser($recordType['parser']);
         $complex = $recordParser->parse();
         $method  = $recordType['method'];
         // Call the setter method
         $record->{$method}($complex);
+    }
+
+    /**
+     * @param string $class
+     * @return Record
+     */
+    protected function createRecordParser($class)
+    {
+        $recordParser = new $class;
+        /** @var $recordParser Record */
+        $recordParser->setXmlReader($this->xmlReader);
+        $recordParser->setRecordFactory($this->recordFactory);
+        return $recordParser;
     }
 }

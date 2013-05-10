@@ -27,6 +27,6 @@ class Misc extends Record
 
     protected function createRecord()
     {
-        return new \BeerXML\Record\Misc();
+        return $this->recordFactory->getMisc();
     }
 }

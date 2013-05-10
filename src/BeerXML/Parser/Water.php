@@ -29,6 +29,6 @@ class Water extends Record
 
     protected function createRecord()
     {
-        return new \BeerXML\Record\Water();
+        return $this->recordFactory->getWater();
     }
 }

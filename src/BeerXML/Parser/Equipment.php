@@ -34,6 +34,6 @@ class Equipment extends Record
 
     protected function createRecord()
     {
-        return new \BeerXML\Record\Equipment();
+        return $this->recordFactory->getEquipment();
     }
 }

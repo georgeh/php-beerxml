@@ -27,6 +27,6 @@ class MashProfile extends Record
 
     protected function createRecord()
     {
-        return new \BeerXML\Record\MashProfile();
+        return $this->recordFactory->getMashProfile();
     }
 }
