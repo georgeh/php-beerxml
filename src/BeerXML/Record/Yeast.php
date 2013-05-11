@@ -4,10 +4,10 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IYeastReader;
-use BeerXML\Parser\IYeastWriter;
+use BeerXML\Generator\IYeast as YeastGetter;
+use BeerXML\Parser\IYeast as YeastSetter;
 
-class Yeast implements IYeastReader, IYeastWriter
+class Yeast implements YeastGetter, YeastSetter
 {
     const TYPE_LAGER             = 'Lager';
     const TYPE_ALE               = 'Ale';

@@ -4,10 +4,10 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IHopReader;
-use BeerXML\Parser\IHopWriter;
+use BeerXML\Generator\IHop as HopGetter;
+use BeerXML\Parser\IHop as HopSetter;
 
-class Hop implements IHopReader, IHopWriter
+class Hop implements HopGetter, HopSetter
 {
 
     const USE_BOIL       = 'Boil';

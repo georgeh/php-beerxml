@@ -1,69 +1,69 @@
 <?php
 
 
-namespace BeerXML\Parser;
+namespace BeerXML\Generator;
 
 
-interface IMashStepWriter
+interface IMashStep
 {
 
     /**
      * the temperature you can expect the mash to fall to after a long mash step.  Measured in degrees Celsius.
      *
-     * @param number $endTemp
+     * @return number
      */
-    public function setEndTemp($endTemp);
+    public function getEndTemp();
 
     /**
      * The volume of water in liters to infuse in this step.  Required only for infusion steps, though one may also add
      * water for temperature mash steps.  One should not have an infusion amount for decoction steps.
      *
-     * @param number $infuseAmount
+     * @return number
      */
-    public function setInfuseAmount($infuseAmount);
+    public function getInfuseAmount();
 
     /**
      * Name of the mash step – usually descriptive text such as "Dough In" or "Conversion"
      *
-     * @param string $name
+     * @return string
      */
-    public function setName($name);
+    public function getName();
 
     /**
      * Time in minutes to achieve the desired step temperature – useful particularly for temperature mashes where it may
      * take some time to achieve the step temperature.
      *
-     * @param number $rampTime
+     * @return number
      */
-    public function setRampTime($rampTime);
+    public function getRampTime();
 
     /**
      * The target temperature for this step in degrees Celsius.
      *
-     * @param number $stepTemp
+     * @return number
      */
-    public function setStepTemp($stepTemp);
+    public function getStepTemp();
 
     /**
      * The number of minutes to spend at this step – i.e. the amount of time we are to hold this particular step
      * temperature.
      *
-     * @param number $stepTime
+     * @return number
      */
-    public function setStepTime($stepTime);
+    public function getStepTime();
 
     /**
      * May be "Infusion", "Temperature" or "Decoction" depending on the type of step.  Infusion denotes adding hot water,
      * Temperature denotes heating with an outside heat source, and decoction denotes drawing off some mash for boiling.
      *
-     * @param string $type
+     * @return string
      */
-    public function setType($type);
+    public function getType();
 
     /**
      * Version of the mash step record.  Should always be "1" for this version of the XML standard.
      *
-     * @param int $version
+     * @return int
      */
-    public function setVersion($version);
+    public function getVersion();
 }

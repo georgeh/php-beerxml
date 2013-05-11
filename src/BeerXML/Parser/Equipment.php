@@ -32,7 +32,7 @@ class Equipment extends Record
     );
 
     /**
-     * @return IEquipmentWriter
+     * @return IEquipment
      */
     protected function createRecord()
     {
@@ -40,7 +40,7 @@ class Equipment extends Record
     }
 
     /**
-     * @param IEquipmentWriter $record
+     * @param IEquipment $record
      */
     protected function otherElementEncountered($record)
     {

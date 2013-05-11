@@ -1,133 +1,133 @@
 <?php
 
 
-namespace BeerXML\Generator;
+namespace BeerXML\Parser;
 
 
-interface IHopReader
+interface IHop
 {
 
     /**
      * Percent alpha of hops - for example "5.5" represents 5.5% alpha
      *
-     * @return number
+     * @param number $alpha
      */
-    public function getAlpha();
+    public function setAlpha($alpha);
 
     /**
      * Weight in Kilograms of the hops used in the recipe
      *
-     * @return number
+     * @param number $amount
      */
-    public function getAmount();
+    public function setAmount($amount);
 
     /**
      * Hop beta percentage - for example "4.4" denotes 4.4 % beta
      *
-     * @return number
+     * @param number $beta
      */
-    public function getBeta();
+    public function setBeta($beta);
 
     /**
      * Caryophyllene level in percent.
      *
-     * @return number
+     * @param number $caryophyllene
      */
-    public function getCaryophyllene();
+    public function setCaryophyllene($caryophyllene);
 
     /**
      * Cohumulone level in percent
      *
-     * @return number
+     * @param number $cohumulone
      */
-    public function getCohumulone();
+    public function setCohumulone($cohumulone);
 
     /**
      * May be "Pellet", "Plug" or "Leaf"
      *
-     * @return string
+     * @param string $form
      */
-    public function getForm();
+    public function setForm($form);
 
     /**
      * Hop Stability Index - defined as the percentage of hop alpha lost in 6 months of storage
      *
-     * @return number
+     * @param number $hsi
      */
-    public function getHsi();
+    public function setHsi($hsi);
 
     /**
      * Humulene level in percent.
      *
-     * @return number
+     * @param number $humulene
      */
-    public function getHumulene();
+    public function setHumulene($humulene);
 
     /**
      * Myrcene level in percent
      *
-     * @return number
+     * @param number $myrcene
      */
-    public function getMyrcene();
+    public function setMyrcene($myrcene);
 
     /**
      * Name of the hops
      *
-     * @return string
+     * @param string $name
      */
-    public function getName();
+    public function setName($name);
 
     /**
      * Textual notes about the hops, usage, substitutes.  May be a multiline entry.
      *
-     * @return string
+     * @param string $notes
      */
-    public function getNotes();
+    public function setNotes($notes);
 
     /**
      * Place of origin for the hops
      *
-     * @return string
+     * @param string $origin
      */
-    public function getOrigin();
+    public function setOrigin($origin);
 
     /**
      * Substitutes that can be used for this hops
      *
-     * @return string
+     * @param string $substitutes
      */
-    public function getSubstitutes();
+    public function setSubstitutes($substitutes);
 
     /**
      * The time as measured in minutes.  Meaning is dependent on the “USE" field.  For “Boil" this is the boil time.
      * For “Mash" this is the mash time.  For “First Wort" this is the boil time.  For “Aroma" this is the steep time.
      * For “Dry Hop" this is the amount of time to dry hop.
      *
-     * @return number
+     * @param number $time
      */
-    public function getTime();
+    public function setTime($time);
 
     /**
      * May be "Bittering", "Aroma" or "Both"
      *
-     * @return string
+     * @param string $type
      */
-    public function getType();
+    public function setType($type);
 
     /**
      * May be "Boil", "Dry Hop", "Mash", "First Wort" or "Aroma".  Note that "Aroma" and "Dry Hop" do not contribute to
      * the bitterness of the beer while the others do.  Aroma hops are added after the boil and do not contribute
      * substantially to beer bitterness.
      *
-     * @return string
+     * @param string $use
      */
-    public function getUse();
+    public function setUse($use);
 
     /**
      * Should be set to 1 for this version of the XML standard.  May be a higher number for later versions but all later
      * versions shall be backward compatible.
      *
-     * @return int
+     * @param int $version
      */
-    public function getVersion();
+    public function setVersion($version);
 }

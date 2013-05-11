@@ -155,7 +155,7 @@ abstract class Record
     /**
      * Called when an unknown element is encountered, useful for edge cases
      *
-     * @param IRecipeWriter|IEquipmentWriter|IFermentableWriter|IHopWriter|IMashProfileWriter|IMiscWriter|IStyleWriter|IWaterWriter|IYeastWriter
+     * @param IRecipe|IEquipment|IFermentable|IHop|IMashProfile|IMisc|IStyleWriter|IWater|IYeast
      */
     protected function otherElementEncountered($record)
     {

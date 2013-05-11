@@ -25,7 +25,7 @@ class MashProfile extends Record
     );
 
     /**
-     * @return IMashProfileWriter
+     * @return IMashProfile
      */
     protected function createRecord()
     {
@@ -33,7 +33,7 @@ class MashProfile extends Record
     }
 
     /**
-     * @param IMashProfileWriter $record
+     * @param IMashProfile $record
      */
     protected function otherElementEncountered($record)
     {

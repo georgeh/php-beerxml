@@ -4,7 +4,7 @@
 namespace BeerXML\Generator;
 
 
-interface IRecipeReader
+interface IRecipe
 {
     /**
      * The time to age the beer in days after bottling.

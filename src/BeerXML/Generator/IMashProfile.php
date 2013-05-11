@@ -4,7 +4,7 @@
 namespace BeerXML\Generator;
 
 
-interface IMashProfileReader
+interface IMashProfile
 {
 
     /**

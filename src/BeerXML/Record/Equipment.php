@@ -4,10 +4,10 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IEquipmentReader;
-use BeerXML\Parser\IEquipmentWriter;
+use BeerXML\Generator\IEquipment as EquipmentGetter;
+use BeerXML\Parser\IEquipment as EquipmentSetter;
 
-class Equipment implements IEquipmentReader, IEquipmentWriter
+class Equipment implements EquipmentGetter, EquipmentSetter
 {
     /**
      * Name of the equipment profile – usually a text description of the brewing setup.

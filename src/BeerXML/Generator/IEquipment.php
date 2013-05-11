@@ -1,128 +1,128 @@
 <?php
 
 
-namespace BeerXML\Parser;
+namespace BeerXML\Generator;
 
 
-interface IEquipmentWriter
+interface IEquipment
 {
 
     /**
      * The target volume of the batch at the start of fermentation.
      *
-     * @param float $batchSize
+     * @return float
      */
-    public function setBatchSize($batchSize);
+    public function getBatchSize();
 
     /**
      * The pre-boil volume used in this particular instance for this equipment setup.  Note that this may be a
      * calculated value depending on the CALC_BOIL_VOLUME parameter.
      *
-     * @param float $boilSize
+     * @return float
      */
-    public function setBoilSize($boilSize);
+    public function getBoilSize();
 
     /**
      * The normal amount of time one boils for this equipment setup.  This can be used with the evaporation rate to
      * calculate the evaporation loss.
      *
-     * @param number $boilTime
+     * @return number
      */
-    public function setBoilTime($boilTime);
+    public function getBoilTime();
 
     /**
      * Flag denoting that the program should calculate the boil size.  Flag may be TRUE or FALSE.
      * If TRUE, then BOIL_SIZE = (BATCH_SIZE – TOP_UP_WATER – TRUB_CHILLER_LOSS) * (1+BOIL_TIME * EVAP_RATE )
      * If set then the boil size should match this value.
      *
-     * @param boolean $calcBoilVolume
+     * @return boolean
      */
-    public function setCalcBoilVolume($calcBoilVolume);
+    public function getCalcBoilVolume();
 
     /**
      * The percentage of wort lost to evaporation per hour of the boil.
      *
-     * @param float $evapRate
+     * @return float
      */
-    public function setEvapRate($evapRate);
+    public function getEvapRate();
 
     /**
      * Large batch hop utilization.  This value should be 100% for batches less than 20 gallons, but may be higher
      * (200% or more) for very large batch equipment.
      *
-     * @param float $hopUtilization
+     * @return float
      */
-    public function setHopUtilization($hopUtilization);
+    public function getHopUtilization();
 
     /**
      * Amount lost to the lauter tun and equipment associated with the lautering process.
      *
-     * @param number $lauterDeadspace
+     * @return number
      */
-    public function setLauterDeadspace($lauterDeadspace);
+    public function getLauterDeadspace();
 
     /**
      * Name of the equipment profile – usually a text description of the brewing setup.
      *
-     * @param string $name
+     * @return string
      */
-    public function setName($name);
+    public function getName();
 
     /**
      * Notes associated with the equipment.  May be a multiline entry.
      *
-     * @param string $notes
+     * @return string
      */
-    public function setNotes($notes);
+    public function getNotes();
 
     /**
      * Amount normally added to the boil kettle before the boil.
      *
-     * @param number $topUpKettle
+     * @return number
      */
-    public function setTopUpKettle($topUpKettle);
+    public function getTopUpKettle();
 
     /**
-     * @param float $topUpWater
+     * @return float
      */
-    public function setTopUpWater($topUpWater);
+    public function getTopUpWater();
 
     /**
      * The amount of wort normally lost during transition from the boiler to the fermentation vessel.  Includes both
      * unusable wort due to trub and wort lost to the chiller and transfer systems.
      *
-     * @param float $trubChillerLoss
+     * @return float
      */
-    public function setTrubChillerLoss($trubChillerLoss);
+    public function getTrubChillerLoss();
 
     /**
      * The specific heat of the mash tun which is usually a function of the material it is made of.  Typical ranges are
      * 0.1-0.25 for metal and 0.2-0.5 for plastic materials.
      *
-     * @param float $tunSpecificHeat
+     * @return float
      */
-    public function setTunSpecificHeat($tunSpecificHeat);
+    public function getTunSpecificHeat();
 
     /**
      * Volume of the mash tun in liters.  This parameter can be used to calculate if a particular mash and grain profile
      * will fit in the mash tun.  It may also be used for thermal calculations in the case of a partially full mash tun.
      *
-     * @param float $tunVolume
+     * @return float
      */
-    public function setTunVolume($tunVolume);
+    public function getTunVolume();
 
     /**
      * Weight of the mash tun in kilograms.  Used primarily to calculate the thermal parameters of the mash tun – in
      * conjunction with the volume and specific heat.
      *
-     * @param float $tunWeight
+     * @return float
      */
-    public function setTunWeight($tunWeight);
+    public function getTunWeight();
 
     /**
      * Version of the equipment record.  Should always be "1" for this version of the XML standard.
      *
-     * @param int $version
+     * @return int
      */
-    public function setVersion($version);
+    public function getVersion();
 }

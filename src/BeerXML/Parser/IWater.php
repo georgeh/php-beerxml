@@ -1,84 +1,84 @@
 <?php
 
 
-namespace BeerXML\Generator;
+namespace BeerXML\Parser;
 
 
-interface IWaterReader
+interface IWater
 {
 
     /**
      * Volume of water to use in a recipe in liters.
      *
-     * @return number
+     * @param number $amount
      */
-    public function getAmount();
+    public function setAmount($amount);
 
     /**
      * The amount of bicarbonate (HCO3) in parts per million.
      *
-     * @return float
+     * @param float $bicarbonate
      */
-    public function getBicarbonate();
+    public function setBicarbonate($bicarbonate);
 
     /**
      * The amount of calcium (Ca) in parts per million.
      *
-     * @return float
+     * @param float $calcium
      */
-    public function getCalcium();
+    public function setCalcium($calcium);
 
     /**
-     * @return float
+     * @param float $chloride
      */
-    public function getChloride();
+    public function setChloride($chloride);
 
     /**
      * The amount of Magnesium (Mg) in parts per million.
      *
-     * @return float
+     * @param float $magnesium
      */
-    public function getMagnesium();
+    public function setMagnesium($magnesium);
 
     /**
      * Name of the water profile – usually the city and country of the water profile.
      *
-     * @return string
+     * @param string $name
      */
-    public function getName();
+    public function setName($name);
 
     /**
      * Notes about the water profile.  May be multiline.
      *
-     * @return string
+     * @param string $notes
      */
-    public function getNotes();
+    public function setNotes($notes);
 
     /**
      * The PH of the water.
      *
-     * @return float
+     * @param float $pH
      */
-    public function getPH();
+    public function setPH($pH);
 
     /**
      * The amount of Sodium (Na) in parts per million.
      *
-     * @return float
+     * @param float $sodium
      */
-    public function getSodium();
+    public function setSodium($sodium);
 
     /**
      * The amount of Sulfate (SO4) in parts per million.
      *
-     * @return float
+     * @param float $sulfate
      */
-    public function getSulfate();
+    public function setSulfate($sulfate);
 
     /**
      * Version of the water record.  Should always be "1" for this version of the XML standard.
      *
-     * @return int
+     * @param int $version
      */
-    public function getVersion();
+    public function setVersion($version);
 }

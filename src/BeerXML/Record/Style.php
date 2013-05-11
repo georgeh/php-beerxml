@@ -4,10 +4,10 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IStyleReader;
-use BeerXML\Parser\IStyleWriter;
+use BeerXML\Generator\IStyle as StyleGetter;
+use BeerXML\Parser\IStyleWriter as StyleSetter;
 
-class Style implements IStyleReader, IStyleWriter
+class Style implements StyleGetter, StyleSetter
 {
 
     const TYPE_LAGER = 'Lager';

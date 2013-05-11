@@ -32,7 +32,7 @@ class Yeast extends Record
     );
 
     /**
-     * @return IYeastWriter
+     * @return IYeast
      */
     protected function createRecord()
     {
@@ -40,7 +40,7 @@ class Yeast extends Record
     }
 
     /**
-     * @param IYeastWriter $record
+     * @param IYeast $record
      */
     protected function otherElementEncountered($record)
     {

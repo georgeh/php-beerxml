@@ -1,49 +1,49 @@
 <?php
 
 
-namespace BeerXML\Parser;
+namespace BeerXML\Generator;
 
 
-interface IFermentableWriter
+interface IFermentable
 {
 
     /**
      * May be TRUE if this item is normally added after the boil.  The default value is FALSE since most grains are
      * added during the mash or boil.
      *
-     * @param boolean $addAfterBoil
+     * @return boolean
      */
-    public function setAddAfterBoil($addAfterBoil);
+    public function getAddAfterBoil();
 
     /**
      * Weight of the fermentable, extract or sugar in Kilograms.
      *
-     * @param number $amount
+     * @return number
      */
-    public function setAmount($amount);
+    public function getAmount();
 
     /**
      * Percent difference between the coarse grain yield and fine grain yield.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
      *
-     * @param number $coarseFineDiff
+     * @return number
      */
-    public function setCoarseFineDiff($coarseFineDiff);
+    public function getCoarseFineDiff();
 
     /**
      * The color of the item in Lovibond Units (SRM for liquid extracts).
      *
-     * @param float $color
+     * @return float
      */
-    public function setColor($color);
+    public function getColor();
 
     /**
      * The diastatic power of the grain as measured in "Lintner" units.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
      *
-     * @param float $diastaticPower
+     * @return float
      */
-    public function setDiastaticPower($diastaticPower);
+    public function getDiastaticPower();
 
     /**
      * For hopped extracts only - an estimate of the number of IBUs per pound of extract in a gallon of water.
@@ -51,53 +51,53 @@ interface IFermentableWriter
      * in the batch.  Based on a sixty minute boil.
      * Only suitable for use with an "Extract" type, otherwise this value is ignored.
      *
-     * @param float $ibuGalPerLb
+     * @return float
      */
-    public function setIbuGalPerLb($ibuGalPerLb);
+    public function getIbuGalPerLb();
 
     /**
      * The recommended maximum percentage (by weight) this ingredient should represent in a batch of beer.
      *
-     * @param number $maxInBatch
+     * @return number
      */
-    public function setMaxInBatch($maxInBatch);
+    public function getMaxInBatch();
 
     /**
      * Percent moisture in the grain.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
      *
-     * @param number $moisture
+     * @return number
      */
-    public function setMoisture($moisture);
+    public function getMoisture();
 
     /**
      * Name of the fermentable.
      *
-     * @param string $name
+     * @return string
      */
-    public function setName($name);
+    public function getName();
 
     /**
      * Textual noted describing this ingredient and its use.  May be multiline.
      *
-     * @param string $notes
+     * @return string
      */
-    public function setNotes($notes);
+    public function getNotes();
 
     /**
      * Country or place of origin
      *
-     * @param string $origin
+     * @return string
      */
-    public function setOrigin($origin);
+    public function getOrigin();
 
     /**
      * The percent protein in the grain.
      * Only appropriate for a "Grain" or "Adjunct" type, otherwise this value is ignored.
      *
-     * @param number $protein
+     * @return number
      */
-    public function setProtein($protein);
+    public function getProtein();
 
     /**
      * TRUE if it is recommended the grain be mashed, FALSE if it can be steeped.
@@ -105,36 +105,36 @@ interface IFermentableWriter
      * Note that this does NOT indicate whether the grain is mashed or not – it is only a recommendation used in recipe
      * formulation.
      *
-     * @param boolean $recommendMash
+     * @return boolean
      */
-    public function setRecommendMash($recommendMash);
+    public function getRecommendMash();
 
     /**
      * Supplier of the grain/extract/sugar
      *
-     * @param string $supplier
+     * @return string
      */
-    public function setSupplier($supplier);
+    public function getSupplier();
 
     /**
      * May be "Grain", "Sugar", "Extract", "Dry Extract" or "Adjunct".  Extract refers to liquid extract.
      *
-     * @param string $type
+     * @return string
      */
-    public function setType($type);
+    public function getType();
 
     /**
      * Should be set to 1 for this version of the XML standard.
      * May be a higher number for later versions but all later versions shall be backward compatible.
      *
-     * @param int $version
+     * @return int
      */
-    public function setVersion($version);
+    public function getVersion();
 
     /**
      * Percent dry yield (fine grain) for the grain, or the raw yield by weight if this is an extract adjunct or sugar.
      *
-     * @param number $yield
+     * @return number
      */
-    public function setYield($yield);
+    public function getYield();
 }

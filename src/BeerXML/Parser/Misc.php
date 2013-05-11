@@ -25,7 +25,7 @@ class Misc extends Record
     );
 
     /**
-     * @return IMiscWriter
+     * @return IMisc
      */
     protected function createRecord()
     {
@@ -33,7 +33,7 @@ class Misc extends Record
     }
 
     /**
-     * @param IMiscWriter $record
+     * @param IMisc $record
      */
     protected function otherElementEncountered($record)
     {

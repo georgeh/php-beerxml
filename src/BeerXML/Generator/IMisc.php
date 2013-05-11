@@ -1,10 +1,10 @@
 <?php
 
 
-namespace BeerXML\Parser;
+namespace BeerXML\Generator;
 
 
-interface IMiscWriter
+interface IMisc
 {
 
     /**
@@ -12,64 +12,64 @@ interface IMiscWriter
      * AMOUNT_IS_WEIGHT is set to TRUE for this record.  If a liquid it is in liters, if a solid the weight is measured
      * in kilograms.
      *
-     * @param number $amount
+     * @return number
      */
-    public function setAmount($amount);
+    public function getAmount();
 
     /**
      * TRUE if the amount measurement is a weight measurement and FALSE if the amount is a volume measurement.  Default
      * value (if not present) is assumed to be FALSE.
      *
-     * @param boolean $amountIsWeight
+     * @return boolean
      */
-    public function setAmountIsWeight($amountIsWeight);
+    public function getAmountIsWeight();
 
     /**
      * Name of the misc item.
      *
-     * @param string $name
+     * @return string
      */
-    public function setName($name);
+    public function getName();
 
     /**
      * Detailed notes on the item including usage.  May be multiline.
      *
-     * @param string $notes
+     * @return string
      */
-    public function setNotes($notes);
+    public function getNotes();
 
     /**
      * Amount of time the misc was boiled, steeped, mashed, etc in minutes
      *
-     * @param number $time
+     * @return number
      */
-    public function setTime($time);
+    public function getTime();
 
     /**
      * May be "Spice", "Fining", "Water Agent", "Herb", "Flavor" or "Other"
      *
-     * @param string $type
+     * @return string
      */
-    public function setType($type);
+    public function getType();
 
     /**
      * May be "Boil", "Mash", "Primary", "Secondary", "Bottling"
      *
-     * @param string $use
+     * @return string
      */
-    public function setUse($use);
+    public function getUse();
 
     /**
      * Short description of what the ingredient is used for in text
      *
-     * @param string $useFor
+     * @return string
      */
-    public function setUseFor($useFor);
+    public function getUseFor();
 
     /**
      * Version number of this element.  Should be "1" for this version.
      *
-     * @param int $version
+     * @return int
      */
-    public function setVersion($version);
+    public function getVersion();
 }

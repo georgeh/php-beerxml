@@ -32,7 +32,7 @@ class Fermentable extends Record
     );
 
     /**
-     * @return IFermentableWriter
+     * @return IFermentable
      */
     public function createRecord()
     {
@@ -40,7 +40,7 @@ class Fermentable extends Record
     }
 
     /**
-     * @param IFermentableWriter $record
+     * @param IFermentable $record
      */
     protected function otherElementEncountered($record)
     {

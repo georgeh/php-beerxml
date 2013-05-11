@@ -2,11 +2,10 @@
 
 namespace BeerXML\Record;
 
+use BeerXML\Generator\IRecipe as RecipeGetter;
+use BeerXML\Parser\IRecipe as RecipeSetter;
 
-use BeerXML\Generator\IRecipeReader;
-use BeerXML\Parser\IRecipeWriter;
-
-class Recipe implements IRecipeReader, IRecipeWriter
+class Recipe implements RecipeGetter, RecipeSetter
 {
     const TYPE_EXTRACT      = 'Extract';
     const TYPE_PARTIAL_MASH = 'Partial Mash';

@@ -4,15 +4,15 @@
 namespace BeerXML;
 
 
-use BeerXML\Generator\IEquipmentReader;
-use BeerXML\Generator\IFermentableReader;
-use BeerXML\Generator\IHopReader;
-use BeerXML\Generator\IMashProfileReader;
-use BeerXML\Generator\IMiscReader;
-use BeerXML\Generator\IRecipeReader;
-use BeerXML\Generator\IStyleReader;
-use BeerXML\Generator\IWaterReader;
-use BeerXML\Generator\IYeastReader;
+use BeerXML\Generator\IEquipment;
+use BeerXML\Generator\IFermentable;
+use BeerXML\Generator\IHop;
+use BeerXML\Generator\IMashProfile;
+use BeerXML\Generator\IMisc;
+use BeerXML\Generator\IRecipe;
+use BeerXML\Generator\IStyle;
+use BeerXML\Generator\IWater;
+use BeerXML\Generator\IYeast;
 use BeerXML\Parser\RecordFactory;
 use BeerXML\Parser\Record;
 
@@ -76,7 +76,7 @@ class Parser
      * Parse a beer XML, returning an array of the record objects found
      *
      * @param string $xml
-     * @return IRecipeReader[]|IEquipmentReader[]|IFermentableReader[]|IHopReader[]|IMashProfileReader[]|IMiscReader[]|IStyleReader[]|IWaterReader[]|IYeastReader[]
+     * @return IRecipe[]|IEquipment[]|IFermentable[]|IHop[]|IMashProfile[]|IMisc[]|IStyle[]|IWater[]|IYeast[]
      */
     public function parse($xml)
     {

@@ -4,7 +4,7 @@
 namespace BeerXML\Generator;
 
 
-interface IYeastReader
+interface IYeast
 {
 
     /**

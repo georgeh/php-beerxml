@@ -48,7 +48,7 @@ class Recipe extends Record
     );
 
     /**
-     * @return IRecipeWriter
+     * @return IRecipe
      */
     protected function createRecord()
     {
@@ -56,7 +56,7 @@ class Recipe extends Record
     }
 
     /**
-     * @param IRecipeWriter $record
+     * @param IRecipe $record
      */
     protected function otherElementEncountered($record)
     {

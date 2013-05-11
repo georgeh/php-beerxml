@@ -4,6 +4,16 @@
 namespace BeerXML;
 
 use BeerXML\Exception\InvalidRecord;
+use BeerXML\Generator\IEquipment;
+use BeerXML\Generator\IFermentable;
+use BeerXML\Generator\IHop;
+use BeerXML\Generator\IMashProfile;
+use BeerXML\Generator\IMashStep;
+use BeerXML\Generator\IMisc;
+use BeerXML\Generator\IRecipe;
+use BeerXML\Generator\IStyle;
+use BeerXML\Generator\IWater;
+use BeerXML\Generator\IYeast;
 
 /**
  * BeerXML Generator Class
@@ -35,18 +45,18 @@ class Generator
      * @var array
      */
     private $recordSetTags = array(
-        '\BeerXML\Generator\IHopReader'         => array('tag' => 'HOPS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IFermentableReader' => array('tag'       => 'FERMENTABLES',
+        '\BeerXML\Generator\IHop'         => array('tag' => 'HOPS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IFermentable' => array('tag'       => 'FERMENTABLES',
                                                          'generator' => 'BeerXML\Generator\Hop'
         ),
-        '\BeerXML\Generator\IYeastReader'       => array('tag' => 'YEASTS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IMiscReader'        => array('tag' => 'MISCS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IWaterReader'       => array('tag' => 'WATERS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IStyleReader'       => array('tag' => 'STYLES', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IMashStepReader'    => array('tag' => 'MASH_STEPS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IMashReader'        => array('tag' => 'MASHS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IRecipeReader'      => array('tag' => 'RECIPES', 'generator' => 'BeerXML\Generator\Recipe'),
-        '\BeerXML\Generator\IEquipmentReader'   => array('tag' => 'EQUIPMENTS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IYeast'       => array('tag' => 'YEASTS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IMisc'        => array('tag' => 'MISCS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IWater'       => array('tag' => 'WATERS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IStyle'       => array('tag' => 'STYLES', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IMashStep'    => array('tag' => 'MASH_STEPS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IMash'        => array('tag' => 'MASHS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IRecipe'      => array('tag' => 'RECIPES', 'generator' => 'BeerXML\Generator\Recipe'),
+        '\BeerXML\Generator\IEquipment'   => array('tag' => 'EQUIPMENTS', 'generator' => 'BeerXML\Generator\Hop'),
     );
 
     /**
@@ -92,7 +102,7 @@ class Generator
     }
 
     /**
-     * @param Record\IHopReader|Record\IFermentableReader|Record\IYeastReader|Record\IMiscReader|Record\IWaterReader|Record\IStyleReader|Record\IMashStepReader|Record\IMashReader|Record\IRecipeReader|Record\IEquipmentReader $record
+     * @param IHop|IFermentable|IEquipment|IYeast|IMisc|IWater|IStyle|IMashStep|IMashProfile|IRecipe $record
      * @return array(string, Record)
      * @throws Exception\InvalidRecord
      */

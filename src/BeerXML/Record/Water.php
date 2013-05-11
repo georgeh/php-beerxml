@@ -4,10 +4,10 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IWaterReader;
-use BeerXML\Parser\IWaterWriter;
+use BeerXML\Generator\IWater as WaterGetter;
+use BeerXML\Parser\IWater as WaterSetter;
 
-class Water implements IWaterReader, IWaterWriter
+class Water implements WaterGetter, WaterSetter
 {
     /**
      * Name of the water profile – usually the city and country of the water profile.

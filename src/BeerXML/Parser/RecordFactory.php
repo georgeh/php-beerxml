@@ -14,11 +14,10 @@ namespace BeerXML\Parser;
  *
  * @package BeerXML\Parser
  */
-class RecordFactory
-{
+class RecordFactory {
 
     /**
-     * @return IEquipmentWriter
+     * @return IEquipment
      */
     public function getEquipment()
     {
@@ -26,7 +25,7 @@ class RecordFactory
     }
 
     /**
-     * @return IFermentableWriter
+     * @return IFermentable
      */
     public function getFermentable()
     {
@@ -34,7 +33,7 @@ class RecordFactory
     }
 
     /**
-     * @return IHopWriter
+     * @return IHop
      */
     public function getHop()
     {
@@ -42,7 +41,7 @@ class RecordFactory
     }
 
     /**
-     * @return IMashProfileWriter
+     * @return IMashProfile
      */
     public function getMashProfile()
     {
@@ -50,7 +49,7 @@ class RecordFactory
     }
 
     /**
-     * @return IMashStepWriter
+     * @return IMashStep
      */
     public function getMashStep()
     {
@@ -58,7 +57,7 @@ class RecordFactory
     }
 
     /**
-     * @return IMiscWriter
+     * @return IMisc
      */
     public function getMisc()
     {
@@ -66,7 +65,7 @@ class RecordFactory
     }
 
     /**
-     * @return IRecipeWriter
+     * @return IRecipe
      */
     public function getRecipe()
     {
@@ -82,7 +81,7 @@ class RecordFactory
     }
 
     /**
-     * @return IWaterWriter
+     * @return IWater
      */
     public function getWater()
     {
@@ -90,7 +89,7 @@ class RecordFactory
     }
 
     /**
-     * @return IYeastWriter
+     * @return IYeast
      */
     public function getYeast()
     {

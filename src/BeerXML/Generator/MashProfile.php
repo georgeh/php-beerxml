@@ -43,8 +43,6 @@ class MashProfile extends Record
     protected function additionalFields()
     {
         $this->xmlWriter->writeElement('EQUIP_ADJUST', $this->boolToString($this->record->getEquipAdjust()));
-
-        return parent::additionalFields();
     }
 
 }
