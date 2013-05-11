@@ -25,15 +25,28 @@ class Equipment extends Record
         'TRUB_CHILLER_LOSS' => 'setTrubChillerLoss',
         'EVAP_RATE'         => 'setEvapRate',
         'BOIL_TIME'         => 'setBoilTime',
-        'CALC_BOIL_VOLUME'  => 'setCalcBoilVolume',
         'LAUTER_DEADSPACE'  => 'setLauterDeadspace',
         'TOP_UP_KETTLE'     => 'setTopUpKettle',
         'HOP_UTILIZATION'   => 'setHopUtilization',
         'NOTES'             => 'setNotes',
     );
 
+    /**
+     * @return IEquipmentWriter
+     */
     protected function createRecord()
     {
         return $this->recordFactory->getEquipment();
+    }
+
+    /**
+     * @param IEquipmentWriter $record
+     */
+    protected function otherElementEncountered($record)
+    {
+        if ('CALC_BOIL_VOLUME' == $this->xmlReader->name) {
+            $value = ($this->xmlReader->readString() == 'TRUE');
+            $record->setCalcBoilVolume($value);
+        }
     }
 }

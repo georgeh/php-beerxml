@@ -14,7 +14,8 @@ namespace BeerXML\Parser;
  *
  * @package BeerXML\Parser
  */
-class RecordFactory {
+class RecordFactory
+{
 
     /**
      * @return IEquipmentWriter

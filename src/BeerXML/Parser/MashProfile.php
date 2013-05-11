@@ -22,11 +22,24 @@ class MashProfile extends Record
         'PH'                => 'setPH',
         'TUN_WEIGHT'        => 'setTunWeight',
         'TUN_SPECIFIC_HEAT' => 'setTunSpecificHeat',
-        'EQUIP_ADJUST'      => 'setEquipAdjust',
     );
 
+    /**
+     * @return IMashProfileWriter
+     */
     protected function createRecord()
     {
         return $this->recordFactory->getMashProfile();
+    }
+
+    /**
+     * @param IMashProfileWriter $record
+     */
+    protected function otherElementEncountered($record)
+    {
+        if ('EQUIP_ADJUST' == $this->xmlReader->name) {
+            $value = ($this->xmlReader->readString() == 'TRUE');
+            $record->setEquipAdjust($value);
+        }
     }
 }

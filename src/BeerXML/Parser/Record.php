@@ -4,9 +4,15 @@
 namespace BeerXML\Parser;
 
 
+use BeerXML\Exception\BadData;
+
 abstract class Record
 {
-    protected $tagName;
+    /**
+     * The <TAG> that a subclass parses
+     * @var string
+     */
+    protected $tagName = null;
 
     /**
      * @var \XMLReader
@@ -113,16 +119,17 @@ abstract class Record
         $this->xmlReader->XML($xmlStr);
     }
 
+    /**
+     * @throws BadData
+     * @return mixed
+     */
     public function parse()
     {
-        if (empty($this->tagName)) {
-            throw new \Exception('If you don\'t have a tagName, you\'re gonna have a bad time');
-        }
         $record = $this->createRecord();
         // While this recipe is still open
         while ($this->tagName != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
             if (!$this->xmlReader->read()) {
-                throw new \Exception('Surprise end of file!');
+                throw new BadData('Surprise end of file!');
             };
 
             if (\XMLReader::ELEMENT == $this->xmlReader->nodeType) {
@@ -134,7 +141,8 @@ abstract class Record
                     $this->setComplexProperty($record);
                 } elseif (isset($this->complexPropertySets[$this->xmlReader->name])) {
                     $this->setComplexPropertySet($record);
-
+                } else {
+                    $this->otherElementEncountered($record);
                 }
             }
         }
@@ -145,6 +153,15 @@ abstract class Record
     abstract protected function createRecord();
 
     /**
+     * Called when an unknown element is encountered, useful for edge cases
+     *
+     * @param IRecipeWriter|IEquipmentWriter|IFermentableWriter|IHopWriter|IMashProfileWriter|IMiscWriter|IStyleWriter|IWaterWriter|IYeastWriter
+     */
+    protected function otherElementEncountered($record)
+    {
+    }
+
+    /**
      * Add a set of records to the record
      *
      * @param $record
@@ -153,9 +170,9 @@ abstract class Record
     protected function setComplexPropertySet($record)
     {
         // Sets of records
-        $setTag      = $this->xmlReader->name;
-        $setType     = $this->complexPropertySets[$this->xmlReader->name];
-        $tag         = $setType['tag'];
+        $setTag = $this->xmlReader->name;
+        $setType = $this->complexPropertySets[$this->xmlReader->name];
+        $tag = $setType['tag'];
         $parserClass = $setType['parser'];
         $recordAdder = $setType['method'];
         while ($setTag != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
@@ -179,10 +196,10 @@ abstract class Record
      */
     protected function setComplexProperty($record)
     {
-        $recordType   = $this->complexProperties[$this->xmlReader->name];
+        $recordType = $this->complexProperties[$this->xmlReader->name];
         $recordParser = $this->createRecordParser($recordType['parser']);
         $complex = $recordParser->parse();
-        $method  = $recordType['method'];
+        $method = $recordType['method'];
         // Call the setter method
         $record->{$method}($complex);
     }
@@ -200,3 +217,4 @@ abstract class Record
         return $recordParser;
     }
 }
+

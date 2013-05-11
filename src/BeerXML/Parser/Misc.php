@@ -14,19 +14,32 @@ class Misc extends Record
      * @var array
      */
     protected $simpleProperties = array(
-        'NAME'             => 'setName',
-        'VERSION'          => 'setVersion',
-        'TYPE'             => 'setType',
-        'USE'              => 'setUse',
-        'TIME'             => 'setTime',
-        'AMOUNT'           => 'setAmount',
-        'AMOUNT_IS_WEIGHT' => 'setAmountIsWeight',
-        'USE_FOR'          => 'setUseFor',
-        'NOTES'            => 'setNotes',
+        'NAME'    => 'setName',
+        'VERSION' => 'setVersion',
+        'TYPE'    => 'setType',
+        'USE'     => 'setUse',
+        'TIME'    => 'setTime',
+        'AMOUNT'  => 'setAmount',
+        'USE_FOR' => 'setUseFor',
+        'NOTES'   => 'setNotes',
     );
 
+    /**
+     * @return IMiscWriter
+     */
     protected function createRecord()
     {
         return $this->recordFactory->getMisc();
+    }
+
+    /**
+     * @param IMiscWriter $record
+     */
+    protected function otherElementEncountered($record)
+    {
+        if ('AMOUNT_IS_WEIGHT' == $this->xmlReader->name) {
+            $value = ($this->xmlReader->readString() == 'TRUE');
+            $record->setAmountIsWeight($value);
+        }
     }
 }

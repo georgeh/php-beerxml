@@ -20,7 +20,6 @@ class Fermentable extends Record
         'AMOUNT'           => 'setAmount',
         'YIELD'            => 'setYield',
         'COLOR'            => 'setColor',
-        'ADD_AFTER_BOIL'   => 'setAddAfterBoil',
         'ORIGIN'           => 'setOrigin',
         'SUPPLIER'         => 'setSupplier',
         'NOTES'            => 'setNotes',
@@ -29,14 +28,29 @@ class Fermentable extends Record
         'DIASTATIC_POWER'  => 'setDiastaticPower',
         'PROTEIN'          => 'setProtein',
         'MAX_IN_BATCH'     => 'setMaxInBatch',
-        'RECOMMEND_MASH'   => 'setRecommendMash',
         'IBU_GAL_PER_LB'   => 'setIbuGalPerLb',
     );
 
+    /**
+     * @return IFermentableWriter
+     */
     public function createRecord()
     {
         return $this->recordFactory->getFermentable();
     }
 
-
+    /**
+     * @param IFermentableWriter $record
+     */
+    protected function otherElementEncountered($record)
+    {
+        if ('ADD_AFTER_BOIL' == $this->xmlReader->name) {
+            $value = ($this->xmlReader->readString() == 'TRUE');
+            $record->setAddAfterBoil($value);
+        }
+        if ('RECOMMEND_MASH' == $this->xmlReader->name) {
+            $value = ($this->xmlReader->readString() == 'TRUE');
+            $record->setRecommendMash($value);
+        }
+    }
 }
