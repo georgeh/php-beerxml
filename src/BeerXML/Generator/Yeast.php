@@ -46,6 +46,17 @@ class Yeast extends Record
         'ADD_TO_SECONDARY' => 'getAddToSecondary',
     );
 
+    protected $displayInterface = 'BeerXML\Generator\IYeastDisplay';
+
+    protected $displayValues = array(
+        'DISPLAY_AMOUNT' => 'getDisplayAmount',
+        'DISP_MIN_TEMP'  => 'getDispMinTemp',
+        'DISP_MAX_TEMP'  => 'getDispMaxTemp',
+        'INVENTORY'      => 'getInventory',
+        'CULTURE_DATE'   => 'getCultureDate',
+    );
+
+
     /**
      * @{inheritDoc}
      */

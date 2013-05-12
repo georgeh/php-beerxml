@@ -288,7 +288,7 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     }
 
     /**
-     * Grain temperature in user display units with the units.  For example: “72 F”.
+     * Grain temperature in user display units with the units.  For example: "72 F".
      *
      * @param string $displayGrainTemp
      */
@@ -298,7 +298,7 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     }
 
     /**
-     * Grain temperature in user display units with the units.  For example: “72 F”.
+     * Grain temperature in user display units with the units.  For example: "72 F".
      *
      * @return string
      */
@@ -308,7 +308,7 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     }
 
     /**
-     * Sparge temperature in user defined units.  For example “178 F”
+     * Sparge temperature in user defined units.  For example "178 F"
      *
      * @param string $displaySpargeTemp
      */
@@ -318,7 +318,7 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     }
 
     /**
-     * Sparge temperature in user defined units.  For example “178 F”
+     * Sparge temperature in user defined units.  For example "178 F"
      *
      * @return string
      */
@@ -328,7 +328,7 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     }
 
     /**
-     * Tun temperature in user display units.  For example “68 F”
+     * Tun temperature in user display units.  For example "68 F"
      *
      * @param string $displayTunTemp
      */
@@ -338,7 +338,7 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     }
 
     /**
-     * Tun temperature in user display units.  For example “68 F”
+     * Tun temperature in user display units.  For example "68 F"
      *
      * @return string
      */
@@ -348,7 +348,7 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     }
 
     /**
-     * Tun weight in user defined units – for example “10 lb”
+     * Tun weight in user defined units – for example "10 lb"
      *
      * @param string $displayTunWeight
      */
@@ -358,7 +358,7 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     }
 
     /**
-     * Tun weight in user defined units – for example “10 lb”
+     * Tun weight in user defined units – for example "10 lb"
      *
      * @return string
      */

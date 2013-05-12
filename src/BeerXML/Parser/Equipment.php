@@ -36,7 +36,23 @@ class Equipment extends Record
      */
     protected function createRecord()
     {
-        return $this->recordFactory->getEquipment();
+        $equipment = $this->recordFactory->getEquipment();
+        if ($equipment instanceof IEquipmentDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DISPLAY_BOIL_SIZE'         => 'setDisplayBoilSize',
+                    'DISPLAY_BATCH_SIZE'        => 'setDisplayBatchSize',
+                    'DISPLAY_TUN_VOLUME'        => 'setDisplayTunVolume',
+                    'DISPLAY_TUN_WEIGHT'        => 'setDisplayTunWeight',
+                    'DISPLAY_TOP_UP_WATER'      => 'setDisplayTopUpWater',
+                    'DISPLAY_TRUB_CHILLER_LOSS' => 'setDisplayTrubChillerLoss',
+                    'DISPLAY_LAUTER_DEADSPACE'  => 'setDisplayLauterDeadspace',
+                    'DISPLAY_TOP_UP_KETTLE'     => 'setDisplayTopUpKettle',
+                )
+            );
+        }
+        return $equipment;
     }
 
     /**

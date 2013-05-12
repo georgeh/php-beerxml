@@ -8,11 +8,6 @@ class Hop extends Record
 {
     protected $tagName = 'HOP';
 
-    protected function createRecord()
-    {
-        return $this->recordFactory->getHop();
-    }
-
     /**
      * Tags that map to simple values and the corresponding setter method on the record class
      *
@@ -37,4 +32,23 @@ class Hop extends Record
         'COHUMULONE'    => 'setCohumulone',
         'MYRCENE'       => 'setMyrcene',
     );
+
+    /**
+     * @return IHop
+     */
+    protected function createRecord()
+    {
+        $hop = $this->recordFactory->getHop();
+        if ($hop instanceof IHopDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DISPLAY_AMOUNT' => 'setDisplayAmount',
+                    'INVENTORY'      => 'setInventory',
+                    'DISPLAY_TIME'   => 'setDisplayTime',
+                )
+            );
+        }
+        return $hop;
+    }
 }

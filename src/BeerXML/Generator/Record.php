@@ -4,6 +4,8 @@
 namespace BeerXML\Generator;
 
 
+use BeerXML\Record\Yeast;
+
 abstract class Record
 {
     /**
@@ -42,6 +44,22 @@ abstract class Record
     protected $complexValueSets = array();
 
     /**
+     * The interface for the optional display fields in Appendix A of the spec
+     *
+     * @var string
+     */
+    protected $displayInterface;
+
+    /**
+     * <TAG> => getterMethod()
+     *
+     * For the optional tags from the display fields in Appendix A of the spec
+     *
+     * @var array
+     */
+    protected $displayValues = array();
+
+    /**
      * @param \XMLWriter $xmlWriter
      */
     public function setXmlWriter($xmlWriter)
@@ -49,6 +67,9 @@ abstract class Record
         $this->xmlWriter = $xmlWriter;
     }
 
+    /**
+     * @param IHop|IFermentable|IEquipment|IYeast|IMisc|IWater|IStyle|IMashStep|IMashProfile|IRecipe $record
+     */
     public function setRecord($record)
     {
         $this->record = $record;
@@ -100,7 +121,17 @@ abstract class Record
             $this->xmlWriter->endElement();
         }
 
-        // Simple optional
+        // If the given record implements the interface for the display fields, write those too
+        if ($this->record instanceof $this->displayInterface) {
+            foreach ($this->displayValues as $tag => $method) {
+                $value = $this->record->{$method}();
+                if (!empty($value)) {
+                    $this->xmlWriter->writeElement($tag, $value);
+                }
+            }
+        }
+
+        // Call the parser to allow it to add any other weird fields
         $this->additionalFields();
 
         $this->xmlWriter->endElement();

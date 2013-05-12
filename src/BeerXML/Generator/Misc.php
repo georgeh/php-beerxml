@@ -38,6 +38,14 @@ class Misc extends Record
         'NOTES'   => 'getNotes',
     );
 
+    protected $displayInterface = 'BeerXML\Generator\IMiscDisplay';
+
+    protected $displayValues = array(
+        'DISPLAY_AMOUNT' => 'getDisplayAmount',
+        'INVENTORY'      => 'getInventory',
+        'DISPLAY_TIME'   => 'getDisplayTime',
+    );
+
     /**
      * @{inheritDoc}
      */

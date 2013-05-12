@@ -311,7 +311,7 @@ class Water implements WaterGetter, WaterSetter
 
     /**
      * The amount of water in this record along with the units formatted for easy display in the current user defined
-     * units.  For example “5.0 gal” or “20.0 l”.
+     * units.  For example "5.0 gal" or "20.0 l".
      *
      * @param string $displayAmount
      */
@@ -322,7 +322,7 @@ class Water implements WaterGetter, WaterSetter
 
     /**
      * The amount of water in this record along with the units formatted for easy display in the current user defined
-     * units.  For example “5.0 gal” or “20.0 l”.
+     * units.  For example "5.0 gal" or "20.0 l".
      *
      * @return string
      */

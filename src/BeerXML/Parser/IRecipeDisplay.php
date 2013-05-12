@@ -62,9 +62,9 @@ interface IRecipeDisplay extends IRecipe
     /**
      * Text description of the carbonation used such as "50g corn sugar" or "Kegged at 20psi"
      *
-     * @param string $displayCarbonationUsed
+     * @param string $carbonationUsed
      */
-    public function setDisplayCarbonationUsed($displayCarbonationUsed);
+    public function setCarbonationUsed($carbonationUsed);
 
     /**
      * Measured final gravity in user defined units as in "1.035 sg"

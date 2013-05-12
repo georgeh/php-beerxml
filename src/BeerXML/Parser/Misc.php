@@ -29,7 +29,18 @@ class Misc extends Record
      */
     protected function createRecord()
     {
-        return $this->recordFactory->getMisc();
+        $misc = $this->recordFactory->getMisc();
+        if ($misc instanceof IMiscDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DISPLAY_AMOUNT' => 'setDisplayAmount',
+                    'INVENTORY'      => 'setInventory',
+                    'DISPLAY_TIME'   => 'setDisplayTime',
+                )
+            );
+        }
+        return $misc;
     }
 
     /**

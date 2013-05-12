@@ -1,0 +1,19 @@
+<HOP>
+    <AMOUNT>0.050</AMOUNT>
+    <VERSION>1</VERSION>
+    <USE>Mash</USE>
+    <ALPHA>4.5</ALPHA>
+    <NOTES>Shortened for unit tests</NOTES>
+    <TIME>45.0</TIME>
+    <BETA>5.5</BETA>
+    <NAME>Super Hops</NAME>
+    <ORIGIN>Planet Krypton</ORIGIN>
+    <SUBSTITUTES>Goldings, Fuggles, Super Alpha</SUBSTITUTES>
+    <MYRCENE>24.4</MYRCENE>
+    <HSI>30</HSI>
+    <FORM>Leaf</FORM>
+    <TYPE>Bittering</TYPE>
+    <COHUMULONE>13.2</COHUMULONE>
+    <HUMULENE>14</HUMULENE>
+    <CARYOPHYLLENE>4.1</CARYOPHYLLENE>
+</HOP>

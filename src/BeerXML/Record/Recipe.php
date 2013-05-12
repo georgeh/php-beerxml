@@ -372,7 +372,7 @@ class Recipe implements RecipeGetter, RecipeSetter
     /**
      * @var string
      */
-    private $displayCarbonationUsed;
+    private $carbonationUsed;
 
     /**
      * @var string
@@ -1136,11 +1136,11 @@ class Recipe implements RecipeGetter, RecipeSetter
     /**
      * Text description of the carbonation used such as "50g corn sugar" or "Kegged at 20psi"
      *
-     * @param string $displayCarbonationUsed
+     * @param string $carbonationUsed
      */
-    public function setDisplayCarbonationUsed($displayCarbonationUsed)
+    public function setCarbonationUsed($carbonationUsed)
     {
-        $this->displayCarbonationUsed = $displayCarbonationUsed;
+        $this->carbonationUsed = $carbonationUsed;
     }
 
     /**
@@ -1148,9 +1148,9 @@ class Recipe implements RecipeGetter, RecipeSetter
      *
      * @return string
      */
-    public function getDisplayCarbonationUsed()
+    public function getCarbonationUsed()
     {
-        return $this->displayCarbonationUsed;
+        return $this->carbonationUsed;
     }
 
     /**

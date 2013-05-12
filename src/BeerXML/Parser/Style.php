@@ -40,11 +40,31 @@ class Style extends Record
     );
 
     /**
-     * @return \BeerXML\Record\Style
+     * @return IStyle
      */
     protected function createRecord()
     {
-        return $this->recordFactory->getStyle();
+        $style = $this->recordFactory->getStyle();
+        if ($style instanceof IStyleDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DISPLAY_OG_MIN'    => 'setDisplayOgMin',
+                    'DISPLAY_OG_MAX'    => 'setDisplayOgMax',
+                    'DISPLAY_FG_MIN'    => 'setDisplayFgMin',
+                    'DISPLAY_FG_MAX'    => 'setDisplayFgMax',
+                    'DISPLAY_COLOR_MIN' => 'setDisplayColorMin',
+                    'DISPLAY_COLOR_MAX' => 'setDisplayColorMax',
+                    'OG_RANGE'          => 'setOgRange',
+                    'FG_RANGE'          => 'setFgRange',
+                    'IBU_RANGE'         => 'setIbuRange',
+                    'CARB_RANGE'        => 'setCarbRange',
+                    'COLOR_RANGE'       => 'setColorRange',
+                    'ABV_RANGE'         => 'setAbvRange',
+                )
+            );
+        }
+        return $style;
     }
 
 }

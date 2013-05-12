@@ -37,6 +37,17 @@ class MashStep extends Record
         'END_TEMP'  => 'getEndTemp',
     );
 
+    protected $displayInterface = 'BeerXML\Generator\IMashStepDisplay';
+
+    protected $displayValues = array(
+        'DESCRIPTION'        => 'getDescription',
+        'WATER_GRAIN_RATIO'  => 'getWaterGrainRatio',
+        'DECOCTION_AMT'      => 'getDecoctionAmt',
+        'INFUSE_TEMP'        => 'getInfuseTemp',
+        'DISPLAY_STEP_TEMP'  => 'getDisplayStepTemp',
+        'DISPLAY_INFUSE_AMT' => 'getDisplayInfuseAmt',
+    );
+
     /**
      * @{inheritDoc}
      */

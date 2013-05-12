@@ -24,8 +24,25 @@ class MashStep extends Record
         'END_TEMP'      => 'setEndTemp',
     );
 
+    /**
+     * @return IMashStep
+     */
     protected function createRecord()
     {
-        return $this->recordFactory->getMashStep();
+        $mashStep = $this->recordFactory->getMashStep();
+        if ($mashStep instanceof IMashStepDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DESCRIPTION'        => 'setDescription',
+                    'WATER_GRAIN_RATIO'  => 'setWaterGrainRatio',
+                    'DECOCTION_AMT'      => 'setDecoctionAmt',
+                    'INFUSE_TEMP'        => 'setInfuseTemp',
+                    'DISPLAY_STEP_TEMP'  => 'setDisplayStepTemp',
+                    'DISPLAY_INFUSE_AMT' => 'setDisplayInfuseAmt',
+                )
+            );
+        }
+        return $mashStep;
     }
 }

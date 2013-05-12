@@ -621,7 +621,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * ABV Range for this style such as “4.5-5.5%”
+     * ABV Range for this style such as "4.5-5.5%"
      *
      * @param string $abvRange
      */
@@ -631,7 +631,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * ABV Range for this style such as “4.5-5.5%”
+     * ABV Range for this style such as "4.5-5.5%"
      *
      * @return string
      */
@@ -641,7 +641,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Carbonation range in volumes such as “2.0-2.6 vols”
+     * Carbonation range in volumes such as "2.0-2.6 vols"
      *
      * @param string $carbRange
      */
@@ -651,7 +651,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Carbonation range in volumes such as “2.0-2.6 vols”
+     * Carbonation range in volumes such as "2.0-2.6 vols"
      *
      * @return string
      */
@@ -661,7 +661,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Color range such as “10-20 SRM”
+     * Color range such as "10-20 SRM"
      *
      * @param string $colorRange
      */
@@ -671,7 +671,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Color range such as “10-20 SRM”
+     * Color range such as "10-20 SRM"
      *
      * @return string
      */
@@ -681,7 +681,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Maximum color in user defined units such as “20 srm”
+     * Maximum color in user defined units such as "20 srm"
      *
      * @param string $displayColorMax
      */
@@ -691,7 +691,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Maximum color in user defined units such as “20 srm”
+     * Maximum color in user defined units such as "20 srm"
      *
      * @return string
      */
@@ -701,7 +701,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Minimum color in user defined units such as “30 srm”.
+     * Minimum color in user defined units such as "30 srm".
      *
      * @param string $displayColorMin
      */
@@ -711,7 +711,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Minimum color in user defined units such as “30 srm”.
+     * Minimum color in user defined units such as "30 srm".
      *
      * @return string
      */
@@ -721,7 +721,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Final gravity maximum in user defined units such as “1.019 sg”.
+     * Final gravity maximum in user defined units such as "1.019 sg".
      *
      * @param string $displayFgMax
      */
@@ -731,7 +731,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Final gravity maximum in user defined units such as “1.019 sg”.
+     * Final gravity maximum in user defined units such as "1.019 sg".
      *
      * @return string
      */
@@ -741,7 +741,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Final gravity minimum in user defined units such as “1.010 sg”.
+     * Final gravity minimum in user defined units such as "1.010 sg".
      *
      * @param string $displayFgMin
      */
@@ -751,7 +751,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Final gravity minimum in user defined units such as “1.010 sg”.
+     * Final gravity minimum in user defined units such as "1.010 sg".
      *
      * @return string
      */
@@ -761,7 +761,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Original gravity max in user defined units such as “1.056 sg”
+     * Original gravity max in user defined units such as "1.056 sg"
      *
      * @param string $displayOgMax
      */
@@ -771,7 +771,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Original gravity max in user defined units such as “1.056 sg”
+     * Original gravity max in user defined units such as "1.056 sg"
      *
      * @return string
      */
@@ -781,7 +781,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Original gravity minimum in user defined units such as “1.036 sg”.
+     * Original gravity minimum in user defined units such as "1.036 sg".
      *
      * @param string $displayOgMin
      */
@@ -791,7 +791,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Original gravity minimum in user defined units such as “1.036 sg”.
+     * Original gravity minimum in user defined units such as "1.036 sg".
      *
      * @return string
      */
@@ -801,7 +801,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Final gravity range such as “1.010-1.015 sg”
+     * Final gravity range such as "1.010-1.015 sg"
      *
      * @param string $fgRange
      */
@@ -811,7 +811,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Final gravity range such as “1.010-1.015 sg”
+     * Final gravity range such as "1.010-1.015 sg"
      *
      * @return string
      */
@@ -821,7 +821,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Bitterness range in IBUs such as “10-20 IBU”
+     * Bitterness range in IBUs such as "10-20 IBU"
      *
      * @param string $ibuRange
      */
@@ -831,7 +831,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Bitterness range in IBUs such as “10-20 IBU”
+     * Bitterness range in IBUs such as "10-20 IBU"
      *
      * @return string
      */
@@ -841,7 +841,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Original gravity range for the style such as “1.030-1.040 sg”
+     * Original gravity range for the style such as "1.030-1.040 sg"
      *
      * @param string $ogRange
      */
@@ -851,7 +851,7 @@ class Style implements StyleGetter, StyleSetter
     }
 
     /**
-     * Original gravity range for the style such as “1.030-1.040 sg”
+     * Original gravity range for the style such as "1.030-1.040 sg"
      *
      * @return string
      */

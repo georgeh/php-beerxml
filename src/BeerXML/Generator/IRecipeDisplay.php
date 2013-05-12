@@ -68,7 +68,7 @@ interface IRecipeDisplay extends IRecipe
      *
      * @return string
      */
-    public function getDisplayCarbonationUsed();
+    public function getCarbonationUsed();
 
     /**
      * Measured final gravity in user defined units as in "1.035 sg"

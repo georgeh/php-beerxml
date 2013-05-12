@@ -37,6 +37,15 @@ class MashProfile extends Record
         'MASH_STEPS' => array('generator' => 'BeerXML\Generator\MashStep', 'values' => 'getMashSteps'),
     );
 
+    protected $displayInterface = 'BeerXML\Generator\IMashProfileDisplay';
+
+    protected $displayValues = array(
+        'DISPLAY_GRAIN_TEMP'  => 'getDisplayGrainTemp',
+        'DISPLAY_TUN_TEMP'    => 'getDisplayTunTemp',
+        'DISPLAY_SPARGE_TEMP' => 'getDisplaySpargeTemp',
+        'DISPLAY_TUN_WEIGHT'  => 'getDisplayTunWeight',
+    );
+
     /**
      * @{inheritDoc}
      */

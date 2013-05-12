@@ -385,9 +385,9 @@ class Hop implements HopGetter, HopSetter
     }
 
     /**
-     * The time as measured in minutes.  Meaning is dependent on the “USE" field.  For “Boil" this is the boil time.
-     * For “Mash" this is the mash time.  For “First Wort" this is the boil time.  For “Aroma" this is the steep time.
-     * For “Dry Hop" this is the amount of time to dry hop.
+     * The time as measured in minutes.  Meaning is dependent on the "USE" field.  For "Boil" this is the boil time.
+     * For "Mash" this is the mash time.  For "First Wort" this is the boil time.  For "Aroma" this is the steep time.
+     * For "Dry Hop" this is the amount of time to dry hop.
      *
      * @param number $time
      */
@@ -397,9 +397,9 @@ class Hop implements HopGetter, HopSetter
     }
 
     /**
-     * The time as measured in minutes.  Meaning is dependent on the “USE" field.  For “Boil" this is the boil time.
-     * For “Mash" this is the mash time.  For “First Wort" this is the boil time.  For “Aroma" this is the steep time.
-     * For “Dry Hop" this is the amount of time to dry hop.
+     * The time as measured in minutes.  Meaning is dependent on the "USE" field.  For "Boil" this is the boil time.
+     * For "Mash" this is the mash time.  For "First Wort" this is the boil time.  For "Aroma" this is the steep time.
+     * For "Dry Hop" this is the amount of time to dry hop.
      *
      * @return number
      */
@@ -476,7 +476,7 @@ class Hop implements HopGetter, HopSetter
 
     /**
      * The amount of hops in this record along with the units formatted for easy display in the current user defined
-     * units.  For example “100 g” or “1.5 oz”.
+     * units.  For example "100 g" or "1.5 oz".
      *
      * @param string $displayAmount
      */
@@ -487,7 +487,7 @@ class Hop implements HopGetter, HopSetter
 
     /**
      * The amount of hops in this record along with the units formatted for easy display in the current user defined
-     * units.  For example “100 g” or “1.5 oz”.
+     * units.  For example "100 g" or "1.5 oz".
      *
      * @return string
      */
@@ -497,7 +497,7 @@ class Hop implements HopGetter, HopSetter
     }
 
     /**
-     * Time displayed in minutes for all uses except for the dry hop which is in days.  For example “60 min”, “3 days”.
+     * Time displayed in minutes for all uses except for the dry hop which is in days.  For example "60 min", "3 days".
      *
      * @param string $displayTime
      */
@@ -507,7 +507,7 @@ class Hop implements HopGetter, HopSetter
     }
 
     /**
-     * Time displayed in minutes for all uses except for the dry hop which is in days.  For example “60 min”, “3 days”.
+     * Time displayed in minutes for all uses except for the dry hop which is in days.  For example "60 min", "3 days".
      *
      * @return string
      */
@@ -517,7 +517,7 @@ class Hop implements HopGetter, HopSetter
     }
 
     /**
-     * Amount in inventory for this item along with the units – for example “10.0 oz”
+     * Amount in inventory for this item along with the units – for example "10.0 oz"
      *
      * @param string $inventory
      */
@@ -527,7 +527,7 @@ class Hop implements HopGetter, HopSetter
     }
 
     /**
-     * Amount in inventory for this item along with the units – for example “10.0 oz”
+     * Amount in inventory for this item along with the units – for example "10.0 oz"
      *
      * @return string
      */

@@ -39,4 +39,11 @@ class Water extends Record
         'PH'    => 'getPH',
         'NOTES' => 'getNotes',
     );
+
+    protected $displayInterface = 'BeerXML\Generator\IWaterDisplay';
+
+    protected $displayValues = array(
+        'DISPLAY_AMOUNT' => 'getDisplayAmount',
+    );
+
 }

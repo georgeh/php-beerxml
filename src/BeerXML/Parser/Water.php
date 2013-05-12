@@ -27,8 +27,20 @@ class Water extends Record
         'NOTES'       => 'setNotes',
     );
 
+    /**
+     * @return IWater
+     */
     protected function createRecord()
     {
-        return $this->recordFactory->getWater();
+        $water = $this->recordFactory->getWater();
+        if ($water instanceof IWaterDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DISPLAY_AMOUNT' => 'setDisplayAmount',
+                )
+            );
+        }
+        return $water;
     }
 }

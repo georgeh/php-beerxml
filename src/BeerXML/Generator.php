@@ -14,6 +14,7 @@ use BeerXML\Generator\IRecipe;
 use BeerXML\Generator\IStyle;
 use BeerXML\Generator\IWater;
 use BeerXML\Generator\IYeast;
+use BeerXML\Generator\Record;
 
 /**
  * BeerXML Generator Class
@@ -46,17 +47,18 @@ class Generator
      */
     private $recordSetTags = array(
         '\BeerXML\Generator\IHop'         => array('tag' => 'HOPS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IFermentable' => array('tag'       => 'FERMENTABLES',
-                                                         'generator' => 'BeerXML\Generator\Hop'
+        '\BeerXML\Generator\IFermentable' => array(
+            'tag'       => 'FERMENTABLES',
+            'generator' => 'BeerXML\Generator\Fermentable'
         ),
-        '\BeerXML\Generator\IYeast'       => array('tag' => 'YEASTS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IMisc'        => array('tag' => 'MISCS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IWater'       => array('tag' => 'WATERS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IStyle'       => array('tag' => 'STYLES', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IMashStep'    => array('tag' => 'MASH_STEPS', 'generator' => 'BeerXML\Generator\Hop'),
-        '\BeerXML\Generator\IMash'        => array('tag' => 'MASHS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IYeast'       => array('tag' => 'YEASTS', 'generator' => 'BeerXML\Generator\Yeast'),
+        '\BeerXML\Generator\IMisc'        => array('tag' => 'MISCS', 'generator' => 'BeerXML\Generator\Misc'),
+        '\BeerXML\Generator\IWater'       => array('tag' => 'WATERS', 'generator' => 'BeerXML\Generator\Water'),
+        '\BeerXML\Generator\IStyle'       => array('tag' => 'STYLES', 'generator' => 'BeerXML\Generator\Style'),
+        '\BeerXML\Generator\IMashStep'    => array('tag' => 'MASH_STEPS', 'generator' => 'BeerXML\Generator\MashStep'),
+        '\BeerXML\Generator\IMash'        => array('tag' => 'MASHS', 'generator' => 'BeerXML\Generator\MashProfile'),
         '\BeerXML\Generator\IRecipe'      => array('tag' => 'RECIPES', 'generator' => 'BeerXML\Generator\Recipe'),
-        '\BeerXML\Generator\IEquipment'   => array('tag' => 'EQUIPMENTS', 'generator' => 'BeerXML\Generator\Hop'),
+        '\BeerXML\Generator\IEquipment'   => array('tag' => 'EQUIPMENTS', 'generator' => 'BeerXML\Generator\Equipment'),
     );
 
     /**
@@ -89,8 +91,10 @@ class Generator
     {
         $this->xmlWriter->openMemory();
         $this->xmlWriter->startDocument('1.0', 'UTF-8');
+        $this->xmlWriter->writeComment('Created with php-beerxml: https://github.com/georgeh/php-beerxml');
 
         list($setTag, $generator) = $this->getTagGeneratorForObject($this->records[0]);
+        /** @var $generator Record */
         $generator->setXmlWriter($this->xmlWriter);
         $this->xmlWriter->startElement($setTag);
         foreach ($this->records as $record) {

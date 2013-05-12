@@ -6,6 +6,14 @@ namespace BeerXML\Parser;
 
 use BeerXML\Exception\BadData;
 
+/**
+ * Abstract Record Parser
+ *
+ * This sets the stage for all of our parsers. Each subclass can define a map of tags to setter methods. The parser will
+ * then call the setter methods with the values from those tags.
+ *
+ * @package BeerXML\Parser
+ */
 abstract class Record
 {
     /**
@@ -128,7 +136,7 @@ abstract class Record
         $record = $this->createRecord();
         // While this recipe is still open
         while ($this->tagName != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
-            if (!$this->xmlReader->read()) {
+            if (!@$this->xmlReader->read()) {
                 throw new BadData('Surprise end of file!');
             };
 
@@ -165,7 +173,7 @@ abstract class Record
      * Add a set of records to the record
      *
      * @param $record
-     * @throws \Exception
+     * @throws BadData
      */
     protected function setComplexPropertySet($record)
     {
@@ -176,8 +184,8 @@ abstract class Record
         $parserClass = $setType['parser'];
         $recordAdder = $setType['method'];
         while ($setTag != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
-            if (!$this->xmlReader->read()) {
-                throw new \Exception('Surprise end of file!');
+            if (@!$this->xmlReader->read()) {
+                throw new BadData('Surprise end of file!');
             };
 
             if ($tag == $this->xmlReader->name && \XMLReader::ELEMENT == $this->xmlReader->nodeType) {

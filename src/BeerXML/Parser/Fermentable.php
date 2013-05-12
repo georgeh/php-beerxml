@@ -36,7 +36,19 @@ class Fermentable extends Record
      */
     public function createRecord()
     {
-        return $this->recordFactory->getFermentable();
+        $fermentable = $this->recordFactory->getFermentable();
+        if ($fermentable instanceof IFermentableDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DISPLAY_AMOUNT' => 'setDisplayAmount',
+                    'POTENTIAL'      => 'setPotential',
+                    'INVENTORY'      => 'setInventory',
+                    'DISPLAY_COLOR'  => 'setDisplayColor',
+                )
+            );
+        }
+        return $fermentable;
     }
 
     /**

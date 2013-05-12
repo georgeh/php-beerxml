@@ -40,6 +40,15 @@ class Fermentable extends Record
         'IBU_GAL_PER_LB'   => 'getIbuGalPerLb',
     );
 
+    protected $displayInterface = 'BeerXML\Generator\IFermentableDisplay';
+
+    protected $displayValues = array(
+        'DISPLAY_AMOUNT' => 'getDisplayAmount',
+        'POTENTIAL'      => 'getPotential',
+        'INVENTORY'      => 'getInventory',
+        'DISPLAY_COLOR'  => 'getDisplayColor',
+    );
+
     /**
      * @{inheritDoc}
      */

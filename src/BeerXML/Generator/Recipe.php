@@ -69,6 +69,30 @@ class Recipe extends Record
         'WATERS'       => array('generator' => 'BeerXML\Generator\Water', 'values' => 'getWaters'),
     );
 
+    protected $displayInterface = 'BeerXML\Generator\IRecipeDisplay';
+
+    protected $displayValues = array(
+        'EST_OG'                 => 'getEstOg',
+        'EST_FG'                 => 'getEstFg',
+        'EST_COLOR'              => 'getEstColor',
+        'IBU'                    => 'getIbu',
+        'IBU_METHOD'             => 'getIbuMethod',
+        'EST_ABV'                => 'getEstAbv',
+        'ABV'                    => 'getAbv',
+        'ACTUAL_EFFICIENCY'      => 'getActualEfficiency',
+        'CALORIES'               => 'getCalories',
+        'DISPLAY_BATCH_SIZE'     => 'getDisplayBatchSize',
+        'DISPLAY_BOIL_SIZE'      => 'getDisplayBoilSize',
+        'DISPLAY_OG'             => 'getDisplayOg',
+        'DISPLAY_FG'             => 'getDisplayFg',
+        'DISPLAY_PRIMARY_TEMP'   => 'getDisplayPrimaryTemp',
+        'DISPLAY_SECONDARY_TEMP' => 'getDisplaySecondaryTemp',
+        'DISPLAY_TERTIARY_TEMP'  => 'getDisplayTertiaryTemp',
+        'DISPLAY_AGE_TEMP'       => 'getDisplayAgeTemp',
+        'CARBONATION_USED'       => 'getCarbonationUsed',
+        'DISPLAY_CARB_TEMP'      => 'getDisplayCarbTemp',
+    );
+
     /**
      * @{inheritDoc}
      */
@@ -85,6 +109,7 @@ class Recipe extends Record
         if ($forcedCarb = $this->record->getForcedCarbonation()) {
             $this->xmlWriter->writeElement('FORCED_CARBONATION', $this->boolToString($forcedCarb));
         }
+
         parent::additionalFields();
     }
 

@@ -88,6 +88,21 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
+     * @dataProvider dryStout
+     * @param Recipe $recipe
+     */
+    public function testCanCreateRecipeWithOptionalFields(Recipe $recipe)
+    {
+        $recipe->setEstOg('1.056');
+        $recipe->setEstFg('1.010');
+        $recipe->setIbu(30);
+        $recipe->setIbuMethod('Tinseth');
+        $this->generator->addRecord($recipe);
+        $xml = $this->generator->render();
+        $this->assertXmlStringEqualsXmlFile(dirname(__FILE__) . '/fixtures/generated-recipe-with-display.xml', $xml);
+    }
+
+    /**
      * Creates a record that matches fixtures/recipe-record.xml
      * @return Recipe
      */

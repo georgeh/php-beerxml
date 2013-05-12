@@ -29,7 +29,19 @@ class MashProfile extends Record
      */
     protected function createRecord()
     {
-        return $this->recordFactory->getMashProfile();
+        $mashProfile = $this->recordFactory->getMashProfile();
+        if ($mashProfile instanceof IMashProfileDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DISPLAY_GRAIN_TEMP'  => 'setDisplayGrainTemp',
+                    'DISPLAY_TUN_TEMP'    => 'setDisplayTunTemp',
+                    'DISPLAY_SPARGE_TEMP' => 'setDisplaySpargeTemp',
+                    'DISPLAY_TUN_WEIGHT'  => 'setDisplayTunWeight',
+                )
+            );
+        }
+        return $mashProfile;
     }
 
     /**

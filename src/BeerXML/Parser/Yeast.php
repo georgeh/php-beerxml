@@ -36,7 +36,20 @@ class Yeast extends Record
      */
     protected function createRecord()
     {
-        return $this->recordFactory->getYeast();
+        $yeast = $this->recordFactory->getYeast();
+        if ($yeast instanceof IYeastDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'DISPLAY_AMOUNT' => 'setDisplayAmount',
+                    'DISP_MIN_TEMP'  => 'setDispMinTemp',
+                    'DISP_MAX_TEMP'  => 'setDispMaxTemp',
+                    'INVENTORY'      => 'setInventory',
+                    'CULTURE_DATE'   => 'setCultureDate',
+                )
+            );
+        }
+        return $yeast;
     }
 
     /**

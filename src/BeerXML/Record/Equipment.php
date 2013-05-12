@@ -507,7 +507,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * The target volume of the batch at the start of fermentation in display volume units such as “5.0 gal”
+     * The target volume of the batch at the start of fermentation in display volume units such as "5.0 gal"
      *
      * @param string $displayBatchSize
      */
@@ -517,7 +517,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * The target volume of the batch at the start of fermentation in display volume units such as “5.0 gal”
+     * The target volume of the batch at the start of fermentation in display volume units such as "5.0 gal"
      *
      * @return string
      */
@@ -527,7 +527,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * The pre-boil volume normally used for a batch of this size shown in display volume units such as “5.5 gal”
+     * The pre-boil volume normally used for a batch of this size shown in display volume units such as "5.5 gal"
      *
      * @param string $displayBoilSize
      */
@@ -537,7 +537,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * The pre-boil volume normally used for a batch of this size shown in display volume units such as “5.5 gal”
+     * The pre-boil volume normally used for a batch of this size shown in display volume units such as "5.5 gal"
      *
      * @return string
      */
@@ -547,7 +547,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * Amount lost to the lauter tun and equipment associated with the lautering process. Ex: “2.0 gal” or “1.0 l”
+     * Amount lost to the lauter tun and equipment associated with the lautering process. Ex: "2.0 gal" or "1.0 l"
      *
      * @param string $displayLauterDeadspace
      */
@@ -557,7 +557,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * Amount lost to the lauter tun and equipment associated with the lautering process. Ex: “2.0 gal” or “1.0 l”
+     * Amount lost to the lauter tun and equipment associated with the lautering process. Ex: "2.0 gal" or "1.0 l"
      *
      * @return string
      */
@@ -567,7 +567,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * Amount normally added to the boil kettle before the boil. Ex: “1.0 gal”
+     * Amount normally added to the boil kettle before the boil. Ex: "1.0 gal"
      *
      * @param string $displayTopUpKettle
      */
@@ -577,7 +577,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * Amount normally added to the boil kettle before the boil. Ex: “1.0 gal”
+     * Amount normally added to the boil kettle before the boil. Ex: "1.0 gal"
      *
      * @return string
      */
@@ -587,7 +587,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * The amount of top up water normally added just prior to starting fermentation in display volume such as “1.0 gal”
+     * The amount of top up water normally added just prior to starting fermentation in display volume such as "1.0 gal"
      *
      * @param string $displayTopUpWater
      */
@@ -597,7 +597,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * The amount of top up water normally added just prior to starting fermentation in display volume such as “1.0 gal”
+     * The amount of top up water normally added just prior to starting fermentation in display volume such as "1.0 gal"
      *
      * @return string
      */
@@ -610,7 +610,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
      * The amount of wort normally lost during transition from the boiler to the fermentation vessel.
      *
      * Includes both unusable wort due to trub and wort lost to the chiller and transfer systems.  Expressed in user
-     * units - Ex: “1.5 qt”
+     * units - Ex: "1.5 qt"
      *
      * @param string $displayTrubChillerLoss
      */
@@ -623,7 +623,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
      * The amount of wort normally lost during transition from the boiler to the fermentation vessel.
      *
      * Includes both unusable wort due to trub and wort lost to the chiller and transfer systems.  Expressed in user
-     * units - Ex: “1.5 qt”
+     * units - Ex: "1.5 qt"
      *
      * @return string
      */
@@ -633,7 +633,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * Volume of the mash tun in display units such as “10.0 gal” or “20.0 l”
+     * Volume of the mash tun in display units such as "10.0 gal" or "20.0 l"
      *
      * @param string $displayTunVolume
      */
@@ -643,7 +643,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * Volume of the mash tun in display units such as “10.0 gal” or “20.0 l”
+     * Volume of the mash tun in display units such as "10.0 gal" or "20.0 l"
      *
      * @return string
      */
@@ -653,7 +653,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * Weight of the mash tun in display units such as “3.0 kg” or “6.0 lb”
+     * Weight of the mash tun in display units such as "3.0 kg" or "6.0 lb"
      *
      * @param string $displayTunWeight
      */
@@ -663,7 +663,7 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     }
 
     /**
-     * Weight of the mash tun in display units such as “3.0 kg” or “6.0 lb”
+     * Weight of the mash tun in display units such as "3.0 kg" or "6.0 lb"
      *
      * @return string
      */

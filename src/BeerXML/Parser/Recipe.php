@@ -52,7 +52,34 @@ class Recipe extends Record
      */
     protected function createRecord()
     {
-        return $this->recordFactory->getRecipe();
+        $recipe = $this->recordFactory->getRecipe();
+        if ($recipe instanceof IRecipeDisplay) {
+            $this->simpleProperties = array_merge(
+                $this->simpleProperties,
+                array(
+                    'EST_OG'                 => 'setEstOg',
+                    'EST_FG'                 => 'setEstFg',
+                    'EST_COLOR'              => 'setEstColor',
+                    'IBU'                    => 'setIbu',
+                    'IBU_METHOD'             => 'setIbuMethod',
+                    'EST_ABV'                => 'setEstAbv',
+                    'ABV'                    => 'setAbv',
+                    'ACTUAL_EFFICIENCY'      => 'setActualEfficiency',
+                    'CALORIES'               => 'setCalories',
+                    'DISPLAY_BATCH_SIZE'     => 'setDisplayBatchSize',
+                    'DISPLAY_BOIL_SIZE'      => 'setDisplayBoilSize',
+                    'DISPLAY_OG'             => 'setDisplayOg',
+                    'DISPLAY_FG'             => 'setDisplayFg',
+                    'DISPLAY_PRIMARY_TEMP'   => 'setDisplayPrimaryTemp',
+                    'DISPLAY_SECONDARY_TEMP' => 'setDisplaySecondaryTemp',
+                    'DISPLAY_TERTIARY_TEMP'  => 'setDisplayTertiaryTemp',
+                    'DISPLAY_AGE_TEMP'       => 'setDisplayAgeTemp',
+                    'CARBONATION_USED'       => 'setCarbonationUsed',
+                    'DISPLAY_CARB_TEMP'      => 'setDisplayCarbTemp',
+                )
+            );
+        }
+        return $recipe;
     }
 
     /**

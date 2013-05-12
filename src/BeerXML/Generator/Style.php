@@ -52,5 +52,21 @@ class Style extends Record
         'EXAMPLES'    => 'getExamples',
     );
 
+    protected $displayInterface = 'BeerXML\Generator\IStyleDisplay';
+
+    protected $displayValues = array(
+        'DISPLAY_OG_MIN'    => 'getDisplayOgMin',
+        'DISPLAY_OG_MAX'    => 'getDisplayOgMax',
+        'DISPLAY_FG_MIN'    => 'getDisplayFgMin',
+        'DISPLAY_FG_MAX'    => 'getDisplayFgMax',
+        'DISPLAY_COLOR_MIN' => 'getDisplayColorMin',
+        'DISPLAY_COLOR_MAX' => 'getDisplayColorMax',
+        'OG_RANGE'          => 'getOgRange',
+        'FG_RANGE'          => 'getFgRange',
+        'IBU_RANGE'         => 'getIbuRange',
+        'CARB_RANGE'        => 'getCarbRange',
+        'COLOR_RANGE'       => 'getColorRange',
+        'ABV_RANGE'         => 'getAbvRange',
+    );
 
 }

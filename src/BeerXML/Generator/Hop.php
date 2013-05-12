@@ -40,4 +40,12 @@ class Hop extends Record
         'COHUMULONE'    => 'getCohumulone',
         'MYRCENE'       => 'getMyrcene',
     );
+
+    protected $displayInterface = 'BeerXML\Generator\IHopDisplay';
+
+    protected $displayValues = array(
+        'DISPLAY_AMOUNT' => 'getDisplayAmount',
+        'INVENTORY'      => 'getInventory',
+        'DISPLAY_TIME'   => 'getDisplayTime',
+    );
 }
