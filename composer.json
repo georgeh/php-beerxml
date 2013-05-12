@@ -12,7 +12,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/georgeh/php-beerxml/issues",
+        "issues": "https://github.com/georgeh/php-beerxml/issues"
     },
     "require": {
         "php": ">=5.3.0",
