@@ -4,8 +4,8 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IMisc as MiscGetter;
-use BeerXML\Parser\IMisc as MiscSetter;
+use BeerXML\Generator\IMiscDisplay as MiscGetter;
+use BeerXML\Parser\IMiscDisplay as MiscSetter;
 
 class Misc implements MiscGetter, MiscSetter
 {
@@ -86,6 +86,23 @@ class Misc implements MiscGetter, MiscSetter
      * @var string
      */
     private $notes;
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+
+    /**
+     * @var string
+     */
+    private $displayAmount;
+
+    /**
+     * @var string
+     */
+    private $inventory;
+
+    /**
+     * @var string
+     */
+    private $displayTime;
 
     /**
      * Amount of item used.  The default measurements are by weight, but this may be the measurement in volume units if
@@ -271,6 +288,68 @@ class Misc implements MiscGetter, MiscSetter
     public function getVersion()
     {
         return $this->version;
+    }
+
+    /**
+     * The amount of the item in this record along with the units formatted for easy display in the current user defined
+     * units.  For example “1.5 lbs” or “2.1 kg”.
+     *
+     * @param string $displayAmount
+     */
+    public function setDisplayAmount($displayAmount)
+    {
+        $this->displayAmount = $displayAmount;
+    }
+
+    /**
+     * The amount of the item in this record along with the units formatted for easy display in the current user defined
+     * units.  For example “1.5 lbs” or “2.1 kg”.
+     *
+     * @return string
+     */
+    public function getDisplayAmount()
+    {
+        return $this->displayAmount;
+    }
+
+    /**
+     * Time in appropriate units along with the units as in “10 min” or “3 days”.
+     *
+     * @param string $displayTime
+     */
+    public function setDisplayTime($displayTime)
+    {
+        $this->displayTime = $displayTime;
+    }
+
+    /**
+     * Time in appropriate units along with the units as in “10 min” or “3 days”.
+     *
+     * @return string
+     */
+    public function getDisplayTime()
+    {
+        return $this->displayTime;
+    }
+
+    /**
+     * Amount in inventory for this item along with the units – for example “10.0 lb”
+     *
+     * @param string $inventory
+     */
+    public function setInventory($inventory)
+    {
+        $this->inventory = $inventory;
+    }
+
+    /**
+     * Amount in inventory for this item along with the units – for example “10.0 lb”
+     *
+     * @return string
+     */
+    public function getInventory()
+    {
+        return $this->inventory;
     }
 
 }

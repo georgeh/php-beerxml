@@ -2,15 +2,11 @@
 
 namespace BeerXML\Record;
 
-use BeerXML\Generator\IRecipe as RecipeGetter;
-use BeerXML\Parser\IRecipe as RecipeSetter;
+use BeerXML\Generator\IRecipeDisplay as RecipeGetter;
+use BeerXML\Parser\IRecipeDisplay as RecipeSetter;
 
 class Recipe implements RecipeGetter, RecipeSetter
 {
-    const TYPE_EXTRACT      = 'Extract';
-    const TYPE_PARTIAL_MASH = 'Partial Mash';
-    const TYPE_ALL_GRAIN    = 'All Grain';
-
     /**
      * Name of the recipe.
      *
@@ -285,6 +281,103 @@ class Recipe implements RecipeGetter, RecipeSetter
      * @var float
      */
     private $kegPrimingFactor;
+
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+    /**
+     * @var string
+     */
+    private $estOg;
+
+    /**
+     * @var string
+     */
+    private $estFg;
+
+    /**
+     * @var string
+     */
+    private $estColor;
+
+    /**
+     * @var float
+     */
+    private $ibu;
+
+    /**
+     * @var string
+     */
+    private $ibuMethod;
+
+    /**
+     * @var float
+     */
+    private $estAbv;
+
+    /**
+     * @var float
+     */
+    private $abv;
+
+    /**
+     * @var float
+     */
+    private $actualEfficiency;
+
+    /**
+     * @var string
+     */
+    private $calories;
+
+    /**
+     * @var string
+     */
+    private $displayBatchSize;
+
+    /**
+     * @var string
+     */
+    private $displayBoilSize;
+
+    /**
+     * @var string
+     */
+    private $displayOg;
+
+    /**
+     * @var string
+     */
+    private $displayFg;
+
+    /**
+     * @var string
+     */
+    private $displayPrimaryTemp;
+
+    /**
+     * @var string
+     */
+    private $displaySecondaryTemp;
+
+    /**
+     * @var string
+     */
+    private $displayTertiaryTemp;
+
+    /**
+     * @var string
+     */
+    private $displayAgeTemp;
+
+    /**
+     * @var string
+     */
+    private $displayCarbonationUsed;
+
+    /**
+     * @var string
+     */
+    private $displayCarbTemp;
 
     /**
      * @return number
@@ -893,4 +986,391 @@ class Recipe implements RecipeGetter, RecipeSetter
     {
         $this->yeasts[] = $yeast;
     }
+
+    /**
+     * Actual alcohol by volume calculated from the OG and FG measured.
+     *
+     * @param float $abv Percent
+     */
+    public function setAbv($abv)
+    {
+        $this->abv = $abv;
+    }
+
+    /**
+     * Actual alcohol by volume calculated from the OG and FG measured.
+     *
+     * @return float Percent
+     */
+    public function getAbv()
+    {
+        return $this->abv;
+    }
+
+    /**
+     * The actual efficiency as calculated using the measured original and final gravity.
+     *
+     * @param float $actualEfficiency Percent
+     */
+    public function setActualEfficiency($actualEfficiency)
+    {
+        $this->actualEfficiency = $actualEfficiency;
+    }
+
+    /**
+     * The actual efficiency as calculated using the measured original and final gravity.
+     *
+     * @return float Percent
+     */
+    public function getActualEfficiency()
+    {
+        return $this->actualEfficiency;
+    }
+
+    /**
+     * Calorie estimate based on the measured starting and ending gravity.
+     *
+     * Note that calories should be quoted in "Cal" or kilocalories which is the normal dietary measure (i.e. a beer is
+     * usually in the range of 100-250 calories per 12 oz).  Examples "180 Cal/pint",
+     *
+     * @param string $calories
+     */
+    public function setCalories($calories)
+    {
+        $this->calories = $calories;
+    }
+
+    /**
+     * Calorie estimate based on the measured starting and ending gravity.
+     *
+     * Note that calories should be quoted in "Cal" or kilocalories which is the normal dietary measure (i.e. a beer is
+     * usually in the range of 100-250 calories per 12 oz).  Examples "180 Cal/pint",
+     *
+     * @return string
+     */
+    public function getCalories()
+    {
+        return $this->calories;
+    }
+
+    /**
+     * Temperature to use when aging the beer in user units such as "55 F"
+     *
+     * @param string $displayAgeTemp
+     */
+    public function setDisplayAgeTemp($displayAgeTemp)
+    {
+        $this->displayAgeTemp = $displayAgeTemp;
+    }
+
+    /**
+     * Temperature to use when aging the beer in user units such as "55 F"
+     *
+     * @return string
+     */
+    public function getDisplayAgeTemp()
+    {
+        return $this->displayAgeTemp;
+    }
+
+    /**
+     * Batch size in user defined units along with the units as in "5.0 gal"
+     *
+     * @param string $displayBatchSize
+     */
+    public function setDisplayBatchSize($displayBatchSize)
+    {
+        $this->displayBatchSize = $displayBatchSize;
+    }
+
+    /**
+     * Batch size in user defined units along with the units as in "5.0 gal"
+     *
+     * @return string
+     */
+    public function getDisplayBatchSize()
+    {
+        return $this->displayBatchSize;
+    }
+
+    /**
+     * Boil size with user defined units as in "6.3 gal"
+     *
+     * @param string $displayBoilSize
+     */
+    public function setDisplayBoilSize($displayBoilSize)
+    {
+        $this->displayBoilSize = $displayBoilSize;
+    }
+
+    /**
+     * Boil size with user defined units as in "6.3 gal"
+     *
+     * @return string
+     */
+    public function getDisplayBoilSize()
+    {
+        return $this->displayBoilSize;
+    }
+
+    /**
+     * Carbonation/Bottling temperature in appropriate units such as "40F" or "32 C"
+     *
+     * @param string $displayCarbTemp
+     */
+    public function setDisplayCarbTemp($displayCarbTemp)
+    {
+        $this->displayCarbTemp = $displayCarbTemp;
+    }
+
+    /**
+     * Carbonation/Bottling temperature in appropriate units such as "40F" or "32 C"
+     *
+     * @return string
+     */
+    public function getDisplayCarbTemp()
+    {
+        return $this->displayCarbTemp;
+    }
+
+    /**
+     * Text description of the carbonation used such as "50g corn sugar" or "Kegged at 20psi"
+     *
+     * @param string $displayCarbonationUsed
+     */
+    public function setDisplayCarbonationUsed($displayCarbonationUsed)
+    {
+        $this->displayCarbonationUsed = $displayCarbonationUsed;
+    }
+
+    /**
+     * Text description of the carbonation used such as "50g corn sugar" or "Kegged at 20psi"
+     *
+     * @return string
+     */
+    public function getDisplayCarbonationUsed()
+    {
+        return $this->displayCarbonationUsed;
+    }
+
+    /**
+     * Measured final gravity in user defined units as in "1.035 sg"
+     *
+     * @param string $displayFg
+     */
+    public function setDisplayFg($displayFg)
+    {
+        $this->displayFg = $displayFg;
+    }
+
+    /**
+     * Measured final gravity in user defined units as in "1.035 sg"
+     *
+     * @return string
+     */
+    public function getDisplayFg()
+    {
+        return $this->displayFg;
+    }
+
+    /**
+     * Measured original gravity in user defined units as in "6.4 plato"
+     *
+     * @param string $displayOg
+     */
+    public function setDisplayOg($displayOg)
+    {
+        $this->displayOg = $displayOg;
+    }
+
+    /**
+     * Measured original gravity in user defined units as in "6.4 plato"
+     *
+     * @return string
+     */
+    public function getDisplayOg()
+    {
+        return $this->displayOg;
+    }
+
+    /**
+     * Primary fermentation temperature in user defined units such as "64 F"
+     *
+     * @param string $displayPrimaryTemp
+     */
+    public function setDisplayPrimaryTemp($displayPrimaryTemp)
+    {
+        $this->displayPrimaryTemp = $displayPrimaryTemp;
+    }
+
+    /**
+     * Primary fermentation temperature in user defined units such as "64 F"
+     *
+     * @return string
+     */
+    public function getDisplayPrimaryTemp()
+    {
+        return $this->displayPrimaryTemp;
+    }
+
+    /**
+     * Secondary fermentation temperature in user defined units such as "56 F"
+     *
+     * @param string $displaySecondaryTemp
+     */
+    public function setDisplaySecondaryTemp($displaySecondaryTemp)
+    {
+        $this->displaySecondaryTemp = $displaySecondaryTemp;
+    }
+
+    /**
+     * Secondary fermentation temperature in user defined units such as "56 F"
+     *
+     * @return string
+     */
+    public function getDisplaySecondaryTemp()
+    {
+        return $this->displaySecondaryTemp;
+    }
+
+    /**
+     * Tertiary temperature in user defined units such as "20 C"
+     *
+     * @param string $displayTertiaryTemp
+     */
+    public function setDisplayTertiaryTemp($displayTertiaryTemp)
+    {
+        $this->displayTertiaryTemp = $displayTertiaryTemp;
+    }
+
+    /**
+     * Tertiary temperature in user defined units such as "20 C"
+     *
+     * @return string
+     */
+    public function getDisplayTertiaryTemp()
+    {
+        return $this->displayTertiaryTemp;
+    }
+
+    /**
+     * Estimated percent alcohol by volume for this recipe.
+     *
+     * @param float $estAbv Percent
+     */
+    public function setEstAbv($estAbv)
+    {
+        $this->estAbv = $estAbv;
+    }
+
+    /**
+     * Estimated percent alcohol by volume for this recipe.
+     *
+     * @return float Percent
+     */
+    public function getEstAbv()
+    {
+        return $this->estAbv;
+    }
+
+    /**
+     * The estimated color of the beer in user defined color units.
+     *
+     * @param string $estColor
+     */
+    public function setEstColor($estColor)
+    {
+        $this->estColor = $estColor;
+    }
+
+    /**
+     * The estimated color of the beer in user defined color units.
+     *
+     * @return string
+     */
+    public function getEstColor()
+    {
+        return $this->estColor;
+    }
+
+    /**
+     * Calculated estimate for the final specific gravity of this recipe along with the units as in "1.015 sg"
+     *
+     * @param string $estFg
+     */
+    public function setEstFg($estFg)
+    {
+        $this->estFg = $estFg;
+    }
+
+    /**
+     * Calculated estimate for the final specific gravity of this recipe along with the units as in "1.015 sg"
+     *
+     * @return string
+     */
+    public function getEstFg()
+    {
+        return $this->estFg;
+    }
+
+    /**
+     * Calculated estimate of the original gravity for this recipe along with the units.
+     *
+     * @param string $estOg
+     */
+    public function setEstOg($estOg)
+    {
+        $this->estOg = $estOg;
+    }
+
+    /**
+     * Calculated estimate of the original gravity for this recipe along with the units.
+     *
+     * @return string
+     */
+    public function getEstOg()
+    {
+        return $this->estOg;
+    }
+
+    /**
+     * The estimated bitterness level of the beer in IBUs
+     *
+     * @param float $ibu
+     */
+    public function setIbu($ibu)
+    {
+        $this->ibu = $ibu;
+    }
+
+    /**
+     * The estimated bitterness level of the beer in IBUs
+     *
+     * @return float
+     */
+    public function getIbu()
+    {
+        return $this->ibu;
+    }
+
+    /**
+     * May be "Rager", "Tinseth" or "Garetz" corresponding to the method/equation used to estimate IBUs for this recipe.
+     *
+     * @param string $ibuMethod
+     */
+    public function setIbuMethod($ibuMethod)
+    {
+        $this->ibuMethod = $ibuMethod;
+    }
+
+    /**
+     * May be "Rager", "Tinseth" or "Garetz" corresponding to the method/equation used to estimate IBUs for this recipe.
+     *
+     * @return string
+     */
+    public function getIbuMethod()
+    {
+        return $this->ibuMethod;
+    }
+
 }

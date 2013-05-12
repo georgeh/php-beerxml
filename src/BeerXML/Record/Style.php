@@ -4,8 +4,8 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IStyle as StyleGetter;
-use BeerXML\Parser\IStyleWriter as StyleSetter;
+use BeerXML\Generator\IStyleDisplay as StyleGetter;
+use BeerXML\Parser\IStyleDisplay as StyleSetter;
 
 class Style implements StyleGetter, StyleSetter
 {
@@ -185,6 +185,72 @@ class Style implements StyleGetter, StyleSetter
      * @var string
      */
     private $examples;
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+
+    /**
+     * @var string
+     */
+    private $displayOgMin;
+
+    /**
+     * @var string
+     */
+    private $displayOgMax;
+
+    /**
+     * @var string
+     */
+    private $displayFgMin;
+
+    /**
+     * @var string
+     */
+    private $displayFgMax;
+
+    /**
+     * @var string
+     */
+    private $displayColorMin;
+
+    /**
+     * @var string
+     */
+
+    /**
+     * @var string
+     */
+    private $displayColorMax;
+
+    /**
+     * @var string
+     */
+    private $ogRange;
+
+    /**
+     * @var string
+     */
+    private $fgRange;
+
+    /**
+     * @var string
+     */
+    private $ibuRange;
+
+    /**
+     * @var string
+     */
+    private $carbRange;
+
+    /**
+     * @var string
+     */
+    private $colorRange;
+
+    /**
+     * @var string
+     */
+    private $abvRange;
 
     /**
      * @param float $abvMax
@@ -554,5 +620,244 @@ class Style implements StyleGetter, StyleSetter
         return $this->version;
     }
 
+    /**
+     * ABV Range for this style such as “4.5-5.5%”
+     *
+     * @param string $abvRange
+     */
+    public function setAbvRange($abvRange)
+    {
+        $this->abvRange = $abvRange;
+    }
+
+    /**
+     * ABV Range for this style such as “4.5-5.5%”
+     *
+     * @return string
+     */
+    public function getAbvRange()
+    {
+        return $this->abvRange;
+    }
+
+    /**
+     * Carbonation range in volumes such as “2.0-2.6 vols”
+     *
+     * @param string $carbRange
+     */
+    public function setCarbRange($carbRange)
+    {
+        $this->carbRange = $carbRange;
+    }
+
+    /**
+     * Carbonation range in volumes such as “2.0-2.6 vols”
+     *
+     * @return string
+     */
+    public function getCarbRange()
+    {
+        return $this->carbRange;
+    }
+
+    /**
+     * Color range such as “10-20 SRM”
+     *
+     * @param string $colorRange
+     */
+    public function setColorRange($colorRange)
+    {
+        $this->colorRange = $colorRange;
+    }
+
+    /**
+     * Color range such as “10-20 SRM”
+     *
+     * @return string
+     */
+    public function getColorRange()
+    {
+        return $this->colorRange;
+    }
+
+    /**
+     * Maximum color in user defined units such as “20 srm”
+     *
+     * @param string $displayColorMax
+     */
+    public function setDisplayColorMax($displayColorMax)
+    {
+        $this->displayColorMax = $displayColorMax;
+    }
+
+    /**
+     * Maximum color in user defined units such as “20 srm”
+     *
+     * @return string
+     */
+    public function getDisplayColorMax()
+    {
+        return $this->displayColorMax;
+    }
+
+    /**
+     * Minimum color in user defined units such as “30 srm”.
+     *
+     * @param string $displayColorMin
+     */
+    public function setDisplayColorMin($displayColorMin)
+    {
+        $this->displayColorMin = $displayColorMin;
+    }
+
+    /**
+     * Minimum color in user defined units such as “30 srm”.
+     *
+     * @return string
+     */
+    public function getDisplayColorMin()
+    {
+        return $this->displayColorMin;
+    }
+
+    /**
+     * Final gravity maximum in user defined units such as “1.019 sg”.
+     *
+     * @param string $displayFgMax
+     */
+    public function setDisplayFgMax($displayFgMax)
+    {
+        $this->displayFgMax = $displayFgMax;
+    }
+
+    /**
+     * Final gravity maximum in user defined units such as “1.019 sg”.
+     *
+     * @return string
+     */
+    public function getDisplayFgMax()
+    {
+        return $this->displayFgMax;
+    }
+
+    /**
+     * Final gravity minimum in user defined units such as “1.010 sg”.
+     *
+     * @param string $displayFgMin
+     */
+    public function setDisplayFgMin($displayFgMin)
+    {
+        $this->displayFgMin = $displayFgMin;
+    }
+
+    /**
+     * Final gravity minimum in user defined units such as “1.010 sg”.
+     *
+     * @return string
+     */
+    public function getDisplayFgMin()
+    {
+        return $this->displayFgMin;
+    }
+
+    /**
+     * Original gravity max in user defined units such as “1.056 sg”
+     *
+     * @param string $displayOgMax
+     */
+    public function setDisplayOgMax($displayOgMax)
+    {
+        $this->displayOgMax = $displayOgMax;
+    }
+
+    /**
+     * Original gravity max in user defined units such as “1.056 sg”
+     *
+     * @return string
+     */
+    public function getDisplayOgMax()
+    {
+        return $this->displayOgMax;
+    }
+
+    /**
+     * Original gravity minimum in user defined units such as “1.036 sg”.
+     *
+     * @param string $displayOgMin
+     */
+    public function setDisplayOgMin($displayOgMin)
+    {
+        $this->displayOgMin = $displayOgMin;
+    }
+
+    /**
+     * Original gravity minimum in user defined units such as “1.036 sg”.
+     *
+     * @return string
+     */
+    public function getDisplayOgMin()
+    {
+        return $this->displayOgMin;
+    }
+
+    /**
+     * Final gravity range such as “1.010-1.015 sg”
+     *
+     * @param string $fgRange
+     */
+    public function setFgRange($fgRange)
+    {
+        $this->fgRange = $fgRange;
+    }
+
+    /**
+     * Final gravity range such as “1.010-1.015 sg”
+     *
+     * @return string
+     */
+    public function getFgRange()
+    {
+        return $this->fgRange;
+    }
+
+    /**
+     * Bitterness range in IBUs such as “10-20 IBU”
+     *
+     * @param string $ibuRange
+     */
+    public function setIbuRange($ibuRange)
+    {
+        $this->ibuRange = $ibuRange;
+    }
+
+    /**
+     * Bitterness range in IBUs such as “10-20 IBU”
+     *
+     * @return string
+     */
+    public function getIbuRange()
+    {
+        return $this->ibuRange;
+    }
+
+    /**
+     * Original gravity range for the style such as “1.030-1.040 sg”
+     *
+     * @param string $ogRange
+     */
+    public function setOgRange($ogRange)
+    {
+        $this->ogRange = $ogRange;
+    }
+
+    /**
+     * Original gravity range for the style such as “1.030-1.040 sg”
+     *
+     * @return string
+     */
+    public function getOgRange()
+    {
+        return $this->ogRange;
+    }
 
 }

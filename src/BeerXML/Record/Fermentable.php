@@ -4,8 +4,8 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IFermentable as FermentableGetter;
-use BeerXML\Parser\IFermentable as FermentableSetter;
+use BeerXML\Generator\IFermentableDisplay as FermentableGetter;
+use BeerXML\Parser\IFermentableDisplay as FermentableSetter;
 
 class Fermentable implements FermentableGetter, FermentableSetter
 {
@@ -100,6 +100,28 @@ class Fermentable implements FermentableGetter, FermentableSetter
      * @var float
      */
     private $ibuGalPerLb;
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+
+    /**
+     * @var string
+     */
+    private $displayAmount;
+
+    /**
+     * @var float
+     */
+    private $potential;
+
+    /**
+     * @var string
+     */
+    private $inventory;
+
+    /**
+     * @var string
+     */
+    private $displayColor;
 
     /**
      * May be TRUE if this item is normally added after the boil.  The default value is FALSE since most grains are
@@ -464,6 +486,91 @@ class Fermentable implements FermentableGetter, FermentableSetter
     {
         return $this->yield;
     }
+
+    /**
+     * The amount of fermentables in this record along with the units formatted for easy display in the current user
+     * defined units.  For example “1.5 lbs” or “2.1 kg”.
+     *
+     * @param string $displayAmount
+     */
+    public function setDisplayAmount($displayAmount)
+    {
+        $this->displayAmount = $displayAmount;
+    }
+
+    /**
+     * The amount of fermentables in this record along with the units formatted for easy display in the current user
+     * defined units.  For example “1.5 lbs” or “2.1 kg”.
+     *
+     * @return string
+     */
+    public function getDisplayAmount()
+    {
+        return $this->displayAmount;
+    }
+
+    /**
+     * Color in user defined color units along with the unit identified – for example “200L” or “40 ebc”
+     *
+     * @param string $displayColor
+     */
+    public function setDisplayColor($displayColor)
+    {
+        $this->displayColor = $displayColor;
+    }
+
+    /**
+     * Color in user defined color units along with the unit identified – for example “200L” or “40 ebc”
+     *
+     * @return string
+     */
+    public function getDisplayColor()
+    {
+        return $this->displayColor;
+    }
+
+    /**
+     * Amount in inventory for this item along with the units – for example “10.0 lb”
+     *
+     * @param string $inventory
+     */
+    public function setInventory($inventory)
+    {
+        $this->inventory = $inventory;
+    }
+
+    /**
+     * Amount in inventory for this item along with the units – for example “10.0 lb”
+     *
+     * @return string
+     */
+    public function getInventory()
+    {
+        return $this->inventory;
+    }
+
+    /**
+     * The yield of the fermentable converted to specific gravity units for display.  For example “1.036” or “1.040”
+     * might be valid potentials.
+     *
+     * @param float $potential
+     */
+    public function setPotential($potential)
+    {
+        $this->potential = $potential;
+    }
+
+    /**
+     * The yield of the fermentable converted to specific gravity units for display.  For example “1.036” or “1.040”
+     * might be valid potentials.
+     *
+     * @return float
+     */
+    public function getPotential()
+    {
+        return $this->potential;
+    }
+
 
 
 }

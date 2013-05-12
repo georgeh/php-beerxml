@@ -73,7 +73,7 @@ class RecordFactory {
     }
 
     /**
-     * @return IStyleWriter
+     * @return IStyle
      */
     public function getStyle()
     {

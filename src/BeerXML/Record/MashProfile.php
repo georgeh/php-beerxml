@@ -4,8 +4,8 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IMashProfile as MashProfileGetter;
-use BeerXML\Parser\IMashProfile as MashProfileSetter;
+use BeerXML\Generator\IMashProfileDisplay as MashProfileGetter;
+use BeerXML\Parser\IMashProfileDisplay as MashProfileSetter;
 
 class MashProfile implements MashProfileGetter, MashProfileSetter
 {
@@ -88,6 +88,28 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
      * @var bool
      */
     private $equipAdjust = false;
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+
+    /**
+     * @var string
+     */
+    private $displayGrainTemp;
+
+    /**
+     * @var string
+     */
+    private $displayTunTemp;
+
+    /**
+     * @var string
+     */
+    private $displaySpargeTemp;
+
+    /**
+     * @var string
+     */
+    private $displayTunWeight;
 
     /**
      * @param boolean $equipAdjust
@@ -264,5 +286,86 @@ class MashProfile implements MashProfileGetter, MashProfileSetter
     {
         return $this->version;
     }
+
+    /**
+     * Grain temperature in user display units with the units.  For example: “72 F”.
+     *
+     * @param string $displayGrainTemp
+     */
+    public function setDisplayGrainTemp($displayGrainTemp)
+    {
+        $this->displayGrainTemp = $displayGrainTemp;
+    }
+
+    /**
+     * Grain temperature in user display units with the units.  For example: “72 F”.
+     *
+     * @return string
+     */
+    public function getDisplayGrainTemp()
+    {
+        return $this->displayGrainTemp;
+    }
+
+    /**
+     * Sparge temperature in user defined units.  For example “178 F”
+     *
+     * @param string $displaySpargeTemp
+     */
+    public function setDisplaySpargeTemp($displaySpargeTemp)
+    {
+        $this->displaySpargeTemp = $displaySpargeTemp;
+    }
+
+    /**
+     * Sparge temperature in user defined units.  For example “178 F”
+     *
+     * @return string
+     */
+    public function getDisplaySpargeTemp()
+    {
+        return $this->displaySpargeTemp;
+    }
+
+    /**
+     * Tun temperature in user display units.  For example “68 F”
+     *
+     * @param string $displayTunTemp
+     */
+    public function setDisplayTunTemp($displayTunTemp)
+    {
+        $this->displayTunTemp = $displayTunTemp;
+    }
+
+    /**
+     * Tun temperature in user display units.  For example “68 F”
+     *
+     * @return string
+     */
+    public function getDisplayTunTemp()
+    {
+        return $this->displayTunTemp;
+    }
+
+    /**
+     * Tun weight in user defined units – for example “10 lb”
+     *
+     * @param string $displayTunWeight
+     */
+    public function setDisplayTunWeight($displayTunWeight)
+    {
+        $this->displayTunWeight = $displayTunWeight;
+    }
+
+    /**
+     * Tun weight in user defined units – for example “10 lb”
+     *
+     * @return string
+     */
+    public function getDisplayTunWeight()
+    {
+        return $this->displayTunWeight;
+    }
+
 
 }

@@ -4,8 +4,8 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IYeast as YeastGetter;
-use BeerXML\Parser\IYeast as YeastSetter;
+use BeerXML\Generator\IYeastDisplay as YeastGetter;
+use BeerXML\Parser\IYeastDisplay as YeastSetter;
 
 class Yeast implements YeastGetter, YeastSetter
 {
@@ -147,6 +147,33 @@ class Yeast implements YeastGetter, YeastSetter
      * @var bool
      */
     private $addToSecondary = false;
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+
+    /**
+     * @var string
+     */
+    private $displayAmount;
+
+    /**
+     * @var string
+     */
+    private $dispMinTemp;
+
+    /**
+     * @var string
+     */
+    private $dispMaxTemp;
+
+    /**
+     * @var string
+     */
+    private $inventory;
+
+    /**
+     * @var string
+     */
+    private $cultureDate;
 
     /**
      * Flag denoting that this yeast was added for a secondary (or later) fermentation as opposed to the primary
@@ -490,6 +517,112 @@ class Yeast implements YeastGetter, YeastSetter
     public function getVersion()
     {
         return $this->version;
+    }
+
+    /**
+     * Date sample was last cultured in a neutral date form such as “10 Dec 04”
+     *
+     * @param string $cultureDate
+     */
+    public function setCultureDate($cultureDate)
+    {
+        $this->cultureDate = $cultureDate;
+    }
+
+    /**
+     * Date sample was last cultured in a neutral date form such as “10 Dec 04”
+     *
+     * @return string
+     */
+    public function getCultureDate()
+    {
+        return $this->cultureDate;
+    }
+
+    /**
+     * Maximum fermentation temperature converted to current user units along with the units.  For example “54.0 F” or
+     * “24.2 C”
+     *
+     * @param string $dispMaxTemp
+     */
+    public function setDispMaxTemp($dispMaxTemp)
+    {
+        $this->dispMaxTemp = $dispMaxTemp;
+    }
+
+    /**
+     * Maximum fermentation temperature converted to current user units along with the units.  For example “54.0 F” or
+     * “24.2 C”
+     *
+     * @return string
+     */
+    public function getDispMaxTemp()
+    {
+        return $this->dispMaxTemp;
+    }
+
+    /**
+     * Minimum fermentation temperature converted to current user units along with the units.  For example “54.0 F” or
+     * “24.2 C”
+     *
+     * @param string $dispMinTemp
+     */
+    public function setDispMinTemp($dispMinTemp)
+    {
+        $this->dispMinTemp = $dispMinTemp;
+    }
+
+    /**
+     * Minimum fermentation temperature converted to current user units along with the units.  For example “54.0 F” or
+     * “24.2 C”
+     *
+     * @return string
+     */
+    public function getDispMinTemp()
+    {
+        return $this->dispMinTemp;
+    }
+
+    /**
+     * The amount of yeast or starter in this record along with the units formatted for easy display in the current user
+     * defined units.  For example “1.5 oz” or “100 g”.
+     *
+     * @param string $displayAmount
+     */
+    public function setDisplayAmount($displayAmount)
+    {
+        $this->displayAmount = $displayAmount;
+    }
+
+    /**
+     * The amount of yeast or starter in this record along with the units formatted for easy display in the current user
+     * defined units.  For example “1.5 oz” or “100 g”.
+     *
+     * @return string
+     */
+    public function getDisplayAmount()
+    {
+        return $this->displayAmount;
+    }
+
+    /**
+     * Amount in inventory for this hop along with the units – for example “10.0 pkgs”
+     *
+     * @param string $inventory
+     */
+    public function setInventory($inventory)
+    {
+        $this->inventory = $inventory;
+    }
+
+    /**
+     * Amount in inventory for this hop along with the units – for example “10.0 pkgs”
+     *
+     * @return string
+     */
+    public function getInventory()
+    {
+        return $this->inventory;
     }
 
 

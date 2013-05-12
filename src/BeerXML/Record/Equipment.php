@@ -4,8 +4,8 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IEquipment as EquipmentGetter;
-use BeerXML\Parser\IEquipment as EquipmentSetter;
+use BeerXML\Generator\IEquipmentDisplay as EquipmentGetter;
+use BeerXML\Parser\IEquipmentDisplay as EquipmentSetter;
 
 class Equipment implements EquipmentGetter, EquipmentSetter
 {
@@ -129,6 +129,48 @@ class Equipment implements EquipmentGetter, EquipmentSetter
      * @var string
      */
     private $notes;
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+
+    /**
+     * @var string
+     */
+    private $displayBoilSize;
+
+    /**
+     * @var string
+     */
+    private $displayBatchSize;
+
+    /**
+     * @var string
+     */
+    private $displayTunVolume;
+
+    /**
+     * @var string
+     */
+    private $displayTunWeight;
+
+    /**
+     * @var string
+     */
+    private $displayTopUpWater;
+
+    /**
+     * @var string
+     */
+    private $displayTrubChillerLoss;
+
+    /**
+     * @var string
+     */
+    private $displayLauterDeadspace;
+
+    /**
+     * @var string
+     */
+    private $displayTopUpKettle;
 
     /**
      * The target volume of the batch at the start of fermentation.
@@ -462,6 +504,172 @@ class Equipment implements EquipmentGetter, EquipmentSetter
     public function getVersion()
     {
         return $this->version;
+    }
+
+    /**
+     * The target volume of the batch at the start of fermentation in display volume units such as “5.0 gal”
+     *
+     * @param string $displayBatchSize
+     */
+    public function setDisplayBatchSize($displayBatchSize)
+    {
+        $this->displayBatchSize = $displayBatchSize;
+    }
+
+    /**
+     * The target volume of the batch at the start of fermentation in display volume units such as “5.0 gal”
+     *
+     * @return string
+     */
+    public function getDisplayBatchSize()
+    {
+        return $this->displayBatchSize;
+    }
+
+    /**
+     * The pre-boil volume normally used for a batch of this size shown in display volume units such as “5.5 gal”
+     *
+     * @param string $displayBoilSize
+     */
+    public function setDisplayBoilSize($displayBoilSize)
+    {
+        $this->displayBoilSize = $displayBoilSize;
+    }
+
+    /**
+     * The pre-boil volume normally used for a batch of this size shown in display volume units such as “5.5 gal”
+     *
+     * @return string
+     */
+    public function getDisplayBoilSize()
+    {
+        return $this->displayBoilSize;
+    }
+
+    /**
+     * Amount lost to the lauter tun and equipment associated with the lautering process. Ex: “2.0 gal” or “1.0 l”
+     *
+     * @param string $displayLauterDeadspace
+     */
+    public function setDisplayLauterDeadspace($displayLauterDeadspace)
+    {
+        $this->displayLauterDeadspace = $displayLauterDeadspace;
+    }
+
+    /**
+     * Amount lost to the lauter tun and equipment associated with the lautering process. Ex: “2.0 gal” or “1.0 l”
+     *
+     * @return string
+     */
+    public function getDisplayLauterDeadspace()
+    {
+        return $this->displayLauterDeadspace;
+    }
+
+    /**
+     * Amount normally added to the boil kettle before the boil. Ex: “1.0 gal”
+     *
+     * @param string $displayTopUpKettle
+     */
+    public function setDisplayTopUpKettle($displayTopUpKettle)
+    {
+        $this->displayTopUpKettle = $displayTopUpKettle;
+    }
+
+    /**
+     * Amount normally added to the boil kettle before the boil. Ex: “1.0 gal”
+     *
+     * @return string
+     */
+    public function getDisplayTopUpKettle()
+    {
+        return $this->displayTopUpKettle;
+    }
+
+    /**
+     * The amount of top up water normally added just prior to starting fermentation in display volume such as “1.0 gal”
+     *
+     * @param string $displayTopUpWater
+     */
+    public function setDisplayTopUpWater($displayTopUpWater)
+    {
+        $this->displayTopUpWater = $displayTopUpWater;
+    }
+
+    /**
+     * The amount of top up water normally added just prior to starting fermentation in display volume such as “1.0 gal”
+     *
+     * @return string
+     */
+    public function getDisplayTopUpWater()
+    {
+        return $this->displayTopUpWater;
+    }
+
+    /**
+     * The amount of wort normally lost during transition from the boiler to the fermentation vessel.
+     *
+     * Includes both unusable wort due to trub and wort lost to the chiller and transfer systems.  Expressed in user
+     * units - Ex: “1.5 qt”
+     *
+     * @param string $displayTrubChillerLoss
+     */
+    public function setDisplayTrubChillerLoss($displayTrubChillerLoss)
+    {
+        $this->displayTrubChillerLoss = $displayTrubChillerLoss;
+    }
+
+    /**
+     * The amount of wort normally lost during transition from the boiler to the fermentation vessel.
+     *
+     * Includes both unusable wort due to trub and wort lost to the chiller and transfer systems.  Expressed in user
+     * units - Ex: “1.5 qt”
+     *
+     * @return string
+     */
+    public function getDisplayTrubChillerLoss()
+    {
+        return $this->displayTrubChillerLoss;
+    }
+
+    /**
+     * Volume of the mash tun in display units such as “10.0 gal” or “20.0 l”
+     *
+     * @param string $displayTunVolume
+     */
+    public function setDisplayTunVolume($displayTunVolume)
+    {
+        $this->displayTunVolume = $displayTunVolume;
+    }
+
+    /**
+     * Volume of the mash tun in display units such as “10.0 gal” or “20.0 l”
+     *
+     * @return string
+     */
+    public function getDisplayTunVolume()
+    {
+        return $this->displayTunVolume;
+    }
+
+    /**
+     * Weight of the mash tun in display units such as “3.0 kg” or “6.0 lb”
+     *
+     * @param string $displayTunWeight
+     */
+    public function setDisplayTunWeight($displayTunWeight)
+    {
+        $this->displayTunWeight = $displayTunWeight;
+    }
+
+    /**
+     * Weight of the mash tun in display units such as “3.0 kg” or “6.0 lb”
+     *
+     * @return string
+     */
+    public function getDisplayTunWeight()
+    {
+        return $this->displayTunWeight;
     }
 
 }

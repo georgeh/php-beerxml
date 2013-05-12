@@ -4,7 +4,7 @@
 namespace BeerXML\Parser;
 
 
-interface IStyleWriter
+interface IStyle
 {
 
     /**

@@ -6,6 +6,12 @@ namespace BeerXML\Parser;
 
 interface IRecipe
 {
+    const TYPE_EXTRACT            = 'Extract';
+    const TYPE_PARTIAL_MASH       = 'Partial Mash';
+    const TYPE_ALL_GRAIN          = 'All Grain';
+    const TYPE_IBU_METHOD_RAGER   = 'Rager';
+    const TYPE_IBU_METHOD_TINSETH = 'Tinseth';
+    const TYPE_IBU_METHOD_GARETZ  = 'Garetz';
 
     /**
      * @param number $age

@@ -4,8 +4,8 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IHop as HopGetter;
-use BeerXML\Parser\IHop as HopSetter;
+use BeerXML\Generator\IHopDisplay as HopGetter;
+use BeerXML\Parser\IHopDisplay as HopSetter;
 
 class Hop implements HopGetter, HopSetter
 {
@@ -106,6 +106,23 @@ class Hop implements HopGetter, HopSetter
      * @var number Percentage
      */
     private $myrcene;
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+
+    /**
+     * @var string
+     */
+    private $displayAmount;
+
+    /**
+     * @var string
+     */
+    private $inventory;
+
+    /**
+     * @var string
+     */
+    private $displayTime;
 
     /**
      * Percent alpha of hops - for example "5.5" represents 5.5% alpha
@@ -457,5 +474,66 @@ class Hop implements HopGetter, HopSetter
         return $this->version;
     }
 
+    /**
+     * The amount of hops in this record along with the units formatted for easy display in the current user defined
+     * units.  For example “100 g” or “1.5 oz”.
+     *
+     * @param string $displayAmount
+     */
+    public function setDisplayAmount($displayAmount)
+    {
+        $this->displayAmount = $displayAmount;
+    }
+
+    /**
+     * The amount of hops in this record along with the units formatted for easy display in the current user defined
+     * units.  For example “100 g” or “1.5 oz”.
+     *
+     * @return string
+     */
+    public function getDisplayAmount()
+    {
+        return $this->displayAmount;
+    }
+
+    /**
+     * Time displayed in minutes for all uses except for the dry hop which is in days.  For example “60 min”, “3 days”.
+     *
+     * @param string $displayTime
+     */
+    public function setDisplayTime($displayTime)
+    {
+        $this->displayTime = $displayTime;
+    }
+
+    /**
+     * Time displayed in minutes for all uses except for the dry hop which is in days.  For example “60 min”, “3 days”.
+     *
+     * @return string
+     */
+    public function getDisplayTime()
+    {
+        return $this->displayTime;
+    }
+
+    /**
+     * Amount in inventory for this item along with the units – for example “10.0 oz”
+     *
+     * @param string $inventory
+     */
+    public function setInventory($inventory)
+    {
+        $this->inventory = $inventory;
+    }
+
+    /**
+     * Amount in inventory for this item along with the units – for example “10.0 oz”
+     *
+     * @return string
+     */
+    public function getInventory()
+    {
+        return $this->inventory;
+    }
 
 }

@@ -4,8 +4,8 @@
 namespace BeerXML\Record;
 
 
-use BeerXML\Generator\IWater as WaterGetter;
-use BeerXML\Parser\IWater as WaterSetter;
+use BeerXML\Generator\IWaterDisplay as WaterGetter;
+use BeerXML\Parser\IWaterDisplay as WaterSetter;
 
 class Water implements WaterGetter, WaterSetter
 {
@@ -85,6 +85,13 @@ class Water implements WaterGetter, WaterSetter
      * @var string
      */
     private $notes;
+
+    /** Fields from Appendix A Optional Extensions for BeerXML Display **/
+
+    /**
+     * @var string
+     */
+    private $displayAmount;
 
     /**
      * Volume of water to use in a recipe in liters.
@@ -301,4 +308,27 @@ class Water implements WaterGetter, WaterSetter
     {
         return $this->version;
     }
+
+    /**
+     * The amount of water in this record along with the units formatted for easy display in the current user defined
+     * units.  For example “5.0 gal” or “20.0 l”.
+     *
+     * @param string $displayAmount
+     */
+    public function setDisplayAmount($displayAmount)
+    {
+        $this->displayAmount = $displayAmount;
+    }
+
+    /**
+     * The amount of water in this record along with the units formatted for easy display in the current user defined
+     * units.  For example “5.0 gal” or “20.0 l”.
+     *
+     * @return string
+     */
+    public function getDisplayAmount()
+    {
+        return $this->displayAmount;
+    }
+
 }
