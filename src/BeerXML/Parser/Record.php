@@ -18,6 +18,7 @@ abstract class Record
 {
     /**
      * The <TAG> that a subclass parses
+     *
      * @var string
      */
     protected $tagName = null;
@@ -137,8 +138,12 @@ abstract class Record
         // While this recipe is still open
         while ($this->tagName != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
             if (!@$this->xmlReader->read()) {
-                throw new BadData('Surprise end of file!');
+                throw new BadData('Surprise end of file! Missing close tag <' . $this->tagName . '>');
             };
+
+            if ($this->xmlReader->isEmptyElement) {
+                continue;
+            }
 
             if (\XMLReader::ELEMENT == $this->xmlReader->nodeType) {
                 if (isset($this->simpleProperties[$this->xmlReader->name])) {
@@ -184,9 +189,11 @@ abstract class Record
         $parserClass = $setType['parser'];
         $recordAdder = $setType['method'];
         while ($setTag != $this->xmlReader->name || \XMLReader::END_ELEMENT != $this->xmlReader->nodeType) {
-            if (@!$this->xmlReader->read()) {
-                throw new BadData('Surprise end of file!');
-            };
+            $this->xmlReader->read();
+
+            if ($this->xmlReader->isEmptyElement) {
+                continue;
+            }
 
             if ($tag == $this->xmlReader->name && \XMLReader::ELEMENT == $this->xmlReader->nodeType) {
                 $recordParser = $this->createRecordParser($parserClass);

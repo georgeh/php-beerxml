@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RECIPES>
+    <RECIPE>
+        <NAME>Dry Stout</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Extract</TYPE>
+        <BREWER>Brad Smith</BREWER>
+        <BATCH_SIZE>18.93</BATCH_SIZE>
+        <BOIL_SIZE>20.82</BOIL_SIZE>
+        <BOIL_TIME>60.0</BOIL_TIME>
+        <OG />
+        <FG nil="true"/>
+        <STYLE>
+            <NAME>Dry Stout</NAME>
+            <CATEGORY>Stout</CATEGORY>
+            <CATEGORY_NUMBER>16</CATEGORY_NUMBER>
+            <STYLE_LETTER>A</STYLE_LETTER>
+            <STYLE_GUIDE>BJCP</STYLE_GUIDE>
+            <VERSION>1</VERSION>
+            <TYPE>Ale</TYPE>
+            <OG_MIN>1.035</OG_MIN>
+            <OG_MAX>1.050</OG_MAX>
+            <FG_MIN>1.007</FG_MIN>
+            <FG_MAX>1.011</FG_MAX>
+            <IBU_MIN>30.0</IBU_MIN>
+            <IBU_MAX>50.0</IBU_MAX>
+            <COLOR_MIN>35.0</COLOR_MIN>
+            <COLOR_MAX>200.0</COLOR_MAX>
+        </STYLE>
+        <HOPS>
+            <HOP>
+                <NAME>Columbus</NAME>
+                <ORIGIN>United States</ORIGIN>
+                <ALPHA>16.0</ALPHA>
+                <BETA nil="true"/>
+                <AMOUNT>0.0680388555</AMOUNT>
+                <DISPLAY_AMOUNT>0.0680388555 kg</DISPLAY_AMOUNT>
+                <USE>Boil</USE>
+                <FORM>Pellet</FORM>
+                <TIME>60</TIME>
+                <DISPLAY_TIME>60.0 min</DISPLAY_TIME>
+                <NOTES>Pleasant, with pungent aroma.</NOTES>
+            </HOP>
+        </HOPS>
+        <FERMENTABLES/>
+        <MISCS/>
+        <WATERS/>
+        <YEASTS/>
+    </RECIPE>
+</RECIPES>

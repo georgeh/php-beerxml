@@ -26,4 +26,16 @@ class RecordTest extends \PHPUnit_Framework_TestCase {
         $parser->setXmlString('<RECIPES><RECIPE><NAME>foo</NAME>');
         $parser->parse();
     }
+
+    /**
+     * @expectedException \BeerXML\Exception\BadData
+     */
+    public function testThrowsExceptionOnTruncatedRecordSet()
+    {
+        $parser = new Recipe();
+        $parser->setRecordFactory(new RecordFactory());
+        $parser->setXmlString('<RECIPES><RECIPE><NAME>foo</NAME><HOPS><HOP></HOP><OG></OG></RECIPE></RECIPES>');
+        $parser->parse();
+
+    }
 }

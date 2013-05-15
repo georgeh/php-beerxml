@@ -77,4 +77,12 @@ class ParserTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('Brew Pot  (6+gal) and Igloo/Gott Cooler (5 Gal)', $equipment->getName());
         $this->assertEquals(60, $equipment->getBoilTime());
     }
+
+    public function testSelfClosingTagsDontError()
+    {
+        list($recipe) = $this->parser->parse(file_get_contents(__DIR__ . '/fixtures/hop-with-self-closing-tag.xml'));
+        /** @var $recipe Recipe */
+        list($hop) = $recipe->getHops();
+        $this->assertEmpty($hop->getBeta());
+    }
 }
