@@ -6,8 +6,8 @@
 
 	<title>Class BeerXML\Parser\Recipe | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -21,17 +21,25 @@
 		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
-				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
 						</li>
-				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
-				<li class="active"><a href="namespace-BeerXML.Parser.html">Parser</a>
+				<li class="active main"><a href="namespace-BeerXML.Parser.html">Parser</a>
 						</li>
-				<li><a href="namespace-BeerXML.Record.html">Record</a>
+				<li class="main"><a href="namespace-BeerXML.Record.html">Record</a>
 						</li>
-							</ul></li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-PHP.html">PHP</a>
 						</li>
 			</ul>
@@ -59,16 +67,26 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-BeerXML.Parser.IEquipmentWriter.html">IEquipmentWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IFermentableWriter.html">IFermentableWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IHopWriter.html">IHopWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IMashProfileWriter.html">IMashProfileWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IMashStepWriter.html">IMashStepWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IMiscWriter.html">IMiscWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IRecipeWriter.html">IRecipeWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IStyleWriter.html">IStyleWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IWaterWriter.html">IWaterWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IYeastWriter.html">IYeastWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IEquipment.html">IEquipment</a></li>
+				<li><a href="class-BeerXML.Parser.IEquipmentDisplay.html">IEquipmentDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentable.html">IFermentable</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableDisplay.html">IFermentableDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IHop.html">IHop</a></li>
+				<li><a href="class-BeerXML.Parser.IHopDisplay.html">IHopDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfile.html">IMashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileDisplay.html">IMashProfileDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStep.html">IMashStep</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepDisplay.html">IMashStepDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMisc.html">IMisc</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscDisplay.html">IMiscDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipe.html">IRecipe</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeDisplay.html">IRecipeDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IStyle.html">IStyle</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleDisplay.html">IStyleDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IWater.html">IWater</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterDisplay.html">IWaterDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IYeast.html">IYeast</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastDisplay.html">IYeastDisplay</a></li>
 			</ul>
 
 
@@ -113,6 +131,15 @@
 	<h1>Class Recipe</h1>
 
 
+	<div class="description">
+	
+<p>Abstract Record Parser</p>
+
+<p>This sets the stage for all of our parsers. Each subclass can define a map of
+tags to setter methods. The parser will then call the setter methods with the
+values from those tags.</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
@@ -140,9 +167,9 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
-		
+		<b>Package:</b> BeerXML\Parser<br />
 
-		<b>Located at</b> <a href="source-class-BeerXML.Parser.Recipe.html#7-54" title="Go to source code">BeerXML/Parser/Recipe.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.Recipe.html#9-95" title="Go to source code">src/BeerXML/Parser/Recipe.php</a><br />
 	</div>
 
 
@@ -153,14 +180,14 @@
 
 		<td class="attributes"><code>
 			 protected 
-			
+			<code><a href="class-BeerXML.Parser.IRecipe.html">BeerXML\Parser\IRecipe</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createRecord">#</a>
-		<code><a href="source-class-BeerXML.Parser.Recipe.html#50-53" title="Go to source code">createRecord</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.Recipe.html#50-83" title="Go to source code">createRecord</a>( )</code>
 
 		<div class="description short">
 			
@@ -171,9 +198,49 @@
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Parser.IRecipe.html">BeerXML\Parser\IRecipe</a></code></code><br />
+				</div>
 
 
 
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="otherElementEncountered" id="_otherElementEncountered">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_otherElementEncountered">#</a>
+		<code><a href="source-class-BeerXML.Parser.Recipe.html#85-94" title="Go to source code">otherElementEncountered</a>( <span><code><a href="class-BeerXML.Parser.IRecipe.html">BeerXML\Parser\IRecipe</a></code> <var>$record</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$record</var></dt>
+					<dd><code><code><a href="class-BeerXML.Parser.IRecipe.html">BeerXML\Parser\IRecipe</a></code></code><br>$record</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.Record.html#_otherElementEncountered">BeerXML\Parser\Record::otherElementEncountered()</a></code></div>
 
 		</div>
 		</div></td>
@@ -214,7 +281,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Parser.Recipe.html#10" title="Go to source code"><var>$tagName</var></a>
+				<a href="source-class-BeerXML.Parser.Recipe.html#11" title="Go to source code"><var>$tagName</var></a>
 		</td>
 		<td class="value"><code><span class="php-quote">'RECIPE'</span></code></td>
 		<td class="description"><div>
@@ -222,10 +289,14 @@
 
 			<div class="description short">
 				
+<p>The &lt;TAG&gt; that a subclass parses</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>The &lt;TAG&gt; that a subclass parses</p>
+
 
 			</div>
 		</div></td>
@@ -237,39 +308,38 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-BeerXML.Parser.Recipe.html#12-48" title="Go to source code"><var>$simpleProperties</var></a>
+				<a href="source-class-BeerXML.Parser.Recipe.html#13-48" title="Go to source code"><var>$simpleProperties</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">array</span>(
-    <span class="php-quote">'AGE'</span>                =&gt; <span class="php-quote">'setAge'</span>,
-    <span class="php-quote">'AGETEMP'</span>            =&gt; <span class="php-quote">'setAgeTemp'</span>,
-    <span class="php-quote">'ASSTBREWER'</span>         =&gt; <span class="php-quote">'setAsstBrewer'</span>,
-    <span class="php-quote">'BATCHSIZE'</span>          =&gt; <span class="php-quote">'setBatchSize'</span>,
-    <span class="php-quote">'BOILSIZE'</span>           =&gt; <span class="php-quote">'setBoilSize'</span>,
-    <span class="php-quote">'BOILTIME'</span>           =&gt; <span class="php-quote">'setBoilTime'</span>,
-    <span class="php-quote">'BREWER'</span>             =&gt; <span class="php-quote">'setBrewer'</span>,
-    <span class="php-quote">'CARBONATION'</span>        =&gt; <span class="php-quote">'setCarbonation'</span>,
-    <span class="php-quote">'CARBONATIONTEMP'</span>    =&gt; <span class="php-quote">'setCarbonationTemp'</span>,
-    <span class="php-quote">'DATE'</span>               =&gt; <span class="php-quote">'setDate'</span>,
-    <span class="php-quote">'EFFICIENCY'</span>         =&gt; <span class="php-quote">'setEfficiency'</span>,
-    <span class="php-quote">'FERMENTATIONSTAGES'</span> =&gt; <span class="php-quote">'setFermentationStages'</span>,
-    <span class="php-quote">'FG'</span>                 =&gt; <span class="php-quote">'setFg'</span>,
-    <span class="php-quote">'FORCEDCARBONATION'</span>  =&gt; <span class="php-quote">'setForcedCarbonation'</span>,
-    <span class="php-quote">'KEGPRIMINGFACTOR'</span>   =&gt; <span class="php-quote">'setKegPrimingFactor'</span>,
-    <span class="php-quote">'NAME'</span>               =&gt; <span class="php-quote">'setName'</span>,
-    <span class="php-quote">'NOTES'</span>              =&gt; <span class="php-quote">'setNotes'</span>,
-    <span class="php-quote">'OG'</span>                 =&gt; <span class="php-quote">'setOg'</span>,
-    <span class="php-quote">'PRIMARYAGE'</span>         =&gt; <span class="php-quote">'setPrimaryAge'</span>,
-    <span class="php-quote">'PRIMARYTEMP'</span>        =&gt; <span class="php-quote">'setPrimaryTemp'</span>,
-    <span class="php-quote">'PRIMINGSUGAREQUIV'</span>  =&gt; <span class="php-quote">'setPrimingSugarEquiv'</span>,
-    <span class="php-quote">'PRIMINGSUGARNAME'</span>   =&gt; <span class="php-quote">'setPrimingSugarName'</span>,
-    <span class="php-quote">'SECONDARYAGE'</span>       =&gt; <span class="php-quote">'setSecondaryAge'</span>,
-    <span class="php-quote">'SECONDARYTEMP'</span>      =&gt; <span class="php-quote">'setSecondaryTemp'</span>,
-    <span class="php-quote">'TASTENOTES'</span>         =&gt; <span class="php-quote">'setTasteNotes'</span>,
-    <span class="php-quote">'TASTERATING'</span>        =&gt; <span class="php-quote">'setTasteRating'</span>,
-    <span class="php-quote">'TERTIARYAGE'</span>        =&gt; <span class="php-quote">'setTertiaryAge'</span>,
-    <span class="php-quote">'TERTIARYTEMP'</span>       =&gt; <span class="php-quote">'setTertiaryTemp'</span>,
-    <span class="php-quote">'TYPE'</span>               =&gt; <span class="php-quote">'setType'</span>,
-    <span class="php-quote">'VERSION'</span>            =&gt; <span class="php-quote">'setVersion'</span>,
+    <span class="php-quote">'AGE'</span>                 =&gt; <span class="php-quote">'setAge'</span>,
+    <span class="php-quote">'AGE_TEMP'</span>            =&gt; <span class="php-quote">'setAgeTemp'</span>,
+    <span class="php-quote">'ASST_BREWER'</span>         =&gt; <span class="php-quote">'setAsstBrewer'</span>,
+    <span class="php-quote">'BATCH_SIZE'</span>          =&gt; <span class="php-quote">'setBatchSize'</span>,
+    <span class="php-quote">'BOIL_SIZE'</span>           =&gt; <span class="php-quote">'setBoilSize'</span>,
+    <span class="php-quote">'BOIL_TIME'</span>           =&gt; <span class="php-quote">'setBoilTime'</span>,
+    <span class="php-quote">'BREWER'</span>              =&gt; <span class="php-quote">'setBrewer'</span>,
+    <span class="php-quote">'CARBONATION'</span>         =&gt; <span class="php-quote">'setCarbonation'</span>,
+    <span class="php-quote">'CARBONATION_TEMP'</span>    =&gt; <span class="php-quote">'setCarbonationTemp'</span>,
+    <span class="php-quote">'DATE'</span>                =&gt; <span class="php-quote">'setDate'</span>,
+    <span class="php-quote">'EFFICIENCY'</span>          =&gt; <span class="php-quote">'setEfficiency'</span>,
+    <span class="php-quote">'FERMENTATION_STAGES'</span> =&gt; <span class="php-quote">'setFermentationStages'</span>,
+    <span class="php-quote">'FG'</span>                  =&gt; <span class="php-quote">'setFg'</span>,
+    <span class="php-quote">'KEG_PRIMING_FACTOR'</span>  =&gt; <span class="php-quote">'setKegPrimingFactor'</span>,
+    <span class="php-quote">'NAME'</span>                =&gt; <span class="php-quote">'setName'</span>,
+    <span class="php-quote">'NOTES'</span>               =&gt; <span class="php-quote">'setNotes'</span>,
+    <span class="php-quote">'OG'</span>                  =&gt; <span class="php-quote">'setOg'</span>,
+    <span class="php-quote">'PRIMARY_AGE'</span>         =&gt; <span class="php-quote">'setPrimaryAge'</span>,
+    <span class="php-quote">'PRIMARY_TEMP'</span>        =&gt; <span class="php-quote">'setPrimaryTemp'</span>,
+    <span class="php-quote">'PRIMING_SUGAR_EQUIV'</span> =&gt; <span class="php-quote">'setPrimingSugarEquiv'</span>,
+    <span class="php-quote">'PRIMING_SUGAR_NAME'</span>  =&gt; <span class="php-quote">'setPrimingSugarName'</span>,
+    <span class="php-quote">'SECONDARY_AGE'</span>       =&gt; <span class="php-quote">'setSecondaryAge'</span>,
+    <span class="php-quote">'SECONDARY_TEMP'</span>      =&gt; <span class="php-quote">'setSecondaryTemp'</span>,
+    <span class="php-quote">'TASTE_NOTES'</span>         =&gt; <span class="php-quote">'setTasteNotes'</span>,
+    <span class="php-quote">'TASTE_RATING'</span>        =&gt; <span class="php-quote">'setTasteRating'</span>,
+    <span class="php-quote">'TERTIARY_AGE'</span>        =&gt; <span class="php-quote">'setTertiaryAge'</span>,
+    <span class="php-quote">'TERTIARY_TEMP'</span>       =&gt; <span class="php-quote">'setTertiaryTemp'</span>,
+    <span class="php-quote">'TYPE'</span>                =&gt; <span class="php-quote">'setType'</span>,
+    <span class="php-quote">'VERSION'</span>             =&gt; <span class="php-quote">'setVersion'</span>,
 )</code></td>
 		<td class="description"><div>
 			<a href="#$simpleProperties" class="anchor">#</a>

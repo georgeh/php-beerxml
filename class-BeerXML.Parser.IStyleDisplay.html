@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BeerXML\Parser\IStyleDisplay | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li class="active main"><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Parser.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Parser.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Parser.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Parser.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Parser.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Parser.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Parser.RecordFactory.html">RecordFactory</a></li>
+				<li><a href="class-BeerXML.Parser.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Parser.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Parser.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.IEquipment.html">IEquipment</a></li>
+				<li><a href="class-BeerXML.Parser.IEquipmentDisplay.html">IEquipmentDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentable.html">IFermentable</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableDisplay.html">IFermentableDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IHop.html">IHop</a></li>
+				<li><a href="class-BeerXML.Parser.IHopDisplay.html">IHopDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfile.html">IMashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileDisplay.html">IMashProfileDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStep.html">IMashStep</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepDisplay.html">IMashStepDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMisc.html">IMisc</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscDisplay.html">IMiscDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipe.html">IRecipe</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeDisplay.html">IRecipeDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IStyle.html">IStyle</a></li>
+				<li class="active"><a href="class-BeerXML.Parser.IStyleDisplay.html">IStyleDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IWater.html">IWater</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterDisplay.html">IWaterDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IYeast.html">IYeast</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastDisplay.html">IYeastDisplay</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Parser.html" title="Summary of BeerXML\Parser"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IStyleDisplay</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>BeerXML\Parser\IStyleDisplay</span></b>			
+			 implements 
+				<a href="class-BeerXML.Parser.IStyle.html"><span>BeerXML\Parser\IStyle</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Record.Style.html">BeerXML\Record\Style</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.IStyleDisplay.html#7-93" title="Go to source code">src/BeerXML/Parser/IStyleDisplay.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setAbvRange" id="_setAbvRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAbvRange">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#10-15" title="Go to source code">setAbvRange</a>( <span>string <var>$abvRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>ABV Range for this style such as "4.5-5.5%"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>ABV Range for this style such as "4.5-5.5%"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$abvRange</var></dt>
+					<dd><code>string</code><br>$abvRange</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCarbRange" id="_setCarbRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCarbRange">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#17-22" title="Go to source code">setCarbRange</a>( <span>string <var>$carbRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Carbonation range in volumes such as "2.0-2.6 vols"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Carbonation range in volumes such as "2.0-2.6 vols"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$carbRange</var></dt>
+					<dd><code>string</code><br>$carbRange</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setColorRange" id="_setColorRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setColorRange">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#24-29" title="Go to source code">setColorRange</a>( <span>string <var>$colorRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Color range such as "10-20 SRM"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Color range such as "10-20 SRM"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$colorRange</var></dt>
+					<dd><code>string</code><br>$colorRange</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayColorMax" id="_setDisplayColorMax">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayColorMax">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#31-36" title="Go to source code">setDisplayColorMax</a>( <span>string <var>$displayColorMax</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Maximum color in user defined units such as "20 srm"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Maximum color in user defined units such as "20 srm"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayColorMax</var></dt>
+					<dd><code>string</code><br>$displayColorMax</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayColorMin" id="_setDisplayColorMin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayColorMin">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#38-43" title="Go to source code">setDisplayColorMin</a>( <span>string <var>$displayColorMin</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Minimum color in user defined units such as "30 srm".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Minimum color in user defined units such as "30 srm".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayColorMin</var></dt>
+					<dd><code>string</code><br>$displayColorMin</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayFgMax" id="_setDisplayFgMax">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayFgMax">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#45-50" title="Go to source code">setDisplayFgMax</a>( <span>string <var>$displayFgMax</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Final gravity maximum in user defined units such as "1.019 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity maximum in user defined units such as "1.019 sg".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayFgMax</var></dt>
+					<dd><code>string</code><br>$displayFgMax</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayFgMin" id="_setDisplayFgMin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayFgMin">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#52-57" title="Go to source code">setDisplayFgMin</a>( <span>string <var>$displayFgMin</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Final gravity minimum in user defined units such as "1.010 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity minimum in user defined units such as "1.010 sg".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayFgMin</var></dt>
+					<dd><code>string</code><br>$displayFgMin</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayOgMax" id="_setDisplayOgMax">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayOgMax">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#59-64" title="Go to source code">setDisplayOgMax</a>( <span>string <var>$displayOgMax</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Original gravity max in user defined units such as "1.056 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity max in user defined units such as "1.056 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayOgMax</var></dt>
+					<dd><code>string</code><br>$displayOgMax</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayOgMin" id="_setDisplayOgMin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayOgMin">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#66-71" title="Go to source code">setDisplayOgMin</a>( <span>string <var>$displayOgMin</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Original gravity minimum in user defined units such as "1.036 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity minimum in user defined units such as "1.036 sg".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayOgMin</var></dt>
+					<dd><code>string</code><br>$displayOgMin</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFgRange" id="_setFgRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFgRange">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#73-78" title="Go to source code">setFgRange</a>( <span>string <var>$fgRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Final gravity range such as "1.010-1.015 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity range such as "1.010-1.015 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fgRange</var></dt>
+					<dd><code>string</code><br>$fgRange</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIbuRange" id="_setIbuRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIbuRange">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#80-85" title="Go to source code">setIbuRange</a>( <span>string <var>$ibuRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Bitterness range in IBUs such as "10-20 IBU"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Bitterness range in IBUs such as "10-20 IBU"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ibuRange</var></dt>
+					<dd><code>string</code><br>$ibuRange</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOgRange" id="_setOgRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOgRange">#</a>
+		<code><a href="source-class-BeerXML.Parser.IStyleDisplay.html#87-92" title="Go to source code">setOgRange</a>( <span>string <var>$ogRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Original gravity range for the style such as "1.030-1.040 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity range for the style such as "1.030-1.040 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ogRange</var></dt>
+					<dd><code>string</code><br>$ogRange</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-BeerXML.Parser.IStyle.html#methods">BeerXML\Parser\IStyle</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-BeerXML.Parser.IStyle.html#_setAbvMax">setAbvMax()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setAbvMin">setAbvMin()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setCarbMax">setCarbMax()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setCarbMin">setCarbMin()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setCategory">setCategory()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setCategoryNumber">setCategoryNumber()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setColorMax">setColorMax()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setColorMin">setColorMin()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setExamples">setExamples()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setFgMax">setFgMax()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setFgMin">setFgMin()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setIbuMax">setIbuMax()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setIbuMin">setIbuMin()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setIngredients">setIngredients()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setName">setName()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setNotes">setNotes()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setOgMax">setOgMax()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setOgMin">setOgMin()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setProfile">setProfile()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setStyleGuide">setStyleGuide()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setStyleLetter">setStyleLetter()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setType">setType()</a>, 
+			<a href="class-BeerXML.Parser.IStyle.html#_setVersion">setVersion()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

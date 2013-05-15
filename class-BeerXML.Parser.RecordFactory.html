@@ -6,8 +6,8 @@
 
 	<title>Class BeerXML\Parser\RecordFactory | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -21,17 +21,25 @@
 		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
-				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
 						</li>
-				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
-				<li class="active"><a href="namespace-BeerXML.Parser.html">Parser</a>
+				<li class="active main"><a href="namespace-BeerXML.Parser.html">Parser</a>
 						</li>
-				<li><a href="namespace-BeerXML.Record.html">Record</a>
+				<li class="main"><a href="namespace-BeerXML.Record.html">Record</a>
 						</li>
-							</ul></li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-PHP.html">PHP</a>
 						</li>
 			</ul>
@@ -59,16 +67,26 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-BeerXML.Parser.IEquipmentWriter.html">IEquipmentWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IFermentableWriter.html">IFermentableWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IHopWriter.html">IHopWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IMashProfileWriter.html">IMashProfileWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IMashStepWriter.html">IMashStepWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IMiscWriter.html">IMiscWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IRecipeWriter.html">IRecipeWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IStyleWriter.html">IStyleWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IWaterWriter.html">IWaterWriter</a></li>
-				<li><a href="class-BeerXML.Parser.IYeastWriter.html">IYeastWriter</a></li>
+				<li><a href="class-BeerXML.Parser.IEquipment.html">IEquipment</a></li>
+				<li><a href="class-BeerXML.Parser.IEquipmentDisplay.html">IEquipmentDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentable.html">IFermentable</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableDisplay.html">IFermentableDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IHop.html">IHop</a></li>
+				<li><a href="class-BeerXML.Parser.IHopDisplay.html">IHopDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfile.html">IMashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileDisplay.html">IMashProfileDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStep.html">IMashStep</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepDisplay.html">IMashStepDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMisc.html">IMisc</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscDisplay.html">IMiscDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipe.html">IRecipe</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeDisplay.html">IRecipeDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IStyle.html">IStyle</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleDisplay.html">IStyleDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IWater.html">IWater</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterDisplay.html">IWaterDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IYeast.html">IYeast</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastDisplay.html">IYeastDisplay</a></li>
 			</ul>
 
 
@@ -139,7 +157,7 @@ so that it returns the objects you want, and then pass it into
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
 		<b>Package:</b> BeerXML\Parser<br />
 
-		<b>Located at</b> <a href="source-class-BeerXML.Parser.RecordFactory.html#6-97" title="Go to source code">BeerXML/Parser/RecordFactory.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.RecordFactory.html#7-98" title="Go to source code">src/BeerXML/Parser/RecordFactory.php</a><br />
 	</div>
 
 
@@ -150,14 +168,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IEquipmentWriter.html">BeerXML\Parser\IEquipmentWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IEquipment.html">BeerXML\Parser\IEquipment</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEquipment">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#18-24" title="Go to source code">getEquipment</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#19-25" title="Go to source code">getEquipment</a>( )</code>
 
 		<div class="description short">
 			
@@ -170,7 +188,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IEquipmentWriter.html">BeerXML\Parser\IEquipmentWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IEquipment.html">BeerXML\Parser\IEquipment</a></code></code><br />
 				</div>
 
 
@@ -183,14 +201,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IFermentableWriter.html">BeerXML\Parser\IFermentableWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IFermentable.html">BeerXML\Parser\IFermentable</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFermentable">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#26-32" title="Go to source code">getFermentable</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#27-33" title="Go to source code">getFermentable</a>( )</code>
 
 		<div class="description short">
 			
@@ -203,7 +221,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IFermentableWriter.html">BeerXML\Parser\IFermentableWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IFermentable.html">BeerXML\Parser\IFermentable</a></code></code><br />
 				</div>
 
 
@@ -216,14 +234,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IHopWriter.html">BeerXML\Parser\IHopWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IHop.html">BeerXML\Parser\IHop</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getHop">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#34-40" title="Go to source code">getHop</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#35-41" title="Go to source code">getHop</a>( )</code>
 
 		<div class="description short">
 			
@@ -236,7 +254,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IHopWriter.html">BeerXML\Parser\IHopWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IHop.html">BeerXML\Parser\IHop</a></code></code><br />
 				</div>
 
 
@@ -249,14 +267,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IMashProfileWriter.html">BeerXML\Parser\IMashProfileWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IMashProfile.html">BeerXML\Parser\IMashProfile</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMashProfile">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#42-48" title="Go to source code">getMashProfile</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#43-49" title="Go to source code">getMashProfile</a>( )</code>
 
 		<div class="description short">
 			
@@ -269,7 +287,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IMashProfileWriter.html">BeerXML\Parser\IMashProfileWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IMashProfile.html">BeerXML\Parser\IMashProfile</a></code></code><br />
 				</div>
 
 
@@ -282,14 +300,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IMashStepWriter.html">BeerXML\Parser\IMashStepWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IMashStep.html">BeerXML\Parser\IMashStep</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMashStep">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#50-56" title="Go to source code">getMashStep</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#51-57" title="Go to source code">getMashStep</a>( )</code>
 
 		<div class="description short">
 			
@@ -302,7 +320,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IMashStepWriter.html">BeerXML\Parser\IMashStepWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IMashStep.html">BeerXML\Parser\IMashStep</a></code></code><br />
 				</div>
 
 
@@ -315,14 +333,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IMiscWriter.html">BeerXML\Parser\IMiscWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IMisc.html">BeerXML\Parser\IMisc</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMisc">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#58-64" title="Go to source code">getMisc</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#59-65" title="Go to source code">getMisc</a>( )</code>
 
 		<div class="description short">
 			
@@ -335,7 +353,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IMiscWriter.html">BeerXML\Parser\IMiscWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IMisc.html">BeerXML\Parser\IMisc</a></code></code><br />
 				</div>
 
 
@@ -348,14 +366,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IRecipeWriter.html">BeerXML\Parser\IRecipeWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IRecipe.html">BeerXML\Parser\IRecipe</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRecipe">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#66-72" title="Go to source code">getRecipe</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#67-73" title="Go to source code">getRecipe</a>( )</code>
 
 		<div class="description short">
 			
@@ -368,7 +386,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IRecipeWriter.html">BeerXML\Parser\IRecipeWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IRecipe.html">BeerXML\Parser\IRecipe</a></code></code><br />
 				</div>
 
 
@@ -381,14 +399,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IStyleWriter.html">BeerXML\Parser\IStyleWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IStyle.html">BeerXML\Parser\IStyle</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStyle">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#74-80" title="Go to source code">getStyle</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#75-81" title="Go to source code">getStyle</a>( )</code>
 
 		<div class="description short">
 			
@@ -401,7 +419,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IStyleWriter.html">BeerXML\Parser\IStyleWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IStyle.html">BeerXML\Parser\IStyle</a></code></code><br />
 				</div>
 
 
@@ -414,14 +432,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IWaterWriter.html">BeerXML\Parser\IWaterWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IWater.html">BeerXML\Parser\IWater</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getWater">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#82-88" title="Go to source code">getWater</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#83-89" title="Go to source code">getWater</a>( )</code>
 
 		<div class="description short">
 			
@@ -434,7 +452,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IWaterWriter.html">BeerXML\Parser\IWaterWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IWater.html">BeerXML\Parser\IWater</a></code></code><br />
 				</div>
 
 
@@ -447,14 +465,14 @@ so that it returns the objects you want, and then pass it into
 
 		<td class="attributes"><code>
 			 public 
-			<code><a href="class-BeerXML.Parser.IYeastWriter.html">BeerXML\Parser\IYeastWriter</a></code>
+			<code><a href="class-BeerXML.Parser.IYeast.html">BeerXML\Parser\IYeast</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getYeast">#</a>
-		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#90-96" title="Go to source code">getYeast</a>( )</code>
+		<code><a href="source-class-BeerXML.Parser.RecordFactory.html#91-97" title="Go to source code">getYeast</a>( )</code>
 
 		<div class="description short">
 			
@@ -467,7 +485,7 @@ so that it returns the objects you want, and then pass it into
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><code><a href="class-BeerXML.Parser.IYeastWriter.html">BeerXML\Parser\IYeastWriter</a></code></code><br />
+					<code><code><a href="class-BeerXML.Parser.IYeast.html">BeerXML\Parser\IYeast</a></code></code><br />
 				</div>
 
 

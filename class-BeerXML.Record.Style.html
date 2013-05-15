@@ -6,8 +6,8 @@
 
 	<title>Class BeerXML\Record\Style | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -21,17 +21,25 @@
 		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
-				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
 						</li>
-				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
-				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
+				<li class="main"><a href="namespace-BeerXML.Parser.html">Parser</a>
 						</li>
-				<li class="active"><a href="namespace-BeerXML.Record.html">Record</a>
+				<li class="active main"><a href="namespace-BeerXML.Record.html">Record</a>
 						</li>
-							</ul></li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-PHP.html">PHP</a>
 						</li>
 			</ul>
@@ -103,9 +111,9 @@
 		<dd style="padding-left:0px">
 <b><span>BeerXML\Record\Style</span></b>			
 			 implements 
-				<a href="class-BeerXML.Generator.IStyleReader.html"><span>BeerXML\Generator\IStyleReader</span></a>, 
+				<a href="class-BeerXML.Generator.IStyleDisplay.html"><span>BeerXML\Generator\IStyleDisplay</span></a>, 
 			
-				<a href="class-BeerXML.Parser.IStyleWriter.html"><span>BeerXML\Parser\IStyleWriter</span></a>
+				<a href="class-BeerXML.Parser.IStyleDisplay.html"><span>BeerXML\Parser\IStyleDisplay</span></a>
 			
 			
 		</dd>
@@ -124,7 +132,7 @@
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Record.html">Record</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Record.Style.html#10-558" title="Go to source code">BeerXML/Record/Style.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Record.Style.html#10-863" title="Go to source code">src/BeerXML/Record/Style.php</a><br />
 	</div>
 
 
@@ -142,7 +150,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAbvMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#189-195" title="Go to source code">setAbvMax</a>( <span>float <var>$abvMax</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#255-261" title="Go to source code">setAbvMax</a>( <span>float <var>$abvMax</var></span> )</code>
 
 		<div class="description short">
 			
@@ -163,7 +171,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setAbvMax">BeerXML\Parser\IStyleWriter::setAbvMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setAbvMax">BeerXML\Parser\IStyle::setAbvMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -178,7 +186,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAbvMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#197-203" title="Go to source code">getAbvMax</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#263-269" title="Go to source code">getAbvMax</a>( )</code>
 
 		<div class="description short">
 			
@@ -198,7 +206,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getAbvMax">BeerXML\Generator\IStyleReader::getAbvMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getAbvMax">BeerXML\Generator\IStyle::getAbvMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -213,7 +221,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAbvMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#205-211" title="Go to source code">setAbvMin</a>( <span>float <var>$abvMin</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#271-277" title="Go to source code">setAbvMin</a>( <span>float <var>$abvMin</var></span> )</code>
 
 		<div class="description short">
 			
@@ -234,7 +242,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setAbvMin">BeerXML\Parser\IStyleWriter::setAbvMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setAbvMin">BeerXML\Parser\IStyle::setAbvMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -249,7 +257,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAbvMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#213-219" title="Go to source code">getAbvMin</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#279-285" title="Go to source code">getAbvMin</a>( )</code>
 
 		<div class="description short">
 			
@@ -269,7 +277,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getAbvMin">BeerXML\Generator\IStyleReader::getAbvMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getAbvMin">BeerXML\Generator\IStyle::getAbvMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -284,7 +292,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCarbMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#221-227" title="Go to source code">setCarbMax</a>( <span>float <var>$carbMax</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#287-293" title="Go to source code">setCarbMax</a>( <span>float <var>$carbMax</var></span> )</code>
 
 		<div class="description short">
 			
@@ -305,7 +313,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setCarbMax">BeerXML\Parser\IStyleWriter::setCarbMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setCarbMax">BeerXML\Parser\IStyle::setCarbMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -320,7 +328,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCarbMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#229-235" title="Go to source code">getCarbMax</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#295-301" title="Go to source code">getCarbMax</a>( )</code>
 
 		<div class="description short">
 			
@@ -340,7 +348,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getCarbMax">BeerXML\Generator\IStyleReader::getCarbMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getCarbMax">BeerXML\Generator\IStyle::getCarbMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -355,7 +363,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCarbMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#237-243" title="Go to source code">setCarbMin</a>( <span>float <var>$carbMin</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#303-309" title="Go to source code">setCarbMin</a>( <span>float <var>$carbMin</var></span> )</code>
 
 		<div class="description short">
 			
@@ -376,7 +384,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setCarbMin">BeerXML\Parser\IStyleWriter::setCarbMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setCarbMin">BeerXML\Parser\IStyle::setCarbMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -391,7 +399,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCarbMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#245-251" title="Go to source code">getCarbMin</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#311-317" title="Go to source code">getCarbMin</a>( )</code>
 
 		<div class="description short">
 			
@@ -411,7 +419,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getCarbMin">BeerXML\Generator\IStyleReader::getCarbMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getCarbMin">BeerXML\Generator\IStyle::getCarbMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -426,7 +434,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCategory">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#253-259" title="Go to source code">setCategory</a>( <span>string <var>$category</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#319-325" title="Go to source code">setCategory</a>( <span>string <var>$category</var></span> )</code>
 
 		<div class="description short">
 			
@@ -447,7 +455,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setCategory">BeerXML\Parser\IStyleWriter::setCategory()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setCategory">BeerXML\Parser\IStyle::setCategory()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -462,7 +470,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCategory">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#261-267" title="Go to source code">getCategory</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#327-333" title="Go to source code">getCategory</a>( )</code>
 
 		<div class="description short">
 			
@@ -482,7 +490,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getCategory">BeerXML\Generator\IStyleReader::getCategory()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getCategory">BeerXML\Generator\IStyle::getCategory()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -497,7 +505,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCategoryNumber">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#269-275" title="Go to source code">setCategoryNumber</a>( <span>string <var>$categoryNumber</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#335-341" title="Go to source code">setCategoryNumber</a>( <span>string <var>$categoryNumber</var></span> )</code>
 
 		<div class="description short">
 			
@@ -518,7 +526,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setCategoryNumber">BeerXML\Parser\IStyleWriter::setCategoryNumber()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setCategoryNumber">BeerXML\Parser\IStyle::setCategoryNumber()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -533,7 +541,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCategoryNumber">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#277-283" title="Go to source code">getCategoryNumber</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#343-349" title="Go to source code">getCategoryNumber</a>( )</code>
 
 		<div class="description short">
 			
@@ -553,7 +561,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getCategoryNumber">BeerXML\Generator\IStyleReader::getCategoryNumber()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getCategoryNumber">BeerXML\Generator\IStyle::getCategoryNumber()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -568,7 +576,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setColorMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#285-291" title="Go to source code">setColorMax</a>( <span>number <var>$colorMax</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#351-357" title="Go to source code">setColorMax</a>( <span>number <var>$colorMax</var></span> )</code>
 
 		<div class="description short">
 			
@@ -589,7 +597,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setColorMax">BeerXML\Parser\IStyleWriter::setColorMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setColorMax">BeerXML\Parser\IStyle::setColorMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -604,7 +612,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getColorMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#293-299" title="Go to source code">getColorMax</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#359-365" title="Go to source code">getColorMax</a>( )</code>
 
 		<div class="description short">
 			
@@ -624,7 +632,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getColorMax">BeerXML\Generator\IStyleReader::getColorMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getColorMax">BeerXML\Generator\IStyle::getColorMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -639,7 +647,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setColorMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#301-307" title="Go to source code">setColorMin</a>( <span>number <var>$colorMin</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#367-373" title="Go to source code">setColorMin</a>( <span>number <var>$colorMin</var></span> )</code>
 
 		<div class="description short">
 			
@@ -660,7 +668,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setColorMin">BeerXML\Parser\IStyleWriter::setColorMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setColorMin">BeerXML\Parser\IStyle::setColorMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -675,7 +683,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getColorMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#309-315" title="Go to source code">getColorMin</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#375-381" title="Go to source code">getColorMin</a>( )</code>
 
 		<div class="description short">
 			
@@ -695,7 +703,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getColorMin">BeerXML\Generator\IStyleReader::getColorMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getColorMin">BeerXML\Generator\IStyle::getColorMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -710,7 +718,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setExamples">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#317-323" title="Go to source code">setExamples</a>( <span>string <var>$examples</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#383-389" title="Go to source code">setExamples</a>( <span>string <var>$examples</var></span> )</code>
 
 		<div class="description short">
 			
@@ -731,7 +739,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setExamples">BeerXML\Parser\IStyleWriter::setExamples()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setExamples">BeerXML\Parser\IStyle::setExamples()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -746,7 +754,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExamples">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#325-331" title="Go to source code">getExamples</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#391-397" title="Go to source code">getExamples</a>( )</code>
 
 		<div class="description short">
 			
@@ -766,7 +774,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getExamples">BeerXML\Generator\IStyleReader::getExamples()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getExamples">BeerXML\Generator\IStyle::getExamples()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -781,7 +789,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setFgMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#333-339" title="Go to source code">setFgMax</a>( <span>float <var>$fgMax</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#399-405" title="Go to source code">setFgMax</a>( <span>float <var>$fgMax</var></span> )</code>
 
 		<div class="description short">
 			
@@ -802,7 +810,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setFgMax">BeerXML\Parser\IStyleWriter::setFgMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setFgMax">BeerXML\Parser\IStyle::setFgMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -817,7 +825,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFgMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#341-347" title="Go to source code">getFgMax</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#407-413" title="Go to source code">getFgMax</a>( )</code>
 
 		<div class="description short">
 			
@@ -837,7 +845,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getFgMax">BeerXML\Generator\IStyleReader::getFgMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getFgMax">BeerXML\Generator\IStyle::getFgMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -852,7 +860,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setFgMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#349-355" title="Go to source code">setFgMin</a>( <span>float <var>$fgMin</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#415-421" title="Go to source code">setFgMin</a>( <span>float <var>$fgMin</var></span> )</code>
 
 		<div class="description short">
 			
@@ -873,7 +881,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setFgMin">BeerXML\Parser\IStyleWriter::setFgMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setFgMin">BeerXML\Parser\IStyle::setFgMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -888,7 +896,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFgMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#357-363" title="Go to source code">getFgMin</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#423-429" title="Go to source code">getFgMin</a>( )</code>
 
 		<div class="description short">
 			
@@ -908,7 +916,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getFgMin">BeerXML\Generator\IStyleReader::getFgMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getFgMin">BeerXML\Generator\IStyle::getFgMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -923,7 +931,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setIbuMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#365-371" title="Go to source code">setIbuMax</a>( <span>float <var>$ibuMax</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#431-437" title="Go to source code">setIbuMax</a>( <span>float <var>$ibuMax</var></span> )</code>
 
 		<div class="description short">
 			
@@ -944,7 +952,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setIbuMax">BeerXML\Parser\IStyleWriter::setIbuMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setIbuMax">BeerXML\Parser\IStyle::setIbuMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -959,7 +967,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getIbuMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#373-379" title="Go to source code">getIbuMax</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#439-445" title="Go to source code">getIbuMax</a>( )</code>
 
 		<div class="description short">
 			
@@ -979,7 +987,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getIbuMax">BeerXML\Generator\IStyleReader::getIbuMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getIbuMax">BeerXML\Generator\IStyle::getIbuMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -994,7 +1002,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setIbuMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#381-387" title="Go to source code">setIbuMin</a>( <span>float <var>$ibuMin</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#447-453" title="Go to source code">setIbuMin</a>( <span>float <var>$ibuMin</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1015,7 +1023,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setIbuMin">BeerXML\Parser\IStyleWriter::setIbuMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setIbuMin">BeerXML\Parser\IStyle::setIbuMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1030,7 +1038,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getIbuMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#389-395" title="Go to source code">getIbuMin</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#455-461" title="Go to source code">getIbuMin</a>( )</code>
 
 		<div class="description short">
 			
@@ -1050,7 +1058,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getIbuMin">BeerXML\Generator\IStyleReader::getIbuMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getIbuMin">BeerXML\Generator\IStyle::getIbuMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1065,7 +1073,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setIngredients">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#397-403" title="Go to source code">setIngredients</a>( <span>string <var>$ingredients</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#463-469" title="Go to source code">setIngredients</a>( <span>string <var>$ingredients</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1086,7 +1094,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setIngredients">BeerXML\Parser\IStyleWriter::setIngredients()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setIngredients">BeerXML\Parser\IStyle::setIngredients()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1101,7 +1109,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getIngredients">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#405-411" title="Go to source code">getIngredients</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#471-477" title="Go to source code">getIngredients</a>( )</code>
 
 		<div class="description short">
 			
@@ -1121,7 +1129,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getIngredients">BeerXML\Generator\IStyleReader::getIngredients()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getIngredients">BeerXML\Generator\IStyle::getIngredients()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1136,7 +1144,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#413-419" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#479-485" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1157,7 +1165,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setName">BeerXML\Parser\IStyleWriter::setName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setName">BeerXML\Parser\IStyle::setName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1172,7 +1180,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#421-427" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#487-493" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -1192,7 +1200,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getName">BeerXML\Generator\IStyleReader::getName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getName">BeerXML\Generator\IStyle::getName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1207,7 +1215,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#429-435" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#495-501" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1228,7 +1236,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setNotes">BeerXML\Parser\IStyleWriter::setNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setNotes">BeerXML\Parser\IStyle::setNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1243,7 +1251,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#437-443" title="Go to source code">getNotes</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#503-509" title="Go to source code">getNotes</a>( )</code>
 
 		<div class="description short">
 			
@@ -1263,7 +1271,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getNotes">BeerXML\Generator\IStyleReader::getNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getNotes">BeerXML\Generator\IStyle::getNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1278,7 +1286,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOgMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#445-451" title="Go to source code">setOgMax</a>( <span>float <var>$ogMax</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#511-517" title="Go to source code">setOgMax</a>( <span>float <var>$ogMax</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1299,7 +1307,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setOgMax">BeerXML\Parser\IStyleWriter::setOgMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setOgMax">BeerXML\Parser\IStyle::setOgMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1314,7 +1322,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getOgMax">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#453-459" title="Go to source code">getOgMax</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#519-525" title="Go to source code">getOgMax</a>( )</code>
 
 		<div class="description short">
 			
@@ -1334,7 +1342,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getOgMax">BeerXML\Generator\IStyleReader::getOgMax()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getOgMax">BeerXML\Generator\IStyle::getOgMax()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1349,7 +1357,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOgMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#461-467" title="Go to source code">setOgMin</a>( <span>float <var>$ogMin</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#527-533" title="Go to source code">setOgMin</a>( <span>float <var>$ogMin</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1370,7 +1378,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setOgMin">BeerXML\Parser\IStyleWriter::setOgMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setOgMin">BeerXML\Parser\IStyle::setOgMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1385,7 +1393,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getOgMin">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#469-475" title="Go to source code">getOgMin</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#535-541" title="Go to source code">getOgMin</a>( )</code>
 
 		<div class="description short">
 			
@@ -1405,7 +1413,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getOgMin">BeerXML\Generator\IStyleReader::getOgMin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getOgMin">BeerXML\Generator\IStyle::getOgMin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1420,7 +1428,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setProfile">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#477-483" title="Go to source code">setProfile</a>( <span>string <var>$profile</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#543-549" title="Go to source code">setProfile</a>( <span>string <var>$profile</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1441,7 +1449,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setProfile">BeerXML\Parser\IStyleWriter::setProfile()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setProfile">BeerXML\Parser\IStyle::setProfile()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1456,7 +1464,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getProfile">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#485-491" title="Go to source code">getProfile</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#551-557" title="Go to source code">getProfile</a>( )</code>
 
 		<div class="description short">
 			
@@ -1476,7 +1484,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getProfile">BeerXML\Generator\IStyleReader::getProfile()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getProfile">BeerXML\Generator\IStyle::getProfile()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1491,7 +1499,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setStyleGuide">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#493-499" title="Go to source code">setStyleGuide</a>( <span>string <var>$styleGuide</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#559-565" title="Go to source code">setStyleGuide</a>( <span>string <var>$styleGuide</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1512,7 +1520,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setStyleGuide">BeerXML\Parser\IStyleWriter::setStyleGuide()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setStyleGuide">BeerXML\Parser\IStyle::setStyleGuide()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1527,7 +1535,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStyleGuide">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#501-507" title="Go to source code">getStyleGuide</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#567-573" title="Go to source code">getStyleGuide</a>( )</code>
 
 		<div class="description short">
 			
@@ -1547,7 +1555,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getStyleGuide">BeerXML\Generator\IStyleReader::getStyleGuide()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getStyleGuide">BeerXML\Generator\IStyle::getStyleGuide()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1562,7 +1570,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setStyleLetter">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#509-515" title="Go to source code">setStyleLetter</a>( <span>string <var>$styleLetter</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#575-581" title="Go to source code">setStyleLetter</a>( <span>string <var>$styleLetter</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1583,7 +1591,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setStyleLetter">BeerXML\Parser\IStyleWriter::setStyleLetter()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setStyleLetter">BeerXML\Parser\IStyle::setStyleLetter()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1598,7 +1606,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStyleLetter">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#517-523" title="Go to source code">getStyleLetter</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#583-589" title="Go to source code">getStyleLetter</a>( )</code>
 
 		<div class="description short">
 			
@@ -1618,7 +1626,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getStyleLetter">BeerXML\Generator\IStyleReader::getStyleLetter()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getStyleLetter">BeerXML\Generator\IStyle::getStyleLetter()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1633,7 +1641,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setType">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#525-531" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#591-597" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1654,7 +1662,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setType">BeerXML\Parser\IStyleWriter::setType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setType">BeerXML\Parser\IStyle::setType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1669,7 +1677,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getType">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#533-539" title="Go to source code">getType</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#599-605" title="Go to source code">getType</a>( )</code>
 
 		<div class="description short">
 			
@@ -1689,7 +1697,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getType">BeerXML\Generator\IStyleReader::getType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getType">BeerXML\Generator\IStyle::getType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1704,7 +1712,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#541-547" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#607-613" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1725,7 +1733,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IStyleWriter.html#_setVersion">BeerXML\Parser\IStyleWriter::setVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyle.html#_setVersion">BeerXML\Parser\IStyle::setVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1740,7 +1748,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Style.html#549-555" title="Go to source code">getVersion</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Style.html#615-621" title="Go to source code">getVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -1760,7 +1768,955 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IStyleReader.html#_getVersion">BeerXML\Generator\IStyleReader::getVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyle.html#_getVersion">BeerXML\Generator\IStyle::getVersion()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAbvRange" id="_setAbvRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAbvRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#623-631" title="Go to source code">setAbvRange</a>( <span>string <var>$abvRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>ABV Range for this style such as "4.5-5.5%"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>ABV Range for this style such as "4.5-5.5%"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$abvRange</var></dt>
+					<dd><code>string</code><br>$abvRange</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setAbvRange">BeerXML\Parser\IStyleDisplay::setAbvRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAbvRange" id="_getAbvRange">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAbvRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#633-641" title="Go to source code">getAbvRange</a>( )</code>
+
+		<div class="description short">
+			
+<p>ABV Range for this style such as "4.5-5.5%"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>ABV Range for this style such as "4.5-5.5%"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getAbvRange">BeerXML\Generator\IStyleDisplay::getAbvRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCarbRange" id="_setCarbRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCarbRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#643-651" title="Go to source code">setCarbRange</a>( <span>string <var>$carbRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Carbonation range in volumes such as "2.0-2.6 vols"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Carbonation range in volumes such as "2.0-2.6 vols"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$carbRange</var></dt>
+					<dd><code>string</code><br>$carbRange</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setCarbRange">BeerXML\Parser\IStyleDisplay::setCarbRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCarbRange" id="_getCarbRange">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCarbRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#653-661" title="Go to source code">getCarbRange</a>( )</code>
+
+		<div class="description short">
+			
+<p>Carbonation range in volumes such as "2.0-2.6 vols"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Carbonation range in volumes such as "2.0-2.6 vols"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getCarbRange">BeerXML\Generator\IStyleDisplay::getCarbRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setColorRange" id="_setColorRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setColorRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#663-671" title="Go to source code">setColorRange</a>( <span>string <var>$colorRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Color range such as "10-20 SRM"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Color range such as "10-20 SRM"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$colorRange</var></dt>
+					<dd><code>string</code><br>$colorRange</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setColorRange">BeerXML\Parser\IStyleDisplay::setColorRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getColorRange" id="_getColorRange">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getColorRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#673-681" title="Go to source code">getColorRange</a>( )</code>
+
+		<div class="description short">
+			
+<p>Color range such as "10-20 SRM"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Color range such as "10-20 SRM"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getColorRange">BeerXML\Generator\IStyleDisplay::getColorRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayColorMax" id="_setDisplayColorMax">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayColorMax">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#683-691" title="Go to source code">setDisplayColorMax</a>( <span>string <var>$displayColorMax</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Maximum color in user defined units such as "20 srm"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Maximum color in user defined units such as "20 srm"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayColorMax</var></dt>
+					<dd><code>string</code><br>$displayColorMax</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setDisplayColorMax">BeerXML\Parser\IStyleDisplay::setDisplayColorMax()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayColorMax" id="_getDisplayColorMax">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayColorMax">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#693-701" title="Go to source code">getDisplayColorMax</a>( )</code>
+
+		<div class="description short">
+			
+<p>Maximum color in user defined units such as "20 srm"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Maximum color in user defined units such as "20 srm"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getDisplayColorMax">BeerXML\Generator\IStyleDisplay::getDisplayColorMax()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayColorMin" id="_setDisplayColorMin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayColorMin">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#703-711" title="Go to source code">setDisplayColorMin</a>( <span>string <var>$displayColorMin</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Minimum color in user defined units such as "30 srm".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Minimum color in user defined units such as "30 srm".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayColorMin</var></dt>
+					<dd><code>string</code><br>$displayColorMin</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setDisplayColorMin">BeerXML\Parser\IStyleDisplay::setDisplayColorMin()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayColorMin" id="_getDisplayColorMin">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayColorMin">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#713-721" title="Go to source code">getDisplayColorMin</a>( )</code>
+
+		<div class="description short">
+			
+<p>Minimum color in user defined units such as "30 srm".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Minimum color in user defined units such as "30 srm".</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getDisplayColorMin">BeerXML\Generator\IStyleDisplay::getDisplayColorMin()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayFgMax" id="_setDisplayFgMax">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayFgMax">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#723-731" title="Go to source code">setDisplayFgMax</a>( <span>string <var>$displayFgMax</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Final gravity maximum in user defined units such as "1.019 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity maximum in user defined units such as "1.019 sg".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayFgMax</var></dt>
+					<dd><code>string</code><br>$displayFgMax</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setDisplayFgMax">BeerXML\Parser\IStyleDisplay::setDisplayFgMax()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayFgMax" id="_getDisplayFgMax">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayFgMax">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#733-741" title="Go to source code">getDisplayFgMax</a>( )</code>
+
+		<div class="description short">
+			
+<p>Final gravity maximum in user defined units such as "1.019 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity maximum in user defined units such as "1.019 sg".</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getDisplayFgMax">BeerXML\Generator\IStyleDisplay::getDisplayFgMax()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayFgMin" id="_setDisplayFgMin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayFgMin">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#743-751" title="Go to source code">setDisplayFgMin</a>( <span>string <var>$displayFgMin</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Final gravity minimum in user defined units such as "1.010 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity minimum in user defined units such as "1.010 sg".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayFgMin</var></dt>
+					<dd><code>string</code><br>$displayFgMin</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setDisplayFgMin">BeerXML\Parser\IStyleDisplay::setDisplayFgMin()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayFgMin" id="_getDisplayFgMin">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayFgMin">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#753-761" title="Go to source code">getDisplayFgMin</a>( )</code>
+
+		<div class="description short">
+			
+<p>Final gravity minimum in user defined units such as "1.010 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity minimum in user defined units such as "1.010 sg".</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getDisplayFgMin">BeerXML\Generator\IStyleDisplay::getDisplayFgMin()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayOgMax" id="_setDisplayOgMax">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayOgMax">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#763-771" title="Go to source code">setDisplayOgMax</a>( <span>string <var>$displayOgMax</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Original gravity max in user defined units such as "1.056 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity max in user defined units such as "1.056 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayOgMax</var></dt>
+					<dd><code>string</code><br>$displayOgMax</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setDisplayOgMax">BeerXML\Parser\IStyleDisplay::setDisplayOgMax()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayOgMax" id="_getDisplayOgMax">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayOgMax">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#773-781" title="Go to source code">getDisplayOgMax</a>( )</code>
+
+		<div class="description short">
+			
+<p>Original gravity max in user defined units such as "1.056 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity max in user defined units such as "1.056 sg"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getDisplayOgMax">BeerXML\Generator\IStyleDisplay::getDisplayOgMax()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayOgMin" id="_setDisplayOgMin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayOgMin">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#783-791" title="Go to source code">setDisplayOgMin</a>( <span>string <var>$displayOgMin</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Original gravity minimum in user defined units such as "1.036 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity minimum in user defined units such as "1.036 sg".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayOgMin</var></dt>
+					<dd><code>string</code><br>$displayOgMin</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setDisplayOgMin">BeerXML\Parser\IStyleDisplay::setDisplayOgMin()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayOgMin" id="_getDisplayOgMin">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayOgMin">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#793-801" title="Go to source code">getDisplayOgMin</a>( )</code>
+
+		<div class="description short">
+			
+<p>Original gravity minimum in user defined units such as "1.036 sg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity minimum in user defined units such as "1.036 sg".</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getDisplayOgMin">BeerXML\Generator\IStyleDisplay::getDisplayOgMin()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFgRange" id="_setFgRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFgRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#803-811" title="Go to source code">setFgRange</a>( <span>string <var>$fgRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Final gravity range such as "1.010-1.015 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity range such as "1.010-1.015 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fgRange</var></dt>
+					<dd><code>string</code><br>$fgRange</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setFgRange">BeerXML\Parser\IStyleDisplay::setFgRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFgRange" id="_getFgRange">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFgRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#813-821" title="Go to source code">getFgRange</a>( )</code>
+
+		<div class="description short">
+			
+<p>Final gravity range such as "1.010-1.015 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Final gravity range such as "1.010-1.015 sg"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getFgRange">BeerXML\Generator\IStyleDisplay::getFgRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIbuRange" id="_setIbuRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIbuRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#823-831" title="Go to source code">setIbuRange</a>( <span>string <var>$ibuRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Bitterness range in IBUs such as "10-20 IBU"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Bitterness range in IBUs such as "10-20 IBU"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ibuRange</var></dt>
+					<dd><code>string</code><br>$ibuRange</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setIbuRange">BeerXML\Parser\IStyleDisplay::setIbuRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIbuRange" id="_getIbuRange">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIbuRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#833-841" title="Go to source code">getIbuRange</a>( )</code>
+
+		<div class="description short">
+			
+<p>Bitterness range in IBUs such as "10-20 IBU"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Bitterness range in IBUs such as "10-20 IBU"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getIbuRange">BeerXML\Generator\IStyleDisplay::getIbuRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOgRange" id="_setOgRange">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOgRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#843-851" title="Go to source code">setOgRange</a>( <span>string <var>$ogRange</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Original gravity range for the style such as "1.030-1.040 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity range for the style such as "1.030-1.040 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ogRange</var></dt>
+					<dd><code>string</code><br>$ogRange</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IStyleDisplay.html#_setOgRange">BeerXML\Parser\IStyleDisplay::setOgRange()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOgRange" id="_getOgRange">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOgRange">#</a>
+		<code><a href="source-class-BeerXML.Record.Style.html#853-861" title="Go to source code">getOgRange</a>( )</code>
+
+		<div class="description short">
+			
+<p>Original gravity range for the style such as "1.030-1.040 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Original gravity range for the style such as "1.030-1.040 sg"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IStyleDisplay.html#_getOgRange">BeerXML\Generator\IStyleDisplay::getOgRange()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

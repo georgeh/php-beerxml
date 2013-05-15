@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BeerXML\Parser\IRecipeDisplay | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li class="active main"><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Parser.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Parser.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Parser.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Parser.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Parser.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Parser.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Parser.RecordFactory.html">RecordFactory</a></li>
+				<li><a href="class-BeerXML.Parser.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Parser.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Parser.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.IEquipment.html">IEquipment</a></li>
+				<li><a href="class-BeerXML.Parser.IEquipmentDisplay.html">IEquipmentDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentable.html">IFermentable</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableDisplay.html">IFermentableDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IHop.html">IHop</a></li>
+				<li><a href="class-BeerXML.Parser.IHopDisplay.html">IHopDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfile.html">IMashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileDisplay.html">IMashProfileDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStep.html">IMashStep</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepDisplay.html">IMashStepDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMisc.html">IMisc</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscDisplay.html">IMiscDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipe.html">IRecipe</a></li>
+				<li class="active"><a href="class-BeerXML.Parser.IRecipeDisplay.html">IRecipeDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IStyle.html">IStyle</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleDisplay.html">IStyleDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IWater.html">IWater</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterDisplay.html">IWaterDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IYeast.html">IYeast</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastDisplay.html">IYeastDisplay</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Parser.html" title="Summary of BeerXML\Parser"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IRecipeDisplay</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>BeerXML\Parser\IRecipeDisplay</span></b>			
+			 implements 
+				<a href="class-BeerXML.Parser.IRecipe.html"><span>BeerXML\Parser\IRecipe</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Record.Recipe.html">BeerXML\Record\Recipe</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.IRecipeDisplay.html#7-145" title="Go to source code">src/BeerXML/Parser/IRecipeDisplay.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setAbv" id="_setAbv">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAbv">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#10-15" title="Go to source code">setAbv</a>( <span>float <var>$abv</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Actual alcohol by volume calculated from the OG and FG measured.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Actual alcohol by volume calculated from the OG and FG measured.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$abv</var></dt>
+					<dd><code>float</code><br>$abv Percent</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setActualEfficiency" id="_setActualEfficiency">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setActualEfficiency">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#17-22" title="Go to source code">setActualEfficiency</a>( <span>float <var>$actualEfficiency</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The actual efficiency as calculated using the measured original and final
+gravity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The actual efficiency as calculated using the measured original and final
+gravity.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$actualEfficiency</var></dt>
+					<dd><code>float</code><br>$actualEfficiency Percent</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCalories" id="_setCalories">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCalories">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#24-32" title="Go to source code">setCalories</a>( <span>string <var>$calories</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calorie estimate based on the measured starting and ending gravity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calorie estimate based on the measured starting and ending gravity.</p>
+
+<p>Note that calories should be quoted in "Cal" or kilocalories which is the
+normal dietary measure (i.e. a beer is usually in the range of 100-250 calories
+per 12 oz). Examples "180 Cal/pint",</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$calories</var></dt>
+					<dd><code>string</code><br>$calories</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayAgeTemp" id="_setDisplayAgeTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayAgeTemp">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#34-39" title="Go to source code">setDisplayAgeTemp</a>( <span>string <var>$displayAgeTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Temperature to use when aging the beer in user units such as "55 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Temperature to use when aging the beer in user units such as "55 F"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayAgeTemp</var></dt>
+					<dd><code>string</code><br>$displayAgeTemp</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayBatchSize" id="_setDisplayBatchSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayBatchSize">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#41-46" title="Go to source code">setDisplayBatchSize</a>( <span>string <var>$displayBatchSize</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Batch size in user defined units along with the units as in "5.0 gal"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Batch size in user defined units along with the units as in "5.0 gal"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayBatchSize</var></dt>
+					<dd><code>string</code><br>$displayBatchSize</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayBoilSize" id="_setDisplayBoilSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayBoilSize">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#48-53" title="Go to source code">setDisplayBoilSize</a>( <span>string <var>$displayBoilSize</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Boil size with user defined units as in "6.3 gal"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Boil size with user defined units as in "6.3 gal"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayBoilSize</var></dt>
+					<dd><code>string</code><br>$displayBoilSize</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayCarbTemp" id="_setDisplayCarbTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayCarbTemp">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#55-60" title="Go to source code">setDisplayCarbTemp</a>( <span>string <var>$displayCarbTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Carbonation/Bottling temperature in appropriate units such as "40F" or "32
+C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Carbonation/Bottling temperature in appropriate units such as "40F" or "32
+C"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayCarbTemp</var></dt>
+					<dd><code>string</code><br>$displayCarbTemp</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCarbonationUsed" id="_setCarbonationUsed">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCarbonationUsed">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#62-67" title="Go to source code">setCarbonationUsed</a>( <span>string <var>$carbonationUsed</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Text description of the carbonation used such as "50g corn sugar" or "Kegged
+at 20psi"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Text description of the carbonation used such as "50g corn sugar" or "Kegged
+at 20psi"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$carbonationUsed</var></dt>
+					<dd><code>string</code><br>$carbonationUsed</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayFg" id="_setDisplayFg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayFg">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#69-74" title="Go to source code">setDisplayFg</a>( <span>string <var>$displayFg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Measured final gravity in user defined units as in "1.035 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Measured final gravity in user defined units as in "1.035 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayFg</var></dt>
+					<dd><code>string</code><br>$displayFg</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayOg" id="_setDisplayOg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayOg">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#76-81" title="Go to source code">setDisplayOg</a>( <span>string <var>$displayOg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Measured original gravity in user defined units as in "6.4 plato"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Measured original gravity in user defined units as in "6.4 plato"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayOg</var></dt>
+					<dd><code>string</code><br>$displayOg</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayPrimaryTemp" id="_setDisplayPrimaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayPrimaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#83-88" title="Go to source code">setDisplayPrimaryTemp</a>( <span>string <var>$displayPrimaryTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Primary fermentation temperature in user defined units such as "64 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Primary fermentation temperature in user defined units such as "64 F"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayPrimaryTemp</var></dt>
+					<dd><code>string</code><br>$displayPrimaryTemp</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplaySecondaryTemp" id="_setDisplaySecondaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplaySecondaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#90-95" title="Go to source code">setDisplaySecondaryTemp</a>( <span>string <var>$displaySecondaryTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Secondary fermentation temperature in user defined units such as "56 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Secondary fermentation temperature in user defined units such as "56 F"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displaySecondaryTemp</var></dt>
+					<dd><code>string</code><br>$displaySecondaryTemp</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayTertiaryTemp" id="_setDisplayTertiaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayTertiaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#97-102" title="Go to source code">setDisplayTertiaryTemp</a>( <span>string <var>$displayTertiaryTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Tertiary temperature in user defined units such as "20 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Tertiary temperature in user defined units such as "20 C"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayTertiaryTemp</var></dt>
+					<dd><code>string</code><br>$displayTertiaryTemp</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEstAbv" id="_setEstAbv">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEstAbv">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#104-109" title="Go to source code">setEstAbv</a>( <span>float <var>$estAbv</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Estimated percent alcohol by volume for this recipe.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Estimated percent alcohol by volume for this recipe.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$estAbv</var></dt>
+					<dd><code>float</code><br>$estAbv Percent</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEstColor" id="_setEstColor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEstColor">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#111-116" title="Go to source code">setEstColor</a>( <span>string <var>$estColor</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The estimated color of the beer in user defined color units.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The estimated color of the beer in user defined color units.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$estColor</var></dt>
+					<dd><code>string</code><br>$estColor</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEstFg" id="_setEstFg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEstFg">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#118-123" title="Go to source code">setEstFg</a>( <span>string <var>$estFg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calculated estimate for the final specific gravity of this recipe along with
+the units as in "1.015 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculated estimate for the final specific gravity of this recipe along with
+the units as in "1.015 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$estFg</var></dt>
+					<dd><code>string</code><br>$estFg</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEstOg" id="_setEstOg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEstOg">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#125-130" title="Go to source code">setEstOg</a>( <span>string <var>$estOg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calculated estimate of the original gravity for this recipe along with the
+units.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculated estimate of the original gravity for this recipe along with the
+units.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$estOg</var></dt>
+					<dd><code>string</code><br>$estOg</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIbu" id="_setIbu">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIbu">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#132-137" title="Go to source code">setIbu</a>( <span>float <var>$ibu</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The estimated bitterness level of the beer in IBUs</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The estimated bitterness level of the beer in IBUs</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ibu</var></dt>
+					<dd><code>float</code><br>$ibu</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIbuMethod" id="_setIbuMethod">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIbuMethod">#</a>
+		<code><a href="source-class-BeerXML.Parser.IRecipeDisplay.html#139-144" title="Go to source code">setIbuMethod</a>( <span>string <var>$ibuMethod</var></span> )</code>
+
+		<div class="description short">
+			
+<p>May be "Rager", "Tinseth" or "Garetz" corresponding to the method/equation
+used to estimate IBUs for this recipe.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be "Rager", "Tinseth" or "Garetz" corresponding to the method/equation
+used to estimate IBUs for this recipe.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ibuMethod</var></dt>
+					<dd><code>string</code><br>$ibuMethod</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-BeerXML.Parser.IRecipe.html#methods">BeerXML\Parser\IRecipe</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-BeerXML.Parser.IRecipe.html#_addFermentable">addFermentable()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_addHop">addHop()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_addMisc">addMisc()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_addWater">addWater()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_addYeast">addYeast()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setAge">setAge()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setAgeTemp">setAgeTemp()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setAsstBrewer">setAsstBrewer()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setBatchSize">setBatchSize()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setBoilSize">setBoilSize()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setBoilTime">setBoilTime()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setBrewer">setBrewer()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setCarbonation">setCarbonation()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setCarbonationTemp">setCarbonationTemp()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setDate">setDate()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setEfficiency">setEfficiency()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setEquipment">setEquipment()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setFermentationStages">setFermentationStages()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setFg">setFg()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setForcedCarbonation">setForcedCarbonation()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setKegPrimingFactor">setKegPrimingFactor()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setMash">setMash()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setName">setName()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setNotes">setNotes()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setOg">setOg()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setPrimaryAge">setPrimaryAge()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setPrimaryTemp">setPrimaryTemp()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setPrimingSugarEquiv">setPrimingSugarEquiv()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setPrimingSugarName">setPrimingSugarName()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setSecondaryAge">setSecondaryAge()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setSecondaryTemp">setSecondaryTemp()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setStyle">setStyle()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setTasteNotes">setTasteNotes()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setTasteRating">setTasteRating()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setTertiaryAge">setTertiaryAge()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setTertiaryTemp">setTertiaryTemp()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setType">setType()</a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#_setVersion">setVersion()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-BeerXML.Parser.IRecipe.html#constants">BeerXML\Parser\IRecipe</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_ALL_GRAIN"><b>TYPE_ALL_GRAIN</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_EXTRACT"><b>TYPE_EXTRACT</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_IBU_METHOD_GARETZ"><b>TYPE_IBU_METHOD_GARETZ</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_IBU_METHOD_RAGER"><b>TYPE_IBU_METHOD_RAGER</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_IBU_METHOD_TINSETH"><b>TYPE_IBU_METHOD_TINSETH</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_PARTIAL_MASH"><b>TYPE_PARTIAL_MASH</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

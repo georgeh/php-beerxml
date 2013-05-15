@@ -6,8 +6,8 @@
 
 	<title>Class BeerXML\Record\MashStep | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -21,17 +21,25 @@
 		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
-				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
 						</li>
-				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
-				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
+				<li class="main"><a href="namespace-BeerXML.Parser.html">Parser</a>
 						</li>
-				<li class="active"><a href="namespace-BeerXML.Record.html">Record</a>
+				<li class="active main"><a href="namespace-BeerXML.Record.html">Record</a>
 						</li>
-							</ul></li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-PHP.html">PHP</a>
 						</li>
 			</ul>
@@ -103,9 +111,9 @@
 		<dd style="padding-left:0px">
 <b><span>BeerXML\Record\MashStep</span></b>			
 			 implements 
-				<a href="class-BeerXML.Generator.IMashStepReader.html"><span>BeerXML\Generator\IMashStepReader</span></a>, 
+				<a href="class-BeerXML.Generator.IMashStepDisplay.html"><span>BeerXML\Generator\IMashStepDisplay</span></a>, 
 			
-				<a href="class-BeerXML.Parser.IMashStepWriter.html"><span>BeerXML\Parser\IMashStepWriter</span></a>
+				<a href="class-BeerXML.Parser.IMashStepDisplay.html"><span>BeerXML\Parser\IMashStepDisplay</span></a>
 			
 			
 		</dd>
@@ -124,7 +132,7 @@
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Record.html">Record</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Record.MashStep.html#10-246" title="Go to source code">BeerXML/Record/MashStep.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Record.MashStep.html#10-410" title="Go to source code">src/BeerXML/Record/MashStep.php</a><br />
 	</div>
 
 
@@ -142,7 +150,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setEndTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#77-85" title="Go to source code">setEndTemp</a>( <span>number <var>$endTemp</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#109-117" title="Go to source code">setEndTemp</a>( <span>number <var>$endTemp</var></span> )</code>
 
 		<div class="description short">
 			
@@ -169,7 +177,7 @@ Measured in degrees Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepWriter.html#_setEndTemp">BeerXML\Parser\IMashStepWriter::setEndTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStep.html#_setEndTemp">BeerXML\Parser\IMashStep::setEndTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -184,7 +192,7 @@ Measured in degrees Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEndTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#87-95" title="Go to source code">getEndTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#119-127" title="Go to source code">getEndTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -210,7 +218,7 @@ Measured in degrees Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepReader.html#_getEndTemp">BeerXML\Generator\IMashStepReader::getEndTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStep.html#_getEndTemp">BeerXML\Generator\IMashStep::getEndTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -225,7 +233,7 @@ Measured in degrees Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setInfuseAmount">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#97-106" title="Go to source code">setInfuseAmount</a>( <span>number <var>$infuseAmount</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#129-138" title="Go to source code">setInfuseAmount</a>( <span>number <var>$infuseAmount</var></span> )</code>
 
 		<div class="description short">
 			
@@ -254,7 +262,7 @@ should not have an infusion amount for decoction steps.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepWriter.html#_setInfuseAmount">BeerXML\Parser\IMashStepWriter::setInfuseAmount()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStep.html#_setInfuseAmount">BeerXML\Parser\IMashStep::setInfuseAmount()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -269,7 +277,7 @@ should not have an infusion amount for decoction steps.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInfuseAmount">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#108-117" title="Go to source code">getInfuseAmount</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#140-149" title="Go to source code">getInfuseAmount</a>( )</code>
 
 		<div class="description short">
 			
@@ -297,7 +305,7 @@ should not have an infusion amount for decoction steps.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepReader.html#_getInfuseAmount">BeerXML\Generator\IMashStepReader::getInfuseAmount()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStep.html#_getInfuseAmount">BeerXML\Generator\IMashStep::getInfuseAmount()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -312,7 +320,7 @@ should not have an infusion amount for decoction steps.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#119-127" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#151-159" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -339,7 +347,7 @@ should not have an infusion amount for decoction steps.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepWriter.html#_setName">BeerXML\Parser\IMashStepWriter::setName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStep.html#_setName">BeerXML\Parser\IMashStep::setName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -354,7 +362,7 @@ should not have an infusion amount for decoction steps.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#129-137" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#161-169" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -380,7 +388,7 @@ should not have an infusion amount for decoction steps.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepReader.html#_getName">BeerXML\Generator\IMashStepReader::getName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStep.html#_getName">BeerXML\Generator\IMashStep::getName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -395,7 +403,7 @@ should not have an infusion amount for decoction steps.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setRampTime">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#139-148" title="Go to source code">setRampTime</a>( <span>number <var>$rampTime</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#171-180" title="Go to source code">setRampTime</a>( <span>number <var>$rampTime</var></span> )</code>
 
 		<div class="description short">
 			
@@ -424,7 +432,7 @@ step temperature.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepWriter.html#_setRampTime">BeerXML\Parser\IMashStepWriter::setRampTime()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStep.html#_setRampTime">BeerXML\Parser\IMashStep::setRampTime()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -439,7 +447,7 @@ step temperature.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRampTime">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#150-159" title="Go to source code">getRampTime</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#182-191" title="Go to source code">getRampTime</a>( )</code>
 
 		<div class="description short">
 			
@@ -467,7 +475,7 @@ step temperature.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepReader.html#_getRampTime">BeerXML\Generator\IMashStepReader::getRampTime()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStep.html#_getRampTime">BeerXML\Generator\IMashStep::getRampTime()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -482,7 +490,7 @@ step temperature.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setStepTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#161-169" title="Go to source code">setStepTemp</a>( <span>number <var>$stepTemp</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#193-201" title="Go to source code">setStepTemp</a>( <span>number <var>$stepTemp</var></span> )</code>
 
 		<div class="description short">
 			
@@ -507,7 +515,7 @@ step temperature.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepWriter.html#_setStepTemp">BeerXML\Parser\IMashStepWriter::setStepTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStep.html#_setStepTemp">BeerXML\Parser\IMashStep::setStepTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -522,7 +530,7 @@ step temperature.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStepTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#171-179" title="Go to source code">getStepTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#203-211" title="Go to source code">getStepTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -546,7 +554,7 @@ step temperature.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepReader.html#_getStepTemp">BeerXML\Generator\IMashStepReader::getStepTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStep.html#_getStepTemp">BeerXML\Generator\IMashStep::getStepTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -561,7 +569,7 @@ step temperature.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setStepTime">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#181-190" title="Go to source code">setStepTime</a>( <span>number <var>$stepTime</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#213-222" title="Go to source code">setStepTime</a>( <span>number <var>$stepTime</var></span> )</code>
 
 		<div class="description short">
 			
@@ -588,7 +596,7 @@ are to hold this particular step temperature.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepWriter.html#_setStepTime">BeerXML\Parser\IMashStepWriter::setStepTime()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStep.html#_setStepTime">BeerXML\Parser\IMashStep::setStepTime()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -603,7 +611,7 @@ are to hold this particular step temperature.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStepTime">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#192-201" title="Go to source code">getStepTime</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#224-233" title="Go to source code">getStepTime</a>( )</code>
 
 		<div class="description short">
 			
@@ -629,7 +637,7 @@ are to hold this particular step temperature.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepReader.html#_getStepTime">BeerXML\Generator\IMashStepReader::getStepTime()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStep.html#_getStepTime">BeerXML\Generator\IMashStep::getStepTime()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -644,7 +652,7 @@ are to hold this particular step temperature.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setType">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#203-212" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#235-244" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -675,7 +683,7 @@ boiling.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepWriter.html#_setType">BeerXML\Parser\IMashStepWriter::setType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStep.html#_setType">BeerXML\Parser\IMashStep::setType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -690,7 +698,7 @@ boiling.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getType">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#214-223" title="Go to source code">getType</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#246-255" title="Go to source code">getType</a>( )</code>
 
 		<div class="description short">
 			
@@ -720,7 +728,7 @@ boiling.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepReader.html#_getType">BeerXML\Generator\IMashStepReader::getType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStep.html#_getType">BeerXML\Generator\IMashStep::getType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -735,7 +743,7 @@ boiling.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#225-233" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#257-265" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
 
 		<div class="description short">
 			
@@ -762,7 +770,7 @@ XML standard.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepWriter.html#_setVersion">BeerXML\Parser\IMashStepWriter::setVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStep.html#_setVersion">BeerXML\Parser\IMashStep::setVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -777,7 +785,7 @@ XML standard.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.MashStep.html#235-243" title="Go to source code">getVersion</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#267-275" title="Go to source code">getVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -803,7 +811,513 @@ XML standard.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepReader.html#_getVersion">BeerXML\Generator\IMashStepReader::getVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStep.html#_getVersion">BeerXML\Generator\IMashStep::getVersion()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDecoctionAmt" id="_setDecoctionAmt">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDecoctionAmt">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#277-286" title="Go to source code">setDecoctionAmt</a>( <span>string <var>$decoctionAmt</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calculated volume of mash to decoct. Only applicable for a decoction step.
+Includes the units as in "7.5 l" or "2.3 gal"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculated volume of mash to decoct. Only applicable for a decoction step.
+Includes the units as in "7.5 l" or "2.3 gal"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$decoctionAmt</var></dt>
+					<dd><code>string</code><br>$decoctionAmt</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepDisplay.html#_setDecoctionAmt">BeerXML\Parser\IMashStepDisplay::setDecoctionAmt()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDecoctionAmt" id="_getDecoctionAmt">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDecoctionAmt">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#288-297" title="Go to source code">getDecoctionAmt</a>( )</code>
+
+		<div class="description short">
+			
+<p>Calculated volume of mash to decoct. Only applicable for a decoction step.
+Includes the units as in "7.5 l" or "2.3 gal"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculated volume of mash to decoct. Only applicable for a decoction step.
+Includes the units as in "7.5 l" or "2.3 gal"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepDisplay.html#_getDecoctionAmt">BeerXML\Generator\IMashStepDisplay::getDecoctionAmt()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDescription" id="_setDescription">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDescription">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#299-308" title="Go to source code">setDescription</a>( <span>string <var>$description</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Textual description of this step such as "Infuse 4.5 gal of water at 170 F"
+– may be either generated by the program or input by the user.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Textual description of this step such as "Infuse 4.5 gal of water at 170 F"
+– may be either generated by the program or input by the user.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$description</var></dt>
+					<dd><code>string</code><br>$description</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepDisplay.html#_setDescription">BeerXML\Parser\IMashStepDisplay::setDescription()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDescription" id="_getDescription">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDescription">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#310-319" title="Go to source code">getDescription</a>( )</code>
+
+		<div class="description short">
+			
+<p>Textual description of this step such as "Infuse 4.5 gal of water at 170 F"
+– may be either generated by the program or input by the user.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Textual description of this step such as "Infuse 4.5 gal of water at 170 F"
+– may be either generated by the program or input by the user.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepDisplay.html#_getDescription">BeerXML\Generator\IMashStepDisplay::getDescription()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayInfuseAmt" id="_setDisplayInfuseAmt">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayInfuseAmt">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#321-329" title="Go to source code">setDisplayInfuseAmt</a>( <span>string <var>$displayInfuseAmt</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Infusion amount along with the volume units as in "20 l" or "13 qt"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Infusion amount along with the volume units as in "20 l" or "13 qt"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayInfuseAmt</var></dt>
+					<dd><code>string</code><br>$displayInfuseAmt</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepDisplay.html#_setDisplayInfuseAmt">BeerXML\Parser\IMashStepDisplay::setDisplayInfuseAmt()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayInfuseAmt" id="_getDisplayInfuseAmt">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayInfuseAmt">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#331-339" title="Go to source code">getDisplayInfuseAmt</a>( )</code>
+
+		<div class="description short">
+			
+<p>Infusion amount along with the volume units as in "20 l" or "13 qt"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Infusion amount along with the volume units as in "20 l" or "13 qt"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepDisplay.html#_getDisplayInfuseAmt">BeerXML\Generator\IMashStepDisplay::getDisplayInfuseAmt()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayStepTemp" id="_setDisplayStepTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayStepTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#341-349" title="Go to source code">setDisplayStepTemp</a>( <span>string <var>$displayStepTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Step temperature in user defined temperature units. For example "154F" or "68
+C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Step temperature in user defined temperature units. For example "154F" or "68
+C"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayStepTemp</var></dt>
+					<dd><code>string</code><br>$displayStepTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepDisplay.html#_setDisplayStepTemp">BeerXML\Parser\IMashStepDisplay::setDisplayStepTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayStepTemp" id="_getDisplayStepTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayStepTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#351-359" title="Go to source code">getDisplayStepTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Step temperature in user defined temperature units. For example "154F" or "68
+C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Step temperature in user defined temperature units. For example "154F" or "68
+C"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepDisplay.html#_getDisplayStepTemp">BeerXML\Generator\IMashStepDisplay::getDisplayStepTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInfuseTemp" id="_setInfuseTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setInfuseTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#361-370" title="Go to source code">setInfuseTemp</a>( <span>string <var>$infuseTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The calculated infusion temperature based on the current step, grain, and
+other settings. Applicable only for an infusion step. Includes the units as in
+"154 F" or "68 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The calculated infusion temperature based on the current step, grain, and
+other settings. Applicable only for an infusion step. Includes the units as in
+"154 F" or "68 C"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$infuseTemp</var></dt>
+					<dd><code>string</code><br>$infuseTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepDisplay.html#_setInfuseTemp">BeerXML\Parser\IMashStepDisplay::setInfuseTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInfuseTemp" id="_getInfuseTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInfuseTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#372-381" title="Go to source code">getInfuseTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>The calculated infusion temperature based on the current step, grain, and
+other settings. Applicable only for an infusion step. Includes the units as in
+"154 F" or "68 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The calculated infusion temperature based on the current step, grain, and
+other settings. Applicable only for an infusion step. Includes the units as in
+"154 F" or "68 C"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepDisplay.html#_getInfuseTemp">BeerXML\Generator\IMashStepDisplay::getInfuseTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setWaterGrainRatio" id="_setWaterGrainRatio">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setWaterGrainRatio">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#383-395" title="Go to source code">setWaterGrainRatio</a>( <span>string <var>$waterGrainRatio</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The total ratio of water to grain for this step AFTER the infusion along with
+the units, usually expressed in qt/lb or l/kg.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The total ratio of water to grain for this step AFTER the infusion along with
+the units, usually expressed in qt/lb or l/kg.</p>
+
+<p>Note this value must be consistent with the required infusion amount and
+amounts added in earlier steps and is only relevant as part of a &lt;MASH&gt;
+profile. For example "1.5 qt/lb" or "3.0 l/kg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$waterGrainRatio</var></dt>
+					<dd><code>string</code><br>$waterGrainRatio</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IMashStepDisplay.html#_setWaterGrainRatio">BeerXML\Parser\IMashStepDisplay::setWaterGrainRatio()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWaterGrainRatio" id="_getWaterGrainRatio">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWaterGrainRatio">#</a>
+		<code><a href="source-class-BeerXML.Record.MashStep.html#397-408" title="Go to source code">getWaterGrainRatio</a>( )</code>
+
+		<div class="description short">
+			
+<p>The total ratio of water to grain for this step AFTER the infusion along with
+the units, usually expressed in qt/lb or l/kg.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The total ratio of water to grain for this step AFTER the infusion along with
+the units, usually expressed in qt/lb or l/kg.</p>
+
+<p>Note this value must be consistent with the required infusion amount and
+amounts added in earlier steps and is only relevant as part of a &lt;MASH&gt;
+profile. For example "1.5 qt/lb" or "3.0 l/kg"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IMashStepDisplay.html#_getWaterGrainRatio">BeerXML\Generator\IMashStepDisplay::getWaterGrainRatio()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

@@ -6,8 +6,8 @@
 
 	<title>Class BeerXML\Record\Fermentable | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -21,17 +21,25 @@
 		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
-				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
 						</li>
-				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
-				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
+				<li class="main"><a href="namespace-BeerXML.Parser.html">Parser</a>
 						</li>
-				<li class="active"><a href="namespace-BeerXML.Record.html">Record</a>
+				<li class="active main"><a href="namespace-BeerXML.Record.html">Record</a>
 						</li>
-							</ul></li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-PHP.html">PHP</a>
 						</li>
 			</ul>
@@ -103,9 +111,9 @@
 		<dd style="padding-left:0px">
 <b><span>BeerXML\Record\Fermentable</span></b>			
 			 implements 
-				<a href="class-BeerXML.Generator.IFermentableReader.html"><span>BeerXML\Generator\IFermentableReader</span></a>, 
+				<a href="class-BeerXML.Generator.IFermentableDisplay.html"><span>BeerXML\Generator\IFermentableDisplay</span></a>, 
 			
-				<a href="class-BeerXML.Parser.IFermentableWriter.html"><span>BeerXML\Parser\IFermentableWriter</span></a>
+				<a href="class-BeerXML.Parser.IFermentableDisplay.html"><span>BeerXML\Parser\IFermentableDisplay</span></a>
 			
 			
 		</dd>
@@ -124,7 +132,7 @@
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Record.html">Record</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Record.Fermentable.html#10-469" title="Go to source code">BeerXML/Record/Fermentable.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Record.Fermentable.html#10-576" title="Go to source code">src/BeerXML/Record/Fermentable.php</a><br />
 	</div>
 
 
@@ -142,7 +150,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAddAfterBoil">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#104-113" title="Go to source code">setAddAfterBoil</a>( <span>boolean <var>$addAfterBoil</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#126-135" title="Go to source code">setAddAfterBoil</a>( <span>boolean <var>$addAfterBoil</var></span> )</code>
 
 		<div class="description short">
 			
@@ -169,7 +177,7 @@ is FALSE since most grains are added during the mash or boil.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setAddAfterBoil">BeerXML\Parser\IFermentableWriter::setAddAfterBoil()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setAddAfterBoil">BeerXML\Parser\IFermentable::setAddAfterBoil()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -184,7 +192,7 @@ is FALSE since most grains are added during the mash or boil.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAddAfterBoil">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#115-124" title="Go to source code">getAddAfterBoil</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#137-146" title="Go to source code">getAddAfterBoil</a>( )</code>
 
 		<div class="description short">
 			
@@ -210,7 +218,7 @@ is FALSE since most grains are added during the mash or boil.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getAddAfterBoil">BeerXML\Generator\IFermentableReader::getAddAfterBoil()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getAddAfterBoil">BeerXML\Generator\IFermentable::getAddAfterBoil()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -225,7 +233,7 @@ is FALSE since most grains are added during the mash or boil.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAmount">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#126-134" title="Go to source code">setAmount</a>( <span>number <var>$amount</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#148-156" title="Go to source code">setAmount</a>( <span>number <var>$amount</var></span> )</code>
 
 		<div class="description short">
 			
@@ -250,7 +258,7 @@ is FALSE since most grains are added during the mash or boil.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setAmount">BeerXML\Parser\IFermentableWriter::setAmount()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setAmount">BeerXML\Parser\IFermentable::setAmount()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -265,7 +273,7 @@ is FALSE since most grains are added during the mash or boil.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAmount">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#136-144" title="Go to source code">getAmount</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#158-166" title="Go to source code">getAmount</a>( )</code>
 
 		<div class="description short">
 			
@@ -289,7 +297,7 @@ is FALSE since most grains are added during the mash or boil.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getAmount">BeerXML\Generator\IFermentableReader::getAmount()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getAmount">BeerXML\Generator\IFermentable::getAmount()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -304,7 +312,7 @@ is FALSE since most grains are added during the mash or boil.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCoarseFineDiff">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#146-155" title="Go to source code">setCoarseFineDiff</a>( <span>number <var>$coarseFineDiff</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#168-177" title="Go to source code">setCoarseFineDiff</a>( <span>number <var>$coarseFineDiff</var></span> )</code>
 
 		<div class="description short">
 			
@@ -333,7 +341,7 @@ ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setCoarseFineDiff">BeerXML\Parser\IFermentableWriter::setCoarseFineDiff()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setCoarseFineDiff">BeerXML\Parser\IFermentable::setCoarseFineDiff()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -348,7 +356,7 @@ ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCoarseFineDiff">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#157-166" title="Go to source code">getCoarseFineDiff</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#179-188" title="Go to source code">getCoarseFineDiff</a>( )</code>
 
 		<div class="description short">
 			
@@ -376,7 +384,7 @@ ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getCoarseFineDiff">BeerXML\Generator\IFermentableReader::getCoarseFineDiff()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getCoarseFineDiff">BeerXML\Generator\IFermentable::getCoarseFineDiff()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -391,7 +399,7 @@ ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setColor">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#168-176" title="Go to source code">setColor</a>( <span>float <var>$color</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#190-198" title="Go to source code">setColor</a>( <span>float <var>$color</var></span> )</code>
 
 		<div class="description short">
 			
@@ -416,7 +424,7 @@ ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setColor">BeerXML\Parser\IFermentableWriter::setColor()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setColor">BeerXML\Parser\IFermentable::setColor()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -431,7 +439,7 @@ ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getColor">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#178-186" title="Go to source code">getColor</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#200-208" title="Go to source code">getColor</a>( )</code>
 
 		<div class="description short">
 			
@@ -455,7 +463,7 @@ ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getColor">BeerXML\Generator\IFermentableReader::getColor()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getColor">BeerXML\Generator\IFermentable::getColor()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -470,7 +478,7 @@ ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDiastaticPower">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#188-197" title="Go to source code">setDiastaticPower</a>( <span>float <var>$diastaticPower</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#210-219" title="Go to source code">setDiastaticPower</a>( <span>float <var>$diastaticPower</var></span> )</code>
 
 		<div class="description short">
 			
@@ -499,7 +507,7 @@ ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setDiastaticPower">BeerXML\Parser\IFermentableWriter::setDiastaticPower()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setDiastaticPower">BeerXML\Parser\IFermentable::setDiastaticPower()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -514,7 +522,7 @@ ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDiastaticPower">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#199-208" title="Go to source code">getDiastaticPower</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#221-230" title="Go to source code">getDiastaticPower</a>( )</code>
 
 		<div class="description short">
 			
@@ -542,7 +550,7 @@ ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getDiastaticPower">BeerXML\Generator\IFermentableReader::getDiastaticPower()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getDiastaticPower">BeerXML\Generator\IFermentable::getDiastaticPower()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -557,7 +565,7 @@ ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setIbuGalPerLb">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#210-221" title="Go to source code">setIbuGalPerLb</a>( <span>float <var>$ibuGalPerLb</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#232-243" title="Go to source code">setIbuGalPerLb</a>( <span>float <var>$ibuGalPerLb</var></span> )</code>
 
 		<div class="description short">
 			
@@ -590,7 +598,7 @@ otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setIbuGalPerLb">BeerXML\Parser\IFermentableWriter::setIbuGalPerLb()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setIbuGalPerLb">BeerXML\Parser\IFermentable::setIbuGalPerLb()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -605,7 +613,7 @@ otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getIbuGalPerLb">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#223-234" title="Go to source code">getIbuGalPerLb</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#245-256" title="Go to source code">getIbuGalPerLb</a>( )</code>
 
 		<div class="description short">
 			
@@ -637,7 +645,7 @@ otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getIbuGalPerLb">BeerXML\Generator\IFermentableReader::getIbuGalPerLb()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getIbuGalPerLb">BeerXML\Generator\IFermentable::getIbuGalPerLb()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -652,7 +660,7 @@ otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setMaxInBatch">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#236-244" title="Go to source code">setMaxInBatch</a>( <span>number <var>$maxInBatch</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#258-266" title="Go to source code">setMaxInBatch</a>( <span>number <var>$maxInBatch</var></span> )</code>
 
 		<div class="description short">
 			
@@ -679,7 +687,7 @@ represent in a batch of beer.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setMaxInBatch">BeerXML\Parser\IFermentableWriter::setMaxInBatch()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setMaxInBatch">BeerXML\Parser\IFermentable::setMaxInBatch()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -694,7 +702,7 @@ represent in a batch of beer.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMaxInBatch">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#246-254" title="Go to source code">getMaxInBatch</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#268-276" title="Go to source code">getMaxInBatch</a>( )</code>
 
 		<div class="description short">
 			
@@ -720,7 +728,7 @@ represent in a batch of beer.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getMaxInBatch">BeerXML\Generator\IFermentableReader::getMaxInBatch()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getMaxInBatch">BeerXML\Generator\IFermentable::getMaxInBatch()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -735,7 +743,7 @@ represent in a batch of beer.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setMoisture">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#256-265" title="Go to source code">setMoisture</a>( <span>number <var>$moisture</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#278-287" title="Go to source code">setMoisture</a>( <span>number <var>$moisture</var></span> )</code>
 
 		<div class="description short">
 			
@@ -762,7 +770,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setMoisture">BeerXML\Parser\IFermentableWriter::setMoisture()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setMoisture">BeerXML\Parser\IFermentable::setMoisture()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -777,7 +785,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMoisture">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#267-276" title="Go to source code">getMoisture</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#289-298" title="Go to source code">getMoisture</a>( )</code>
 
 		<div class="description short">
 			
@@ -803,7 +811,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getMoisture">BeerXML\Generator\IFermentableReader::getMoisture()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getMoisture">BeerXML\Generator\IFermentable::getMoisture()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -818,7 +826,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#278-286" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#300-308" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -843,7 +851,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setName">BeerXML\Parser\IFermentableWriter::setName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setName">BeerXML\Parser\IFermentable::setName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -858,7 +866,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#288-296" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#310-318" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -882,7 +890,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getName">BeerXML\Generator\IFermentableReader::getName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getName">BeerXML\Generator\IFermentable::getName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -897,7 +905,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#298-306" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#320-328" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
 
 		<div class="description short">
 			
@@ -922,7 +930,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setNotes">BeerXML\Parser\IFermentableWriter::setNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setNotes">BeerXML\Parser\IFermentable::setNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -937,7 +945,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#308-316" title="Go to source code">getNotes</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#330-338" title="Go to source code">getNotes</a>( )</code>
 
 		<div class="description short">
 			
@@ -961,7 +969,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getNotes">BeerXML\Generator\IFermentableReader::getNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getNotes">BeerXML\Generator\IFermentable::getNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -976,7 +984,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOrigin">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#318-326" title="Go to source code">setOrigin</a>( <span>string <var>$origin</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#340-348" title="Go to source code">setOrigin</a>( <span>string <var>$origin</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1001,7 +1009,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setOrigin">BeerXML\Parser\IFermentableWriter::setOrigin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setOrigin">BeerXML\Parser\IFermentable::setOrigin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1016,7 +1024,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getOrigin">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#328-336" title="Go to source code">getOrigin</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#350-358" title="Go to source code">getOrigin</a>( )</code>
 
 		<div class="description short">
 			
@@ -1040,7 +1048,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getOrigin">BeerXML\Generator\IFermentableReader::getOrigin()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getOrigin">BeerXML\Generator\IFermentable::getOrigin()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1055,7 +1063,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setProtein">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#338-347" title="Go to source code">setProtein</a>( <span>number <var>$protein</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#360-369" title="Go to source code">setProtein</a>( <span>number <var>$protein</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1082,7 +1090,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setProtein">BeerXML\Parser\IFermentableWriter::setProtein()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setProtein">BeerXML\Parser\IFermentable::setProtein()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1097,7 +1105,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getProtein">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#349-358" title="Go to source code">getProtein</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#371-380" title="Go to source code">getProtein</a>( )</code>
 
 		<div class="description short">
 			
@@ -1123,7 +1131,7 @@ type, otherwise this value is ignored.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getProtein">BeerXML\Generator\IFermentableReader::getProtein()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getProtein">BeerXML\Generator\IFermentable::getProtein()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1138,7 +1146,7 @@ type, otherwise this value is ignored.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setRecommendMash">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#360-371" title="Go to source code">setRecommendMash</a>( <span>boolean <var>$recommendMash</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#382-393" title="Go to source code">setRecommendMash</a>( <span>boolean <var>$recommendMash</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1169,7 +1177,7 @@ not – it is only a recommendation used in recipe formulation.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setRecommendMash">BeerXML\Parser\IFermentableWriter::setRecommendMash()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setRecommendMash">BeerXML\Parser\IFermentable::setRecommendMash()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1184,7 +1192,7 @@ not – it is only a recommendation used in recipe formulation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRecommendMash">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#373-384" title="Go to source code">getRecommendMash</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#395-406" title="Go to source code">getRecommendMash</a>( )</code>
 
 		<div class="description short">
 			
@@ -1214,7 +1222,7 @@ not – it is only a recommendation used in recipe formulation.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getRecommendMash">BeerXML\Generator\IFermentableReader::getRecommendMash()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getRecommendMash">BeerXML\Generator\IFermentable::getRecommendMash()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1229,7 +1237,7 @@ not – it is only a recommendation used in recipe formulation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setSupplier">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#386-394" title="Go to source code">setSupplier</a>( <span>string <var>$supplier</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#408-416" title="Go to source code">setSupplier</a>( <span>string <var>$supplier</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1254,7 +1262,7 @@ not – it is only a recommendation used in recipe formulation.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setSupplier">BeerXML\Parser\IFermentableWriter::setSupplier()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setSupplier">BeerXML\Parser\IFermentable::setSupplier()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1269,7 +1277,7 @@ not – it is only a recommendation used in recipe formulation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSupplier">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#396-404" title="Go to source code">getSupplier</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#418-426" title="Go to source code">getSupplier</a>( )</code>
 
 		<div class="description short">
 			
@@ -1293,7 +1301,7 @@ not – it is only a recommendation used in recipe formulation.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getSupplier">BeerXML\Generator\IFermentableReader::getSupplier()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getSupplier">BeerXML\Generator\IFermentable::getSupplier()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1308,7 +1316,7 @@ not – it is only a recommendation used in recipe formulation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setType">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#406-414" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#428-436" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1335,7 +1343,7 @@ refers to liquid extract.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setType">BeerXML\Parser\IFermentableWriter::setType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setType">BeerXML\Parser\IFermentable::setType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1350,7 +1358,7 @@ refers to liquid extract.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getType">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#416-424" title="Go to source code">getType</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#438-446" title="Go to source code">getType</a>( )</code>
 
 		<div class="description short">
 			
@@ -1376,7 +1384,7 @@ refers to liquid extract.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getType">BeerXML\Generator\IFermentableReader::getType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getType">BeerXML\Generator\IFermentable::getType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1391,7 +1399,7 @@ refers to liquid extract.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#426-435" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#448-457" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1420,7 +1428,7 @@ compatible.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setVersion">BeerXML\Parser\IFermentableWriter::setVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setVersion">BeerXML\Parser\IFermentable::setVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1435,7 +1443,7 @@ compatible.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#437-446" title="Go to source code">getVersion</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#459-468" title="Go to source code">getVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -1463,7 +1471,7 @@ compatible.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getVersion">BeerXML\Generator\IFermentableReader::getVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getVersion">BeerXML\Generator\IFermentable::getVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1478,7 +1486,7 @@ compatible.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setYield">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#448-456" title="Go to source code">setYield</a>( <span>number <var>$yield</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#470-478" title="Go to source code">setYield</a>( <span>number <var>$yield</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1505,7 +1513,7 @@ this is an extract adjunct or sugar.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableWriter.html#_setYield">BeerXML\Parser\IFermentableWriter::setYield()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentable.html#_setYield">BeerXML\Parser\IFermentable::setYield()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1520,7 +1528,7 @@ this is an extract adjunct or sugar.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getYield">#</a>
-		<code><a href="source-class-BeerXML.Record.Fermentable.html#458-466" title="Go to source code">getYield</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#480-488" title="Go to source code">getYield</a>( )</code>
 
 		<div class="description short">
 			
@@ -1546,7 +1554,343 @@ this is an extract adjunct or sugar.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableReader.html#_getYield">BeerXML\Generator\IFermentableReader::getYield()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentable.html#_getYield">BeerXML\Generator\IFermentable::getYield()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayAmount" id="_setDisplayAmount">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayAmount">#</a>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#490-499" title="Go to source code">setDisplayAmount</a>( <span>string <var>$displayAmount</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The amount of fermentables in this record along with the units formatted for
+easy display in the current user defined units. For example "1.5 lbs" or "2.1
+kg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of fermentables in this record along with the units formatted for
+easy display in the current user defined units. For example "1.5 lbs" or "2.1
+kg".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayAmount</var></dt>
+					<dd><code>string</code><br>$displayAmount</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableDisplay.html#_setDisplayAmount">BeerXML\Parser\IFermentableDisplay::setDisplayAmount()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayAmount" id="_getDisplayAmount">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayAmount">#</a>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#501-510" title="Go to source code">getDisplayAmount</a>( )</code>
+
+		<div class="description short">
+			
+<p>The amount of fermentables in this record along with the units formatted for
+easy display in the current user defined units. For example "1.5 lbs" or "2.1
+kg".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of fermentables in this record along with the units formatted for
+easy display in the current user defined units. For example "1.5 lbs" or "2.1
+kg".</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableDisplay.html#_getDisplayAmount">BeerXML\Generator\IFermentableDisplay::getDisplayAmount()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayColor" id="_setDisplayColor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayColor">#</a>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#512-520" title="Go to source code">setDisplayColor</a>( <span>string <var>$displayColor</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Color in user defined color units along with the unit identified – for
+example "200L" or "40 ebc"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Color in user defined color units along with the unit identified – for
+example "200L" or "40 ebc"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayColor</var></dt>
+					<dd><code>string</code><br>$displayColor</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableDisplay.html#_setDisplayColor">BeerXML\Parser\IFermentableDisplay::setDisplayColor()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayColor" id="_getDisplayColor">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayColor">#</a>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#522-530" title="Go to source code">getDisplayColor</a>( )</code>
+
+		<div class="description short">
+			
+<p>Color in user defined color units along with the unit identified – for
+example "200L" or "40 ebc"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Color in user defined color units along with the unit identified – for
+example "200L" or "40 ebc"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableDisplay.html#_getDisplayColor">BeerXML\Generator\IFermentableDisplay::getDisplayColor()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInventory" id="_setInventory">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setInventory">#</a>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#532-540" title="Go to source code">setInventory</a>( <span>string <var>$inventory</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Amount in inventory for this item along with the units – for example "10.0
+lb"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Amount in inventory for this item along with the units – for example "10.0
+lb"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$inventory</var></dt>
+					<dd><code>string</code><br>$inventory</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableDisplay.html#_setInventory">BeerXML\Parser\IFermentableDisplay::setInventory()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInventory" id="_getInventory">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInventory">#</a>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#542-550" title="Go to source code">getInventory</a>( )</code>
+
+		<div class="description short">
+			
+<p>Amount in inventory for this item along with the units – for example "10.0
+lb"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Amount in inventory for this item along with the units – for example "10.0
+lb"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableDisplay.html#_getInventory">BeerXML\Generator\IFermentableDisplay::getInventory()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPotential" id="_setPotential">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPotential">#</a>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#552-561" title="Go to source code">setPotential</a>( <span>float <var>$potential</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The yield of the fermentable converted to specific gravity units for display.
+For example "1.036" or "1.040" might be valid potentials.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The yield of the fermentable converted to specific gravity units for display.
+For example "1.036" or "1.040" might be valid potentials.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$potential</var></dt>
+					<dd><code>float</code><br>$potential</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IFermentableDisplay.html#_setPotential">BeerXML\Parser\IFermentableDisplay::setPotential()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPotential" id="_getPotential">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPotential">#</a>
+		<code><a href="source-class-BeerXML.Record.Fermentable.html#563-572" title="Go to source code">getPotential</a>( )</code>
+
+		<div class="description short">
+			
+<p>The yield of the fermentable converted to specific gravity units for display.
+For example "1.036" or "1.040" might be valid potentials.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The yield of the fermentable converted to specific gravity units for display.
+For example "1.036" or "1.040" might be valid potentials.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IFermentableDisplay.html#_getPotential">BeerXML\Generator\IFermentableDisplay::getPotential()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

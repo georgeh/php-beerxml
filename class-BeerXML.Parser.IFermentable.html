@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BeerXML\Parser\IFermentable | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li class="active main"><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Parser.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Parser.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Parser.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Parser.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Parser.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Parser.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Parser.RecordFactory.html">RecordFactory</a></li>
+				<li><a href="class-BeerXML.Parser.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Parser.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Parser.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Parser.IEquipment.html">IEquipment</a></li>
+				<li><a href="class-BeerXML.Parser.IEquipmentDisplay.html">IEquipmentDisplay</a></li>
+				<li class="active"><a href="class-BeerXML.Parser.IFermentable.html">IFermentable</a></li>
+				<li><a href="class-BeerXML.Parser.IFermentableDisplay.html">IFermentableDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IHop.html">IHop</a></li>
+				<li><a href="class-BeerXML.Parser.IHopDisplay.html">IHopDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfile.html">IMashProfile</a></li>
+				<li><a href="class-BeerXML.Parser.IMashProfileDisplay.html">IMashProfileDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStep.html">IMashStep</a></li>
+				<li><a href="class-BeerXML.Parser.IMashStepDisplay.html">IMashStepDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IMisc.html">IMisc</a></li>
+				<li><a href="class-BeerXML.Parser.IMiscDisplay.html">IMiscDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipe.html">IRecipe</a></li>
+				<li><a href="class-BeerXML.Parser.IRecipeDisplay.html">IRecipeDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IStyle.html">IStyle</a></li>
+				<li><a href="class-BeerXML.Parser.IStyleDisplay.html">IStyleDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IWater.html">IWater</a></li>
+				<li><a href="class-BeerXML.Parser.IWaterDisplay.html">IWaterDisplay</a></li>
+				<li><a href="class-BeerXML.Parser.IYeast.html">IYeast</a></li>
+				<li><a href="class-BeerXML.Parser.IYeastDisplay.html">IYeastDisplay</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Parser.html" title="Summary of BeerXML\Parser"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IFermentable</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Parser.IFermentableDisplay.html">BeerXML\Parser\IFermentableDisplay</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-BeerXML.Record.Fermentable.html">BeerXML\Record\Fermentable</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Parser.html">Parser</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-BeerXML.Parser.IFermentable.html#7-140" title="Go to source code">src/BeerXML/Parser/IFermentable.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setAddAfterBoil" id="_setAddAfterBoil">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAddAfterBoil">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#10-16" title="Go to source code">setAddAfterBoil</a>( <span>boolean <var>$addAfterBoil</var></span> )</code>
+
+		<div class="description short">
+			
+<p>May be TRUE if this item is normally added after the boil. The default value
+is FALSE since most grains are added during the mash or boil.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be TRUE if this item is normally added after the boil. The default value
+is FALSE since most grains are added during the mash or boil.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$addAfterBoil</var></dt>
+					<dd><code>boolean</code><br>$addAfterBoil</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAmount" id="_setAmount">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAmount">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#18-23" title="Go to source code">setAmount</a>( <span>number <var>$amount</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Weight of the fermentable, extract or sugar in Kilograms.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Weight of the fermentable, extract or sugar in Kilograms.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$amount</var></dt>
+					<dd><code>number</code><br>$amount</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCoarseFineDiff" id="_setCoarseFineDiff">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCoarseFineDiff">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#25-31" title="Go to source code">setCoarseFineDiff</a>( <span>number <var>$coarseFineDiff</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Percent difference between the coarse grain yield and fine grain yield. Only
+appropriate for a "Grain" or "Adjunct" type, otherwise this value is
+ignored.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Percent difference between the coarse grain yield and fine grain yield. Only
+appropriate for a "Grain" or "Adjunct" type, otherwise this value is
+ignored.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$coarseFineDiff</var></dt>
+					<dd><code>number</code><br>$coarseFineDiff</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setColor" id="_setColor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setColor">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#33-38" title="Go to source code">setColor</a>( <span>float <var>$color</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The color of the item in Lovibond Units (SRM for liquid extracts).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The color of the item in Lovibond Units (SRM for liquid extracts).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$color</var></dt>
+					<dd><code>float</code><br>$color</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDiastaticPower" id="_setDiastaticPower">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDiastaticPower">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#40-46" title="Go to source code">setDiastaticPower</a>( <span>float <var>$diastaticPower</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The diastatic power of the grain as measured in "Lintner" units. Only
+appropriate for a "Grain" or "Adjunct" type, otherwise this value is
+ignored.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The diastatic power of the grain as measured in "Lintner" units. Only
+appropriate for a "Grain" or "Adjunct" type, otherwise this value is
+ignored.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$diastaticPower</var></dt>
+					<dd><code>float</code><br>$diastaticPower</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIbuGalPerLb" id="_setIbuGalPerLb">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIbuGalPerLb">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#48-56" title="Go to source code">setIbuGalPerLb</a>( <span>float <var>$ibuGalPerLb</var></span> )</code>
+
+		<div class="description short">
+			
+<p>For hopped extracts only - an estimate of the number of IBUs per pound of
+extract in a gallon of water. To convert to IBUs we multiply this number by the
+"AMOUNT" field (in pounds) and divide by the number of gallons in the batch.
+Based on a sixty minute boil. Only suitable for use with an "Extract" type,
+otherwise this value is ignored.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>For hopped extracts only - an estimate of the number of IBUs per pound of
+extract in a gallon of water. To convert to IBUs we multiply this number by the
+"AMOUNT" field (in pounds) and divide by the number of gallons in the batch.
+Based on a sixty minute boil. Only suitable for use with an "Extract" type,
+otherwise this value is ignored.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ibuGalPerLb</var></dt>
+					<dd><code>float</code><br>$ibuGalPerLb</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMaxInBatch" id="_setMaxInBatch">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMaxInBatch">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#58-63" title="Go to source code">setMaxInBatch</a>( <span>number <var>$maxInBatch</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The recommended maximum percentage (by weight) this ingredient should
+represent in a batch of beer.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The recommended maximum percentage (by weight) this ingredient should
+represent in a batch of beer.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$maxInBatch</var></dt>
+					<dd><code>number</code><br>$maxInBatch</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMoisture" id="_setMoisture">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMoisture">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#65-71" title="Go to source code">setMoisture</a>( <span>number <var>$moisture</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Percent moisture in the grain. Only appropriate for a "Grain" or "Adjunct"
+type, otherwise this value is ignored.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Percent moisture in the grain. Only appropriate for a "Grain" or "Adjunct"
+type, otherwise this value is ignored.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$moisture</var></dt>
+					<dd><code>number</code><br>$moisture</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setName" id="_setName">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setName">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#73-78" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Name of the fermentable.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Name of the fermentable.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setNotes" id="_setNotes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setNotes">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#80-85" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Textual noted describing this ingredient and its use. May be multiline.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Textual noted describing this ingredient and its use. May be multiline.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$notes</var></dt>
+					<dd><code>string</code><br>$notes</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOrigin" id="_setOrigin">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOrigin">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#87-92" title="Go to source code">setOrigin</a>( <span>string <var>$origin</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Country or place of origin</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Country or place of origin</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$origin</var></dt>
+					<dd><code>string</code><br>$origin</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setProtein" id="_setProtein">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setProtein">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#94-100" title="Go to source code">setProtein</a>( <span>number <var>$protein</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The percent protein in the grain. Only appropriate for a "Grain" or "Adjunct"
+type, otherwise this value is ignored.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The percent protein in the grain. Only appropriate for a "Grain" or "Adjunct"
+type, otherwise this value is ignored.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$protein</var></dt>
+					<dd><code>number</code><br>$protein</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRecommendMash" id="_setRecommendMash">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRecommendMash">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#102-110" title="Go to source code">setRecommendMash</a>( <span>boolean <var>$recommendMash</var></span> )</code>
+
+		<div class="description short">
+			
+<p>TRUE if it is recommended the grain be mashed, FALSE if it can be steeped. A
+value of TRUE is only appropriate for a "Grain" or "Adjunct" types. The default
+value is FALSE. Note that this does NOT indicate whether the grain is mashed or
+not – it is only a recommendation used in recipe formulation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>TRUE if it is recommended the grain be mashed, FALSE if it can be steeped. A
+value of TRUE is only appropriate for a "Grain" or "Adjunct" types. The default
+value is FALSE. Note that this does NOT indicate whether the grain is mashed or
+not – it is only a recommendation used in recipe formulation.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$recommendMash</var></dt>
+					<dd><code>boolean</code><br>$recommendMash</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSupplier" id="_setSupplier">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSupplier">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#112-117" title="Go to source code">setSupplier</a>( <span>string <var>$supplier</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Supplier of the grain/extract/sugar</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Supplier of the grain/extract/sugar</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$supplier</var></dt>
+					<dd><code>string</code><br>$supplier</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setType" id="_setType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setType">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#119-124" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
+
+		<div class="description short">
+			
+<p>May be "Grain", "Sugar", "Extract", "Dry Extract" or "Adjunct". Extract
+refers to liquid extract.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be "Grain", "Sugar", "Extract", "Dry Extract" or "Adjunct". Extract
+refers to liquid extract.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code><br>$type</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setVersion" id="_setVersion">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setVersion">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#126-132" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Should be set to 1 for this version of the XML standard. May be a higher
+number for later versions but all later versions shall be backward
+compatible.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Should be set to 1 for this version of the XML standard. May be a higher
+number for later versions but all later versions shall be backward
+compatible.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$version</var></dt>
+					<dd><code>integer</code><br>$version</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setYield" id="_setYield">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setYield">#</a>
+		<code><a href="source-class-BeerXML.Parser.IFermentable.html#134-139" title="Go to source code">setYield</a>( <span>number <var>$yield</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Percent dry yield (fine grain) for the grain, or the raw yield by weight if
+this is an extract adjunct or sugar.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Percent dry yield (fine grain) for the grain, or the raw yield by weight if
+this is an extract adjunct or sugar.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$yield</var></dt>
+					<dd><code>number</code><br>$yield</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

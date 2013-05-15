@@ -6,8 +6,8 @@
 
 	<title>Class BeerXML\Record\Recipe | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -21,17 +21,25 @@
 		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
-				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
 						</li>
-				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
-				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
+				<li class="main"><a href="namespace-BeerXML.Parser.html">Parser</a>
 						</li>
-				<li class="active"><a href="namespace-BeerXML.Record.html">Record</a>
+				<li class="active main"><a href="namespace-BeerXML.Record.html">Record</a>
 						</li>
-							</ul></li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-PHP.html">PHP</a>
 						</li>
 			</ul>
@@ -98,14 +106,20 @@
 	<h1>Class Recipe</h1>
 
 
+	<div class="description">
+	
+<p>Interface for classes that want to implement the optional display properties
+from the appendix of the specification</p>
+
+	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
 <b><span>BeerXML\Record\Recipe</span></b>			
 			 implements 
-				<a href="class-BeerXML.Generator.IRecipeReader.html"><span>BeerXML\Generator\IRecipeReader</span></a>, 
+				<a href="class-BeerXML.Generator.IRecipeDisplay.html"><span>BeerXML\Generator\IRecipeDisplay</span></a>, 
 			
-				<a href="class-BeerXML.Parser.IRecipeWriter.html"><span>BeerXML\Parser\IRecipeWriter</span></a>
+				<a href="class-BeerXML.Parser.IRecipeDisplay.html"><span>BeerXML\Parser\IRecipeDisplay</span></a>
 			
 			
 		</dd>
@@ -122,9 +136,9 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Record.html">Record</a><br />
-		
+		<b>Package:</b> BeerXML\Generator<br />
 
-		<b>Located at</b> <a href="source-class-BeerXML.Record.Recipe.html#9-897" title="Go to source code">BeerXML/Record/Recipe.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Record.Recipe.html#8-1376" title="Go to source code">src/BeerXML/Record/Recipe.php</a><br />
 	</div>
 
 
@@ -142,7 +156,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAge">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#290-296" title="Go to source code">getAge</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#382-388" title="Go to source code">getAge</a>( )</code>
 
 		<div class="description short">
 			
@@ -162,7 +176,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getAge">BeerXML\Generator\IRecipeReader::getAge()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getAge">BeerXML\Generator\IRecipe::getAge()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -177,7 +191,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAge">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#298-304" title="Go to source code">setAge</a>( <span>number <var>$age</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#390-396" title="Go to source code">setAge</a>( <span>number <var>$age</var></span> )</code>
 
 		<div class="description short">
 			
@@ -198,7 +212,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setAge">BeerXML\Parser\IRecipeWriter::setAge()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setAge">BeerXML\Parser\IRecipe::setAge()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -213,7 +227,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAgeTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#306-312" title="Go to source code">getAgeTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#398-404" title="Go to source code">getAgeTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -233,7 +247,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getAgeTemp">BeerXML\Generator\IRecipeReader::getAgeTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getAgeTemp">BeerXML\Generator\IRecipe::getAgeTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -248,7 +262,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAgeTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#314-320" title="Go to source code">setAgeTemp</a>( <span>number <var>$ageTemp</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#406-412" title="Go to source code">setAgeTemp</a>( <span>number <var>$ageTemp</var></span> )</code>
 
 		<div class="description short">
 			
@@ -269,7 +283,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setAgeTemp">BeerXML\Parser\IRecipeWriter::setAgeTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setAgeTemp">BeerXML\Parser\IRecipe::setAgeTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -284,7 +298,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAsstBrewer">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#322-328" title="Go to source code">getAsstBrewer</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#414-420" title="Go to source code">getAsstBrewer</a>( )</code>
 
 		<div class="description short">
 			
@@ -304,7 +318,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getAsstBrewer">BeerXML\Generator\IRecipeReader::getAsstBrewer()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getAsstBrewer">BeerXML\Generator\IRecipe::getAsstBrewer()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -319,7 +333,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAsstBrewer">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#330-336" title="Go to source code">setAsstBrewer</a>( <span>string <var>$asstBrewer</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#422-428" title="Go to source code">setAsstBrewer</a>( <span>string <var>$asstBrewer</var></span> )</code>
 
 		<div class="description short">
 			
@@ -340,7 +354,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setAsstBrewer">BeerXML\Parser\IRecipeWriter::setAsstBrewer()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setAsstBrewer">BeerXML\Parser\IRecipe::setAsstBrewer()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -355,7 +369,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBatchSize">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#338-344" title="Go to source code">getBatchSize</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#430-436" title="Go to source code">getBatchSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -375,7 +389,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getBatchSize">BeerXML\Generator\IRecipeReader::getBatchSize()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getBatchSize">BeerXML\Generator\IRecipe::getBatchSize()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -390,7 +404,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBatchSize">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#346-352" title="Go to source code">setBatchSize</a>( <span>float <var>$batchSize</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#438-444" title="Go to source code">setBatchSize</a>( <span>float <var>$batchSize</var></span> )</code>
 
 		<div class="description short">
 			
@@ -411,7 +425,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setBatchSize">BeerXML\Parser\IRecipeWriter::setBatchSize()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setBatchSize">BeerXML\Parser\IRecipe::setBatchSize()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -426,7 +440,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBoilSize">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#354-360" title="Go to source code">getBoilSize</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#446-452" title="Go to source code">getBoilSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -446,7 +460,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getBoilSize">BeerXML\Generator\IRecipeReader::getBoilSize()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getBoilSize">BeerXML\Generator\IRecipe::getBoilSize()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -461,7 +475,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBoilSize">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#362-368" title="Go to source code">setBoilSize</a>( <span>float <var>$boilSize</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#454-460" title="Go to source code">setBoilSize</a>( <span>float <var>$boilSize</var></span> )</code>
 
 		<div class="description short">
 			
@@ -482,7 +496,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setBoilSize">BeerXML\Parser\IRecipeWriter::setBoilSize()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setBoilSize">BeerXML\Parser\IRecipe::setBoilSize()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -497,7 +511,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBoilTime">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#370-376" title="Go to source code">getBoilTime</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#462-468" title="Go to source code">getBoilTime</a>( )</code>
 
 		<div class="description short">
 			
@@ -517,7 +531,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getBoilTime">BeerXML\Generator\IRecipeReader::getBoilTime()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getBoilTime">BeerXML\Generator\IRecipe::getBoilTime()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -532,7 +546,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBoilTime">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#378-384" title="Go to source code">setBoilTime</a>( <span>number <var>$boilTime</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#470-476" title="Go to source code">setBoilTime</a>( <span>number <var>$boilTime</var></span> )</code>
 
 		<div class="description short">
 			
@@ -553,7 +567,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setBoilTime">BeerXML\Parser\IRecipeWriter::setBoilTime()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setBoilTime">BeerXML\Parser\IRecipe::setBoilTime()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -568,7 +582,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBrewer">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#386-392" title="Go to source code">getBrewer</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#478-484" title="Go to source code">getBrewer</a>( )</code>
 
 		<div class="description short">
 			
@@ -588,7 +602,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getBrewer">BeerXML\Generator\IRecipeReader::getBrewer()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getBrewer">BeerXML\Generator\IRecipe::getBrewer()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -603,7 +617,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBrewer">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#394-400" title="Go to source code">setBrewer</a>( <span>string <var>$brewer</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#486-492" title="Go to source code">setBrewer</a>( <span>string <var>$brewer</var></span> )</code>
 
 		<div class="description short">
 			
@@ -624,7 +638,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setBrewer">BeerXML\Parser\IRecipeWriter::setBrewer()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setBrewer">BeerXML\Parser\IRecipe::setBrewer()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -639,7 +653,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCarbonation">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#402-408" title="Go to source code">getCarbonation</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#494-500" title="Go to source code">getCarbonation</a>( )</code>
 
 		<div class="description short">
 			
@@ -659,7 +673,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getCarbonation">BeerXML\Generator\IRecipeReader::getCarbonation()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getCarbonation">BeerXML\Generator\IRecipe::getCarbonation()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -674,7 +688,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCarbonation">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#410-416" title="Go to source code">setCarbonation</a>( <span>float <var>$carbonation</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#502-508" title="Go to source code">setCarbonation</a>( <span>float <var>$carbonation</var></span> )</code>
 
 		<div class="description short">
 			
@@ -695,7 +709,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setCarbonation">BeerXML\Parser\IRecipeWriter::setCarbonation()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setCarbonation">BeerXML\Parser\IRecipe::setCarbonation()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -710,7 +724,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCarbonationTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#418-424" title="Go to source code">getCarbonationTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#510-516" title="Go to source code">getCarbonationTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -730,7 +744,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getCarbonationTemp">BeerXML\Generator\IRecipeReader::getCarbonationTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getCarbonationTemp">BeerXML\Generator\IRecipe::getCarbonationTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -745,7 +759,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCarbonationTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#426-432" title="Go to source code">setCarbonationTemp</a>( <span>number <var>$carbonationTemp</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#518-524" title="Go to source code">setCarbonationTemp</a>( <span>number <var>$carbonationTemp</var></span> )</code>
 
 		<div class="description short">
 			
@@ -766,7 +780,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setCarbonationTemp">BeerXML\Parser\IRecipeWriter::setCarbonationTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setCarbonationTemp">BeerXML\Parser\IRecipe::setCarbonationTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -781,7 +795,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDate">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#434-440" title="Go to source code">getDate</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#526-532" title="Go to source code">getDate</a>( )</code>
 
 		<div class="description short">
 			
@@ -801,7 +815,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getDate">BeerXML\Generator\IRecipeReader::getDate()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getDate">BeerXML\Generator\IRecipe::getDate()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -816,7 +830,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDate">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#442-448" title="Go to source code">setDate</a>( <span>string <var>$date</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#534-540" title="Go to source code">setDate</a>( <span>string <var>$date</var></span> )</code>
 
 		<div class="description short">
 			
@@ -837,7 +851,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setDate">BeerXML\Parser\IRecipeWriter::setDate()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setDate">BeerXML\Parser\IRecipe::setDate()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -852,7 +866,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEfficiency">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#450-456" title="Go to source code">getEfficiency</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#542-548" title="Go to source code">getEfficiency</a>( )</code>
 
 		<div class="description short">
 			
@@ -872,7 +886,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getEfficiency">BeerXML\Generator\IRecipeReader::getEfficiency()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getEfficiency">BeerXML\Generator\IRecipe::getEfficiency()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -887,7 +901,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setEfficiency">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#458-464" title="Go to source code">setEfficiency</a>( <span>float <var>$efficiency</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#550-556" title="Go to source code">setEfficiency</a>( <span>float <var>$efficiency</var></span> )</code>
 
 		<div class="description short">
 			
@@ -908,7 +922,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setEfficiency">BeerXML\Parser\IRecipeWriter::setEfficiency()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setEfficiency">BeerXML\Parser\IRecipe::setEfficiency()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -923,7 +937,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEquipment">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#466-472" title="Go to source code">getEquipment</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#558-564" title="Go to source code">getEquipment</a>( )</code>
 
 		<div class="description short">
 			
@@ -943,7 +957,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getEquipment">BeerXML\Generator\IRecipeReader::getEquipment()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getEquipment">BeerXML\Generator\IRecipe::getEquipment()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -958,7 +972,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setEquipment">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#474-480" title="Go to source code">setEquipment</a>( <span><code><a href="class-BeerXML.Record.Equipment.html">BeerXML\Record\Equipment</a></code> <var>$equipment</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#566-572" title="Go to source code">setEquipment</a>( <span><code><a href="class-BeerXML.Record.Equipment.html">BeerXML\Record\Equipment</a></code> <var>$equipment</var></span> )</code>
 
 		<div class="description short">
 			
@@ -979,7 +993,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setEquipment">BeerXML\Parser\IRecipeWriter::setEquipment()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setEquipment">BeerXML\Parser\IRecipe::setEquipment()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -994,7 +1008,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFermentables">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#482-488" title="Go to source code">getFermentables</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#574-580" title="Go to source code">getFermentables</a>( )</code>
 
 		<div class="description short">
 			
@@ -1014,7 +1028,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getFermentables">BeerXML\Generator\IRecipeReader::getFermentables()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getFermentables">BeerXML\Generator\IRecipe::getFermentables()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1029,7 +1043,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addFermentable">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#490-496" title="Go to source code">addFermentable</a>( <span><code><a href="class-BeerXML.Record.Fermentable.html">BeerXML\Record\Fermentable</a></code> <var>$fermentable</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#582-588" title="Go to source code">addFermentable</a>( <span><code><a href="class-BeerXML.Record.Fermentable.html">BeerXML\Record\Fermentable</a></code> <var>$fermentable</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1050,7 +1064,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_addFermentable">BeerXML\Parser\IRecipeWriter::addFermentable()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_addFermentable">BeerXML\Parser\IRecipe::addFermentable()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1065,7 +1079,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFermentationStages">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#498-504" title="Go to source code">getFermentationStages</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#590-596" title="Go to source code">getFermentationStages</a>( )</code>
 
 		<div class="description short">
 			
@@ -1085,7 +1099,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getFermentationStages">BeerXML\Generator\IRecipeReader::getFermentationStages()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getFermentationStages">BeerXML\Generator\IRecipe::getFermentationStages()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1100,7 +1114,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setFermentationStages">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#506-512" title="Go to source code">setFermentationStages</a>( <span>integer <var>$fermentationStages</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#598-604" title="Go to source code">setFermentationStages</a>( <span>integer <var>$fermentationStages</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1121,7 +1135,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setFermentationStages">BeerXML\Parser\IRecipeWriter::setFermentationStages()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setFermentationStages">BeerXML\Parser\IRecipe::setFermentationStages()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1136,7 +1150,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFg">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#514-520" title="Go to source code">getFg</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#606-612" title="Go to source code">getFg</a>( )</code>
 
 		<div class="description short">
 			
@@ -1156,7 +1170,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getFg">BeerXML\Generator\IRecipeReader::getFg()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getFg">BeerXML\Generator\IRecipe::getFg()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1171,7 +1185,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setFg">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#522-528" title="Go to source code">setFg</a>( <span>float <var>$fg</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#614-620" title="Go to source code">setFg</a>( <span>float <var>$fg</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1192,7 +1206,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setFg">BeerXML\Parser\IRecipeWriter::setFg()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setFg">BeerXML\Parser\IRecipe::setFg()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1207,7 +1221,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getForcedCarbonation">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#530-536" title="Go to source code">getForcedCarbonation</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#622-628" title="Go to source code">getForcedCarbonation</a>( )</code>
 
 		<div class="description short">
 			
@@ -1227,7 +1241,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getForcedCarbonation">BeerXML\Generator\IRecipeReader::getForcedCarbonation()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getForcedCarbonation">BeerXML\Generator\IRecipe::getForcedCarbonation()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1242,7 +1256,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setForcedCarbonation">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#538-544" title="Go to source code">setForcedCarbonation</a>( <span>boolean <var>$forcedCarbonation</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#630-636" title="Go to source code">setForcedCarbonation</a>( <span>boolean <var>$forcedCarbonation</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1263,7 +1277,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setForcedCarbonation">BeerXML\Parser\IRecipeWriter::setForcedCarbonation()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setForcedCarbonation">BeerXML\Parser\IRecipe::setForcedCarbonation()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1278,7 +1292,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getHops">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#546-552" title="Go to source code">getHops</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#638-644" title="Go to source code">getHops</a>( )</code>
 
 		<div class="description short">
 			
@@ -1298,7 +1312,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getHops">BeerXML\Generator\IRecipeReader::getHops()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getHops">BeerXML\Generator\IRecipe::getHops()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1313,7 +1327,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addHop">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#554-560" title="Go to source code">addHop</a>( <span><code><a href="class-BeerXML.Record.Hop.html">BeerXML\Record\Hop</a></code> <var>$hop</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#646-652" title="Go to source code">addHop</a>( <span><code><a href="class-BeerXML.Record.Hop.html">BeerXML\Record\Hop</a></code> <var>$hop</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1334,7 +1348,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_addHop">BeerXML\Parser\IRecipeWriter::addHop()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_addHop">BeerXML\Parser\IRecipe::addHop()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1349,7 +1363,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getKegPrimingFactor">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#562-568" title="Go to source code">getKegPrimingFactor</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#654-660" title="Go to source code">getKegPrimingFactor</a>( )</code>
 
 		<div class="description short">
 			
@@ -1369,7 +1383,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getKegPrimingFactor">BeerXML\Generator\IRecipeReader::getKegPrimingFactor()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getKegPrimingFactor">BeerXML\Generator\IRecipe::getKegPrimingFactor()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1384,7 +1398,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setKegPrimingFactor">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#570-576" title="Go to source code">setKegPrimingFactor</a>( <span>float <var>$kegPrimingFactor</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#662-668" title="Go to source code">setKegPrimingFactor</a>( <span>float <var>$kegPrimingFactor</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1405,7 +1419,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setKegPrimingFactor">BeerXML\Parser\IRecipeWriter::setKegPrimingFactor()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setKegPrimingFactor">BeerXML\Parser\IRecipe::setKegPrimingFactor()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1420,7 +1434,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMash">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#578-584" title="Go to source code">getMash</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#670-676" title="Go to source code">getMash</a>( )</code>
 
 		<div class="description short">
 			
@@ -1440,7 +1454,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getMash">BeerXML\Generator\IRecipeReader::getMash()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getMash">BeerXML\Generator\IRecipe::getMash()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1455,7 +1469,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setMash">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#586-592" title="Go to source code">setMash</a>( <span><code><a href="class-BeerXML.Record.MashProfile.html">BeerXML\Record\MashProfile</a></code> <var>$mash</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#678-684" title="Go to source code">setMash</a>( <span><code><a href="class-BeerXML.Record.MashProfile.html">BeerXML\Record\MashProfile</a></code> <var>$mash</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1476,7 +1490,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setMash">BeerXML\Parser\IRecipeWriter::setMash()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setMash">BeerXML\Parser\IRecipe::setMash()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1491,7 +1505,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMiscs">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#594-600" title="Go to source code">getMiscs</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#686-692" title="Go to source code">getMiscs</a>( )</code>
 
 		<div class="description short">
 			
@@ -1511,7 +1525,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getMiscs">BeerXML\Generator\IRecipeReader::getMiscs()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getMiscs">BeerXML\Generator\IRecipe::getMiscs()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1526,7 +1540,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addMisc">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#602-608" title="Go to source code">addMisc</a>( <span><code><a href="class-BeerXML.Record.Misc.html">BeerXML\Record\Misc</a></code> <var>$misc</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#694-700" title="Go to source code">addMisc</a>( <span><code><a href="class-BeerXML.Record.Misc.html">BeerXML\Record\Misc</a></code> <var>$misc</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1547,7 +1561,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_addMisc">BeerXML\Parser\IRecipeWriter::addMisc()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_addMisc">BeerXML\Parser\IRecipe::addMisc()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1562,7 +1576,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#610-616" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#702-708" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -1582,7 +1596,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getName">BeerXML\Generator\IRecipeReader::getName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getName">BeerXML\Generator\IRecipe::getName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1597,7 +1611,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#618-624" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#710-716" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1618,7 +1632,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setName">BeerXML\Parser\IRecipeWriter::setName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setName">BeerXML\Parser\IRecipe::setName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1633,7 +1647,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#626-632" title="Go to source code">getNotes</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#718-724" title="Go to source code">getNotes</a>( )</code>
 
 		<div class="description short">
 			
@@ -1653,7 +1667,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getNotes">BeerXML\Generator\IRecipeReader::getNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getNotes">BeerXML\Generator\IRecipe::getNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1668,7 +1682,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#634-640" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#726-732" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1689,7 +1703,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setNotes">BeerXML\Parser\IRecipeWriter::setNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setNotes">BeerXML\Parser\IRecipe::setNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1704,7 +1718,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getOg">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#642-648" title="Go to source code">getOg</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#734-740" title="Go to source code">getOg</a>( )</code>
 
 		<div class="description short">
 			
@@ -1724,7 +1738,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getOg">BeerXML\Generator\IRecipeReader::getOg()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getOg">BeerXML\Generator\IRecipe::getOg()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1739,7 +1753,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOg">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#650-656" title="Go to source code">setOg</a>( <span>float <var>$og</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#742-748" title="Go to source code">setOg</a>( <span>float <var>$og</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1760,7 +1774,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setOg">BeerXML\Parser\IRecipeWriter::setOg()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setOg">BeerXML\Parser\IRecipe::setOg()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1775,7 +1789,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#658-664" title="Go to source code">getPrimaryAge</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#750-756" title="Go to source code">getPrimaryAge</a>( )</code>
 
 		<div class="description short">
 			
@@ -1795,7 +1809,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getPrimaryAge">BeerXML\Generator\IRecipeReader::getPrimaryAge()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getPrimaryAge">BeerXML\Generator\IRecipe::getPrimaryAge()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1810,7 +1824,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setPrimaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#666-672" title="Go to source code">setPrimaryAge</a>( <span>number <var>$primaryAge</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#758-764" title="Go to source code">setPrimaryAge</a>( <span>number <var>$primaryAge</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1831,7 +1845,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setPrimaryAge">BeerXML\Parser\IRecipeWriter::setPrimaryAge()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setPrimaryAge">BeerXML\Parser\IRecipe::setPrimaryAge()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1846,7 +1860,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#674-680" title="Go to source code">getPrimaryTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#766-772" title="Go to source code">getPrimaryTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -1866,7 +1880,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getPrimaryTemp">BeerXML\Generator\IRecipeReader::getPrimaryTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getPrimaryTemp">BeerXML\Generator\IRecipe::getPrimaryTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1881,7 +1895,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setPrimaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#682-688" title="Go to source code">setPrimaryTemp</a>( <span>number <var>$primaryTemp</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#774-780" title="Go to source code">setPrimaryTemp</a>( <span>number <var>$primaryTemp</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1902,7 +1916,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setPrimaryTemp">BeerXML\Parser\IRecipeWriter::setPrimaryTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setPrimaryTemp">BeerXML\Parser\IRecipe::setPrimaryTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1917,7 +1931,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimingSugarEquiv">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#690-696" title="Go to source code">getPrimingSugarEquiv</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#782-788" title="Go to source code">getPrimingSugarEquiv</a>( )</code>
 
 		<div class="description short">
 			
@@ -1937,7 +1951,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getPrimingSugarEquiv">BeerXML\Generator\IRecipeReader::getPrimingSugarEquiv()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getPrimingSugarEquiv">BeerXML\Generator\IRecipe::getPrimingSugarEquiv()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1952,7 +1966,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setPrimingSugarEquiv">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#698-704" title="Go to source code">setPrimingSugarEquiv</a>( <span>float <var>$primingSugarEquiv</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#790-796" title="Go to source code">setPrimingSugarEquiv</a>( <span>float <var>$primingSugarEquiv</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1973,7 +1987,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setPrimingSugarEquiv">BeerXML\Parser\IRecipeWriter::setPrimingSugarEquiv()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setPrimingSugarEquiv">BeerXML\Parser\IRecipe::setPrimingSugarEquiv()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1988,7 +2002,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimingSugarName">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#706-712" title="Go to source code">getPrimingSugarName</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#798-804" title="Go to source code">getPrimingSugarName</a>( )</code>
 
 		<div class="description short">
 			
@@ -2008,7 +2022,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getPrimingSugarName">BeerXML\Generator\IRecipeReader::getPrimingSugarName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getPrimingSugarName">BeerXML\Generator\IRecipe::getPrimingSugarName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2023,7 +2037,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setPrimingSugarName">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#714-720" title="Go to source code">setPrimingSugarName</a>( <span>string <var>$primingSugarName</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#806-812" title="Go to source code">setPrimingSugarName</a>( <span>string <var>$primingSugarName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2044,7 +2058,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setPrimingSugarName">BeerXML\Parser\IRecipeWriter::setPrimingSugarName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setPrimingSugarName">BeerXML\Parser\IRecipe::setPrimingSugarName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2059,7 +2073,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSecondaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#722-728" title="Go to source code">getSecondaryAge</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#814-820" title="Go to source code">getSecondaryAge</a>( )</code>
 
 		<div class="description short">
 			
@@ -2079,7 +2093,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getSecondaryAge">BeerXML\Generator\IRecipeReader::getSecondaryAge()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getSecondaryAge">BeerXML\Generator\IRecipe::getSecondaryAge()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2094,7 +2108,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setSecondaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#730-736" title="Go to source code">setSecondaryAge</a>( <span>number <var>$secondaryAge</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#822-828" title="Go to source code">setSecondaryAge</a>( <span>number <var>$secondaryAge</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2115,7 +2129,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setSecondaryAge">BeerXML\Parser\IRecipeWriter::setSecondaryAge()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setSecondaryAge">BeerXML\Parser\IRecipe::setSecondaryAge()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2130,7 +2144,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSecondaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#738-744" title="Go to source code">getSecondaryTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#830-836" title="Go to source code">getSecondaryTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -2150,7 +2164,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getSecondaryTemp">BeerXML\Generator\IRecipeReader::getSecondaryTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getSecondaryTemp">BeerXML\Generator\IRecipe::getSecondaryTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2165,7 +2179,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setSecondaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#746-752" title="Go to source code">setSecondaryTemp</a>( <span>number <var>$secondaryTemp</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#838-844" title="Go to source code">setSecondaryTemp</a>( <span>number <var>$secondaryTemp</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2186,7 +2200,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setSecondaryTemp">BeerXML\Parser\IRecipeWriter::setSecondaryTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setSecondaryTemp">BeerXML\Parser\IRecipe::setSecondaryTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2201,7 +2215,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStyle">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#754-760" title="Go to source code">getStyle</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#846-852" title="Go to source code">getStyle</a>( )</code>
 
 		<div class="description short">
 			
@@ -2221,7 +2235,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getStyle">BeerXML\Generator\IRecipeReader::getStyle()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getStyle">BeerXML\Generator\IRecipe::getStyle()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2236,7 +2250,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setStyle">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#762-768" title="Go to source code">setStyle</a>( <span><code><a href="class-BeerXML.Record.Style.html">BeerXML\Record\Style</a></code> <var>$style</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#854-860" title="Go to source code">setStyle</a>( <span><code><a href="class-BeerXML.Record.Style.html">BeerXML\Record\Style</a></code> <var>$style</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2257,7 +2271,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setStyle">BeerXML\Parser\IRecipeWriter::setStyle()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setStyle">BeerXML\Parser\IRecipe::setStyle()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2272,7 +2286,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTasteNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#770-776" title="Go to source code">getTasteNotes</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#862-868" title="Go to source code">getTasteNotes</a>( )</code>
 
 		<div class="description short">
 			
@@ -2292,7 +2306,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getTasteNotes">BeerXML\Generator\IRecipeReader::getTasteNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getTasteNotes">BeerXML\Generator\IRecipe::getTasteNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2307,7 +2321,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTasteNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#778-784" title="Go to source code">setTasteNotes</a>( <span>string <var>$tasteNotes</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#870-876" title="Go to source code">setTasteNotes</a>( <span>string <var>$tasteNotes</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2328,7 +2342,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setTasteNotes">BeerXML\Parser\IRecipeWriter::setTasteNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setTasteNotes">BeerXML\Parser\IRecipe::setTasteNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2343,7 +2357,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTasteRating">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#786-792" title="Go to source code">getTasteRating</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#878-884" title="Go to source code">getTasteRating</a>( )</code>
 
 		<div class="description short">
 			
@@ -2363,7 +2377,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getTasteRating">BeerXML\Generator\IRecipeReader::getTasteRating()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getTasteRating">BeerXML\Generator\IRecipe::getTasteRating()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2378,7 +2392,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTasteRating">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#794-800" title="Go to source code">setTasteRating</a>( <span>float <var>$tasteRating</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#886-892" title="Go to source code">setTasteRating</a>( <span>float <var>$tasteRating</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2399,7 +2413,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setTasteRating">BeerXML\Parser\IRecipeWriter::setTasteRating()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setTasteRating">BeerXML\Parser\IRecipe::setTasteRating()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2414,7 +2428,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTertiaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#802-808" title="Go to source code">getTertiaryAge</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#894-900" title="Go to source code">getTertiaryAge</a>( )</code>
 
 		<div class="description short">
 			
@@ -2434,7 +2448,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getTertiaryAge">BeerXML\Generator\IRecipeReader::getTertiaryAge()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getTertiaryAge">BeerXML\Generator\IRecipe::getTertiaryAge()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2449,7 +2463,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTertiaryAge">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#810-816" title="Go to source code">setTertiaryAge</a>( <span>number <var>$tertiaryAge</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#902-908" title="Go to source code">setTertiaryAge</a>( <span>number <var>$tertiaryAge</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2470,7 +2484,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setTertiaryAge">BeerXML\Parser\IRecipeWriter::setTertiaryAge()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setTertiaryAge">BeerXML\Parser\IRecipe::setTertiaryAge()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2485,7 +2499,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTertiaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#818-824" title="Go to source code">getTertiaryTemp</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#910-916" title="Go to source code">getTertiaryTemp</a>( )</code>
 
 		<div class="description short">
 			
@@ -2505,7 +2519,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getTertiaryTemp">BeerXML\Generator\IRecipeReader::getTertiaryTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getTertiaryTemp">BeerXML\Generator\IRecipe::getTertiaryTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2520,7 +2534,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTertiaryTemp">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#826-832" title="Go to source code">setTertiaryTemp</a>( <span>number <var>$tertiaryTemp</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#918-924" title="Go to source code">setTertiaryTemp</a>( <span>number <var>$tertiaryTemp</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2541,7 +2555,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setTertiaryTemp">BeerXML\Parser\IRecipeWriter::setTertiaryTemp()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setTertiaryTemp">BeerXML\Parser\IRecipe::setTertiaryTemp()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2556,7 +2570,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getType">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#834-840" title="Go to source code">getType</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#926-932" title="Go to source code">getType</a>( )</code>
 
 		<div class="description short">
 			
@@ -2576,7 +2590,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getType">BeerXML\Generator\IRecipeReader::getType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getType">BeerXML\Generator\IRecipe::getType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2591,7 +2605,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setType">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#842-848" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#934-940" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2612,7 +2626,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setType">BeerXML\Parser\IRecipeWriter::setType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setType">BeerXML\Parser\IRecipe::setType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2627,7 +2641,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#850-856" title="Go to source code">getVersion</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#942-948" title="Go to source code">getVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -2647,7 +2661,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getVersion">BeerXML\Generator\IRecipeReader::getVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getVersion">BeerXML\Generator\IRecipe::getVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2662,7 +2676,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#858-864" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#950-956" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2683,7 +2697,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_setVersion">BeerXML\Parser\IRecipeWriter::setVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_setVersion">BeerXML\Parser\IRecipe::setVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2698,7 +2712,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getWaters">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#866-872" title="Go to source code">getWaters</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#958-964" title="Go to source code">getWaters</a>( )</code>
 
 		<div class="description short">
 			
@@ -2718,7 +2732,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getWaters">BeerXML\Generator\IRecipeReader::getWaters()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getWaters">BeerXML\Generator\IRecipe::getWaters()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2733,7 +2747,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addWater">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#874-880" title="Go to source code">addWater</a>( <span><code><a href="class-BeerXML.Record.Water.html">BeerXML\Record\Water</a></code> <var>$water</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#966-972" title="Go to source code">addWater</a>( <span><code><a href="class-BeerXML.Record.Water.html">BeerXML\Record\Water</a></code> <var>$water</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2754,7 +2768,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_addWater">BeerXML\Parser\IRecipeWriter::addWater()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_addWater">BeerXML\Parser\IRecipe::addWater()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2769,7 +2783,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getYeasts">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#882-888" title="Go to source code">getYeasts</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#974-980" title="Go to source code">getYeasts</a>( )</code>
 
 		<div class="description short">
 			
@@ -2789,7 +2803,7 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeReader.html#_getYeasts">BeerXML\Generator\IRecipeReader::getYeasts()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipe.html#_getYeasts">BeerXML\Generator\IRecipe::getYeasts()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2804,7 +2818,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addYeast">#</a>
-		<code><a href="source-class-BeerXML.Record.Recipe.html#890-896" title="Go to source code">addYeast</a>( <span><code><a href="class-BeerXML.Record.Yeast.html">BeerXML\Record\Yeast</a></code> <var>$yeast</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#982-988" title="Go to source code">addYeast</a>( <span><code><a href="class-BeerXML.Record.Yeast.html">BeerXML\Record\Yeast</a></code> <var>$yeast</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2825,7 +2839,1540 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeWriter.html#_addYeast">BeerXML\Parser\IRecipeWriter::addYeast()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipe.html#_addYeast">BeerXML\Parser\IRecipe::addYeast()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAbv" id="_setAbv">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAbv">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#990-998" title="Go to source code">setAbv</a>( <span>float <var>$abv</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Actual alcohol by volume calculated from the OG and FG measured.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Actual alcohol by volume calculated from the OG and FG measured.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$abv</var></dt>
+					<dd><code>float</code><br>$abv Percent</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setAbv">BeerXML\Parser\IRecipeDisplay::setAbv()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAbv" id="_getAbv">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAbv">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1000-1008" title="Go to source code">getAbv</a>( )</code>
+
+		<div class="description short">
+			
+<p>Actual alcohol by volume calculated from the OG and FG measured.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Actual alcohol by volume calculated from the OG and FG measured.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>Percent<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getAbv">BeerXML\Generator\IRecipeDisplay::getAbv()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setActualEfficiency" id="_setActualEfficiency">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setActualEfficiency">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1010-1018" title="Go to source code">setActualEfficiency</a>( <span>float <var>$actualEfficiency</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The actual efficiency as calculated using the measured original and final
+gravity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The actual efficiency as calculated using the measured original and final
+gravity.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$actualEfficiency</var></dt>
+					<dd><code>float</code><br>$actualEfficiency Percent</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setActualEfficiency">BeerXML\Parser\IRecipeDisplay::setActualEfficiency()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getActualEfficiency" id="_getActualEfficiency">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getActualEfficiency">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1020-1028" title="Go to source code">getActualEfficiency</a>( )</code>
+
+		<div class="description short">
+			
+<p>The actual efficiency as calculated using the measured original and final
+gravity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The actual efficiency as calculated using the measured original and final
+gravity.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>Percent<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getActualEfficiency">BeerXML\Generator\IRecipeDisplay::getActualEfficiency()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCalories" id="_setCalories">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCalories">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1030-1041" title="Go to source code">setCalories</a>( <span>string <var>$calories</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calorie estimate based on the measured starting and ending gravity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calorie estimate based on the measured starting and ending gravity.</p>
+
+<p>Note that calories should be quoted in "Cal" or kilocalories which is the
+normal dietary measure (i.e. a beer is usually in the range of 100-250 calories
+per 12 oz). Examples "180 Cal/pint",</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$calories</var></dt>
+					<dd><code>string</code><br>$calories</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setCalories">BeerXML\Parser\IRecipeDisplay::setCalories()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCalories" id="_getCalories">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCalories">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1043-1054" title="Go to source code">getCalories</a>( )</code>
+
+		<div class="description short">
+			
+<p>Calorie estimate based on the measured starting and ending gravity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calorie estimate based on the measured starting and ending gravity.</p>
+
+<p>Note that calories should be quoted in "Cal" or kilocalories which is the
+normal dietary measure (i.e. a beer is usually in the range of 100-250 calories
+per 12 oz). Examples "180 Cal/pint",</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getCalories">BeerXML\Generator\IRecipeDisplay::getCalories()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayAgeTemp" id="_setDisplayAgeTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayAgeTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1056-1064" title="Go to source code">setDisplayAgeTemp</a>( <span>string <var>$displayAgeTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Temperature to use when aging the beer in user units such as "55 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Temperature to use when aging the beer in user units such as "55 F"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayAgeTemp</var></dt>
+					<dd><code>string</code><br>$displayAgeTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplayAgeTemp">BeerXML\Parser\IRecipeDisplay::setDisplayAgeTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayAgeTemp" id="_getDisplayAgeTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayAgeTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1066-1074" title="Go to source code">getDisplayAgeTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Temperature to use when aging the beer in user units such as "55 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Temperature to use when aging the beer in user units such as "55 F"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplayAgeTemp">BeerXML\Generator\IRecipeDisplay::getDisplayAgeTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayBatchSize" id="_setDisplayBatchSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayBatchSize">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1076-1084" title="Go to source code">setDisplayBatchSize</a>( <span>string <var>$displayBatchSize</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Batch size in user defined units along with the units as in "5.0 gal"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Batch size in user defined units along with the units as in "5.0 gal"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayBatchSize</var></dt>
+					<dd><code>string</code><br>$displayBatchSize</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplayBatchSize">BeerXML\Parser\IRecipeDisplay::setDisplayBatchSize()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayBatchSize" id="_getDisplayBatchSize">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayBatchSize">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1086-1094" title="Go to source code">getDisplayBatchSize</a>( )</code>
+
+		<div class="description short">
+			
+<p>Batch size in user defined units along with the units as in "5.0 gal"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Batch size in user defined units along with the units as in "5.0 gal"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplayBatchSize">BeerXML\Generator\IRecipeDisplay::getDisplayBatchSize()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayBoilSize" id="_setDisplayBoilSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayBoilSize">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1096-1104" title="Go to source code">setDisplayBoilSize</a>( <span>string <var>$displayBoilSize</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Boil size with user defined units as in "6.3 gal"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Boil size with user defined units as in "6.3 gal"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayBoilSize</var></dt>
+					<dd><code>string</code><br>$displayBoilSize</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplayBoilSize">BeerXML\Parser\IRecipeDisplay::setDisplayBoilSize()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayBoilSize" id="_getDisplayBoilSize">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayBoilSize">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1106-1114" title="Go to source code">getDisplayBoilSize</a>( )</code>
+
+		<div class="description short">
+			
+<p>Boil size with user defined units as in "6.3 gal"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Boil size with user defined units as in "6.3 gal"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplayBoilSize">BeerXML\Generator\IRecipeDisplay::getDisplayBoilSize()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayCarbTemp" id="_setDisplayCarbTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayCarbTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1116-1124" title="Go to source code">setDisplayCarbTemp</a>( <span>string <var>$displayCarbTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Carbonation/Bottling temperature in appropriate units such as "40F" or "32
+C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Carbonation/Bottling temperature in appropriate units such as "40F" or "32
+C"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayCarbTemp</var></dt>
+					<dd><code>string</code><br>$displayCarbTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplayCarbTemp">BeerXML\Parser\IRecipeDisplay::setDisplayCarbTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayCarbTemp" id="_getDisplayCarbTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayCarbTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1126-1134" title="Go to source code">getDisplayCarbTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Carbonation/Bottling temperature in appropriate units such as "40F" or "32
+C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Carbonation/Bottling temperature in appropriate units such as "40F" or "32
+C"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplayCarbTemp">BeerXML\Generator\IRecipeDisplay::getDisplayCarbTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCarbonationUsed" id="_setCarbonationUsed">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCarbonationUsed">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1136-1144" title="Go to source code">setCarbonationUsed</a>( <span>string <var>$carbonationUsed</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Text description of the carbonation used such as "50g corn sugar" or "Kegged
+at 20psi"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Text description of the carbonation used such as "50g corn sugar" or "Kegged
+at 20psi"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$carbonationUsed</var></dt>
+					<dd><code>string</code><br>$carbonationUsed</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setCarbonationUsed">BeerXML\Parser\IRecipeDisplay::setCarbonationUsed()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCarbonationUsed" id="_getCarbonationUsed">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCarbonationUsed">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1146-1154" title="Go to source code">getCarbonationUsed</a>( )</code>
+
+		<div class="description short">
+			
+<p>Text description of the carbonation used such as "50g corn sugar" or "Kegged
+at 20psi"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Text description of the carbonation used such as "50g corn sugar" or "Kegged
+at 20psi"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getCarbonationUsed">BeerXML\Generator\IRecipeDisplay::getCarbonationUsed()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayFg" id="_setDisplayFg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayFg">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1156-1164" title="Go to source code">setDisplayFg</a>( <span>string <var>$displayFg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Measured final gravity in user defined units as in "1.035 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Measured final gravity in user defined units as in "1.035 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayFg</var></dt>
+					<dd><code>string</code><br>$displayFg</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplayFg">BeerXML\Parser\IRecipeDisplay::setDisplayFg()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayFg" id="_getDisplayFg">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayFg">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1166-1174" title="Go to source code">getDisplayFg</a>( )</code>
+
+		<div class="description short">
+			
+<p>Measured final gravity in user defined units as in "1.035 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Measured final gravity in user defined units as in "1.035 sg"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplayFg">BeerXML\Generator\IRecipeDisplay::getDisplayFg()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayOg" id="_setDisplayOg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayOg">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1176-1184" title="Go to source code">setDisplayOg</a>( <span>string <var>$displayOg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Measured original gravity in user defined units as in "6.4 plato"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Measured original gravity in user defined units as in "6.4 plato"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayOg</var></dt>
+					<dd><code>string</code><br>$displayOg</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplayOg">BeerXML\Parser\IRecipeDisplay::setDisplayOg()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayOg" id="_getDisplayOg">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayOg">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1186-1194" title="Go to source code">getDisplayOg</a>( )</code>
+
+		<div class="description short">
+			
+<p>Measured original gravity in user defined units as in "6.4 plato"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Measured original gravity in user defined units as in "6.4 plato"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplayOg">BeerXML\Generator\IRecipeDisplay::getDisplayOg()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayPrimaryTemp" id="_setDisplayPrimaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayPrimaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1196-1204" title="Go to source code">setDisplayPrimaryTemp</a>( <span>string <var>$displayPrimaryTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Primary fermentation temperature in user defined units such as "64 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Primary fermentation temperature in user defined units such as "64 F"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayPrimaryTemp</var></dt>
+					<dd><code>string</code><br>$displayPrimaryTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplayPrimaryTemp">BeerXML\Parser\IRecipeDisplay::setDisplayPrimaryTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayPrimaryTemp" id="_getDisplayPrimaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayPrimaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1206-1214" title="Go to source code">getDisplayPrimaryTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Primary fermentation temperature in user defined units such as "64 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Primary fermentation temperature in user defined units such as "64 F"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplayPrimaryTemp">BeerXML\Generator\IRecipeDisplay::getDisplayPrimaryTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplaySecondaryTemp" id="_setDisplaySecondaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplaySecondaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1216-1224" title="Go to source code">setDisplaySecondaryTemp</a>( <span>string <var>$displaySecondaryTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Secondary fermentation temperature in user defined units such as "56 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Secondary fermentation temperature in user defined units such as "56 F"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displaySecondaryTemp</var></dt>
+					<dd><code>string</code><br>$displaySecondaryTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplaySecondaryTemp">BeerXML\Parser\IRecipeDisplay::setDisplaySecondaryTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplaySecondaryTemp" id="_getDisplaySecondaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplaySecondaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1226-1234" title="Go to source code">getDisplaySecondaryTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Secondary fermentation temperature in user defined units such as "56 F"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Secondary fermentation temperature in user defined units such as "56 F"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplaySecondaryTemp">BeerXML\Generator\IRecipeDisplay::getDisplaySecondaryTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayTertiaryTemp" id="_setDisplayTertiaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayTertiaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1236-1244" title="Go to source code">setDisplayTertiaryTemp</a>( <span>string <var>$displayTertiaryTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Tertiary temperature in user defined units such as "20 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Tertiary temperature in user defined units such as "20 C"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayTertiaryTemp</var></dt>
+					<dd><code>string</code><br>$displayTertiaryTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setDisplayTertiaryTemp">BeerXML\Parser\IRecipeDisplay::setDisplayTertiaryTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayTertiaryTemp" id="_getDisplayTertiaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayTertiaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1246-1254" title="Go to source code">getDisplayTertiaryTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Tertiary temperature in user defined units such as "20 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Tertiary temperature in user defined units such as "20 C"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getDisplayTertiaryTemp">BeerXML\Generator\IRecipeDisplay::getDisplayTertiaryTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEstAbv" id="_setEstAbv">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEstAbv">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1256-1264" title="Go to source code">setEstAbv</a>( <span>float <var>$estAbv</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Estimated percent alcohol by volume for this recipe.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Estimated percent alcohol by volume for this recipe.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$estAbv</var></dt>
+					<dd><code>float</code><br>$estAbv Percent</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setEstAbv">BeerXML\Parser\IRecipeDisplay::setEstAbv()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEstAbv" id="_getEstAbv">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEstAbv">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1266-1274" title="Go to source code">getEstAbv</a>( )</code>
+
+		<div class="description short">
+			
+<p>Estimated percent alcohol by volume for this recipe.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Estimated percent alcohol by volume for this recipe.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>Percent<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getEstAbv">BeerXML\Generator\IRecipeDisplay::getEstAbv()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEstColor" id="_setEstColor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEstColor">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1276-1284" title="Go to source code">setEstColor</a>( <span>string <var>$estColor</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The estimated color of the beer in user defined color units.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The estimated color of the beer in user defined color units.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$estColor</var></dt>
+					<dd><code>string</code><br>$estColor</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setEstColor">BeerXML\Parser\IRecipeDisplay::setEstColor()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEstColor" id="_getEstColor">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEstColor">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1286-1294" title="Go to source code">getEstColor</a>( )</code>
+
+		<div class="description short">
+			
+<p>The estimated color of the beer in user defined color units.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The estimated color of the beer in user defined color units.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getEstColor">BeerXML\Generator\IRecipeDisplay::getEstColor()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEstFg" id="_setEstFg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEstFg">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1296-1304" title="Go to source code">setEstFg</a>( <span>string <var>$estFg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calculated estimate for the final specific gravity of this recipe along with
+the units as in "1.015 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculated estimate for the final specific gravity of this recipe along with
+the units as in "1.015 sg"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$estFg</var></dt>
+					<dd><code>string</code><br>$estFg</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setEstFg">BeerXML\Parser\IRecipeDisplay::setEstFg()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEstFg" id="_getEstFg">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEstFg">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1306-1314" title="Go to source code">getEstFg</a>( )</code>
+
+		<div class="description short">
+			
+<p>Calculated estimate for the final specific gravity of this recipe along with
+the units as in "1.015 sg"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculated estimate for the final specific gravity of this recipe along with
+the units as in "1.015 sg"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getEstFg">BeerXML\Generator\IRecipeDisplay::getEstFg()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEstOg" id="_setEstOg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEstOg">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1316-1324" title="Go to source code">setEstOg</a>( <span>string <var>$estOg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Calculated estimate of the original gravity for this recipe along with the
+units.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculated estimate of the original gravity for this recipe along with the
+units.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$estOg</var></dt>
+					<dd><code>string</code><br>$estOg</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setEstOg">BeerXML\Parser\IRecipeDisplay::setEstOg()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEstOg" id="_getEstOg">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEstOg">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1326-1334" title="Go to source code">getEstOg</a>( )</code>
+
+		<div class="description short">
+			
+<p>Calculated estimate of the original gravity for this recipe along with the
+units.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Calculated estimate of the original gravity for this recipe along with the
+units.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getEstOg">BeerXML\Generator\IRecipeDisplay::getEstOg()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIbu" id="_setIbu">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIbu">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1336-1344" title="Go to source code">setIbu</a>( <span>float <var>$ibu</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The estimated bitterness level of the beer in IBUs</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The estimated bitterness level of the beer in IBUs</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ibu</var></dt>
+					<dd><code>float</code><br>$ibu</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setIbu">BeerXML\Parser\IRecipeDisplay::setIbu()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIbu" id="_getIbu">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIbu">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1346-1354" title="Go to source code">getIbu</a>( )</code>
+
+		<div class="description short">
+			
+<p>The estimated bitterness level of the beer in IBUs</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The estimated bitterness level of the beer in IBUs</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getIbu">BeerXML\Generator\IRecipeDisplay::getIbu()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIbuMethod" id="_setIbuMethod">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIbuMethod">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1356-1364" title="Go to source code">setIbuMethod</a>( <span>string <var>$ibuMethod</var></span> )</code>
+
+		<div class="description short">
+			
+<p>May be "Rager", "Tinseth" or "Garetz" corresponding to the method/equation
+used to estimate IBUs for this recipe.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be "Rager", "Tinseth" or "Garetz" corresponding to the method/equation
+used to estimate IBUs for this recipe.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ibuMethod</var></dt>
+					<dd><code>string</code><br>$ibuMethod</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IRecipeDisplay.html#_setIbuMethod">BeerXML\Parser\IRecipeDisplay::setIbuMethod()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIbuMethod" id="_getIbuMethod">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIbuMethod">#</a>
+		<code><a href="source-class-BeerXML.Record.Recipe.html#1366-1374" title="Go to source code">getIbuMethod</a>( )</code>
+
+		<div class="description short">
+			
+<p>May be "Rager", "Tinseth" or "Garetz" corresponding to the method/equation
+used to estimate IBUs for this recipe.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be "Rager", "Tinseth" or "Garetz" corresponding to the method/equation
+used to estimate IBUs for this recipe.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IRecipeDisplay.html#_getIbuMethod">BeerXML\Generator\IRecipeDisplay::getIbuMethod()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -2838,70 +4385,20 @@
 
 
 
-	<table class="summary" id="constants">
-	<caption>Constants summary</caption>
-	<tr data-order="TYPE_EXTRACT" id="TYPE_EXTRACT">
 
-		<td class="attributes"><code>string</code></td>
-		<td class="name"><code>
-				<a href="source-class-BeerXML.Record.Recipe.html#11" title="Go to source code"><b>TYPE_EXTRACT</b></a>
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-BeerXML.Parser.IRecipe.html#constants">BeerXML\Parser\IRecipe</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_ALL_GRAIN"><b>TYPE_ALL_GRAIN</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_EXTRACT"><b>TYPE_EXTRACT</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_IBU_METHOD_GARETZ"><b>TYPE_IBU_METHOD_GARETZ</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_IBU_METHOD_RAGER"><b>TYPE_IBU_METHOD_RAGER</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_IBU_METHOD_TINSETH"><b>TYPE_IBU_METHOD_TINSETH</b></a>, 
+			<a href="class-BeerXML.Parser.IRecipe.html#TYPE_PARTIAL_MASH"><b>TYPE_PARTIAL_MASH</b></a>
 		</code></td>
-		<td class="value"><code><span class="php-quote">'Extract'</span></code></td>
-		<td class="description"><div>
-			<a href="#TYPE_EXTRACT" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TYPE_PARTIAL_MASH" id="TYPE_PARTIAL_MASH">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name"><code>
-				<a href="source-class-BeerXML.Record.Recipe.html#12" title="Go to source code"><b>TYPE_PARTIAL_MASH</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-quote">'Partial Mash'</span></code></td>
-		<td class="description"><div>
-			<a href="#TYPE_PARTIAL_MASH" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TYPE_ALL_GRAIN" id="TYPE_ALL_GRAIN">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name"><code>
-				<a href="source-class-BeerXML.Record.Recipe.html#13" title="Go to source code"><b>TYPE_ALL_GRAIN</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-quote">'All Grain'</span></code></td>
-		<td class="description"><div>
-			<a href="#TYPE_ALL_GRAIN" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
 	</tr>
 	</table>
-
 
 
 

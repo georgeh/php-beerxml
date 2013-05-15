@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface BeerXML\Generator\IRecipe | php-beerxml</title>
+
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
+						</li>
+				<li class="active main"><a href="namespace-BeerXML.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Record.html">Record</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BeerXML.Generator.Equipment.html">Equipment</a></li>
+				<li><a href="class-BeerXML.Generator.Fermentable.html">Fermentable</a></li>
+				<li><a href="class-BeerXML.Generator.Hop.html">Hop</a></li>
+				<li><a href="class-BeerXML.Generator.MashProfile.html">MashProfile</a></li>
+				<li><a href="class-BeerXML.Generator.MashStep.html">MashStep</a></li>
+				<li><a href="class-BeerXML.Generator.Misc.html">Misc</a></li>
+				<li><a href="class-BeerXML.Generator.Recipe.html">Recipe</a></li>
+				<li><a href="class-BeerXML.Generator.Record.html">Record</a></li>
+				<li><a href="class-BeerXML.Generator.Style.html">Style</a></li>
+				<li><a href="class-BeerXML.Generator.Water.html">Water</a></li>
+				<li><a href="class-BeerXML.Generator.Yeast.html">Yeast</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-BeerXML.Generator.IEquipment.html">IEquipment</a></li>
+				<li><a href="class-BeerXML.Generator.IEquipmentDisplay.html">IEquipmentDisplay</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentable.html">IFermentable</a></li>
+				<li><a href="class-BeerXML.Generator.IFermentableDisplay.html">IFermentableDisplay</a></li>
+				<li><a href="class-BeerXML.Generator.IHop.html">IHop</a></li>
+				<li><a href="class-BeerXML.Generator.IHopDisplay.html">IHopDisplay</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfile.html">IMashProfile</a></li>
+				<li><a href="class-BeerXML.Generator.IMashProfileDisplay.html">IMashProfileDisplay</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStep.html">IMashStep</a></li>
+				<li><a href="class-BeerXML.Generator.IMashStepDisplay.html">IMashStepDisplay</a></li>
+				<li><a href="class-BeerXML.Generator.IMisc.html">IMisc</a></li>
+				<li><a href="class-BeerXML.Generator.IMiscDisplay.html">IMiscDisplay</a></li>
+				<li class="active"><a href="class-BeerXML.Generator.IRecipe.html">IRecipe</a></li>
+				<li><a href="class-BeerXML.Generator.IRecipeDisplay.html">IRecipeDisplay</a></li>
+				<li><a href="class-BeerXML.Generator.IStyle.html">IStyle</a></li>
+				<li><a href="class-BeerXML.Generator.IStyleDisplay.html">IStyleDisplay</a></li>
+				<li><a href="class-BeerXML.Generator.IWater.html">IWater</a></li>
+				<li><a href="class-BeerXML.Generator.IWaterDisplay.html">IWaterDisplay</a></li>
+				<li><a href="class-BeerXML.Generator.IYeast.html">IYeast</a></li>
+				<li><a href="class-BeerXML.Generator.IYeastDisplay.html">IYeastDisplay</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-BeerXML.Generator.html" title="Summary of BeerXML\Generator"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IRecipe</h1>
+
+
+	<div class="description">
+	
+<p>Interface for classes that want to implement getters for Recipe Records.</p>
+
+<p>These can be used with the Generator to parse into an object implementing
+this interface</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-BeerXML.Generator.IRecipeDisplay.html">BeerXML\Generator\IRecipeDisplay</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-BeerXML.Record.Recipe.html">BeerXML\Record\Recipe</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Generator.html">Generator</a><br />
+		<b>Package:</b> BeerXML\Generator<br />
+
+		<b>Located at</b> <a href="source-class-BeerXML.Generator.IRecipe.html#6-297" title="Go to source code">src/BeerXML/Generator/IRecipe.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getAge" id="_getAge">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAge">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#15-20" title="Go to source code">getAge</a>( )</code>
+
+		<div class="description short">
+			
+<p>The time to age the beer in days after bottling.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The time to age the beer in days after bottling.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Time (days)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAgeTemp" id="_getAgeTemp">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAgeTemp">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#22-27" title="Go to source code">getAgeTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Temperature for aging the beer after bottling.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Temperature for aging the beer after bottling.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Temperature C<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAsstBrewer" id="_getAsstBrewer">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAsstBrewer">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#29-34" title="Go to source code">getAsstBrewer</a>( )</code>
+
+		<div class="description short">
+			
+<p>Optional name of the assistant brewer</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Optional name of the assistant brewer</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBatchSize" id="_getBatchSize">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBatchSize">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#36-41" title="Go to source code">getBatchSize</a>( )</code>
+
+		<div class="description short">
+			
+<p>Target size of the finished batch in liters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Target size of the finished batch in liters.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>Volume (liters)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBoilSize" id="_getBoilSize">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBoilSize">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#43-48" title="Go to source code">getBoilSize</a>( )</code>
+
+		<div class="description short">
+			
+<p>Starting size for the main boil of the wort in liters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Starting size for the main boil of the wort in liters.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>Volume (liters)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBoilTime" id="_getBoilTime">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBoilTime">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#50-55" title="Go to source code">getBoilTime</a>( )</code>
+
+		<div class="description short">
+			
+<p>The total time to boil the wort in minutes.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The total time to boil the wort in minutes.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Time in minutes<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBrewer" id="_getBrewer">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBrewer">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#57-62" title="Go to source code">getBrewer</a>( )</code>
+
+		<div class="description short">
+			
+<p>Name of the brewer</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Name of the brewer</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCarbonation" id="_getCarbonation">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCarbonation">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#64-69" title="Go to source code">getCarbonation</a>( )</code>
+
+		<div class="description short">
+			
+<p>Floating point value corresponding to the target volumes of CO2 used to
+carbonate this beer.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Floating point value corresponding to the target volumes of CO2 used to
+carbonate this beer.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>Volumes of CO2<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCarbonationTemp" id="_getCarbonationTemp">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCarbonationTemp">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#71-76" title="Go to source code">getCarbonationTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>The temperature for either bottling or forced carbonation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The temperature for either bottling or forced carbonation.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Temperature (degrees C)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDate" id="_getDate">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDate">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#78-83" title="Go to source code">getDate</a>( )</code>
+
+		<div class="description short">
+			
+<p>Date brewed in a easily recognizable format such as "3 Dec 04".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Date brewed in a easily recognizable format such as "3 Dec 04".</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEfficiency" id="_getEfficiency">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEfficiency">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#85-92" title="Go to source code">getEfficiency</a>( )</code>
+
+		<div class="description short">
+			
+<p>The percent brewhouse efficiency to be used for estimating the starting
+gravity of the beer.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The percent brewhouse efficiency to be used for estimating the starting
+gravity of the beer.</p>
+
+<p>Not required for "Extract" recipes, but is required for "Partial Mash" and
+"All Grain" recipes.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>(e.g. 72.3)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEquipment" id="_getEquipment">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Generator.IEquipment.html">BeerXML\Generator\IEquipment</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEquipment">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#94-101" title="Go to source code">getEquipment</a>( )</code>
+
+		<div class="description short">
+			
+<p>An equipment record is optional.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>An equipment record is optional.</p>
+
+<p>If included the BATCH_SIZE and BOIL_SIZE in the equipment record must match
+the values in this recipe record.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Generator.IEquipment.html">BeerXML\Generator\IEquipment</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFermentables" id="_getFermentables">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Generator.IFermentable.html">BeerXML\Generator\IFermentable</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFermentables">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#103-108" title="Go to source code">getFermentables</a>( )</code>
+
+		<div class="description short">
+			
+<p>Zero or more FERMENTABLE ingredients may appear between the
+&lt;FERMENTABLES&gt; … &lt;/FERMENTABLES&gt; tags.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Zero or more FERMENTABLE ingredients may appear between the
+&lt;FERMENTABLES&gt; … &lt;/FERMENTABLES&gt; tags.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Generator.IFermentable.html">BeerXML\Generator\IFermentable</a>[]</code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFermentationStages" id="_getFermentationStages">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFermentationStages">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#110-115" title="Go to source code">getFermentationStages</a>( )</code>
+
+		<div class="description short">
+			
+<p>The number of fermentation stages used – typically a number between one and
+three</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The number of fermentation stages used – typically a number between one and
+three</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFg" id="_getFg">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFg">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#117-122" title="Go to source code">getFg</a>( )</code>
+
+		<div class="description short">
+			
+<p>The measured final gravity of the finished beer.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The measured final gravity of the finished beer.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>Specific Gravity<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getForcedCarbonation" id="_getForcedCarbonation">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getForcedCarbonation">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#124-132" title="Go to source code">getForcedCarbonation</a>( )</code>
+
+		<div class="description short">
+			
+<p>TRUE if the batch was force carbonated using CO2 pressure, FALSE if the batch
+was carbonated using a priming agent.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>TRUE if the batch was force carbonated using CO2 pressure, FALSE if the batch
+was carbonated using a priming agent.</p>
+
+<p>Default is FALSE</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHops" id="_getHops">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Generator.IHop.html">BeerXML\Generator\IHop</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHops">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#134-139" title="Go to source code">getHops</a>( )</code>
+
+		<div class="description short">
+			
+<p>Zero or more HOP ingredient records may appear between the
+&lt;HOPS&gt;…&lt;/HOPS&gt; tags.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Zero or more HOP ingredient records may appear between the
+&lt;HOPS&gt;…&lt;/HOPS&gt; tags.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Generator.IHop.html">BeerXML\Generator\IHop</a>[]</code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getKegPrimingFactor" id="_getKegPrimingFactor">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getKegPrimingFactor">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#141-149" title="Go to source code">getKegPrimingFactor</a>( )</code>
+
+		<div class="description short">
+			
+<p>Used to factor in the smaller amount of sugar needed for large
+containers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Used to factor in the smaller amount of sugar needed for large
+containers.</p>
+
+<p>For example, this might be 0.5 for a typical 5 gallon keg since naturally
+priming a keg requires about 50% as much sugar as priming bottles.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMash" id="_getMash">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Generator.IMashProfile.html">BeerXML\Generator\IMashProfile</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMash">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#151-158" title="Go to source code">getMash</a>( )</code>
+
+		<div class="description short">
+			
+<p>A MASH profile record containing one or more MASH_STEPs.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>A MASH profile record containing one or more MASH_STEPs.</p>
+
+<p>NOTE: No Mash record is needed for "Extract" type brews.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Generator.IMashProfile.html">BeerXML\Generator\IMashProfile</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMiscs" id="_getMiscs">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Generator.IMisc.html">BeerXML\Generator\IMisc</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMiscs">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#160-165" title="Go to source code">getMiscs</a>( )</code>
+
+		<div class="description short">
+			
+<p>Zero or more MISC records may appear between &lt;MISCS&gt; …
+&lt;/MISCS&gt;</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Zero or more MISC records may appear between &lt;MISCS&gt; …
+&lt;/MISCS&gt;</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Generator.IMisc.html">BeerXML\Generator\IMisc</a>[]</code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#167-172" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Name of the recipe.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Name of the recipe.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNotes" id="_getNotes">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNotes">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#174-179" title="Go to source code">getNotes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Notes associated with this recipe – may be multiline.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Notes associated with this recipe – may be multiline.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOg" id="_getOg">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOg">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#181-186" title="Go to source code">getOg</a>( )</code>
+
+		<div class="description short">
+			
+<p>The measured original (pre-fermentation) specific gravity of the beer.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The measured original (pre-fermentation) specific gravity of the beer.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>Specific Gravity<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimaryAge" id="_getPrimaryAge">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimaryAge">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#188-193" title="Go to source code">getPrimaryAge</a>( )</code>
+
+		<div class="description short">
+			
+<p>Time spent in the primary in days</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Time spent in the primary in days</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Time (days)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimaryTemp" id="_getPrimaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#195-200" title="Go to source code">getPrimaryTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Temperature in degrees Celsius for the primary fermentation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Temperature in degrees Celsius for the primary fermentation.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Temperature C<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimingSugarEquiv" id="_getPrimingSugarEquiv">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimingSugarEquiv">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#202-211" title="Go to source code">getPrimingSugarEquiv</a>( )</code>
+
+		<div class="description short">
+			
+<p>Factor used to convert this priming agent to an equivalent amount of corn
+sugar for a bottled scenario.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Factor used to convert this priming agent to an equivalent amount of corn
+sugar for a bottled scenario.</p>
+
+<p>For example, "Dry Malt Extract" would have a value of 1.4 because it requires
+1.4 times as much DME as corn sugar to carbonate. To calculate the amount of DME
+needed, the program can calculate the amount of corn sugar needed and then
+multiply by this factor.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimingSugarName" id="_getPrimingSugarName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimingSugarName">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#213-218" title="Go to source code">getPrimingSugarName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Text describing the priming agent such as "Honey" or "Corn Sugar" – used
+only if this is not a forced carbonation</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Text describing the priming agent such as "Honey" or "Corn Sugar" – used
+only if this is not a forced carbonation</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSecondaryAge" id="_getSecondaryAge">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSecondaryAge">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#220-225" title="Go to source code">getSecondaryAge</a>( )</code>
+
+		<div class="description short">
+			
+<p>Time spent in the secondary in days</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Time spent in the secondary in days</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Time (days)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSecondaryTemp" id="_getSecondaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSecondaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#227-232" title="Go to source code">getSecondaryTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Temperature in degrees Celsius for the secondary fermentation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Temperature in degrees Celsius for the secondary fermentation.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Temperature (C )<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStyle" id="_getStyle">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Record.Style.html">BeerXML\Record\Style</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStyle">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#234-240" title="Go to source code">getStyle</a>( )</code>
+
+		<div class="description short">
+			
+<p>The style of the beer this recipe is associated with. All of the required
+items for a valid style should be between the &lt;STYLE&gt;…&lt;/STYLE&gt;
+tags.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The style of the beer this recipe is associated with. All of the required
+items for a valid style should be between the &lt;STYLE&gt;…&lt;/STYLE&gt;
+tags.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Record.Style.html">BeerXML\Record\Style</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTasteNotes" id="_getTasteNotes">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTasteNotes">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#242-247" title="Go to source code">getTasteNotes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Tasting notes – may be multiline.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Tasting notes – may be multiline.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTasteRating" id="_getTasteRating">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTasteRating">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#249-254" title="Go to source code">getTasteRating</a>( )</code>
+
+		<div class="description short">
+			
+<p>Number between zero and 50.0 denoting the taste rating – corresponds to the
+50 point BJCP rating system.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Number between zero and 50.0 denoting the taste rating – corresponds to the
+50 point BJCP rating system.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTertiaryAge" id="_getTertiaryAge">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTertiaryAge">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#256-261" title="Go to source code">getTertiaryAge</a>( )</code>
+
+		<div class="description short">
+			
+<p>Time spent in the third fermenter in days.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Time spent in the third fermenter in days.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Time (days)<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTertiaryTemp" id="_getTertiaryTemp">
+
+		<td class="attributes"><code>
+			 public 
+			number
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTertiaryTemp">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#263-268" title="Go to source code">getTertiaryTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Temperature in the tertiary fermenter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Temperature in the tertiary fermenter.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>number</code><br>Temperature C<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getType" id="_getType">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getType">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#270-275" title="Go to source code">getType</a>( )</code>
+
+		<div class="description short">
+			
+<p>May be one of "Extract", "Partial Mash" or "All Grain"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>May be one of "Extract", "Partial Mash" or "All Grain"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVersion" id="_getVersion">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVersion">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#277-282" title="Go to source code">getVersion</a>( )</code>
+
+		<div class="description short">
+			
+<p>Version of the recipe record. Should always be "1" for this version of the
+XML standard.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Version of the recipe record. Should always be "1" for this version of the
+XML standard.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWaters" id="_getWaters">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Generator.IWater.html">BeerXML\Generator\IWater</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWaters">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#284-289" title="Go to source code">getWaters</a>( )</code>
+
+		<div class="description short">
+			
+<p>Zero or more WATER records may appear between &lt;WATERS&gt; …
+&lt;/WATERS&gt;</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Zero or more WATER records may appear between &lt;WATERS&gt; …
+&lt;/WATERS&gt;</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Generator.IWater.html">BeerXML\Generator\IWater</a>[]</code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getYeasts" id="_getYeasts">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-BeerXML.Generator.IYeast.html">BeerXML\Generator\IYeast</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getYeasts">#</a>
+		<code><a href="source-class-BeerXML.Generator.IRecipe.html#291-296" title="Go to source code">getYeasts</a>( )</code>
+
+		<div class="description short">
+			
+<p>Zero or more YEAST records may appear between &lt;YEASTS&gt; …
+&lt;/YEASTS&gt;</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Zero or more YEAST records may appear between &lt;YEASTS&gt; …
+&lt;/YEASTS&gt;</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-BeerXML.Generator.IYeast.html">BeerXML\Generator\IYeast</a>[]</code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-beerxml API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

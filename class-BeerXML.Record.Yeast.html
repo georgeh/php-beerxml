@@ -6,8 +6,8 @@
 
 	<title>Class BeerXML\Record\Yeast | php-beerxml</title>
 
-	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
-	<script type="text/javascript" src="elementlist.js?3598463007"></script>
+	<script type="text/javascript" src="resources/combined.js?1901046268"></script>
+	<script type="text/javascript" src="elementlist.js?829167590"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -21,17 +21,25 @@
 		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
+				<li class="active main"><a href="namespace-BeerXML.html">BeerXML<span></span></a>
 						<ul>
-				<li><a href="namespace-BeerXML.Exception.html">Exception</a>
+				<li class="main"><a href="namespace-BeerXML.Exception.html">Exception</a>
 						</li>
-				<li><a href="namespace-BeerXML.Generator.html">Generator</a>
+				<li class="main"><a href="namespace-BeerXML.Generator.html">Generator</a>
 						</li>
-				<li><a href="namespace-BeerXML.Parser.html">Parser</a>
+				<li class="main"><a href="namespace-BeerXML.Parser.html">Parser</a>
 						</li>
-				<li class="active"><a href="namespace-BeerXML.Record.html">Record</a>
+				<li class="active main"><a href="namespace-BeerXML.Record.html">Record</a>
 						</li>
-							</ul></li>
+				<li class="main"><a href="namespace-BeerXML.Test.html">Test<span></span></a>
+						<ul>
+				<li class="main"><a href="namespace-BeerXML.Test.Generator.html">Generator</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Parser.html">Parser</a>
+						</li>
+				<li class="main"><a href="namespace-BeerXML.Test.Record.html">Record</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="namespace-PHP.html">PHP</a>
 						</li>
 			</ul>
@@ -103,9 +111,9 @@
 		<dd style="padding-left:0px">
 <b><span>BeerXML\Record\Yeast</span></b>			
 			 implements 
-				<a href="class-BeerXML.Generator.IYeastReader.html"><span>BeerXML\Generator\IYeastReader</span></a>, 
+				<a href="class-BeerXML.Generator.IYeastDisplay.html"><span>BeerXML\Generator\IYeastDisplay</span></a>, 
 			
-				<a href="class-BeerXML.Parser.IYeastWriter.html"><span>BeerXML\Parser\IYeastWriter</span></a>
+				<a href="class-BeerXML.Parser.IYeastDisplay.html"><span>BeerXML\Parser\IYeastDisplay</span></a>
 			
 			
 		</dd>
@@ -124,7 +132,7 @@
 		<b>Namespace:</b> <a href="namespace-BeerXML.html">BeerXML</a>\<a href="namespace-BeerXML.Record.html">Record</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-BeerXML.Record.Yeast.html#10-496" title="Go to source code">BeerXML/Record/Yeast.php</a><br />
+		<b>Located at</b> <a href="source-class-BeerXML.Record.Yeast.html#10-629" title="Go to source code">src/BeerXML/Record/Yeast.php</a><br />
 	</div>
 
 
@@ -142,7 +150,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAddToSecondary">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#151-161" title="Go to source code">setAddToSecondary</a>( <span>boolean <var>$addToSecondary</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#178-188" title="Go to source code">setAddToSecondary</a>( <span>boolean <var>$addToSecondary</var></span> )</code>
 
 		<div class="description short">
 			
@@ -171,7 +179,7 @@ more yeast strains for a single brew (eg: Lambic). Default value is FALSE.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setAddToSecondary">BeerXML\Parser\IYeastWriter::setAddToSecondary()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setAddToSecondary">BeerXML\Parser\IYeast::setAddToSecondary()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -186,7 +194,7 @@ more yeast strains for a single brew (eg: Lambic). Default value is FALSE.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAddToSecondary">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#163-173" title="Go to source code">getAddToSecondary</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#190-200" title="Go to source code">getAddToSecondary</a>( )</code>
 
 		<div class="description short">
 			
@@ -214,7 +222,7 @@ more yeast strains for a single brew (eg: Lambic). Default value is FALSE.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getAddToSecondary">BeerXML\Generator\IYeastReader::getAddToSecondary()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getAddToSecondary">BeerXML\Generator\IYeast::getAddToSecondary()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -229,7 +237,7 @@ more yeast strains for a single brew (eg: Lambic). Default value is FALSE.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAmount">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#175-184" title="Go to source code">setAmount</a>( <span>number <var>$amount</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#202-211" title="Go to source code">setAmount</a>( <span>number <var>$amount</var></span> )</code>
 
 		<div class="description short">
 			
@@ -258,7 +266,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setAmount">BeerXML\Parser\IYeastWriter::setAmount()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setAmount">BeerXML\Parser\IYeast::setAmount()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -273,7 +281,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAmount">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#186-195" title="Go to source code">getAmount</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#213-222" title="Go to source code">getAmount</a>( )</code>
 
 		<div class="description short">
 			
@@ -301,7 +309,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getAmount">BeerXML\Generator\IYeastReader::getAmount()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getAmount">BeerXML\Generator\IYeast::getAmount()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -316,7 +324,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAmountIsWeight">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#197-203" title="Go to source code">setAmountIsWeight</a>( <span>boolean <var>$amountIsWeight</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#224-230" title="Go to source code">setAmountIsWeight</a>( <span>boolean <var>$amountIsWeight</var></span> )</code>
 
 		<div class="description short">
 			
@@ -337,7 +345,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setAmountIsWeight">BeerXML\Parser\IYeastWriter::setAmountIsWeight()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setAmountIsWeight">BeerXML\Parser\IYeast::setAmountIsWeight()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -352,7 +360,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAmountIsWeight">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#205-211" title="Go to source code">getAmountIsWeight</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#232-238" title="Go to source code">getAmountIsWeight</a>( )</code>
 
 		<div class="description short">
 			
@@ -372,7 +380,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getAmountIsWeight">BeerXML\Generator\IYeastReader::getAmountIsWeight()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getAmountIsWeight">BeerXML\Generator\IYeast::getAmountIsWeight()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -387,7 +395,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAttenuation">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#213-221" title="Go to source code">setAttenuation</a>( <span>number <var>$attenuation</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#240-248" title="Go to source code">setAttenuation</a>( <span>number <var>$attenuation</var></span> )</code>
 
 		<div class="description short">
 			
@@ -412,7 +420,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setAttenuation">BeerXML\Parser\IYeastWriter::setAttenuation()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setAttenuation">BeerXML\Parser\IYeast::setAttenuation()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -427,7 +435,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAttenuation">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#223-231" title="Go to source code">getAttenuation</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#250-258" title="Go to source code">getAttenuation</a>( )</code>
 
 		<div class="description short">
 			
@@ -451,7 +459,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getAttenuation">BeerXML\Generator\IYeastReader::getAttenuation()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getAttenuation">BeerXML\Generator\IYeast::getAttenuation()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -466,7 +474,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBestFor">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#233-241" title="Go to source code">setBestFor</a>( <span>string <var>$bestFor</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#260-268" title="Go to source code">setBestFor</a>( <span>string <var>$bestFor</var></span> )</code>
 
 		<div class="description short">
 			
@@ -491,7 +499,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setBestFor">BeerXML\Parser\IYeastWriter::setBestFor()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setBestFor">BeerXML\Parser\IYeast::setBestFor()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -506,7 +514,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBestFor">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#243-251" title="Go to source code">getBestFor</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#270-278" title="Go to source code">getBestFor</a>( )</code>
 
 		<div class="description short">
 			
@@ -530,7 +538,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getBestFor">BeerXML\Generator\IYeastReader::getBestFor()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getBestFor">BeerXML\Generator\IYeast::getBestFor()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -545,7 +553,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setFlocculation">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#253-261" title="Go to source code">setFlocculation</a>( <span>string <var>$flocculation</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#280-288" title="Go to source code">setFlocculation</a>( <span>string <var>$flocculation</var></span> )</code>
 
 		<div class="description short">
 			
@@ -570,7 +578,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setFlocculation">BeerXML\Parser\IYeastWriter::setFlocculation()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setFlocculation">BeerXML\Parser\IYeast::setFlocculation()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -585,7 +593,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFlocculation">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#263-271" title="Go to source code">getFlocculation</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#290-298" title="Go to source code">getFlocculation</a>( )</code>
 
 		<div class="description short">
 			
@@ -609,7 +617,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getFlocculation">BeerXML\Generator\IYeastReader::getFlocculation()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getFlocculation">BeerXML\Generator\IYeast::getFlocculation()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -624,7 +632,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setForm">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#273-281" title="Go to source code">setForm</a>( <span>string <var>$form</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#300-308" title="Go to source code">setForm</a>( <span>string <var>$form</var></span> )</code>
 
 		<div class="description short">
 			
@@ -649,7 +657,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setForm">BeerXML\Parser\IYeastWriter::setForm()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setForm">BeerXML\Parser\IYeast::setForm()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -664,7 +672,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getForm">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#283-291" title="Go to source code">getForm</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#310-318" title="Go to source code">getForm</a>( )</code>
 
 		<div class="description short">
 			
@@ -688,7 +696,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getForm">BeerXML\Generator\IYeastReader::getForm()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getForm">BeerXML\Generator\IYeast::getForm()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -703,7 +711,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setLaboratory">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#293-301" title="Go to source code">setLaboratory</a>( <span>string <var>$laboratory</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#320-328" title="Go to source code">setLaboratory</a>( <span>string <var>$laboratory</var></span> )</code>
 
 		<div class="description short">
 			
@@ -728,7 +736,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setLaboratory">BeerXML\Parser\IYeastWriter::setLaboratory()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setLaboratory">BeerXML\Parser\IYeast::setLaboratory()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -743,7 +751,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLaboratory">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#303-311" title="Go to source code">getLaboratory</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#330-338" title="Go to source code">getLaboratory</a>( )</code>
 
 		<div class="description short">
 			
@@ -767,7 +775,7 @@ is in kilograms and not liters.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getLaboratory">BeerXML\Generator\IYeastReader::getLaboratory()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getLaboratory">BeerXML\Generator\IYeast::getLaboratory()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -782,7 +790,7 @@ is in kilograms and not liters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setMaxReuse">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#313-321" title="Go to source code">setMaxReuse</a>( <span>integer <var>$maxReuse</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#340-348" title="Go to source code">setMaxReuse</a>( <span>integer <var>$maxReuse</var></span> )</code>
 
 		<div class="description short">
 			
@@ -809,7 +817,7 @@ batch)</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setMaxReuse">BeerXML\Parser\IYeastWriter::setMaxReuse()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setMaxReuse">BeerXML\Parser\IYeast::setMaxReuse()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -824,7 +832,7 @@ batch)</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMaxReuse">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#323-331" title="Go to source code">getMaxReuse</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#350-358" title="Go to source code">getMaxReuse</a>( )</code>
 
 		<div class="description short">
 			
@@ -850,7 +858,7 @@ batch)</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getMaxReuse">BeerXML\Generator\IYeastReader::getMaxReuse()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getMaxReuse">BeerXML\Generator\IYeast::getMaxReuse()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -865,7 +873,7 @@ batch)</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setMaxTemperature">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#333-341" title="Go to source code">setMaxTemperature</a>( <span>number <var>$maxTemperature</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#360-368" title="Go to source code">setMaxTemperature</a>( <span>number <var>$maxTemperature</var></span> )</code>
 
 		<div class="description short">
 			
@@ -892,7 +900,7 @@ Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setMaxTemperature">BeerXML\Parser\IYeastWriter::setMaxTemperature()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setMaxTemperature">BeerXML\Parser\IYeast::setMaxTemperature()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -907,7 +915,7 @@ Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMaxTemperature">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#343-351" title="Go to source code">getMaxTemperature</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#370-378" title="Go to source code">getMaxTemperature</a>( )</code>
 
 		<div class="description short">
 			
@@ -933,7 +941,7 @@ Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getMaxTemperature">BeerXML\Generator\IYeastReader::getMaxTemperature()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getMaxTemperature">BeerXML\Generator\IYeast::getMaxTemperature()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -948,7 +956,7 @@ Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setMinTemperature">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#353-361" title="Go to source code">setMinTemperature</a>( <span>number <var>$minTemperature</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#380-388" title="Go to source code">setMinTemperature</a>( <span>number <var>$minTemperature</var></span> )</code>
 
 		<div class="description short">
 			
@@ -975,7 +983,7 @@ degrees Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setMinTemperature">BeerXML\Parser\IYeastWriter::setMinTemperature()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setMinTemperature">BeerXML\Parser\IYeast::setMinTemperature()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -990,7 +998,7 @@ degrees Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMinTemperature">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#363-371" title="Go to source code">getMinTemperature</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#390-398" title="Go to source code">getMinTemperature</a>( )</code>
 
 		<div class="description short">
 			
@@ -1016,7 +1024,7 @@ degrees Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getMinTemperature">BeerXML\Generator\IYeastReader::getMinTemperature()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getMinTemperature">BeerXML\Generator\IYeast::getMinTemperature()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1031,7 +1039,7 @@ degrees Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#373-381" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#400-408" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1056,7 +1064,7 @@ degrees Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setName">BeerXML\Parser\IYeastWriter::setName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setName">BeerXML\Parser\IYeast::setName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1071,7 +1079,7 @@ degrees Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#383-391" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#410-418" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -1095,7 +1103,7 @@ degrees Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getName">BeerXML\Generator\IYeastReader::getName()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getName">BeerXML\Generator\IYeast::getName()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1110,7 +1118,7 @@ degrees Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#393-401" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#420-428" title="Go to source code">setNotes</a>( <span>string <var>$notes</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1135,7 +1143,7 @@ degrees Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setNotes">BeerXML\Parser\IYeastWriter::setNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setNotes">BeerXML\Parser\IYeast::setNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1150,7 +1158,7 @@ degrees Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNotes">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#403-411" title="Go to source code">getNotes</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#430-438" title="Go to source code">getNotes</a>( )</code>
 
 		<div class="description short">
 			
@@ -1174,7 +1182,7 @@ degrees Celsius.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getNotes">BeerXML\Generator\IYeastReader::getNotes()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getNotes">BeerXML\Generator\IYeast::getNotes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1189,7 +1197,7 @@ degrees Celsius.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setProductId">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#413-421" title="Go to source code">setProductId</a>( <span>string <var>$productId</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#440-448" title="Go to source code">setProductId</a>( <span>string <var>$productId</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1216,7 +1224,7 @@ particular strain of yeast.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setProductId">BeerXML\Parser\IYeastWriter::setProductId()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setProductId">BeerXML\Parser\IYeast::setProductId()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1231,7 +1239,7 @@ particular strain of yeast.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getProductId">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#423-431" title="Go to source code">getProductId</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#450-458" title="Go to source code">getProductId</a>( )</code>
 
 		<div class="description short">
 			
@@ -1257,7 +1265,7 @@ particular strain of yeast.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getProductId">BeerXML\Generator\IYeastReader::getProductId()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getProductId">BeerXML\Generator\IYeast::getProductId()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1272,7 +1280,7 @@ particular strain of yeast.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTimesCultured">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#433-442" title="Go to source code">setTimesCultured</a>( <span>integer <var>$timesCultured</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#460-469" title="Go to source code">setTimesCultured</a>( <span>integer <var>$timesCultured</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1299,7 +1307,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setTimesCultured">BeerXML\Parser\IYeastWriter::setTimesCultured()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setTimesCultured">BeerXML\Parser\IYeast::setTimesCultured()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1314,7 +1322,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTimesCultured">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#444-453" title="Go to source code">getTimesCultured</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#471-480" title="Go to source code">getTimesCultured</a>( )</code>
 
 		<div class="description short">
 			
@@ -1340,7 +1348,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getTimesCultured">BeerXML\Generator\IYeastReader::getTimesCultured()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getTimesCultured">BeerXML\Generator\IYeast::getTimesCultured()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1355,7 +1363,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setType">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#455-463" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#482-490" title="Go to source code">setType</a>( <span>string <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1380,7 +1388,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setType">BeerXML\Parser\IYeastWriter::setType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setType">BeerXML\Parser\IYeast::setType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1395,7 +1403,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getType">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#465-473" title="Go to source code">getType</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#492-500" title="Go to source code">getType</a>( )</code>
 
 		<div class="description short">
 			
@@ -1419,7 +1427,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getType">BeerXML\Generator\IYeastReader::getType()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getType">BeerXML\Generator\IYeast::getType()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1434,7 +1442,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#475-483" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#502-510" title="Go to source code">setVersion</a>( <span>integer <var>$version</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1459,7 +1467,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Parser.IYeastWriter.html#_setVersion">BeerXML\Parser\IYeastWriter::setVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeast.html#_setVersion">BeerXML\Parser\IYeast::setVersion()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -1474,7 +1482,7 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVersion">#</a>
-		<code><a href="source-class-BeerXML.Record.Yeast.html#485-493" title="Go to source code">getVersion</a>( )</code>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#512-520" title="Go to source code">getVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -1498,7 +1506,422 @@ number should be zero if this is a product directly from the manufacturer.</p>
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-BeerXML.Generator.IYeastReader.html#_getVersion">BeerXML\Generator\IYeastReader::getVersion()</a></code></div>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeast.html#_getVersion">BeerXML\Generator\IYeast::getVersion()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCultureDate" id="_setCultureDate">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCultureDate">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#522-530" title="Go to source code">setCultureDate</a>( <span>string <var>$cultureDate</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Date sample was last cultured in a neutral date form such as "10 Dec 04"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Date sample was last cultured in a neutral date form such as "10 Dec 04"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cultureDate</var></dt>
+					<dd><code>string</code><br>$cultureDate</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeastDisplay.html#_setCultureDate">BeerXML\Parser\IYeastDisplay::setCultureDate()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCultureDate" id="_getCultureDate">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCultureDate">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#532-540" title="Go to source code">getCultureDate</a>( )</code>
+
+		<div class="description short">
+			
+<p>Date sample was last cultured in a neutral date form such as "10 Dec 04"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Date sample was last cultured in a neutral date form such as "10 Dec 04"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeastDisplay.html#_getCultureDate">BeerXML\Generator\IYeastDisplay::getCultureDate()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDispMaxTemp" id="_setDispMaxTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDispMaxTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#542-551" title="Go to source code">setDispMaxTemp</a>( <span>string <var>$dispMaxTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Maximum fermentation temperature converted to current user units along with
+the units. For example "54.0 F" or "24.2 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Maximum fermentation temperature converted to current user units along with
+the units. For example "54.0 F" or "24.2 C"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dispMaxTemp</var></dt>
+					<dd><code>string</code><br>$dispMaxTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeastDisplay.html#_setDispMaxTemp">BeerXML\Parser\IYeastDisplay::setDispMaxTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDispMaxTemp" id="_getDispMaxTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDispMaxTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#553-562" title="Go to source code">getDispMaxTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Maximum fermentation temperature converted to current user units along with
+the units. For example "54.0 F" or "24.2 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Maximum fermentation temperature converted to current user units along with
+the units. For example "54.0 F" or "24.2 C"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeastDisplay.html#_getDispMaxTemp">BeerXML\Generator\IYeastDisplay::getDispMaxTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDispMinTemp" id="_setDispMinTemp">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDispMinTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#564-573" title="Go to source code">setDispMinTemp</a>( <span>string <var>$dispMinTemp</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Minimum fermentation temperature converted to current user units along with
+the units. For example "54.0 F" or "24.2 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Minimum fermentation temperature converted to current user units along with
+the units. For example "54.0 F" or "24.2 C"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dispMinTemp</var></dt>
+					<dd><code>string</code><br>$dispMinTemp</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeastDisplay.html#_setDispMinTemp">BeerXML\Parser\IYeastDisplay::setDispMinTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDispMinTemp" id="_getDispMinTemp">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDispMinTemp">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#575-584" title="Go to source code">getDispMinTemp</a>( )</code>
+
+		<div class="description short">
+			
+<p>Minimum fermentation temperature converted to current user units along with
+the units. For example "54.0 F" or "24.2 C"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Minimum fermentation temperature converted to current user units along with
+the units. For example "54.0 F" or "24.2 C"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeastDisplay.html#_getDispMinTemp">BeerXML\Generator\IYeastDisplay::getDispMinTemp()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisplayAmount" id="_setDisplayAmount">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisplayAmount">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#586-595" title="Go to source code">setDisplayAmount</a>( <span>string <var>$displayAmount</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The amount of yeast or starter in this record along with the units formatted
+for easy display in the current user defined units. For example "1.5 oz" or "100
+g".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of yeast or starter in this record along with the units formatted
+for easy display in the current user defined units. For example "1.5 oz" or "100
+g".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$displayAmount</var></dt>
+					<dd><code>string</code><br>$displayAmount</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeastDisplay.html#_setDisplayAmount">BeerXML\Parser\IYeastDisplay::setDisplayAmount()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayAmount" id="_getDisplayAmount">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayAmount">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#597-606" title="Go to source code">getDisplayAmount</a>( )</code>
+
+		<div class="description short">
+			
+<p>The amount of yeast or starter in this record along with the units formatted
+for easy display in the current user defined units. For example "1.5 oz" or "100
+g".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The amount of yeast or starter in this record along with the units formatted
+for easy display in the current user defined units. For example "1.5 oz" or "100
+g".</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeastDisplay.html#_getDisplayAmount">BeerXML\Generator\IYeastDisplay::getDisplayAmount()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInventory" id="_setInventory">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setInventory">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#608-616" title="Go to source code">setInventory</a>( <span>string <var>$inventory</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Amount in inventory for this hop along with the units – for example "10.0
+pkgs"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Amount in inventory for this hop along with the units – for example "10.0
+pkgs"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$inventory</var></dt>
+					<dd><code>string</code><br>$inventory</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Parser.IYeastDisplay.html#_setInventory">BeerXML\Parser\IYeastDisplay::setInventory()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInventory" id="_getInventory">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInventory">#</a>
+		<code><a href="source-class-BeerXML.Record.Yeast.html#618-626" title="Go to source code">getInventory</a>( )</code>
+
+		<div class="description short">
+			
+<p>Amount in inventory for this hop along with the units – for example "10.0
+pkgs"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Amount in inventory for this hop along with the units – for example "10.0
+pkgs"</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-BeerXML.Generator.IYeastDisplay.html#_getInventory">BeerXML\Generator\IYeastDisplay::getInventory()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
