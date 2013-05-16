@@ -72,6 +72,13 @@ class Yeast extends Record
             $this->xmlWriter->writeElement('ADD_TO_SECONDARY', $this->boolToString($addToSecondary));
         }
 
-        return parent::additionalFields();
+        if ($this->record instanceof $this->displayInterface) {
+            $cultureDate = $this->record->getCultureDate();
+            if ($cultureDate instanceof \DateTime) {
+                $this->xmlWriter->writeElement('CULTURE_DATE', $cultureDate->format('d M y'));
+            }
+        }
+
+        parent::additionalFields();
     }
 }

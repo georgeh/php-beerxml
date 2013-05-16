@@ -45,7 +45,6 @@ class Yeast extends Record
                     'DISP_MIN_TEMP'  => 'setDispMinTemp',
                     'DISP_MAX_TEMP'  => 'setDispMaxTemp',
                     'INVENTORY'      => 'setInventory',
-                    'CULTURE_DATE'   => 'setCultureDate',
                 )
             );
         }
@@ -60,10 +59,12 @@ class Yeast extends Record
         if ('AMOUNT_IS_WEIGHT' == $this->xmlReader->name) {
             $value = ($this->xmlReader->readString() == 'TRUE');
             $record->setAmountIsWeight($value);
-        }
-        if ('ADD_TO_SECONDARY' == $this->xmlReader->name) {
+        } elseif ('ADD_TO_SECONDARY' == $this->xmlReader->name) {
             $value = ($this->xmlReader->readString() == 'TRUE');
             $record->setAddToSecondary($value);
+        } elseif ('CULTURE_DATE' == $this->xmlReader->name && $record instanceof IYeastDisplay) {
+            $date = new \DateTime($this->xmlReader->readString());
+            $record->setCultureDate($date);
         }
     }
 }

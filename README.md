@@ -31,7 +31,6 @@ that get generated. You'll need to implement the `BeerXML\Parser\I*Writer` inter
 `BeerXML\Parser\RecordFactory` to have it create your classes. Once you've got your objects set up, you can pass it into
 the constructor of `BeerXML\Parser`
 
-
 Generator
 ---------
 
@@ -46,6 +45,21 @@ echo $xml;
 ```
 
 `BeerXML\Generator` will accept any record that implements the `BeerXML\Generator\I*Reader` interfaces.
+
+Records
+-------
+There are a record classes for all the record types in the BeerXML specification that contain getter and setter methods.
+They implement the extended "Display" interfaces for the parser and generator, which means that include getters and
+setters from Appendix A of the spec. They do not include any math or compute any fields, as that is outside the scope
+of this project.
+
+``php
+$recipe = new \BeerXML\Record\Recipe();
+$recipe->setName('Imperial Session');
+$recipe->setOg(1.105);
+$recipe->setFg(1.002);
+$recipe->setIbu(99);
+``
 
 Installation
 ============
@@ -72,7 +86,7 @@ $ php composer.phar install
 ```
 
 If you don't use Composer, you can directly [download](https://github.com/georgeh/php-beerxml) the sources and configure
-it with your autoloader.
+it with your PSR-0 compatible autoloader.
 
 License
 =======

@@ -77,6 +77,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
 
 
     /**
+     * @todo Make this test less brittle
      * @dataProvider dryStout
      * @param Recipe $recipe
      */
@@ -88,6 +89,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
+     * @todo Make this test less brittle
      * @dataProvider dryStout
      * @param Recipe $recipe
      */

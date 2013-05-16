@@ -25,7 +25,6 @@ class Recipe extends Record
         'BREWER'              => 'setBrewer',
         'CARBONATION'         => 'setCarbonation',
         'CARBONATION_TEMP'    => 'setCarbonationTemp',
-        'DATE'                => 'setDate',
         'EFFICIENCY'          => 'setEfficiency',
         'FERMENTATION_STAGES' => 'setFermentationStages',
         'FG'                  => 'setFg',
@@ -88,8 +87,11 @@ class Recipe extends Record
     protected function otherElementEncountered($record)
     {
         if ('FORCED_CARBONATION' == $this->xmlReader->name) {
-            $value = ($this->xmlReader->readString() == 'TRUE');
-            $record->setForcedCarbonation($value);
+            $carb = ($this->xmlReader->readString() == 'TRUE');
+            $record->setForcedCarbonation($carb);
+        } elseif ('DATE' == $this->xmlReader->name) {
+            $date = new \DateTime($this->xmlReader->readString());
+            $record->setDate($date);
         }
     }
 }

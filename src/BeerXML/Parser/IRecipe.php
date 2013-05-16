@@ -59,7 +59,7 @@ interface IRecipe
     public function setCarbonationTemp($carbonationTemp);
 
     /**
-     * @param string $date
+     * @param \DateTime $date
      */
     public function setDate($date);
 

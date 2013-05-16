@@ -171,7 +171,7 @@ class Yeast implements YeastGetter, YeastSetter
     private $inventory;
 
     /**
-     * @var string
+     * @var \DateTime
      */
     private $cultureDate;
 
@@ -520,9 +520,9 @@ class Yeast implements YeastGetter, YeastSetter
     }
 
     /**
-     * Date sample was last cultured in a neutral date form such as "10 Dec 04"
+     * Date sample was last cultured
      *
-     * @param string $cultureDate
+     * @param \DateTime $cultureDate
      */
     public function setCultureDate($cultureDate)
     {
@@ -530,9 +530,9 @@ class Yeast implements YeastGetter, YeastSetter
     }
 
     /**
-     * Date sample was last cultured in a neutral date form such as "10 Dec 04"
+     * Date sample was last cultured
      *
-     * @return string
+     * @return \DateTime
      */
     public function getCultureDate()
     {

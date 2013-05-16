@@ -48,7 +48,6 @@ class Recipe extends Record
         'TERTIARY_TEMP'       => 'getTertiaryTemp',
         'AGE'                 => 'getAge',
         'AGE_TEMP'            => 'getAgeTemp',
-        'DATE'                => 'getDate',
         'CARBONATION'         => 'getCarbonation',
         'PRIMING_SUGAR_NAME'  => 'getPrimingSugarName',
         'CARBONATION_TEMP'    => 'getCarbonationTemp',
@@ -108,6 +107,11 @@ class Recipe extends Record
 
         if ($forcedCarb = $this->record->getForcedCarbonation()) {
             $this->xmlWriter->writeElement('FORCED_CARBONATION', $this->boolToString($forcedCarb));
+        }
+
+        $date = $this->record->getDate();
+        if ($date instanceof \DateTime) {
+            $this->xmlWriter->writeElement('DATE', $date->format('d M y'));
         }
 
         parent::additionalFields();

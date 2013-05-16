@@ -9,7 +9,7 @@ interface IYeastDisplay extends IYeast {
     /**
      * Date sample was last cultured in a neutral date form such as "10 Dec 04"
      *
-     * @param string $cultureDate
+     * @param \DateTime $cultureDate
      */
     public function setCultureDate($cultureDate);
 

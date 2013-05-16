@@ -229,9 +229,9 @@ class Recipe implements RecipeGetter, RecipeSetter
     private $ageTemp;
 
     /**
-     * Date brewed in a easily recognizable format such as "3 Dec 04".
+     * Date brewed
      *
-     * @var string
+     * @var \DateTime
      */
     private $date;
 
@@ -524,7 +524,7 @@ class Recipe implements RecipeGetter, RecipeSetter
     }
 
     /**
-     * @return string
+     * @return \DateTime
      */
     public function getDate()
     {
@@ -532,7 +532,7 @@ class Recipe implements RecipeGetter, RecipeSetter
     }
 
     /**
-     * @param string $date
+     * @param \DateTime $date
      */
     public function setDate($date)
     {

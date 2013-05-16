@@ -10,7 +10,7 @@ interface IYeastDisplay extends IYeast
     /**
      * Date sample was last cultured in a neutral date form such as "10 Dec 04"
      *
-     * @return string
+     * @return \DateTime
      */
     public function getCultureDate();
 

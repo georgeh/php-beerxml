@@ -11,7 +11,7 @@ use BeerXML\Parser\RecordFactory;
  * Class RecipeTest
  *
  * @package BeerXML\Test\Parser
- * @covers \BeerXML\Record\Recipe
+ * @covers \BeerXML\Parser\Recipe
  */
 class RecipeTest extends \PHPUnit_Framework_TestCase
 {
@@ -39,6 +39,16 @@ class RecipeTest extends \PHPUnit_Framework_TestCase
         $this->parser->setXmlString(file_get_contents(dirname(dirname(__FILE__)) . '/fixtures/recipe-record.xml'));
         $recipe = $this->parser->parse();
         $this->assertInstanceOf('BeerXML\Record\Recipe', $recipe);
+    }
+
+    public function testDateIsParsedIntoDateTime()
+    {
+        $this->parser->setXmlString(file_get_contents(__DIR__ . '/../fixtures/recipe-record.xml'));
+        $recipe = $this->parser->parse();
+        /** @var $recipe \BeerXML\Record\Recipe */
+        $date = $recipe->getDate();
+        $this->assertInstanceOf('\DateTime', $date);
+        $this->assertEquals(new \DateTime('2004-01-03'), $date);
     }
 
 }

@@ -78,7 +78,7 @@ interface IRecipe
     /**
      * Date brewed in a easily recognizable format such as "3 Dec 04".
      *
-     * @return string
+     * @return \DateTime
      */
     public function getDate();
 
