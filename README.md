@@ -53,13 +53,13 @@ They implement the extended "Display" interfaces for the parser and generator, w
 setters from Appendix A of the spec. They do not include any math or compute any fields, as that is outside the scope
 of this project.
 
-``php
+```php
 $recipe = new \BeerXML\Record\Recipe();
 $recipe->setName('Imperial Session');
 $recipe->setOg(1.105);
 $recipe->setFg(1.002);
 $recipe->setIbu(99);
-``
+```
 
 Installation
 ============
