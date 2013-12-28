@@ -63,9 +63,6 @@ class Yeast extends Record
             $value = ($this->xmlReader->readString() == 'TRUE');
             $record->setAddToSecondary($value);
         } elseif ('CULTURE_DATE' == $this->xmlReader->name && $record instanceof IYeastDisplay) {
-            /*$dateTimeString = $this->xmlReader->readString();
-            $date = new \DateTime();
-            $date->setTimestamp(strtotime($dateTimeString));*/
             $dateTimeString = $this->xmlReader->readString();
             $record->setCultureDate($this->parseDateString($dateTimeString));
         }
