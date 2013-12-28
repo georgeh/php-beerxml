@@ -90,8 +90,8 @@ class Recipe extends Record
             $carb = ($this->xmlReader->readString() == 'TRUE');
             $record->setForcedCarbonation($carb);
         } elseif ('DATE' == $this->xmlReader->name) {
-            $date = new \DateTime($this->xmlReader->readString());
-            $record->setDate($date);
+            $dateTimeString = $this->xmlReader->readString();
+            $record->setDate($this->parseDateString($dateTimeString));
         }
     }
 }

@@ -231,5 +231,27 @@ abstract class Record
         $recordParser->setRecordFactory($this->recordFactory);
         return $recordParser;
     }
+
+    /**
+     * @param string $dateTimeString
+     * @return \DateTime
+     */
+    protected function parseDateString($dateTimeString)
+    {
+        // Date format is _very_ loosely defined as 'easily recognizable format such as “3 Dec 04”.'
+        // BeerSmith2 seems use d/m/Y format in european timezone, so in case the normal conversion fails try
+        // replacing / with - which makes strtotime use european tz
+
+        // There is no way of knowing which timezone was used if the date is 1/6/2001 .. could be either month 6 or 1
+        // so we are using the PHP default which is US format when written with slashes.
+        $timestamp = strtotime($dateTimeString);
+        if ($timestamp === false) {
+            $dateTimeString = str_replace("/", "-", $dateTimeString);
+            $timestamp = strtotime($dateTimeString);
+        }
+        $date = new \DateTime();
+        $date->setTimestamp($timestamp);
+        return $date;
+    }
 }
 

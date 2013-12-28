@@ -1,0 +1,24 @@
+<YEAST>
+    <NAME>Nottingham Yeast</NAME>
+    <VERSION>1</VERSION>
+    <TYPE>Ale</TYPE>
+    <FORM>Dry</FORM>
+    <AMOUNT>0.0236590</AMOUNT>
+    <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+    <LABORATORY>Lallemand</LABORATORY>
+    <PRODUCT_ID>-</PRODUCT_ID>
+    <MIN_TEMPERATURE>16.6666667</MIN_TEMPERATURE>
+    <MAX_TEMPERATURE>22.2222222</MAX_TEMPERATURE>
+    <FLOCCULATION>Very High</FLOCCULATION>
+    <ATTENUATION>75.0000000</ATTENUATION>
+    <NOTES>High flocculation - settles quickly.  Very good reputation as a fast starter and quick fermenter.  Clean and only slightly fruity.  Some nutty flavor in bottled version.  Relatively high attenuation.</NOTES>
+    <BEST_FOR>Ales</BEST_FOR>
+    <MAX_REUSE>5</MAX_REUSE>
+    <TIMES_CULTURED>0</TIMES_CULTURED>
+    <ADD_TO_SECONDARY>FALSE</ADD_TO_SECONDARY>
+    <DISPLAY_AMOUNT>23.66 ml</DISPLAY_AMOUNT>
+    <DISP_MIN_TEMP>16.7 C</DISP_MIN_TEMP>
+    <DISP_MAX_TEMP>22.2 C</DISP_MAX_TEMP>
+    <INVENTORY>0.0 pkg</INVENTORY>
+    <CULTURE_DATE>13/06/2003</CULTURE_DATE>
+</YEAST>
