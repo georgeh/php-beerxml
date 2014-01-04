@@ -53,7 +53,6 @@ class Yeast extends Record
         'DISP_MIN_TEMP'  => 'getDispMinTemp',
         'DISP_MAX_TEMP'  => 'getDispMaxTemp',
         'INVENTORY'      => 'getInventory',
-        'CULTURE_DATE'   => 'getCultureDate',
     );
 
 
