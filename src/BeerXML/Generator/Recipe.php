@@ -21,6 +21,7 @@ class Recipe extends Record
     protected $simpleValues = array(
         'NAME'       => 'getName',
         'VERSION'    => 'getVersion',
+        'TYPE'    => 'getType',
         'BREWER'     => 'getBrewer',
         'BATCH_SIZE' => 'getBatchSize',
         'BOIL_SIZE'  => 'getBoilSize',
