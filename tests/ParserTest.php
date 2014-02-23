@@ -56,6 +56,9 @@ class ParserTest extends \PHPUnit_Framework_TestCase
 
         $burtonAle = $result[0];
         /** @var $burtonAle Recipe */
+
+        $this->assertEquals($burtonAle->getType(), Recipe::TYPE_ALL_GRAIN);
+
         $miscs = $burtonAle->getMiscs();
         $this->assertEquals(2, count($miscs));
         $polyclar = $miscs[1];
